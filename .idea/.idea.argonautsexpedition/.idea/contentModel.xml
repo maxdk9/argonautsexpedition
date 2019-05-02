@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\maxdk9\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\maxdk9\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_argonautsexpedition.-564067725.00" t="ExcludeRecursive" />
+    <e p="D:\git_repo\argonautsexpedition" t="IncludeRecursive">
+      <e p="argonautsexpedition.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="GameManager.cs" t="Include" />
+        <e p="Lean" t="Include">
+          <e p="Common" t="Include">
+            <e p="Examples" t="Include">
+              <e p="Fonts" t="Include">
+                <e p="OFL.txt" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="LeanCircuit.cs" t="Include" />
+                <e p="LeanDocumentation.cs" t="Include" />
+                <e p="LeanMarker.cs" t="Include" />
+                <e p="LeanOpenUrl.cs" t="Include" />
+              </e>
+              <e p="Shaders" t="Include">
+                <e p="Alpha.shader" t="Include" />
+                <e p="Object.shader" t="Include" />
+                <e p="Skybox.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="LeanHelper.cs" t="Include" />
+              <e p="LeanInspector.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Localization" t="Include">
+            <e p="Examples" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="LeanSliderToArg.cs" t="Include" />
+              </e>
+              <e p="Texts" t="Include">
+                <e p="English.txt" t="Include" />
+                <e p="Japanese.txt" t="Include" />
+                <e p="Spanish.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Behaviours" t="Include">
+                <e p="LeanLocalizedAudioSource.cs" t="Include" />
+                <e p="LeanLocalizedImage.cs" t="Include" />
+                <e p="LeanLocalizedRenderer.cs" t="Include" />
+                <e p="LeanLocalizedSpriteRenderer.cs" t="Include" />
+                <e p="LeanLocalizedText.cs" t="Include" />
+                <e p="LeanLocalizedTextFont.cs" t="Include" />
+              </e>
+              <e p="LeanCulture.cs" t="Include" />
+              <e p="LeanLanguage.cs" t="Include" />
+              <e p="LeanLanguageCSV.cs" t="Include" />
+              <e p="LeanLanguageNameAttribute.cs" t="Include" />
+              <e p="LeanLocalization.cs" t="Include" />
+              <e p="LeanLocalizedBehaviour.cs" t="Include" />
+              <e p="LeanPhrase.cs" t="Include" />
+              <e p="LeanPhrasePathAttribute.cs" t="Include" />
+              <e p="LeanTranslation.cs" t="Include" />
+            </e>
+          </e>
+          <e p="READ ME.txt" t="Include" />
+        </e>
+        <e p="MainMenu.cs" t="Include" />
+        <e p="Resources" t="Include">
+          <e p="localizationfiles" t="Include">
+            <e p="En_StringResource.txt" t="Include" />
+            <e p="Ru_StringResource.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

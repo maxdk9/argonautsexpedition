@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7d2c4ac1-6d17-46b2-810e-476a80db9510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/DOCUMENTATION.html" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/DOCUMENTATION.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Editor/LeanDocumentation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/00 Text.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/00 Text.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/01 Image.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/01 Image.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/01 Localization.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/02 Phrase.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/03 Renderer.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/03 Text.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/04 TextAsset Loaders.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/05 Image.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/05 Image.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/06 Renderer.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/06 Renderer.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/07 Formatted Text.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/08 CSV.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/09 Organization.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/09 Organization.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Hello And Flag.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/English Flag.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/English Flag.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Japanese Flag.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Japanese Flag.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Spanish Flag.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Spanish Flag.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Meshes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanOpenUrl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanSliderToArg.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanSliderToArg.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanSliderToArg.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanSliderToArg.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/English.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/English.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/Spainish Flag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/Spainish Flag.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanCulture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanCulture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageNameAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageNameAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalization.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalization.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizationLoader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedAudioSource.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedAudioSource.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedImage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedImage.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedRenderer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedRenderer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedSpriteRenderer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedSpriteRenderer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedText.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedTextFont.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedTextFont.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhrase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhrase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhraseNameAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhraseNameAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="726021093">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="9" />
+          <entry key="html" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="9" />
+          <entry key="HTML" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="193" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="193" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/GameManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <marker date="1556805056703" expanded="false" signature="6:78" ph="..." />
+                <marker date="1556805056703" expanded="true" signature="120:414" ph="{...}" />
+                <marker date="1556805056703" expanded="true" signature="343:350" ph="{...}" />
+                <marker date="1556805056703" expanded="true" signature="405:412" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Resources/localizationfiles/En_StringResource.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="7" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1556580622000" expanded="false" signature="6:73" ph="..." />
+                <marker date="1556580622000" expanded="true" signature="111:1277" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="259:1275" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="304:1272" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="1091:1139" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="1183:1232" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="1313:5757" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="1317:1508" ph="///This component will load localizations from a CSV file. By default they should be in the format: ... " />
+                <marker date="1556580622000" expanded="true" signature="1692:5755" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="2496:2525" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="2593:3920" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="2663:3916" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="2868:3772" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="3041:3766" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="3276:3450" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="3369:3442" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="3555:3636" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="3855:3911" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4007:5745" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4059:5741" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4296:5736" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4469:5133" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4603:5126" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4636:4698" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="4790:5118" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="5216:5372" ph="{...}" />
+                <marker date="1556580622000" expanded="true" signature="5606:5730" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+              <folding>
+                <marker date="1556580626000" expanded="false" signature="6:52" ph="..." />
+                <marker date="1556580626000" expanded="true" signature="81:597" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="158:595" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="278:356" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="289:317" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="325:352" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="471:592" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="482:588" ph="{...}" />
+                <marker date="1556580626000" expanded="true" signature="513:561" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="528" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Lean" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Lean" type="1045f7f1:UnityExplorerNode" />
+              <item name="Localization" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Lean" type="1045f7f1:UnityExplorerNode" />
+              <item name="Localization" type="1045f7f1:UnityExplorerNode" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+              <item name="Read only" type="7f48d1bd:ReadOnlyPackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.DOCUMENTATION.html">
+    <configuration name="DOCUMENTATION.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/argonautsexpedition/Assets/Lean/Localization/DOCUMENTATION.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+      <item itemvalue="JavaScript Debug.DOCUMENTATION.html" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.DOCUMENTATION.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7d2c4ac1-6d17-46b2-810e-476a80db9510" name="Default Changelist" comment="" />
+      <created>1556804395810</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556804395810</updated>
+      <workItem from="1556804397106" duration="159000" />
+      <workItem from="1556804620512" duration="3511000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3670000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/DOCUMENTATION.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="76" lean-forward="true" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizationLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalization.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3417">
+          <caret line="205" column="17" selection-start-line="205" selection-start-column="17" selection-end-line="205" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanCulture.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <marker date="1556805056703" expanded="false" signature="6:78" ph="..." />
+            <marker date="1556805056703" expanded="true" signature="120:414" ph="{...}" />
+            <marker date="1556805056703" expanded="true" signature="343:350" ph="{...}" />
+            <marker date="1556805056703" expanded="true" signature="405:412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedText.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/localizationfiles/En_StringResource.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1556580622000" expanded="false" signature="6:73" ph="..." />
+            <marker date="1556580622000" expanded="true" signature="111:1277" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="259:1275" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="304:1272" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="1091:1139" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="1183:1232" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="1313:5757" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="1317:1508" ph="///This component will load localizations from a CSV file. By default they should be in the format: ... " />
+            <marker date="1556580622000" expanded="true" signature="1692:5755" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="2496:2525" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="2593:3920" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="2663:3916" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="2868:3772" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="3041:3766" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="3276:3450" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="3369:3442" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="3555:3636" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="3855:3911" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4007:5745" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4059:5741" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4296:5736" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4469:5133" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4603:5126" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4636:4698" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="4790:5118" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="5216:5372" ph="{...}" />
+            <marker date="1556580622000" expanded="true" signature="5606:5730" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <marker date="1556580626000" expanded="false" signature="6:52" ph="..." />
+            <marker date="1556580626000" expanded="true" signature="81:597" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="158:595" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="278:356" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="289:317" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="325:352" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="471:592" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="482:588" ph="{...}" />
+            <marker date="1556580626000" expanded="true" signature="513:561" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

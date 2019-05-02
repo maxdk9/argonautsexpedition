@@ -97,6 +97,7 @@ namespace Lean.Localization
 namespace Lean.Localization
 {
 	/// <summary>This contains data about each phrase, which is then translated into different languages.</summary>
+	[ExecuteInEditMode]
 	[DisallowMultipleComponent]
 	[HelpURL(LeanLocalization.HelpUrlPrefix + "LeanPhrase")]
 	[AddComponentMenu(LeanLocalization.ComponentPathPrefix + "Phrase")]
@@ -196,6 +197,16 @@ namespace Lean.Localization
 					Register(path, translation);
 				}
 			}
+		}
+
+		protected virtual void OnEnable()
+		{
+			LeanLocalization.DelayUpdateTranslations();
+		}
+
+		protected virtual void OnDisable()
+		{
+			LeanLocalization.DelayUpdateTranslations();
 		}
 
 		private void Register(string path, LeanTranslation translation)

@@ -246,7 +246,7 @@ namespace Lean.Localization
 		/// <summary>The currently set language.</summary>
 		private static string currentLanguage;
 
-		private static int pendingUpdates;
+		private static bool pendingUpdates;
 
 		public List<LeanLanguage> Languages
 		{
@@ -500,6 +500,8 @@ namespace Lean.Localization
 		/// <summary>This rebuilds the dictionary used to quickly map phrase names to translations for the current language.</summary>
 		public static void UpdateTranslations()
 		{
+			pendingUpdates = false;
+
 			CurrentPhrases.Clear();
 			CurrentLanguages.Clear();
 			CurrentTranslations.Clear();
@@ -515,6 +517,19 @@ namespace Lean.Localization
 			{
 				OnLocalizationChanged();
 			}
+		}
+
+		public static void DelayUpdateTranslations()
+		{
+			pendingUpdates = true;
+
+#if UNITY_EDITOR
+			// Go through all enabled phrases
+			for (var i = 0; i < Instances.Count; i++)
+			{
+				EditorUtility.SetDirty(Instances[i].gameObject);
+			}
+#endif
 		}
 
 		private void Register()
@@ -578,6 +593,14 @@ namespace Lean.Localization
 			Instances.Remove(this);
 
 			UpdateTranslations();
+		}
+
+		protected virtual void Update()
+		{
+			if (pendingUpdates == true)
+			{
+				UpdateTranslations();
+			}
 		}
 #if UNITY_EDITOR
 		// Inspector modified?
