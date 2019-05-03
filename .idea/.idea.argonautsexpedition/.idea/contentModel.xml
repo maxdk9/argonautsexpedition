@@ -5,6 +5,7 @@
     <e p="C:\Users\maxdk9\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_argonautsexpedition.-564067725.00" t="ExcludeRecursive" />
     <e p="D:\git_repo\argonautsexpedition" t="IncludeRecursive">
       <e p="argonautsexpedition.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Demigiant" t="Include">
@@ -22,68 +23,19 @@
           </e>
         </e>
         <e p="GameManager.cs" t="Include" />
-        <e p="Lean" t="Include">
-          <e p="Common" t="Include">
-            <e p="Examples" t="Include">
-              <e p="Fonts" t="Include">
-                <e p="OFL.txt" t="Include" />
-              </e>
-              <e p="Scripts" t="Include">
-                <e p="LeanCircuit.cs" t="Include" />
-                <e p="LeanDocumentation.cs" t="Include" />
-                <e p="LeanMarker.cs" t="Include" />
-                <e p="LeanOpenUrl.cs" t="Include" />
-              </e>
-              <e p="Shaders" t="Include">
-                <e p="Alpha.shader" t="Include" />
-                <e p="Object.shader" t="Include" />
-                <e p="Skybox.shader" t="Include" />
-              </e>
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="LeanHelper.cs" t="Include" />
-              <e p="LeanInspector.cs" t="Include" />
-            </e>
-          </e>
-          <e p="Localization" t="Include">
-            <e p="Examples" t="Include">
-              <e p="Scripts" t="Include">
-                <e p="LeanSliderToArg.cs" t="Include" />
-              </e>
-              <e p="Texts" t="Include">
-                <e p="English.txt" t="Include" />
-                <e p="Japanese.txt" t="Include" />
-                <e p="Spanish.txt" t="Include" />
-              </e>
-            </e>
-            <e p="Scripts" t="Include">
-              <e p="Behaviours" t="Include">
-                <e p="LeanLocalizedAudioSource.cs" t="Include" />
-                <e p="LeanLocalizedImage.cs" t="Include" />
-                <e p="LeanLocalizedRenderer.cs" t="Include" />
-                <e p="LeanLocalizedSpriteRenderer.cs" t="Include" />
-                <e p="LeanLocalizedText.cs" t="Include" />
-                <e p="LeanLocalizedTextFont.cs" t="Include" />
-              </e>
-              <e p="LeanCulture.cs" t="Include" />
-              <e p="LeanLanguage.cs" t="Include" />
-              <e p="LeanLanguageCSV.cs" t="Include" />
-              <e p="LeanLanguageNameAttribute.cs" t="Include" />
-              <e p="LeanLocalization.cs" t="Include" />
-              <e p="LeanLocalizedBehaviour.cs" t="Include" />
-              <e p="LeanPhrase.cs" t="Include" />
-              <e p="LeanPhrasePathAttribute.cs" t="Include" />
-              <e p="LeanTranslation.cs" t="Include" />
-            </e>
-          </e>
-          <e p="READ ME.txt" t="Include" />
-        </e>
+        <e p="LocalizationLoad.cs" t="Include" />
         <e p="MainMenu.cs" t="Include" />
-        <e p="Resources" t="Include">
-          <e p="localizationfiles" t="Include">
-            <e p="En_StringResource.txt" t="Include" />
-            <e p="Ru_StringResource.txt" t="Include" />
+        <e p="SimpleLocalization" t="Include">
+          <e p="Downloader.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="LocalizationSyncEditor.cs" t="Include" />
           </e>
+          <e p="Example.cs" t="Include" />
+          <e p="LocalizationManager.cs" t="Include" />
+          <e p="LocalizationSync.cs" t="Include" />
+          <e p="LocalizedDropdown.cs" t="Include" />
+          <e p="LocalizedText.cs" t="Include" />
+          <e p="Sheet.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
