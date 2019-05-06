@@ -30,6 +30,8 @@ namespace screen
         public Canvas CreditsCanvas;
         public Canvas DeckgameCanvas;
         public Canvas RollDiceCanvas;
+
+        private ScreenType currentType;
         
         
         private void InitializeManager()
@@ -71,12 +73,20 @@ namespace screen
                 if (keyvalue.Key == screenType)
                 {
                     keyvalue.Value.gameObject.SetActive(true);
+                    currentType = screenType;
                 }
                 else
                 {
                     keyvalue.Value.gameObject.SetActive(false);
                 }
             }
+        }
+
+
+
+        public ScreenType CurrentType()
+        {
+            return currentType;
         }
     }
 }

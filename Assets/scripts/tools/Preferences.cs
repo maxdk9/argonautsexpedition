@@ -1,3 +1,5 @@
+using System;
+using Assets.SimpleLocalization;
 using UnityEngine;
 
 namespace tools
@@ -5,7 +7,10 @@ namespace tools
     public class Preferences
     {
         public static string sfxPref = "sfx_preference";
-        public static string soundPref = "sound_preference";
+        public static string musicPref = "music_preference";
+        public static string languagePref = "language_preference";
+        
+        
         private static  Preferences instance;
 
         public static Preferences GetInstance()
@@ -30,26 +35,33 @@ namespace tools
             }
         }
 
-        private void SavePreferences()
+        public void SavePreferences()
         {
             PlayerPrefs.SetInt(sfxPref,sfxVolume);
-            PlayerPrefs.SetInt(soundPref,soundVolume);
+            PlayerPrefs.SetInt(musicPref,musicVolume);
+            PlayerPrefs.SetString(languagePref,LocalizationManager.Language);
             PlayerPrefs.Save();
         }
 
         public void LoadPreferences()
         {
             sfxVolume=PlayerPrefs.GetInt(sfxPref);
-            soundVolume = PlayerPrefs.GetInt(soundPref);
+            musicVolume = PlayerPrefs.GetInt(musicPref);
+            String lang = PlayerPrefs.GetString(languagePref,"");
+            if (!lang.Equals(""))
+            {
+                LocalizationManager.Language = lang;    
+            }
+            
         }
 
-        private int soundVolume;
-        public int SoundVolume
+        private int musicVolume;
+        public int MusicVolume
         {
-            get { return soundVolume; }
+            get { return musicVolume; }
             set
             {
-                soundVolume = value;
+                musicVolume = value;
                 SavePreferences();
             }
         }

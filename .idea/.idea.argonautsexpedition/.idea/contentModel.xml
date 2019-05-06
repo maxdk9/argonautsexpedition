@@ -27,6 +27,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="common" t="Include">
+            <e p="CommonController.cs" t="Include" />
             <e p="GameLoader.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using screen;
 using UnityEngine;
 
 public class MainMenu : MonoBehaviour {
@@ -13,4 +14,27 @@ public class MainMenu : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	private void GoToMainMenu()
+	{
+		ScreenManager.instance.Show(ScreenManager.ScreenType.Mainmenu);
+	}
+
+
+	public void OptionsButton()
+	{
+		ScreenManager.instance.Show(ScreenManager.ScreenType.Options);
+	}
+
+
+	public void StartNewGame()
+	{
+		
+	}
+
+	public void ResumeGame()
+	{
+		
+	}
+	
 }

@@ -1,7 +1,12 @@
 Key,English,Russian
 Menu.Title,Menu,Меню
-Menu.NewGame,New game1,Новая игра1
+Menu.NewGame,New game,Новая игра
 Menu.Resume,Continue,Продолжить
 Menu.OptionsButton,Settings,Настройки
 Menu.Review,Write a review,Написать отзыв
 Settings.PlayTime,11,11
+Options.languagelabel,Language,Язык
+Options.musiclabel,MUSIC,МУЗЫКА
+Options.sfxlabel,SFX,SFX
+Options.LanguageEnglish,English,Английский
+Options.LanguageRussian,Russian,Русский
