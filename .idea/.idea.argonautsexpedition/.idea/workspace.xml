@@ -2,166 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d2c4ac1-6d17-46b2-810e-476a80db9510" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/common.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/common/GameLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/common/GameLoader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/common/GameManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/localization.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/localization/LocalizedTextMeshPro.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/screen.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/screen/ScreenManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/screen/ScreenManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/tools.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/tools/Preferences.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/scripts/tools/Preferences.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.argonautsexpedition/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.argonautsexpedition/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.argonautsexpedition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.argonautsexpedition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Fonts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Fonts/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Fonts/OFL.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Fonts/VarelaRound-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Fonts/VarelaRound-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Blue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Blue.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Circuit.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Circuit.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Green.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Green.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Grey.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Grey.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Grid.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Grid.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Orange.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Orange.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Purple.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Purple.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Red.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Red.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Skybox.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Skybox.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/White.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/White.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Yellow.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Materials/Yellow.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Meshes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Meshes/RoundedCube.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Meshes/RoundedCube.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Button.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Button.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Canvas.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Canvas.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Grid.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Grid.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Label.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Label.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Skybox.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Prefabs/Skybox.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanCircuit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanCircuit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanDocumentation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanDocumentation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanMarker.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanMarker.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanOpenUrl.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Scripts/LeanOpenUrl.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders/Alpha.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders/Alpha.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders/Object.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders/Object.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders/Skybox.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Shaders/Skybox.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures/Description.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures/Description.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures/Grid.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures/Grid.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures/Publisher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Examples/Textures/Publisher.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanInspector.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Common/Scripts/LeanInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/DOCUMENTATION.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/DOCUMENTATION.html.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/01 Localization.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/01 Localization.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/02 Phrase.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/02 Phrase.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/03 Text.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/03 Text.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/04 Change Language.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/04 Change Language.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/05 Image.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/05 Image.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/06 Renderer.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/06 Renderer.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/07 Formatted Text.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/07 Formatted Text.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/08 CSV.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/08 CSV.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/09 Organization.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/09 Organization.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/English Flag.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/English Flag.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Japanese Flag.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Japanese Flag.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Spanish Flag.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Materials/Spanish Flag.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanSliderToArg.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Scripts/LeanSliderToArg.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/English.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/English.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/Japanese.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/Japanese.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/Spanish.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Texts/Spanish.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/English Flag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/English Flag.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/Japanese Flag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/Japanese Flag.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/Spanish Flag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Examples/Textures/Spanish Flag.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedAudioSource.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedAudioSource.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedImage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedImage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedRenderer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedRenderer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedSpriteRenderer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedSpriteRenderer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedText.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedText.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedTextFont.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/Behaviours/LeanLocalizedTextFont.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanCulture.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanCulture.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageNameAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageNameAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalization.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalization.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedBehaviour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLocalizedBehaviour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhrase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhrase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhrasePathAttribute.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanPhrasePathAttribute.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanTranslation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanTranslation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/READ ME.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Lean/READ ME.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/localizationfiles/En_StringResource.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/localizationfiles/En_StringResource.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/localizationfiles/Ru_StringResource.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/localizationfiles/Ru_StringResource.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/common/GameManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizationLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/tools/LocalizationLoad.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LocalizationLoad.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/tools/LocalizationLoad.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/screen/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/screen/MainMenu.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,15 +36,17 @@
     <session id="726021093">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="14" />
+          <entry key="cs" value="24" />
           <entry key="csv" value="2" />
           <entry key="html" value="1" />
           <entry key="txt" value="1" />
@@ -189,19 +54,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="14" />
+          <entry key="C#" value="24" />
           <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="224" />
+          <entry key="cs" value="1720" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="224" />
+          <entry key="C#" value="1720" />
         </counts>
       </usages-collector>
     </session>
@@ -209,71 +74,106 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/GameManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/common/GameManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <marker date="1557073503468" expanded="false" signature="6:105" ph="..." />
+                <marker date="1557073503468" expanded="true" signature="147:515" ph="{...}" />
+                <marker date="1557073503468" expanded="true" signature="234:404" ph="{...}" />
+                <marker date="1557073503468" expanded="true" signature="260:288" ph="{...}" />
+                <marker date="1557073503468" expanded="true" signature="314:345" ph="{...}" />
+                <marker date="1557073503468" expanded="true" signature="441:513" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/common/GameLoader.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding>
-                <marker date="1556805056703" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556805056703" expanded="true" signature="120:414" ph="{...}" />
-                <marker date="1556805056703" expanded="true" signature="343:350" ph="{...}" />
-                <marker date="1556805056703" expanded="true" signature="405:412" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/Example.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding>
-                <marker date="1542703160000" expanded="false" signature="6:54" ph="..." />
-                <marker date="1542703160000" expanded="true" signature="91:1396" ph="{...}" />
-                <marker date="1542703160000" expanded="true" signature="95:150" ph="/// Asset usage example. ... " />
-                <marker date="1542703160000" expanded="true" signature="188:1394" ph="{...}" />
-                <marker date="1542703160000" expanded="true" signature="224:281" ph="/// Called on app start. ... " />
-                <marker date="1542703160000" expanded="true" signature="303:1046" ph="{...}" />
-                <marker date="1542703160000" expanded="true" signature="378:642" ph="{...}" />
-                <marker date="1542703160000" expanded="true" signature="1050:1117" ph="/// Change localization at runtime ... " />
-                <marker date="1542703160000" expanded="true" signature="1168:1224" ph="{...}" />
-                <marker date="1542703160000" expanded="true" signature="1228:1280" ph="/// Write a review. ... " />
-                <marker date="1542703160000" expanded="true" signature="1303:1391" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/MainMenu.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding>
-                <marker date="1556804613670" expanded="false" signature="6:78" ph="..." />
-                <marker date="1556804613670" expanded="true" signature="118:239" ph="{...}" />
-                <marker date="1556804613670" expanded="true" signature="168:175" ph="{...}" />
-                <marker date="1556804613670" expanded="true" signature="230:237" ph="{...}" />
+                <marker date="1557073942624" expanded="true" signature="6:32" ph="..." />
+                <marker date="1557073942624" expanded="true" signature="50:533" ph="{...}" />
+                <marker date="1557073942624" expanded="true" signature="96:531" ph="{...}" />
+                <marker date="1557073942624" expanded="true" signature="216:525" ph="{...}" />
+                <marker date="1557073942624" expanded="true" signature="274:346" ph="{...}" />
+                <marker date="1557073942624" expanded="true" signature="418:488" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/LocalizationLoad.cs">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/07/63342762/Object.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="40" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="40" />
+            <state relative-caret-position="349">
+              <caret line="217" column="20" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/screen/ScreenManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
-                <marker date="1556889328094" expanded="false" signature="6:147" ph="..." />
-                <marker date="1556889328094" expanded="true" signature="195:1125" ph="{...}" />
-                <marker date="1556889328094" expanded="true" signature="228:283" ph="/// Called on app start. ... " />
-                <marker date="1556889328094" expanded="true" signature="304:949" ph="{...}" />
-                <marker date="1556889328094" expanded="true" signature="376:546" ph="{...}" />
-                <marker date="1556889328094" expanded="true" signature="550:946" ph="/* This way you can insert values to localized strings. ... */" />
-                <marker date="1556889328094" expanded="true" signature="952:1017" ph="/// Change localization at runtime ... " />
-                <marker date="1556889328094" expanded="true" signature="1067:1120" ph="{...}" />
+                <marker date="1557073476606" expanded="false" signature="6:52" ph="..." />
+                <marker date="1557073476606" expanded="true" signature="70:2280" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="118:2278" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="233:486" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="269:320" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="346:400" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="765:1562" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="1705:1832" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="1882:2272" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="1966:2262" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="2028:2127" ph="{...}" />
+                <marker date="1557073476606" expanded="true" signature="2148:2248" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationSync.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <marker date="1556986859881" expanded="false" signature="6:111" ph="..." />
+                <marker date="1556986859881" expanded="true" signature="152:296" ph="/// Downloads spritesheets from Google Spreadsheet and saves them to Resources. My laziness made me to create it. ... " />
+                <marker date="1556986859881" expanded="true" signature="364:2538" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="370:717" ph="/// Table id on Google Spreadsheet. ... " />
+                <marker date="1556986859881" expanded="true" signature="746:886" ph="/// Table sheet contains sheet name and id. First sheet has always zero id. Sheet name is used when saving. ... " />
+                <marker date="1556986859881" expanded="true" signature="915:1013" ph="/// Folder to save spreadsheets. Must be inside Resources folder. ... " />
+                <marker date="1556986859881" expanded="true" signature="1186:1241" ph="/// Sync spreadsheets. ... " />
+                <marker date="1556986859881" expanded="true" signature="1262:1330" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="1369:2525" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="1719:1875" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="1919:2448" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="1952:1994" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="2029:2378" ph="{...}" />
+                <marker date="1556986859881" expanded="true" signature="2387:2443" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/screen/MainMenu.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding>
+                <marker date="1556815174818" expanded="true" signature="6:78" ph="..." />
+                <marker date="1556815174818" expanded="true" signature="118:239" ph="{...}" />
+                <marker date="1556815174818" expanded="true" signature="168:175" ph="{...}" />
+                <marker date="1556815174818" expanded="true" signature="230:237" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -282,25 +182,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizedText.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="442">
+              <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
-                <marker date="1542703156000" expanded="false" signature="6:40" ph="..." />
-                <marker date="1542703156000" expanded="true" signature="81:140" ph="/// Localize text component. ... " />
-                <marker date="1542703156000" expanded="true" signature="224:671" ph="{...}" />
-                <marker date="1542703156000" expanded="true" signature="298:407" ph="{...}" />
-                <marker date="1542703156000" expanded="true" signature="440:525" ph="{...}" />
-                <marker date="1542703156000" expanded="true" signature="558:665" ph="{...}" />
+                <marker date="1556986859882" expanded="false" signature="6:40" ph="..." />
+                <marker date="1556986859882" expanded="true" signature="81:140" ph="/// Localize text component. ... " />
+                <marker date="1556986859882" expanded="true" signature="224:671" ph="{...}" />
+                <marker date="1556986859882" expanded="true" signature="298:407" ph="{...}" />
+                <marker date="1556986859882" expanded="true" signature="440:525" ph="{...}" />
+                <marker date="1556986859882" expanded="true" signature="558:665" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Resources/localizationfiles/base.csv">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/screen/OptionsMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="238">
+              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+              <folding>
+                <marker date="1557073826185" expanded="false" signature="6:100" ph="..." />
+                <marker date="1557073826185" expanded="true" signature="142:596" ph="{...}" />
+                <marker date="1557073826185" expanded="true" signature="286:532" ph="{...}" />
+                <marker date="1557073826185" expanded="true" signature="292:526" ph="/* this.sfxSlider = GameObject.Find(&quot;sfxSlider&quot;).GetComponent&lt;Slider&gt;(); ... */" />
+                <marker date="1557073826185" expanded="true" signature="587:594" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/tools/Preferences.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+              <folding>
+                <marker date="1557000632201" expanded="true" signature="35:1304" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="66:1302" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="285:441" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="329:401" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="503:675" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="567:665" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="715:873" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="912:1040" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="1105:1281" ph="{...}" />
+                <marker date="1557000632201" expanded="true" signature="1171:1271" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -308,32 +236,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="1666">
               <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
               <folding>
-                <marker date="1556889253236" expanded="false" signature="6:123" ph="..." />
-                <marker date="1556889253236" expanded="true" signature="160:3564" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="164:220" ph="/// Localization manager. ... " />
-                <marker date="1556889253236" expanded="true" signature="264:3562" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="273:342" ph="/// Fired when localization changed. ... " />
-                <marker date="1556889253236" expanded="true" signature="615:672" ph="/// Get or set language. ... " />
-                <marker date="1556889253236" expanded="true" signature="710:830" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="834:892" ph="/// Set default language. ... " />
-                <marker date="1556889253236" expanded="true" signature="934:988" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="992:1060" ph="/// Read localization spreadsheets. ... " />
-                <marker date="1556889253236" expanded="true" signature="1116:2592" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="1289:2553" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="1481:1640" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="1870:2101" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="1951:2083" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="2161:2539" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="2406:2521" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="2596:2673" ph="/// Get localized value by localization key. ... " />
-                <marker date="1556889253236" expanded="true" signature="2735:3134" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="2784:2836" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="3141:3224" ph="/// Get localized value by localization key. ... " />
-                <marker date="1556889253236" expanded="true" signature="3302:3425" ph="{...}" />
-                <marker date="1556889253236" expanded="true" signature="3484:3556" ph="{...}" />
+                <marker date="1556986859880" expanded="false" signature="6:123" ph="..." />
+                <marker date="1556986859880" expanded="true" signature="164:220" ph="/// Localization manager. ... " />
+                <marker date="1556986859880" expanded="true" signature="264:3562" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="273:342" ph="/// Fired when localization changed. ... " />
+                <marker date="1556986859880" expanded="true" signature="615:672" ph="/// Get or set language. ... " />
+                <marker date="1556986859880" expanded="true" signature="710:830" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="834:892" ph="/// Set default language. ... " />
+                <marker date="1556986859880" expanded="true" signature="934:988" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="992:1060" ph="/// Read localization spreadsheets. ... " />
+                <marker date="1556986859880" expanded="true" signature="1116:2592" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="1289:2553" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="1481:1640" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="1870:2101" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="1951:2083" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="2161:2539" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="2406:2521" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="2596:2673" ph="/// Get localized value by localization key. ... " />
+                <marker date="1556986859880" expanded="true" signature="2735:3134" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="2784:2836" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="3141:3224" ph="/// Get localized value by localization key. ... " />
+                <marker date="1556986859880" expanded="true" signature="3302:3425" ph="{...}" />
+                <marker date="1556986859880" expanded="true" signature="3484:3556" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -345,19 +272,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SimpleLocalization/Example.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/LocalizationLoad.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizedText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/screen/OptionsMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/tools/LocalizationLoad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/common/GameLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/tools/Preferences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/screen/ScreenManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/07/63342762/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SimpleLocalization/Example.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizedText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationSync.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/localization/LocalizedTextMeshPro.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/screen/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scripts/common/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationManager.cs" />
         <option value="$PROJECT_DIR$/Assets/LocalizationLoad.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/Class1.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/localization/LocalizedTextMeshPro.cs" />
+        <option value="$PROJECT_DIR$/Assets/OptionsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/tools/Preferences.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/screen/ScreenManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/common/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/screen/OptionsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/scripts/common/GameLoader.cs" />
       </list>
     </option>
   </component>
@@ -371,6 +314,9 @@
     <option name="x" value="528" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -391,17 +337,31 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Resources" type="1045f7f1:UnityExplorerNode" />
+              <item name="scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="common" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="StreamingAssets" type="1045f7f1:UnityExplorerNode" />
+              <item name="scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="localization" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="screen" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="tools" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -461,6 +421,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7d2c4ac1-6d17-46b2-810e-476a80db9510" name="Default Changelist" comment="" />
@@ -473,11 +436,14 @@
       <workItem from="1556886344022" duration="1234000" />
       <workItem from="1556887600909" duration="633000" />
       <workItem from="1556888337258" duration="1217000" />
+      <workItem from="1556987921846" duration="5931000" />
+      <workItem from="1557037673022" duration="1040000" />
+      <workItem from="1557050878452" duration="4248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6754000" />
+    <option name="totallyTimeSpent" value="17973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,7 +457,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -567,123 +533,228 @@
     <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguageCSV.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Lean/Localization/Scripts/LeanLanguage.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Resources/localizationfiles/En_StringResource.txt" />
-    <entry file="file://$PROJECT_DIR$/Assets/GameManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Resources/localizationfiles/base.csv" />
+    <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/Resources/Localization/Menu.csv" />
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/localization/LocalizedTextMeshPro.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <marker date="1556805056703" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556805056703" expanded="true" signature="120:414" ph="{...}" />
-            <marker date="1556805056703" expanded="true" signature="343:350" ph="{...}" />
-            <marker date="1556805056703" expanded="true" signature="405:412" ph="{...}" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MainMenu.cs">
+    <entry file="file://$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4/Scripts/Runtime/TextMeshProUGUI.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding>
-            <marker date="1556804613670" expanded="false" signature="6:78" ph="..." />
-            <marker date="1556804613670" expanded="true" signature="118:239" ph="{...}" />
-            <marker date="1556804613670" expanded="true" signature="168:175" ph="{...}" />
-            <marker date="1556804613670" expanded="true" signature="230:237" ph="{...}" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizedText.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <marker date="1542703156000" expanded="false" signature="6:40" ph="..." />
-            <marker date="1542703156000" expanded="true" signature="81:140" ph="/// Localize text component. ... " />
-            <marker date="1542703156000" expanded="true" signature="224:671" ph="{...}" />
-            <marker date="1542703156000" expanded="true" signature="298:407" ph="{...}" />
-            <marker date="1542703156000" expanded="true" signature="440:525" ph="{...}" />
-            <marker date="1542703156000" expanded="true" signature="558:665" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Resources/localizationfiles/base.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/Resources/Localization/Menu.csv">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/Example.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
           <folding>
-            <marker date="1542703160000" expanded="false" signature="6:54" ph="..." />
-            <marker date="1542703160000" expanded="true" signature="91:1396" ph="{...}" />
-            <marker date="1542703160000" expanded="true" signature="95:150" ph="/// Asset usage example. ... " />
-            <marker date="1542703160000" expanded="true" signature="188:1394" ph="{...}" />
-            <marker date="1542703160000" expanded="true" signature="224:281" ph="/// Called on app start. ... " />
-            <marker date="1542703160000" expanded="true" signature="303:1046" ph="{...}" />
-            <marker date="1542703160000" expanded="true" signature="378:642" ph="{...}" />
-            <marker date="1542703160000" expanded="true" signature="1050:1117" ph="/// Change localization at runtime ... " />
-            <marker date="1542703160000" expanded="true" signature="1168:1224" ph="{...}" />
-            <marker date="1542703160000" expanded="true" signature="1228:1280" ph="/// Write a review. ... " />
-            <marker date="1542703160000" expanded="true" signature="1303:1391" ph="{...}" />
+            <marker date="1556986859878" expanded="false" signature="6:54" ph="..." />
+            <marker date="1556986859878" expanded="true" signature="95:150" ph="/// Asset usage example. ... " />
+            <marker date="1556986859878" expanded="true" signature="188:1394" ph="{...}" />
+            <marker date="1556986859878" expanded="true" signature="224:281" ph="/// Called on app start. ... " />
+            <marker date="1556986859878" expanded="true" signature="303:1046" ph="{...}" />
+            <marker date="1556986859878" expanded="true" signature="378:642" ph="{...}" />
+            <marker date="1556986859878" expanded="true" signature="1050:1117" ph="/// Change localization at runtime ... " />
+            <marker date="1556986859878" expanded="true" signature="1168:1224" ph="{...}" />
+            <marker date="1556986859878" expanded="true" signature="1228:1280" ph="/// Write a review. ... " />
+            <marker date="1556986859878" expanded="true" signature="1303:1391" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationSync.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <marker date="1556986859881" expanded="false" signature="6:111" ph="..." />
+            <marker date="1556986859881" expanded="true" signature="152:296" ph="/// Downloads spritesheets from Google Spreadsheet and saves them to Resources. My laziness made me to create it. ... " />
+            <marker date="1556986859881" expanded="true" signature="364:2538" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="370:717" ph="/// Table id on Google Spreadsheet. ... " />
+            <marker date="1556986859881" expanded="true" signature="746:886" ph="/// Table sheet contains sheet name and id. First sheet has always zero id. Sheet name is used when saving. ... " />
+            <marker date="1556986859881" expanded="true" signature="915:1013" ph="/// Folder to save spreadsheets. Must be inside Resources folder. ... " />
+            <marker date="1556986859881" expanded="true" signature="1186:1241" ph="/// Sync spreadsheets. ... " />
+            <marker date="1556986859881" expanded="true" signature="1262:1330" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="1369:2525" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="1719:1875" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="1919:2448" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="1952:1994" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="2029:2378" ph="{...}" />
+            <marker date="1556986859881" expanded="true" signature="2387:2443" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizedText.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <marker date="1556986859882" expanded="false" signature="6:40" ph="..." />
+            <marker date="1556986859882" expanded="true" signature="81:140" ph="/// Localize text component. ... " />
+            <marker date="1556986859882" expanded="true" signature="224:671" ph="{...}" />
+            <marker date="1556986859882" expanded="true" signature="298:407" ph="{...}" />
+            <marker date="1556986859882" expanded="true" signature="440:525" ph="{...}" />
+            <marker date="1556986859882" expanded="true" signature="558:665" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/SimpleLocalization/LocalizationManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="1666">
           <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
           <folding>
-            <marker date="1556889253236" expanded="false" signature="6:123" ph="..." />
-            <marker date="1556889253236" expanded="true" signature="160:3564" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="164:220" ph="/// Localization manager. ... " />
-            <marker date="1556889253236" expanded="true" signature="264:3562" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="273:342" ph="/// Fired when localization changed. ... " />
-            <marker date="1556889253236" expanded="true" signature="615:672" ph="/// Get or set language. ... " />
-            <marker date="1556889253236" expanded="true" signature="710:830" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="834:892" ph="/// Set default language. ... " />
-            <marker date="1556889253236" expanded="true" signature="934:988" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="992:1060" ph="/// Read localization spreadsheets. ... " />
-            <marker date="1556889253236" expanded="true" signature="1116:2592" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="1289:2553" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="1481:1640" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="1870:2101" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="1951:2083" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="2161:2539" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="2406:2521" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="2596:2673" ph="/// Get localized value by localization key. ... " />
-            <marker date="1556889253236" expanded="true" signature="2735:3134" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="2784:2836" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="3141:3224" ph="/// Get localized value by localization key. ... " />
-            <marker date="1556889253236" expanded="true" signature="3302:3425" ph="{...}" />
-            <marker date="1556889253236" expanded="true" signature="3484:3556" ph="{...}" />
+            <marker date="1556986859880" expanded="false" signature="6:123" ph="..." />
+            <marker date="1556986859880" expanded="true" signature="164:220" ph="/// Localization manager. ... " />
+            <marker date="1556986859880" expanded="true" signature="264:3562" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="273:342" ph="/// Fired when localization changed. ... " />
+            <marker date="1556986859880" expanded="true" signature="615:672" ph="/// Get or set language. ... " />
+            <marker date="1556986859880" expanded="true" signature="710:830" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="834:892" ph="/// Set default language. ... " />
+            <marker date="1556986859880" expanded="true" signature="934:988" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="992:1060" ph="/// Read localization spreadsheets. ... " />
+            <marker date="1556986859880" expanded="true" signature="1116:2592" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="1289:2553" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="1481:1640" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="1870:2101" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="1951:2083" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="2161:2539" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="2406:2521" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="2596:2673" ph="/// Get localized value by localization key. ... " />
+            <marker date="1556986859880" expanded="true" signature="2735:3134" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="2784:2836" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="3141:3224" ph="/// Get localized value by localization key. ... " />
+            <marker date="1556986859880" expanded="true" signature="3302:3425" ph="{...}" />
+            <marker date="1556986859880" expanded="true" signature="3484:3556" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/LocalizationLoad.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/tools/LocalizationLoad.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="40" />
+        <state relative-caret-position="425">
+          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
           <folding>
-            <marker date="1556889328094" expanded="false" signature="6:147" ph="..." />
-            <marker date="1556889328094" expanded="true" signature="195:1125" ph="{...}" />
-            <marker date="1556889328094" expanded="true" signature="228:283" ph="/// Called on app start. ... " />
-            <marker date="1556889328094" expanded="true" signature="304:949" ph="{...}" />
-            <marker date="1556889328094" expanded="true" signature="376:546" ph="{...}" />
-            <marker date="1556889328094" expanded="true" signature="550:946" ph="/* This way you can insert values to localized strings. ... */" />
-            <marker date="1556889328094" expanded="true" signature="952:1017" ph="/// Change localization at runtime ... " />
-            <marker date="1556889328094" expanded="true" signature="1067:1120" ph="{...}" />
+            <marker date="1556986859831" expanded="false" signature="6:147" ph="..." />
+            <marker date="1556986859831" expanded="true" signature="195:1125" ph="{...}" />
+            <marker date="1556986859831" expanded="true" signature="228:283" ph="/// Called on app start. ... " />
+            <marker date="1556986859831" expanded="true" signature="304:949" ph="{...}" />
+            <marker date="1556986859831" expanded="true" signature="376:546" ph="{...}" />
+            <marker date="1556986859831" expanded="true" signature="550:946" ph="/* This way you can insert values to localized strings. ... */" />
+            <marker date="1556986859831" expanded="true" signature="952:1017" ph="/// Change localization at runtime ... " />
+            <marker date="1556986859831" expanded="true" signature="1067:1120" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/tools/Preferences.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <marker date="1557000632201" expanded="true" signature="35:1304" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="66:1302" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="285:441" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="329:401" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="503:675" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="567:665" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="715:873" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="912:1040" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="1105:1281" ph="{...}" />
+            <marker date="1557000632201" expanded="true" signature="1171:1271" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/screen/MainMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1556815174818" expanded="true" signature="6:78" ph="..." />
+            <marker date="1556815174818" expanded="true" signature="118:239" ph="{...}" />
+            <marker date="1556815174818" expanded="true" signature="168:175" ph="{...}" />
+            <marker date="1556815174818" expanded="true" signature="230:237" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/common/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <marker date="1557073503468" expanded="false" signature="6:105" ph="..." />
+            <marker date="1557073503468" expanded="true" signature="147:515" ph="{...}" />
+            <marker date="1557073503468" expanded="true" signature="234:404" ph="{...}" />
+            <marker date="1557073503468" expanded="true" signature="260:288" ph="{...}" />
+            <marker date="1557073503468" expanded="true" signature="314:345" ph="{...}" />
+            <marker date="1557073503468" expanded="true" signature="441:513" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/screen/OptionsMenu.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <marker date="1557073826185" expanded="false" signature="6:100" ph="..." />
+            <marker date="1557073826185" expanded="true" signature="142:596" ph="{...}" />
+            <marker date="1557073826185" expanded="true" signature="286:532" ph="{...}" />
+            <marker date="1557073826185" expanded="true" signature="292:526" ph="/* this.sfxSlider = GameObject.Find(&quot;sfxSlider&quot;).GetComponent&lt;Slider&gt;(); ... */" />
+            <marker date="1557073826185" expanded="true" signature="587:594" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/screen/ScreenManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <marker date="1557073476606" expanded="false" signature="6:52" ph="..." />
+            <marker date="1557073476606" expanded="true" signature="70:2280" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="118:2278" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="233:486" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="269:320" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="346:400" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="765:1562" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="1705:1832" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="1882:2272" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="1966:2262" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="2028:2127" ph="{...}" />
+            <marker date="1557073476606" expanded="true" signature="2148:2248" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/common/GameLoader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <marker date="1557073942624" expanded="true" signature="6:32" ph="..." />
+            <marker date="1557073942624" expanded="true" signature="50:533" ph="{...}" />
+            <marker date="1557073942624" expanded="true" signature="96:531" ph="{...}" />
+            <marker date="1557073942624" expanded="true" signature="216:525" ph="{...}" />
+            <marker date="1557073942624" expanded="true" signature="274:346" ph="{...}" />
+            <marker date="1557073942624" expanded="true" signature="418:488" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2F14D49E-DC70-4940-AEE5-57642343F344/07/63342762/Object.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="217" column="20" selection-start-line="217" selection-start-column="20" selection-end-line="217" selection-end-column="20" />
         </state>
       </provider>
     </entry>

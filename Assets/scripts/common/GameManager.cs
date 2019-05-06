@@ -1,16 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using screen;
 using tools;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
 
-	
-	
-	
-	
-	
 	public static GameManager instance = null; // Экземпляр объекта
 
 	
@@ -25,7 +21,8 @@ public class GameManager : MonoBehaviour
 	}
 
 	
-	private void InitializeManager(){
-		
+	private void InitializeManager()
+	{
+		ScreenManager.instance.Show(ScreenManager.ScreenType.Mainmenu);
 	}
 }

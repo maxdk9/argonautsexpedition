@@ -22,9 +22,27 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="GameManager.cs" t="Include" />
-        <e p="LocalizationLoad.cs" t="Include" />
-        <e p="MainMenu.cs" t="Include" />
+        <e p="JsonDotNet" t="Include">
+          <e p="link.xml" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="common" t="Include">
+            <e p="GameLoader.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
+          </e>
+          <e p="Localization" t="Include">
+            <e p="LocalizedTextMeshPro.cs" t="Include" />
+          </e>
+          <e p="screen" t="Include">
+            <e p="MainMenu.cs" t="Include" />
+            <e p="OptionsMenu.cs" t="Include" />
+            <e p="ScreenManager.cs" t="Include" />
+          </e>
+          <e p="tools" t="Include">
+            <e p="LocalizationLoad.cs" t="Include" />
+            <e p="Preferences.cs" t="Include" />
+          </e>
+        </e>
         <e p="SimpleLocalization" t="Include">
           <e p="Downloader.cs" t="Include" />
           <e p="Editor" t="Include">
@@ -36,6 +54,31 @@
           <e p="LocalizedDropdown.cs" t="Include" />
           <e p="LocalizedText.cs" t="Include" />
           <e p="Sheet.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
