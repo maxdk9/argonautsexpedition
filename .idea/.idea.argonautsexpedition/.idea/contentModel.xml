@@ -34,6 +34,10 @@
           <e p="Localization" t="Include">
             <e p="LocalizedTextMeshPro.cs" t="Include" />
           </e>
+          <e p="Model" t="Include">
+            <e p="CardManager.cs" t="Include" />
+            <e p="GamePhase.cs" t="Include" />
+          </e>
           <e p="screen" t="Include">
             <e p="MainMenu.cs" t="Include" />
             <e p="OptionsMenu.cs" t="Include" />
