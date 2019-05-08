@@ -770,8 +770,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1492808518}
-        m_MethodName: OnSfxSliderChanged
+      - m_Target: {fileID: 384379164}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1408,7 +1408,6 @@ GameObject:
   - component: {fileID: 691953991}
   - component: {fileID: 691953990}
   - component: {fileID: 691953989}
-  - component: {fileID: 691953988}
   m_Layer: 8
   m_Name: CreditsCanvas
   m_TagString: Untagged
@@ -1416,17 +1415,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &691953988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 691953987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f989818192921434e925a09d0befa23b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &691953989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,7 +1834,6 @@ GameObject:
   - component: {fileID: 1003685631}
   - component: {fileID: 1003685630}
   - component: {fileID: 1003685629}
-  - component: {fileID: 1003685628}
   m_Layer: 8
   m_Name: DeckgameCanvas
   m_TagString: Untagged
@@ -1854,17 +1841,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1003685628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1003685627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f989818192921434e925a09d0befa23b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1003685629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2192,7 +2168,6 @@ GameObject:
   - component: {fileID: 1227015083}
   - component: {fileID: 1227015082}
   - component: {fileID: 1227015081}
-  - component: {fileID: 1227015080}
   m_Layer: 8
   m_Name: RollDiceCanvas
   m_TagString: Untagged
@@ -2200,17 +2175,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1227015080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1227015079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f989818192921434e925a09d0befa23b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1227015081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2812,6 +2776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f989818192921434e925a09d0befa23b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SfxSlider: {fileID: 384379166}
+  MusicSlider: {fileID: 867181054}
+  LanguageDropdown: {fileID: 779174751}
 --- !u!114 &1492808519
 MonoBehaviour:
   m_ObjectHideFlags: 0

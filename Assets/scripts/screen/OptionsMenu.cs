@@ -10,19 +10,16 @@ using UnityEngine.UI;
 public class OptionsMenu : MonoBehaviour
 {
 
-	private Slider SfxSlider;
-	private Slider MusicSlider;
-	private Dropdown LanguageDropdown;
+	public  Slider SfxSlider;
+	public Slider MusicSlider;
+	public Dropdown LanguageDropdown;
 	
 	private Dictionary<string, SystemLanguage> languagesDictionary=new Dictionary<string, SystemLanguage>();
 	
 	// Use this for initialization
 	void Start ()
 	{
-		this.SfxSlider = GameObject.Find("SfxSlider").GetComponent<Slider>();
-		this.MusicSlider = GameObject.Find("MusicSlider").GetComponent<Slider>();
-		LanguageDropdown = GameObject.Find("LanguageDropdown").GetComponent<Dropdown>();
-		SetLanaguagesDictionary();
+		//SetLanaguagesDictionary();
 	}
 	
 	// Update is called once per frame
@@ -30,26 +27,21 @@ public class OptionsMenu : MonoBehaviour
 		
 	}
 
+	private void Awake()
+	{
+		SetLanaguagesDictionary();
+	}
 
 
-	
 	private void SetLanaguagesDictionary()
 	{
 		languagesDictionary.Clear();
 		languagesDictionary.Add(LocalizationManager.Localize("Options.LanguageEnglish"),SystemLanguage.English);
 		languagesDictionary.Add(LocalizationManager.Localize("Options.LanguageRussian"),SystemLanguage.Russian);
 		
-		
-		
-		
-		
 		List<string> keyList = new List<string>(languagesDictionary.Keys);
 		LanguageDropdown.options.Clear();
-		LanguageDropdown.AddOptions(keyList);
-
-
-		
-		
+		LanguageDropdown.AddOptions(keyList);		
 		
 		SfxSlider.value = Preferences.GetInstance().SfxVolume;
 		MusicSlider.value = Preferences.GetInstance().MusicVolume;
