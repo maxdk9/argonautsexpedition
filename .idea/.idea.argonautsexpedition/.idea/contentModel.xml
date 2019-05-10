@@ -44,6 +44,8 @@
             <e p="ScreenManager.cs" t="Include" />
           </e>
           <e p="tools" t="Include">
+            <e p="GetStreamingAssetsFilePath.cs" t="Include" />
+            <e p="JsonHelper.cs" t="Include" />
             <e p="LocalizationLoad.cs" t="Include" />
             <e p="Preferences.cs" t="Include" />
           </e>

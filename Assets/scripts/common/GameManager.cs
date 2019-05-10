@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Model;
 using screen;
 using tools;
 using UnityEngine;
@@ -23,6 +24,8 @@ public class GameManager : MonoBehaviour
 	
 	private void InitializeManager()
 	{
+		
+		CardManager.Instance().Init();
 		ScreenManager.instance.Show(ScreenManager.ScreenType.Mainmenu);
 	}
 }

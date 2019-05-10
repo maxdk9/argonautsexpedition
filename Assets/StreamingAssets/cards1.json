@@ -1,0 +1,439 @@
+[
+
+
+{
+	
+	"type": "monster",
+	"resolved": "notresolved",
+	"name": "skeleton",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "skeleton",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "skeleton",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "harpy",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "harpy",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "hydra",
+	"difficulty": [ 7, 8, 9, 10, 11, 11 ],
+	"deadliness": [ 1, 2, 2, 3, 3, 4 ]
+},
+{
+	
+	"type": "monster",
+	"name": "gorgon",
+	"difficulty": [ 7, 7, 8, 7, 8, 8 ],
+	"deadliness": [ 1, 1, 1, 2, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "typhon",
+	"difficulty": [ 10, 9, 9, 8, 8, 8 ],
+	"deadliness": [ 3, 2, 2, 2, 2, 1 ]
+},
+{
+	
+	"type": "monster",
+	"name": "echidna",
+	"difficulty": [ 9, 9, 8, 8, 7, 7 ],
+	"deadliness": [ 2, 2, 2, 2, 2, 1 ]
+},
+{
+	
+	"type": "monster",
+	"name": "minotaur",
+	"difficulty": [ 8, 9, 8, 9, 9, 9 ],
+	"deadliness": [ 1, 2, 2, 2, 2, 3 ]
+},
+{
+	
+	"type": "monster",
+	"name": "cyclops",
+	"difficulty": [ 9, 9, 9, 9, 9, 9 ],
+	"deadliness": [ 1, 2, 2, 2, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "cerberus",
+	"difficulty": [ 8, 8, 8, 10, 9, 9 ],
+	"deadliness": [ 1, 1, 2, 2, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "manticore",
+	"difficulty": [ 8, 8, 9, 9, 9, 10 ],
+	"deadliness": [ 1, 2, 1, 2, 2, 2 ]
+},
+{
+	
+	"effecttype":  "Defeat_ColchianDragon_single"
+	"type": "monster",
+	"name": "colchiandragon",
+	"difficulty": [ 9, 9, 9, 10, 10, 9 ],
+	"deadliness": [ 1, 1, 2, 2, 2, 3 ]
+},
+{
+	
+	"effecttype":  "Ignore_Scylla"
+	"type": "monster",
+	"name": "scylla",
+	"difficulty": [ 8, 8, 8, 9, 9, 9 ],
+	"deadliness": [ 2, 2, 2, 2, 2, 2 ]
+},
+{
+	
+	"effecttype":  "Ignore_Charybdis"
+	"type": "monster",
+	"name": "charybdis",
+	"difficulty": [ 8, 8, 8, 9, 9, 9 ],
+	"deadliness": [ 2, 2, 2, 2, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "ketos",
+	"difficulty": [ 8, 8, 8, 10, 9, 9 ],
+	"deadliness": [ 1, 1, 2, 1, 1, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "khalkotaurus",
+	"difficulty": [ 7, 8, 8, 9, 9, 9 ],
+	"deadliness": [ 1, 1, 2, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "khalkotaurus",
+	"difficulty": [ 7, 8, 8, 9, 9, 9 ],
+	"deadliness": [ 1, 1, 2, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"name": "sirens",
+	"difficulty": [ 7, 7, 7, 7, 8, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 1, 1 ]
+},
+{
+	
+	"effecttype":  "Argo_TreasureRolls_p1_cont"
+	"type": "treasure",
+	"useType": "continuous",
+	"name": "argo",
+	"difficulty": [ 7, 8, 8, 8, 9, 9 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "SwordOfPeleus_MonsterRolls_p1_cont"
+	"type": "treasure",
+	"useType": "continuous",
+	"name": "swordofpeleus",
+	"difficulty": [ 7, 8, 8, 9, 10, 10 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "WingedSandals_ReturnAdventureCard_single"
+	"type": "treasure",
+	"useType": "single",
+	"name": "wingedsandals",
+	"difficulty": [ 6, 6, 7, 7, 8, 8 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "Cornucopia_Recover2Crew_single"
+
+	"type": "treasure",
+	"useType": "single",
+	"name": "cornucopia",
+	"difficulty": [ 6, 7, 7, 8, 8, 9 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "treasure",
+	"useType": "single",
+	"name": "goldenfleece",
+	"difficulty": [ 8, 9, 10, 11, 12, 12 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "PansFlute_DiscardTop2Cards_single"
+	"type": "treasure",
+	"useType": "single",
+	"name": "pansflute",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "treasure",
+	"useType": "continuous",
+	"name": "mirroredshield",
+	"difficulty": [ 6, 6, 6, 7, 7, 7 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "OrpheusLyre_StopLevelUpMonsterInVictoryPile_single"
+	"type": "treasure",
+	"useType": "single",
+	"name": "orpheuslyre",
+	"difficulty": [ 8, 9, 9, 9, 10, 10 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "chimera",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "nemeanlion",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "sphinx",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "harpy",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "harpy",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "harpy",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"type": "monster",
+	"reserve": true,
+	"name": "harpy",
+	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
+	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
+},
+{
+	
+	"effecttype":  "HelmOfHades_MoveMonsterToDiscardPile_single"
+	"type": "treasure",
+	"useType": "single",
+	"reserve": true,
+	"name": "helmofhades",
+	"difficulty": [ 6, 7, 7, 8, 8, 9 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "CloakOfHeracles_monsterdifficulty_m1_cont"
+	"type": "treasure",
+	"useType": "single",
+	"reserve": true,
+	"name": "cloakofheracles",
+	"difficulty": [ 6, 6, 6, 7, 7, 7 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "PoseydonTrident_ConvertWrathToBlessing_cont"
+	"type": "treasure",
+	"useType": "continuous",
+	"reserve": true,
+	"name": "poseidontrident",
+	"difficulty": [ 6, 6, 7, 7, 7, 8 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "Ambrosia_Recover3Crew_single"
+	"type": "treasure",
+	"useType": "single",
+	"reserve": true,
+	"name": "ambrosia",
+	"difficulty": [ 7, 7, 8, 9, 9, 10 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "DaedalusWing_RerollDieOncePerTurn_cont"
+	"type": "treasure",
+	"useType": "single",
+	"reserve": true,
+	"name": "daedaluswing",
+	"difficulty": [ 7, 8, 8, 9, 9, 10 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "AegisOfZeus_IgnoreDeadliness_single"
+	"type": "treasure",
+	"useType": "single",
+	"reserve": true,
+	"name": "aegisofzeus",
+	"difficulty": [ 8, 9, 9, 9, 9, 10 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"effecttype":  "ApolloBow_RollDice6_single"
+	"type": "treasure",
+	"useType": "single",
+	"reserve": true,
+	"name": "apollobow",
+	"difficulty": [ 8, 8, 9, 9, 9, 10 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "blessing",
+	"useType": "single",
+	"name": "hera_blessing",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "blessing",
+	"useType": "single",
+	"name": "hera_blessing",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "wrath",
+	"useType": "single",
+	"reserve": true,
+	"wrath": true,
+	"name": "poseidon_wrath",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "wrath",
+	"useType": "single",
+	"reserve": true,
+	"wrath": true,
+	"name": "poseidon_wrath",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "wrath",
+	"useType": "single",
+	"reserve": true,
+	"wrath": true,
+	"name": "hades_wrath",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "wrath",
+	"useType": "single",
+	"reserve": true,
+	"wrath": true,
+	"name": "hades_wrath",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "blessing",
+	"useType": "single",
+	"reserve": true,
+	"name": "zeus_blessing",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "blessing",
+	"useType": "single",
+	"reserve": true,
+	"name": "zeus_blessing",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "blessing",
+	"useType": "single",
+	"reserve": true,
+	"name": "apollo_blessing",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+},
+{
+	
+	"type": "blessing",
+	"useType": "single",
+	"reserve": true,
+	"name": "apollo_blessing",
+	"difficulty": [ 0, 0, 0, 0, 0, 0 ],
+	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
+}
+
+
+	]

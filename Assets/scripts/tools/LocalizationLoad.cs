@@ -39,6 +39,8 @@ public class LocalizationLoad : MonoBehaviour {
 	/// </summary>
 	public void SetLocalization(string localization)
 	{
+		
+		
 		LocalizationManager.Language = localization;
 	}
 
