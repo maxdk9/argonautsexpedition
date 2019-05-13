@@ -95,7 +95,7 @@
 },
 {
 	
-	"effecttype":  "Defeat_ColchianDragon_single"
+	"effecttype":  "Defeat_ColchianDragon_single",
 	"type": "monster",
 	"name": "colchiandragon",
 	"difficulty": [ 9, 9, 9, 10, 10, 9 ],
@@ -103,7 +103,7 @@
 },
 {
 	
-	"effecttype":  "Ignore_Scylla"
+	"effecttype":  "Ignore_Scylla",
 	"type": "monster",
 	"name": "scylla",
 	"difficulty": [ 8, 8, 8, 9, 9, 9 ],
@@ -111,7 +111,7 @@
 },
 {
 	
-	"effecttype":  "Ignore_Charybdis"
+	"effecttype":  "Ignore_Charybdis",
 	"type": "monster",
 	"name": "charybdis",
 	"difficulty": [ 8, 8, 8, 9, 9, 9 ],
@@ -147,7 +147,7 @@
 },
 {
 	
-	"effecttype":  "Argo_TreasureRolls_p1_cont"
+	"effecttype":  "Argo_TreasureRolls_p1_cont",
 	"type": "treasure",
 	"useType": "continuous",
 	"name": "argo",
@@ -156,7 +156,7 @@
 },
 {
 	
-	"effecttype":  "SwordOfPeleus_MonsterRolls_p1_cont"
+	"effecttype":  "SwordOfPeleus_MonsterRolls_p1_cont",
 	"type": "treasure",
 	"useType": "continuous",
 	"name": "swordofpeleus",
@@ -165,7 +165,7 @@
 },
 {
 	
-	"effecttype":  "WingedSandals_ReturnAdventureCard_single"
+	"effecttype":  "WingedSandals_ReturnAdventureCard_single",
 	"type": "treasure",
 	"useType": "single",
 	"name": "wingedsandals",
@@ -174,7 +174,7 @@
 },
 {
 	
-	"effecttype":  "Cornucopia_Recover2Crew_single"
+	"effecttype":  "Cornucopia_Recover2Crew_single",
 
 	"type": "treasure",
 	"useType": "single",
@@ -192,7 +192,7 @@
 },
 {
 	
-	"effecttype":  "PansFlute_DiscardTop2Cards_single"
+	"effecttype":  "PansFlute_DiscardTop2Cards_single",
 	"type": "treasure",
 	"useType": "single",
 	"name": "pansflute",
@@ -209,7 +209,7 @@
 },
 {
 	
-	"effecttype":  "OrpheusLyre_StopLevelUpMonsterInVictoryPile_single"
+	"effecttype":  "OrpheusLyre_StopLevelUpMonsterInVictoryPile_single",
 	"type": "treasure",
 	"useType": "single",
 	"name": "orpheuslyre",
@@ -274,7 +274,7 @@
 },
 {
 	
-	"effecttype":  "HelmOfHades_MoveMonsterToDiscardPile_single"
+	"effecttype":  "HelmOfHades_MoveMonsterToDiscardPile_single",
 	"type": "treasure",
 	"useType": "single",
 	"reserve": true,
@@ -284,7 +284,7 @@
 },
 {
 	
-	"effecttype":  "CloakOfHeracles_monsterdifficulty_m1_cont"
+	"effecttype":  "CloakOfHeracles_monsterdifficulty_m1_cont",
 	"type": "treasure",
 	"useType": "single",
 	"reserve": true,
@@ -294,7 +294,7 @@
 },
 {
 	
-	"effecttype":  "PoseydonTrident_ConvertWrathToBlessing_cont"
+	"effecttype":  "PoseydonTrident_ConvertWrathToBlessing_cont",
 	"type": "treasure",
 	"useType": "continuous",
 	"reserve": true,
@@ -304,7 +304,7 @@
 },
 {
 	
-	"effecttype":  "Ambrosia_Recover3Crew_single"
+	"effecttype":  "Ambrosia_Recover3Crew_single",
 	"type": "treasure",
 	"useType": "single",
 	"reserve": true,
@@ -314,7 +314,7 @@
 },
 {
 	
-	"effecttype":  "DaedalusWing_RerollDieOncePerTurn_cont"
+	"effecttype":  "DaedalusWing_RerollDieOncePerTurn_cont",
 	"type": "treasure",
 	"useType": "single",
 	"reserve": true,
@@ -324,7 +324,7 @@
 },
 {
 	
-	"effecttype":  "AegisOfZeus_IgnoreDeadliness_single"
+	"effecttype":  "AegisOfZeus_IgnoreDeadliness_single",
 	"type": "treasure",
 	"useType": "single",
 	"reserve": true,
@@ -334,7 +334,7 @@
 },
 {
 	
-	"effecttype":  "ApolloBow_RollDice6_single"
+	"effecttype":  "ApolloBow_RollDice6_single",
 	"type": "treasure",
 	"useType": "single",
 	"reserve": true,

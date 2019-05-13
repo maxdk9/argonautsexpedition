@@ -16,7 +16,7 @@ namespace Model
 
 
 	    [System.Serializable]
-        public class Card
+        public class Card:ScriptableObject
         {
             public int cardnumber;
             public EffectType effecttype;

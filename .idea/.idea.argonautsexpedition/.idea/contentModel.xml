@@ -31,6 +31,9 @@
             <e p="GameLoader.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="GameActors" t="Include">
+            <e p="CardActor.cs" t="Include" />
+          </e>
           <e p="Localization" t="Include">
             <e p="LocalizedTextMeshPro.cs" t="Include" />
           </e>
