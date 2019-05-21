@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void StartNewGame()
 	{
-		
+		ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
 	}
 
 	public void ResumeGame()

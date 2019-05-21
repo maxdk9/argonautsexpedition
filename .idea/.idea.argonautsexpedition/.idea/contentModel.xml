@@ -26,6 +26,19 @@
           <e p="link.xml" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="advancedtools" t="Include">
+            <e p="CardVisualScripts" t="Include">
+              <e p="BetterCardRotation.cs" t="Include" />
+            </e>
+            <e p="Outlines by N Yoda" t="Include">
+              <e p="BoxOutline.cs" t="Include" />
+              <e p="CircleOutline.cs" t="Include" />
+              <e p="ListPool.cs" t="Include" />
+              <e p="ModifiedShadow.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+              <e p="Outline8.cs" t="Include" />
+            </e>
+          </e>
           <e p="common" t="Include">
             <e p="CommonController.cs" t="Include" />
             <e p="GameLoader.cs" t="Include" />
