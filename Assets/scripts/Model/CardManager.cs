@@ -35,12 +35,8 @@ namespace Model
             public String name;
             public int [] difficulty;
             public int [] deadliness;
-            
-            
             [NonSerialized]
             public Sprite front;
-            
-		
         
         }
 
@@ -58,7 +54,9 @@ namespace Model
         }
 
 
-        private System.Collections.Generic.List<Card> m_Dictionary=new System.Collections.Generic.List<Card>(); 
+        private System.Collections.Generic.List<Card> m_Dictionary=new System.Collections.Generic.List<Card>();
+
+        public List<Card> shuffledList=new List<Card>();
 
         public void Init()
         {
@@ -102,5 +100,34 @@ namespace Model
             //CardManager.Card[] cards = JsonHelper.FromJson<CardManager.Card>(dataAsJson);
             //Debug.Log( cards[0]);
         }
+
+
+
+        public void Shuffle()
+        {
+            shuffledList.Clear();
+
+
+
+            CardManager.Card c=null;
+
+            while (true)
+            {
+                if (shuffledList.Count == m_Dictionary.Count)
+                {
+                    break;
+                }
+			 
+                int randomInt = UnityEngine.Random.Range(0, m_Dictionary.Count);
+                c = m_Dictionary[randomInt];
+                if (shuffledList.Contains(c))
+                {
+                    continue;
+                }
+                shuffledList.Add(c);
+            }
+        }
+        
+        
     }
 }

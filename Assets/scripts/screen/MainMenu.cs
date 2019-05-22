@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using screen;
+using tools;
 using UnityEngine;
 
 public class MainMenu : MonoBehaviour {
@@ -36,5 +37,12 @@ public class MainMenu : MonoBehaviour {
 	{
 		
 	}
+
+	public void TestGame()
+	{
+		ScreenManager.instance.Show(ScreenManager.ScreenType.Testscreen);
+		TestTools.TestCardList();
+	}
+	
 	
 }

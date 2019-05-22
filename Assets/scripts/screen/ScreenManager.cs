@@ -30,6 +30,7 @@ namespace screen
         public Canvas CreditsCanvas;
         public Canvas DeckgameCanvas;
         public Canvas RollDiceCanvas;
+        public Canvas TestCanvas;
 
         private ScreenType currentType;
         
@@ -42,6 +43,7 @@ namespace screen
             CreditsCanvas = GameObject.Find("CreditsCanvas").GetComponent<Canvas>();
             DeckgameCanvas = GameObject.Find("DeckgameCanvas").GetComponent<Canvas>();
             RollDiceCanvas = GameObject.Find("RollDiceCanvas").GetComponent<Canvas>();
+            TestCanvas = GameObject.Find("TestCanvas").GetComponent<Canvas>();
             
             
             screens.Add(ScreenType.Deckgame,DeckgameCanvas);  
@@ -50,6 +52,7 @@ namespace screen
             screens.Add(ScreenType.Options,OptionsCanvas);  
             screens.Add(ScreenType.Mainmenu,MainMenuCanvas);
             screens.Add(ScreenType.Rolldice,RollDiceCanvas);
+            screens.Add(ScreenType.Testscreen,TestCanvas);
             
         }
 
@@ -62,7 +65,8 @@ namespace screen
             Options,
             Credits,
             Rolldice,
-            Mainmenu
+            Mainmenu,
+            Testscreen
         }
 
 

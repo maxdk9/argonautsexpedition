@@ -20,10 +20,13 @@ public class OneCardManager : MonoBehaviour {
     [Header ("GameObject References")]
     public GameObject DifficultyImage;
     public GameObject DeadlinessImage;
+    
+    
     [Header("Image References")]
     public Image CardBackground;
     public Image CardImage;
     public Image CardFrame;
+    public Image UseTypeImage;
     
     public Image CardFaceGlowImage;
     public Image CardBackGlowImage;
@@ -54,11 +57,30 @@ public class OneCardManager : MonoBehaviour {
     {
       
         // 2) add card name
-        NameLabel.text = cardAsset.name;
+        NameLabel.text = LocalizationManager.Localize(Const.cardsin+cardAsset.name);
         // 3) add mana cost
-        DescriptionLabel.text = LocalizationManager.Localize(cardAsset.name + Const.carddescr);
-        DeadlinessLabel.text = cardAsset.deadliness[cardAsset.level].ToString();
-        DifficultyLabel.text = cardAsset.difficulty[cardAsset.level].ToString();
+        if (DescriptionLabel != null)
+        {
+            DescriptionLabel.text = LocalizationManager.Localize( Const.carddescr+cardAsset.name);    
+        }
+
+        if (DeadlinessLabel != null)
+        {
+            DeadlinessLabel.text = cardAsset.deadliness[cardAsset.level].ToString();    
+        }
+
+        if (DifficultyLabel != null)
+        {
+            DifficultyLabel.text = cardAsset.difficulty[cardAsset.level].ToString();    
+        }
+
+        if (UseTypeImage != null)
+        {
+            string usetTypePath = "tools/" + cardAsset.useType.ToString();
+            UseTypeImage.sprite = Resources.Load<Sprite>(usetTypePath);
+        }
+        
+        
         
         string frontpath = "cards/" + cardAsset.name;
         
@@ -74,4 +96,22 @@ public class OneCardManager : MonoBehaviour {
             PreviewManager.ReadCardFromAsset();
         }
     }
+
+    public static GameObject GetCardPrefab(CardManager.Card c)
+    {
+        if (c.type == CardType.monster)
+        {
+            return GameManager.instance.MonsterCardPrefab;
+        }
+
+        if (c.type == CardType.treasure)
+        {
+            return GameManager.instance.ItemCardPrefab;
+        }
+        
+        
+        return GameManager.instance.MonsterCardPrefab;
+    }
+    
+    
 }

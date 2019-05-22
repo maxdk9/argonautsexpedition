@@ -66,6 +66,7 @@
             <e p="JsonHelper.cs" t="Include" />
             <e p="LocalizationLoad.cs" t="Include" />
             <e p="Preferences.cs" t="Include" />
+            <e p="TestTools.cs" t="Include" />
           </e>
         </e>
         <e p="SimpleLocalization" t="Include">

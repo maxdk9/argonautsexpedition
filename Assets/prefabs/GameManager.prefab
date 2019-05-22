@@ -51,3 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9126a10fcdfa34fa94de62f65b4d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MonsterCardPrefab: {fileID: 1040919091539084, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+    type: 2}
+  ItemCardPrefab: {fileID: 1008414481078862, guid: 2b5a7eadbe6550047bb83a5ef0673e8d,
+    type: 2}

@@ -10,3 +10,74 @@ Options.musiclabel,MUSIC,МУЗЫКА
 Options.sfxlabel,SFX,SFX
 Options.LanguageEnglish,English,Английский
 Options.LanguageRussian,Russian,Русский
+legend_aegisofzeus, Igore deadliness of the monster (if defeat), Igore deadliness of the monster (if defeat)
+legend_ambrosia,"Recover 3 crew, up to starting count","Recover 3 crew, up to starting count"
+legend_apollobow,Set dice result as 6 before rolling,Set dice result as 6 before rolling
+legend_argo, +1 to treasure recovery rolls, +1 to treasure recovery rolls
+legend_cerberus, ADD 3-HADES WRATH ADD 5-HADES WRATH ADD 5-HELM OF HADES, ADD 3-HADES WRATH ADD 5-HADES WRATH ADD 5-HELM OF HADES
+legend_charybdis, You may sacrifice 1 crew to ignore this card, You may sacrifice 1 crew to ignore this card
+legend_cloakofheracles, -1 to monster difficulty (minimum 7), -1 to monster difficulty (minimum 7)
+legend_colchiandragon,If defeated +2 to treasure recovery rolls this turn,If defeated +2 to treasure recovery rolls this turn
+legend_cornucopia,"Recover 2 crew, up to starting count","Recover 2 crew, up to starting count"
+legend_daedaluswing,Once time per turn you can  reroll one dice,Once time per turn you can  reroll one dice
+legend_echidna,ADD 2 -NEMEAN LION ADD 4 - SPHINX,ADD 2 -NEMEAN LION ADD 4 - SPHINX
+legend_goldenfleece,Gain an extra heroic deed at the end of the game,Gain an extra heroic deed at the end of the game
+legend_gorgon,"If not defeated, kill all crew, assigned to card","If not defeated, kill all crew, assigned to card"
+legend_harpy," +1 difficulty for each other harpy in play ADD 3,5 - HARPY"," +1 difficulty for each other harpy in play ADD 3,5 - HARPY"
+legend_helmofhades,Move revealed monster to  discard pile,Move revealed monster to  discard pile
+legend_hydra,"When this card gain a level, you gain bonus heroic deed ","When this card gain a level, you gain bonus heroic deed "
+legend_ketos,ADD3-POSEIDON WRATH ADD5-POSEIDON WRATH ADD5-POSEIDON TRIDENT,ADD3-POSEIDON WRATH ADD5-POSEIDON WRATH ADD5-POSEIDON TRIDENT
+legend_mirroredshield,Ignore effects printed on monsters Does not stop ADD,Ignore effects printed on monsters Does not stop ADD
+legend_nemeanlion,ADD 3 -CLOAK OF HERACLES,ADD 3 -CLOAK OF HERACLES
+legend_orpheuslyre,Stop a monster in victory pile from level up at the end,Stop a monster in victory pile from level up at the end
+legend_pansflute,Discard top two  cards from  adventure deck,Discard top two  cards from  adventure deck
+legend_poseidontrident,Wrath card works as blessing card,Wrath card works as blessing card
+legend_scylla,"Can be ignored. Roll a die - on 5-6, lose half of crew","Can be ignored. Roll a die - on 5-6, lose half of crew"
+legend_sirens, 1 crew member may not be assigned this turn, 1 crew member may not be assigned this turn
+legend_skeleton, +1 difficulty for each other skeleton in play, +1 difficulty for each other skeleton in play
+legend_swordofpeleus, +1 to monster  combat rolls, +1 to monster  combat rolls
+legend_typhon,ADD 3 - CHIMERA,ADD 3 - CHIMERA
+legend_wingedsandals,Return current  adventure cards. Deal 3 new card.,Return current  adventure cards. Deal 3 new card.
+legend_wrath,WRATH,WRATH
+legend_blessing,BLESSING,BLESSING
+sin_aegisofzeus,Aegis of Zeus,Aegis of Zeus
+sin_ambrosia,Ambrosia,Ambrosia
+sin_apollo_blessing,APOLLO'S,APOLLO'S
+sin_apollobow,Apollo bow,Apollo bow
+sin_argo,Argo,Argo
+sin_blessing,BLESSING,BLESSING
+sin_cerberus,Cerberus,Cerberus
+sin_charybdis,Charybdis,Charybdis
+sin_chimera,Chimera,Chimera
+sin_cloakofheracles,Heracles Cloak,Heracles Cloak
+sin_colchiandragon,Dragon,Dragon
+sin_cornucopia,Cornucopia,Cornucopia
+sin_cyclops,Cyclop,Cyclop
+sin_daedaluswing,Daedal wing,Daedal wing
+sin_echidna,Echidna,Echidna
+sin_goldenfleece,Golden fleece,Golden fleece
+sin_gorgon,Gorgon,Gorgon
+sin_hades_wrath,HADES,HADES
+sin_harpy,Harpy,Harpy
+sin_helmofhades,Hades helm,Hades helm
+sin_hera_blessing,HERA'S,HERA'S
+sin_hydra,Hydra,Hydra
+sin_ketos,Ketos,Ketos
+sin_khalkotaurus,Khalkotaur,Khalkotaur
+sin_manticore,Manticore,Manticore
+sin_minotaur,Minotaur,Minotaur
+sin_mirroredshield,Mirror shield,Mirror shield
+sin_nemeanlion,Nemean lion,Nemean lion
+sin_orpheuslyre,Orpheus lyre,Orpheus lyre
+sin_pansflute,Pans flute,Pans flute
+sin_poseidon_wrath,POSEIDON'S,POSEIDON'S
+sin_poseidontrident,Trident,Trident
+sin_scylla,Scylla,Scylla
+sin_sirens,Sirens,Sirens
+sin_skeleton,Skeleton,Skeleton
+sin_sphinx,Sphinx,Sphinx
+sin_swordofpeleus,Peleus sword,Peleus sword
+sin_typhon,Typhon,Typhon
+sin_wingedsandals,Wing sandals,Wing sandals
+sin_wrath,WRATH,WRATH
+sin_zeus_blessing,ZEUS',ZEUS'
