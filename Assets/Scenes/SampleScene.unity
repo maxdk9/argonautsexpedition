@@ -389,43 +389,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 226791322}
   m_CullTransparentMesh: 0
---- !u!1 &257765325 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1040919091539084, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-    type: 2}
-  m_PrefabInternal: {fileID: 773357869}
 --- !u!224 &257765326 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
     type: 2}
   m_PrefabInternal: {fileID: 773357869}
---- !u!65 &257765327
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 257765325}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 300, y: 454.8322, z: 0.01}
-  m_Center: {x: 0, y: 5.0838947, z: 0}
---- !u!114 &257765328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 257765325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0ef218518f5f3f488732639d8f59411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CardFront: {fileID: 693056964}
-  CardBack: {fileID: 680991648}
-  targetFacePoint: {fileID: 920229944}
-  col: {fileID: 257765327}
 --- !u!1 &275819307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1376,11 +1344,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 612627492}
   m_CullTransparentMesh: 0
---- !u!224 &680991648 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224781880638970450, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-    type: 2}
-  m_PrefabInternal: {fileID: 773357869}
 --- !u!1 &687296619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,11 +1507,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!224 &693056964 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 224029637985637476, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-    type: 2}
-  m_PrefabInternal: {fileID: 773357869}
 --- !u!1001 &773357869
 Prefab:
   m_ObjectHideFlags: 0
@@ -1656,16 +1614,6 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114513134720721132, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114513134720721132, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114454763697811818, guid: 198fc0e3a37ff2146ae1bceed8a08053,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -1686,38 +1634,19 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+    - target: {fileID: 114513134720721132, guid: 198fc0e3a37ff2146ae1bceed8a08053,
         type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.8786303
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.8786303
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 8.786303
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283377093867600, guid: 198fc0e3a37ff2146ae1bceed8a08053, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1434268834443508, guid: 198fc0e3a37ff2146ae1bceed8a08053, type: 2}
-      propertyPath: m_IsActive
+      propertyPath: m_havePropertiesChanged
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114513134720721132, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1523569578950982, guid: 198fc0e3a37ff2146ae1bceed8a08053, type: 2}
+      propertyPath: m_Name
+      value: cardframe
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 198fc0e3a37ff2146ae1bceed8a08053, type: 2}
@@ -2054,39 +1983,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!1 &920229943
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 920229944}
-  m_Layer: 10
-  m_Name: FacePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &920229944
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 920229943}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 257765326}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1003685627
 GameObject:
   m_ObjectHideFlags: 0

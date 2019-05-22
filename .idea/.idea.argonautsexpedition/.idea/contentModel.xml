@@ -41,11 +41,13 @@
           </e>
           <e p="common" t="Include">
             <e p="CommonController.cs" t="Include" />
+            <e p="Const.cs" t="Include" />
             <e p="GameLoader.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
           <e p="GameActors" t="Include">
             <e p="CardActor.cs" t="Include" />
+            <e p="OneCardManager.cs" t="Include" />
           </e>
           <e p="Localization" t="Include">
             <e p="LocalizedTextMeshPro.cs" t="Include" />
