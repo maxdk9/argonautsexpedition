@@ -1724,11 +1724,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 779174749}
   m_CullTransparentMesh: 0
---- !u!1 &788379639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1040919091539084, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-    type: 2}
-  m_PrefabInternal: {fileID: 1119009328}
 --- !u!1 &789737230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,11 +2276,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114988418761115816, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-        type: 2}
-      propertyPath: col
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 114120070643050874, guid: 198fc0e3a37ff2146ae1bceed8a08053,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -2366,10 +2356,20 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 224361567936489212, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+    - target: {fileID: 114738951170838828, guid: 198fc0e3a37ff2146ae1bceed8a08053,
         type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+      propertyPath: ActivateInAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114738951170838828, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+        type: 2}
+      propertyPath: TargetPosition.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114738951170838828, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+        type: 2}
+      propertyPath: TargetPosition.y
+      value: -100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 198fc0e3a37ff2146ae1bceed8a08053, type: 2}
@@ -2379,27 +2379,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 224076277737574510, guid: 198fc0e3a37ff2146ae1bceed8a08053,
     type: 2}
   m_PrefabInternal: {fileID: 1119009328}
---- !u!1 &1119009330 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1065523122443948, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-    type: 2}
-  m_PrefabInternal: {fileID: 1119009328}
---- !u!114 &1119009331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1119009330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d41496b4b6ed7d34993e2de3b69900df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurnThisOffWhenPreviewing: {fileID: 1809173999}
-  TargetPosition: {x: 0, y: 25, z: 0}
-  TargetScale: 2
-  previewGameObject: {fileID: 788379639}
-  ActivateInAwake: 0
 --- !u!1 &1133727768
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,11 +4219,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
---- !u!1 &1809173999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1763701136014688, guid: 198fc0e3a37ff2146ae1bceed8a08053,
-    type: 2}
-  m_PrefabInternal: {fileID: 1119009328}
 --- !u!1 &1811046136
 GameObject:
   m_ObjectHideFlags: 0
