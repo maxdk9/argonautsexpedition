@@ -11,6 +11,7 @@ public class OneCardManager : MonoBehaviour {
 
     public CardManager.Card cardAsset;
     public OneCardManager PreviewManager;
+    private bool m_highlighted = true;
     [Header("Text Component References")]
     public TextMeshProUGUI NameLabel;
     public TextMeshProUGUI DifficultyLabel;
@@ -53,6 +54,18 @@ public class OneCardManager : MonoBehaviour {
         }
     }
 
+    public bool Highlighted
+    {
+        get { return m_highlighted; }
+        set
+        {
+            m_highlighted = value;
+            if (CardFaceGlowImage != null){
+                CardFaceGlowImage.gameObject.SetActive(m_highlighted);
+            }
+        }
+    }
+
     public void ReadCardFromAsset()
     {
       
@@ -80,7 +93,9 @@ public class OneCardManager : MonoBehaviour {
             UseTypeImage.sprite = Resources.Load<Sprite>(usetTypePath);
         }
         
-        
+        if (CardFaceGlowImage != null){
+            CardFaceGlowImage.gameObject.SetActive(m_highlighted);
+        }
         
         string frontpath = "cards/" + cardAsset.name;
         
@@ -108,10 +123,19 @@ public class OneCardManager : MonoBehaviour {
         {
             return GameManager.instance.ItemCardPrefab;
         }
+
+        if (c.type == CardType.blessing || c.type == CardType.wrath)
+        {
+            return GameManager.instance.BlessingCardPrefab;
+        }
         
         
         return GameManager.instance.MonsterCardPrefab;
     }
-    
-    
+
+
+    private void Update()
+    {
+        
+    }
 }

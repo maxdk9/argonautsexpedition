@@ -10,74 +10,397 @@ Options.musiclabel,MUSIC,МУЗЫКА
 Options.sfxlabel,SFX,SFX
 Options.LanguageEnglish,English,Английский
 Options.LanguageRussian,Russian,Русский
-legend_aegisofzeus, Igore deadliness of the monster (if defeat), Igore deadliness of the monster (if defeat)
-legend_ambrosia,"Recover 3 crew, up to starting count","Recover 3 crew, up to starting count"
-legend_apollobow,Set dice result as 6 before rolling,Set dice result as 6 before rolling
+cancel,Cancel,Cancel
+tutorial000,Hello Brave Argonaut!,Hello Brave Argonaut!
+legend_swordofpeleus, +1 to monster combat rolls, +1 to monster combat rolls
+tutorial001,"Ride of Argonauts is single player game of adventures and legends set in Grecian mythology. You will take on the role of a hero set out to recover treasure, slay monsters, and find a place for yourself in the retelling of Greek myths. Touch to continue.","Ride of Argonauts is single player game of adventures and legends set in Grecian mythology. You will take on the role of a hero set out to recover treasure, slay monsters, and find a place for yourself in the retelling of Greek myths. Touch to continue."
+tutorial004,"The number of your crew. You can assign crew member on adventure card to resolve challenge.
+ 
+ Carefully if all team members die(drop to zero), you lose. Touch to continue.","The number of your crew. You can assign crew member on adventure card to resolve challenge.
+ 
+ Carefully if all team members die(drop to zero), you lose. Touch to continue."
+thesmellofbloodintheair,The smell of blood in the air,The smell of blood in the air
 legend_argo, +1 to treasure recovery rolls, +1 to treasure recovery rolls
-legend_cerberus, ADD 3-HADES WRATH ADD 5-HADES WRATH ADD 5-HELM OF HADES, ADD 3-HADES WRATH ADD 5-HADES WRATH ADD 5-HELM OF HADES
-legend_charybdis, You may sacrifice 1 crew to ignore this card, You may sacrifice 1 crew to ignore this card
-legend_cloakofheracles, -1 to monster difficulty (minimum 7), -1 to monster difficulty (minimum 7)
-legend_colchiandragon,If defeated +2 to treasure recovery rolls this turn,If defeated +2 to treasure recovery rolls this turn
-legend_cornucopia,"Recover 2 crew, up to starting count","Recover 2 crew, up to starting count"
-legend_daedaluswing,Once time per turn you can  reroll one dice,Once time per turn you can  reroll one dice
-legend_echidna,ADD 2 -NEMEAN LION ADD 4 - SPHINX,ADD 2 -NEMEAN LION ADD 4 - SPHINX
-legend_goldenfleece,Gain an extra heroic deed at the end of the game,Gain an extra heroic deed at the end of the game
-legend_gorgon,"If not defeated, kill all crew, assigned to card","If not defeated, kill all crew, assigned to card"
-legend_harpy," +1 difficulty for each other harpy in play ADD 3,5 - HARPY"," +1 difficulty for each other harpy in play ADD 3,5 - HARPY"
-legend_helmofhades,Move revealed monster to  discard pile,Move revealed monster to  discard pile
-legend_hydra,"When this card gain a level, you gain bonus heroic deed ","When this card gain a level, you gain bonus heroic deed "
-legend_ketos,ADD3-POSEIDON WRATH ADD5-POSEIDON WRATH ADD5-POSEIDON TRIDENT,ADD3-POSEIDON WRATH ADD5-POSEIDON WRATH ADD5-POSEIDON TRIDENT
-legend_mirroredshield,Ignore effects printed on monsters Does not stop ADD,Ignore effects printed on monsters Does not stop ADD
-legend_nemeanlion,ADD 3 -CLOAK OF HERACLES,ADD 3 -CLOAK OF HERACLES
-legend_orpheuslyre,Stop a monster in victory pile from level up at the end,Stop a monster in victory pile from level up at the end
-legend_pansflute,Discard top two  cards from  adventure deck,Discard top two  cards from  adventure deck
-legend_poseidontrident,Wrath card works as blessing card,Wrath card works as blessing card
-legend_scylla,"Can be ignored. Roll a die - on 5-6, lose half of crew","Can be ignored. Roll a die - on 5-6, lose half of crew"
-legend_sirens, 1 crew member may not be assigned this turn, 1 crew member may not be assigned this turn
-legend_skeleton, +1 difficulty for each other skeleton in play, +1 difficulty for each other skeleton in play
-legend_swordofpeleus, +1 to monster  combat rolls, +1 to monster  combat rolls
-legend_typhon,ADD 3 - CHIMERA,ADD 3 - CHIMERA
-legend_wingedsandals,Return current  adventure cards. Deal 3 new card.,Return current  adventure cards. Deal 3 new card.
-legend_wrath,WRATH,WRATH
-legend_blessing,BLESSING,BLESSING
+tutorial005,Assignment phase,Assignment phase
+unavailable,Unavailable,Unavailable
+tutorial002,"Touch on deck, for draw 3 adventure card. This will be your challenge in the current round.","Touch on deck, for draw 3 adventure card. This will be your challenge in the current round."
+tutorial003,Crew Counter,Crew Counter
+tutorial008,Touch on cornucopia card and assign other 3 crew member.,Touch on cornucopia card and assign other 3 crew member.
+tutorial009,End of assignment phase,End of assignment phase
+tutorial006,Now you can assign your crew. Touch on skeleton and assign 4.,Now you can assign your crew. Touch on skeleton and assign 4.
+music1,Night Cave Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 License http://creativecommons.org/licenses/by/3.0/,Night Cave Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 License http://creativecommons.org/licenses/by/3.0/
+tutorial007,Touch on harpy and assign 5.,Touch on harpy and assign 5.
+legend_colchiandragon,"If defeated +2 to
+ treasure recovery
+ rolls this turn","If defeated +2 to
+ treasure recovery
+ rolls this turn"
+chooseyouraction,Choose your action,Choose your action
+choosemonsterforoleffect,Choose monster to stop level-up...,Choose monster to stop level-up...
+hiding,Do you want to hide?,Do you want to hide?
+score,Score,Score
+legend_gorgon,"If not defeated,
+ kill all crew,
+ assigned to card","If not defeated,
+ kill all crew,
+ assigned to card"
+designervalue,Mike Arlington,Mike Arlington
+choosecardtodropbotton,"Choose a card that 
+ 
+ go to bottom","Choose a card that 
+ 
+ go to bottom"
+music,Music,Music
+heroism,Heroic act!,Heroic act!
 sin_aegisofzeus,Aegis of Zeus,Aegis of Zeus
-sin_ambrosia,Ambrosia,Ambrosia
-sin_apollo_blessing,APOLLO'S,APOLLO'S
-sin_apollobow,Apollo bow,Apollo bow
-sin_argo,Argo,Argo
-sin_blessing,BLESSING,BLESSING
-sin_cerberus,Cerberus,Cerberus
-sin_charybdis,Charybdis,Charybdis
-sin_chimera,Chimera,Chimera
-sin_cloakofheracles,Heracles Cloak,Heracles Cloak
-sin_colchiandragon,Dragon,Dragon
-sin_cornucopia,Cornucopia,Cornucopia
-sin_cyclops,Cyclop,Cyclop
-sin_daedaluswing,Daedal wing,Daedal wing
-sin_echidna,Echidna,Echidna
-sin_goldenfleece,Golden fleece,Golden fleece
-sin_gorgon,Gorgon,Gorgon
-sin_hades_wrath,HADES,HADES
-sin_harpy,Harpy,Harpy
-sin_helmofhades,Hades helm,Hades helm
-sin_hera_blessing,HERA'S,HERA'S
-sin_hydra,Hydra,Hydra
-sin_ketos,Ketos,Ketos
+searchtotem,Search artifact,Search artifact
+somethinggrowsnearby,Something grows nearby,Something grows nearby
+youheardrumsinthedistance,You hear drums in the distance,You hear drums in the distance
+tutorial011,Resolve phase,Resolve phase
+tutorial012,You can resolve adventure cards in any order. Now touch on first harpy to battle.,You can resolve adventure cards in any order. Now touch on first harpy to battle.
+legend_ambrosia,"Recover 3 crew,
+ up to starting
+ count","Recover 3 crew,
+ up to starting
+ count"
+tutorial010,"Press ""To Battle"" button and go to resolve encounters phase.","Press ""To Battle"" button and go to resolve encounters phase."
+tutorial015,"That's battle screen. You see a card-encounter. There are three kind of cards: monsters, treasure and  divine intervention. This is monster card. Now you will learn what parts it consists. Touch to continue.","That's battle screen. You see a card-encounter. There are three kind of cards: monsters, treasure and  divine intervention. This is monster card. Now you will learn what parts it consists. Touch to continue."
+enormousgorilla,Enormous gorilla,Enormous gorilla
+tutorial016,Difficulty,Difficulty
 sin_khalkotaurus,Khalkotaur,Khalkotaur
-sin_manticore,Manticore,Manticore
-sin_minotaur,Minotaur,Minotaur
-sin_mirroredshield,Mirror shield,Mirror shield
+tutorial013,"Arrange 4 to first harpy, 5 to second harpy and 3 to cornucopia.
+ 
+ Press ""To Battle"" button and go to resolve encounters phase.","Arrange 4 to first harpy, 5 to second harpy and 3 to cornucopia.
+ 
+ Press ""To Battle"" button and go to resolve encounters phase."
+tutorial014,Battle screen,Battle screen
+tutorial019,"Deadliness - If you lost battle, monster kill this number of crew.","Deadliness - If you lost battle, monster kill this number of crew."
+legend_skeleton, +1 difficulty for each other skeleton in play, +1 difficulty for each other skeleton in play
+tutorial017,Difficulty mean what result (dice roll+crew number assigned) can be achieved to resolve current challenge. Some monster\treasure abilities also affect on battle result.,Difficulty mean what result (dice roll+crew number assigned) can be achieved to resolve current challenge. Some monster\treasure abilities also affect on battle result.
+tutorial018,Deadliness,Deadliness
+yourbodyshiversinvoluntarily,Your body shivers involuntarily,Your body shivers involuntarily
+legend_goldenfleece,Gain an extra  heroic deed at the end of the game,Gain an extra  heroic deed at the end of the game
+sin_cerberus,Cerberus,Cerberus
+doyouwantgetitem,Want to get the item?,Want to get the item?
+altarroom,Altar Room,Altar Room
+scylladefeat,"Wow, Scylla attack  and eat half   of you crew!","Wow, Scylla attack  and eat half   of you crew!"
+actions,AD,AD
+items,Items,Items
+moveorrest,Explore or Rest?,Explore or Rest?
+spiketrap,Spike trap,Spike trap
+tutorial022,Roll the dice.,Roll the dice.
+tutorial023,"Now roll the dice. You result is 3. Add the number of crew(4) on that card. Final result is 7. If the result is greater than or equal to the current difficulty on the card, it resolves successfully. Great, you defeated the monster!Touch ok to continue.","Now roll the dice. You result is 3. Add the number of crew(4) on that card. Final result is 7. If the result is greater than or equal to the current difficulty on the card, it resolves successfully. Great, you defeated the monster!Touch ok to continue."
+developervalue,Max Matyushenko,Max Matyushenko
+tutorial020,Level counter,Level counter
 sin_nemeanlion,Nemean lion,Nemean lion
-sin_orpheuslyre,Orpheus lyre,Orpheus lyre
-sin_pansflute,Pans flute,Pans flute
-sin_poseidon_wrath,POSEIDON'S,POSEIDON'S
-sin_poseidontrident,Trident,Trident
-sin_scylla,Scylla,Scylla
-sin_sirens,Sirens,Sirens
-sin_skeleton,Skeleton,Skeleton
-sin_sphinx,Sphinx,Sphinx
-sin_swordofpeleus,Peleus sword,Peleus sword
-sin_typhon,Typhon,Typhon
-sin_wingedsandals,Wing sandals,Wing sandals
+tutorial021,"Deadliness and Difficulty depends on card level. If you succesfully resolve this card of first level, in next stage you must fight with Harpy 2 lvl with difficulty 7.","Deadliness and Difficulty depends on card level. If you succesfully resolve this card of first level, in next stage you must fight with Harpy 2 lvl with difficulty 7."
+youlosehealth,You lose health,You lose health
+legend_cornucopia,"Recover 2 crew, up
+ to starting count","Recover 2 crew, up
+ to starting count"
+legend_apollobow,"Set dice result
+ as 6 before
+ rolling","Set dice result
+ as 6 before
+ rolling"
+tutorial026,Type of treasure,Type of treasure
+tutorial027,"There are two types of treasure. Continuous (uroboros) and sigle use (arrow target). Continuous take effect immediately and single-use treasures may be used at any time is appropriate for their effect.
+ 
+ Touch to roll dice.","There are two types of treasure. Continuous (uroboros) and sigle use (arrow target). Continuous take effect immediately and single-use treasures may be used at any time is appropriate for their effect.
+ 
+ Touch to roll dice."
+tutorial024,You won the second battle automatically. Harpy dealiness equal to assigned number of crew +minimal dice result 1. So now you go to third card -Cornucopia. Touch it.,You won the second battle automatically. Harpy dealiness equal to assigned number of crew +minimal dice result 1. So now you go to third card -Cornucopia. Touch it.
+youactivatedam,You activated the ancient mechanism,You activated the ancient mechanism
+tutorial025,"This example of second kind of card -treasure. It does not have deadliness, so treasure cannot harm your crew. But if you treasure resolves succesfully, it come on your control. And you can use treasure's modifiers that you own. 
+ 
+ Touch to continue.","This example of second kind of card -treasure. It does not have deadliness, so treasure cannot harm your crew. But if you treasure resolves succesfully, it come on your control. And you can use treasure's modifiers that you own. 
+ 
+ Touch to continue."
+legend_hydra,"When this card gain
+ a level, you gain
+ bonus heroic deed","When this card gain
+ a level, you gain
+ bonus heroic deed"
+roll,Roll,Roll
+tutorial028,Oooh! Your result is 5 and the treasure comes into your hands.,Oooh! Your result is 5 and the treasure comes into your hands.
+enemy,Enemy,Enemy
+tutorial029,You have successfully passed the first small quest of three cards. Touch on deck to take new 3 encounter.,You have successfully passed the first small quest of three cards. Touch on deck to take new 3 encounter.
+fist,Combat,Combat
+sin_manticore,Manticore,Manticore
+search,Search,Search
+sin_argo,Argo,Argo
+attack,Attack,Attack
 sin_wrath,WRATH,WRATH
+sin_gorgon,Gorgon,Gorgon
+tobattle,To battle,To battle
+losttime,"Time is run out and you could not escape. 
+ You score:","Time is run out and you could not escape. 
+ You score:"
+tutorial033,It would be better start to resolve encounters from Peleus sword card to use Peleus sword ability in the same quest against the Sirens and Typhon.,It would be better start to resolve encounters from Peleus sword card to use Peleus sword ability in the same quest against the Sirens and Typhon.
+tutorial034,"Great, you won Peleus sword, Now you will have +1 to roll dice with encounter-monster.","Great, you won Peleus sword, Now you will have +1 to roll dice with encounter-monster."
+tutorial031,Assign 4 crew on sirens.,Assign 4 crew on sirens.
+tutorial032,And rest 3 assign to Typhon.,And rest 3 assign to Typhon.
+sin_charybdis,Charybdis,Charybdis
+tutorial037,At the end of this quest you have to fight with Typhon -dangerous monster. Are you feel lucky?,At the end of this quest you have to fight with Typhon -dangerous monster. Are you feel lucky?
+tutorial038,Unfortunately -you rolled 4 and lost the challenge. Several sailors were killed.,Unfortunately -you rolled 4 and lost the challenge. Several sailors were killed.
+tutorial035,"And now you fight with a siren, touch on it.","And now you fight with a siren, touch on it."
+flaregun,Flare Gun,Flare Gun
+tutorial036,Oooh -your rolled 2 but bonus of Peleus sword helped you.,Oooh -your rolled 2 but bonus of Peleus sword helped you.
+youhavefoundtotem,You have found artifact,You have found artifact
+legend_wingedsandals,"Return current 
+ adventure cards.
+ Deal 3 new card.","Return current 
+ adventure cards.
+ Deal 3 new card."
+tutorial039,"The second quest is passed, touch on deck to take new 3 encounter.","The second quest is passed, touch on deck to take new 3 encounter."
+plus2crew, +2 crew, +2 crew
+sin_colchiandragon,Dragon,Dragon
+legend_wrath,WRATH,WRATH
+confirm,Confirm,Confirm
+legend_helmofhades,"Move revealed
+ monster to 
+ discard pile","Move revealed
+ monster to 
+ discard pile"
+yoursoulisntwantedhere,Your soul is not wanted here,Your soul is not wanted here
+somethingickyinyourmouth,Something icky in your mouth,Something icky in your mouth
+sin_scylla,Scylla,Scylla
+sin_poseidontrident,Trident,Trident
+sin_sphinx,Sphinx,Sphinx
+canteen,Canteen,Canteen
+aneeriessilencefillsthejungle,An eeries silence fills the jungle,An eeries silence fills the jungle
+tutorial030,"In this quest you will have to fight with sirens, so your crew will be reduced by one. Peleus sword is very helpful treasure, you should get it as soon as possible. Assign 4 crew on peleus sword.","In this quest you will have to fight with sirens, so your crew will be reduced by one. Peleus sword is very helpful treasure, you should get it as soon as possible. Assign 4 crew on peleus sword."
+tutorial044,Gods wrath,Gods wrath
+gamelost,You did not succed and and died in jungle!,You did not succed and and died in jungle!
+tutorial045,"If any Wrath cards have been revealed, the gods have been angered by your hubris. Immediately take two additional cards off the top of the deck and add them to the play field. Touch to take 2 card.","If any Wrath cards have been revealed, the gods have been angered by your hubris. Immediately take two additional cards off the top of the deck and add them to the play field. Touch to take 2 card."
+sin_hera_blessing,HERA'S,HERA'S
+tutorial042,Gods blessing,Gods blessing
+tutorial043,"If any Blessing cards have been revealed, the gods have decided to give you respite. The blessing card will do nothing, but will allow you to focus on the other cards that are revealed.  Touch to continue.","If any Blessing cards have been revealed, the gods have decided to give you respite. The blessing card will do nothing, but will allow you to focus on the other cards that are revealed.  Touch to continue."
+tutorial048,Congratulations.,Congratulations.
+tutorial049,"You have finished the tutorial and learned the basic principles of the game, more can be found in the How to play section. Touch to back in main menu.","You have finished the tutorial and learned the basic principles of the game, more can be found in the How to play section. Touch to back in main menu."
+tutorial046,Assign phase,Assign phase
+tutorial047,The gods were angry with you -in this round will still have to fight three enemies.  Assign crew on your choice on all 3 monster card. Touch to continue.,The gods were angry with you -in this round will still have to fight three enemies.  Assign crew on your choice on all 3 monster card. Touch to continue.
+legend_pansflute,Discard top two  cards from  adventure deck,Discard top two  cards from  adventure deck
+shortage,Shortage,Shortage
+contact,Contact,Contact
+shoot,Shoot,Shoot
+legend_scylla,"Can be ignored. Roll a die - on 5-6,  lose half of crew","Can be ignored. Roll a die - on 5-6,  lose half of crew"
+noundeafetedmonster,"You cannot,no undefeated monsters  on the field","You cannot,no undefeated monsters  on the field"
+correcthealth,Correct health,Correct health
+tutorial040,Activate single-use treasure,Activate single-use treasure
+tutorial041,"To restore crew, use the Cornucopia card.","To restore crew, use the Cornucopia card."
+att,Att,Att
+sin_ketos,Ketos,Ketos
+test,Test,Test
+adventuringtools,Adventuring tools,Adventuring tools
+sin_goldenfleece,Golden fleece,Golden fleece
+bullwhip,Bullwhip,Bullwhip
+sin_sirens,Sirens,Sirens
+retreat,Retreat,Retreat
+illegaltilepositiontempleentranceoutdoor,Illegal. Temple entrance must be free!,Illegal. Temple entrance must be free!
+sin_echidna,Echidna,Echidna
+legend_typhon,ADD 3 - CHIMERA,ADD 3 - CHIMERA
+legend_mirroredshield,"Ignore effects
+ printed on monsters
+ Does not stop ADD","Ignore effects
+ printed on monsters
+ Does not stop ADD"
+youscore,You score,You score
+youfeelasparkofhope,You feel a spark of hope,You feel a spark of hope
+doyouwantactivate,Are you going to activate?,Are you going to activate?
+whatdoyouwant,What do you want?,What do you want?
+creepingleopard,Creeping leopard,Creeping leopard
+back,back,back
+itemstaken,Acquired treasure,Acquired treasure
+scyllawin,"Your ship has flown 
+ 
+ near Scylla. 
+ 
+ Everyone is alive!","Your ship has flown 
+ 
+ near Scylla. 
+ 
+ Everyone is alive!"
+machete,Machete,Machete
+singleuse,SINGLE USE,SINGLE USE
+rate,Rate,Rate
+yougettheitem,You have found item,You have found item
+ignore,Ignore,Ignore
+tutorial,Tutorial,Tutorial
+spendheroicdeed,Spend your heroic deed,Spend your heroic deed
+losehealthwhilerunaway,You lost 1 health while running away,You lost 1 health while running away
+legend_echidna,ADD 2 -NEMEAN LION ADD 4 - SPHINX,ADD 2 -NEMEAN LION ADD 4 - SPHINX
+victory,Victory,Victory
+go,GO-GO,GO-GO
+choosecardtostayontop,Choose a card that  go bottom,Choose a card that  go bottom
+bouldertrap,Boulder trap,Boulder trap
+developer,Programmer,Programmer
+sin_apollobow,Apollo bow,Apollo bow
+discard,Discard,Discard
+youtrytohardnottowetyourself,You try hard not to wet yourself,You try hard not to wet yourself
+nomonsterinwinpile,"There are no
+ 
+ monster in win
+ 
+ pile","There are no
+ 
+ monster in win
+ 
+ pile"
+sliponnastygoo,Slip on nasty goo,Slip on nasty goo
+hp,HP,HP
+tiles,Tiles,Tiles
+number,Number,Number
+legend_nemeanlion,"ADD 3 -CLOAK OF
+ HERACLES","ADD 3 -CLOAK OF
+ HERACLES"
+mainmenu,Main Menu,Main Menu
+ancientmechanism,Ancient mechanism,Ancient mechanism
+choosemonsterforapollobow,"Choose monster 
+  shoot from Apollo bow","Choose monster 
+  shoot from Apollo bow"
+sin_cloakofheracles,Heracles Cloak,Heracles Cloak
+legend_charybdis,"You may sacrifice
+ 1 crew to ignore
+ this card","You may sacrifice
+ 1 crew to ignore
+ this card"
+unlockfull,Buy full game,Buy full game
+sin_wingedsandals,Wing sandals,Wing sandals
+legend_daedaluswing,"Once time per
+ turn you can 
+ reroll one dice","Once time per
+ turn you can 
+ reroll one dice"
+doyouwanttosearchinstorage,"Do you want to search
+ 
+ in storage","Do you want to search
+ 
+ in storage"
+discardoneitem,Discard one item,Discard one item
+sin_harpy,Harpy,Harpy
+sin_typhon,Typhon,Typhon
 sin_zeus_blessing,ZEUS',ZEUS'
+sin_helmofhades,Hades helm,Hades helm
+placenewtile,Rotate new tile,Rotate new tile
+reset,Reset,Reset
+artist,Artists,Artists
+sin_swordofpeleus,Peleus sword,Peleus sword
+sin_blessing,BLESSING,BLESSING
+extras,Extras,Extras
+legend_poseidontrident,"Wrath card works
+ as blessing card","Wrath card works
+ as blessing card"
+sin_chimera,Chimera,Chimera
+resumegame,Resume,Resume
+dontshowthiswindow,"Don't show
+ 
+ this window","Don't show
+ 
+ this window"
+sin_apollo_blessing,APOLLO'S,APOLLO'S
+legend_cerberus,"ADD 3-HADES WRATH
+ ADD 5-HADES WRATH
+ ADD 5-HELM OF HADES","ADD 3-HADES WRATH
+ ADD 5-HADES WRATH
+ ADD 5-HELM OF HADES"
+crew,Crew,Crew
+artistvalue,JregNonk ArtVenture,JregNonk ArtVenture
+discardmonsterbyhadeshelm,"Touch monster to
+ 
+ discard","Touch monster to
+ 
+ discard"
+defeat,Defeat,Defeat
+premium,Premium,Premium
+combatresult,Battle result,Battle result
+illegaltileposition,"Illegal position
+ 
+ room must be connected","Illegal position
+ 
+ room must be connected"
+sin_poseidon_wrath,POSEIDON'S,POSEIDON'S
+share,Share,Share
+yousenseyourinpendingdoom,You sense your in pending doom,You sense your in pending doom
+choosenewdestination,Choose new destination room,Choose new destination room
+legend_sirens,1 crew member may  not be assigned this turn,1 crew member may  not be assigned this turn
+sin_ambrosia,Ambrosia,Ambrosia
+choosemonstertoignoredeadliness,Choose monster to ignore it deadliness,Choose monster to ignore it deadliness
+endgamedescription,All of you crew members die and you have lost  the game,All of you crew members die and you have lost  the game
+sin_mirroredshield,Mirror shield,Mirror shield
+health,Health,Health
+illegaltilepositiontempleentranceindoor,Illegal! Temple ENTRANCES must be connected!,Illegal! Temple ENTRANCES must be connected!
+torch,Torch,Torch
+menu,Menu,Menu
+kill,Kill,Kill
+nounassignedcrew,"No free 
+ 
+ crew member","No free 
+ 
+ crew member"
+sin_orpheuslyre,Orpheus lyre,Orpheus lyre
+sin_cyclops,Cyclop,Cyclop
+hide,Hide,Hide
+textlist,Card list,Card list
+clearvictory,Clear Victory,Clear Victory
+reroll,Reroll,Reroll
+return,Return,Return
+data,Data,Data
+use,Use,Use
+legend_blessing,BLESSING,BLESSING
+resolvedevelopmentcard,Resolve development card,Resolve development card
+sin_cornucopia,Cornucopia,Cornucopia
+legend_orpheuslyre,"Stop a monster in
+ victory pile from
+ level up at the end","Stop a monster in
+ victory pile from
+ level up at the end"
+legend_ketos,ADD3-POSEIDON WRATH  ADD5-POSEIDON WRATH  ADD5-POSEIDON TRIDENT,ADD3-POSEIDON WRATH  ADD5-POSEIDON WRATH  ADD5-POSEIDON TRIDENT
+gobattle,Attack!!! To the battle.,Attack!!! To the battle.
+newgame,New Game,New Game
+continuous,CONTINUOUS,CONTINUOUS
+expeditionjournal,Expedition journal,Expedition journal
+endturn,End Turn,End Turn
+removeoneofitem,Remove one item,Remove one item
+crouchingtiger,Crouching tiger,Crouching tiger
+sin_hydra,Hydra,Hydra
+pause,Pause,Pause
+sin_daedaluswing,Daedal wing,Daedal wing
+hiscores,Hi Scores,Hi Scores
+ignoredead,Ignore Dead,Ignore Dead
+crewlost,Crew lost,Crew lost
+activate,Activate,Activate
+sin_pansflute,Pans flute,Pans flute
+sin_skeleton,Skeleton,Skeleton
+retreatfromzombie,Retreat,Retreat
+finditem,You have found item,You have found item
+howtoplay,How To Play,How To Play
+sin_minotaur,Minotaur,Minotaur
+helpfilename,Data/howtoplay_en.txt,Data/howtoplay_en.txt
+credits,Credits,Credits
+gethealth,You - are -_ get health,You - are -_ get health
+needmoreheroicdeed,"Need more 
+ 
+ heroic deed","Need more 
+ 
+ heroic deed"
+plus3crew, +3 crew, +3 crew
+endgameheader,GAME OVER,GAME OVER
+legend_harpy," +1 difficulty for each  other harpy in play  ADD 3,5 - HARPY"," +1 difficulty for each  other harpy in play  ADD 3,5 - HARPY"
+ok,OK,OK
+win,Win,Win
+disarmtrap,You disarm trap with lockpick,You disarm trap with lockpick
+rest,Rest,Rest
+move,Move,Move
+win1,You won. Congratulations on a job well done!,You won. Congratulations on a job well done!
+legend_cloakofheracles,"- 1 to monster
+ difficulty
+ (minimum 7)","- 1 to monster
+ difficulty
+ (minimum 7)"
+designer,Designer,Designer
+nextround,Next round,Next round
+freshfruit,Fresh fruit,Fresh fruit
+legend_aegisofzeus,Igore deadliness  of the monster (if defeat),Igore deadliness  of the monster (if defeat)
+sin_hades_wrath,HADES',HADES'
+cannotresolveexpeditionjournal,Must not! Only one card in developopment deck.,Must not! Only one card in developopment deck.

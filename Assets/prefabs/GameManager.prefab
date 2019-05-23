@@ -55,3 +55,5 @@ MonoBehaviour:
     type: 2}
   ItemCardPrefab: {fileID: 1008414481078862, guid: 2b5a7eadbe6550047bb83a5ef0673e8d,
     type: 2}
+  BlessingCardPrefab: {fileID: 1859094933921646, guid: 37c7a9eaa50a74b489953a135c27e21f,
+    type: 2}
