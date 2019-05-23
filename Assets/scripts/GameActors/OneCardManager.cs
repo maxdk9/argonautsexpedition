@@ -11,7 +11,7 @@ public class OneCardManager : MonoBehaviour {
 
     public CardManager.Card cardAsset;
     public OneCardManager PreviewManager;
-    private bool m_highlighted = true;
+    private bool m_highlighted = false;
     [Header("Text Component References")]
     public TextMeshProUGUI NameLabel;
     public TextMeshProUGUI DifficultyLabel;
@@ -74,7 +74,16 @@ public class OneCardManager : MonoBehaviour {
         // 3) add mana cost
         if (DescriptionLabel != null)
         {
-            DescriptionLabel.text = LocalizationManager.Localize( Const.carddescr+cardAsset.name);    
+
+            if (cardAsset.type == CardType.blessing || cardAsset.type == CardType.wrath)
+            {
+                DescriptionLabel.text = LocalizationManager.Localize( Const.cardsin+cardAsset.type.ToString());
+            }
+            else
+            {
+                DescriptionLabel.text = LocalizationManager.Localize( Const.carddescr+cardAsset.name);    
+            }
+                
         }
 
         if (DeadlinessLabel != null)

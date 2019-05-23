@@ -45,6 +45,15 @@
             <e p="GameLoader.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
           </e>
+          <e p="dragging" t="Include">
+            <e p="DraggingTest" t="Include">
+              <e p="DraggableTest.cs" t="Include" />
+              <e p="DraggableTestWithActions.cs" t="Include" />
+              <e p="DraggingActionsTest.cs" t="Include" />
+              <e p="DraggingActionsTestReturn.cs" t="Include" />
+              <e p="DragOnTargetTest.cs" t="Include" />
+            </e>
+          </e>
           <e p="GameActors" t="Include">
             <e p="CardActor.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />

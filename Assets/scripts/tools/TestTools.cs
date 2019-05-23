@@ -17,23 +17,10 @@ namespace tools
             
             for (int i = 0; i < 3; i++)
             {
-
-                while (true)
-                {
-                    int r = UnityEngine.Random.Range(0, CardManager.Instance().shuffledList.Count - 1);
-                    c = CardManager.Instance().shuffledList[r];
-                    if (c.type == CardType.blessing || c.type == CardType.wrath)
-                    {
-                        break;
-                    }
-                    
-                }
-
-               
                 
                 
-
                 
+                c = CardManager.Instance().shuffledList[i];
                 
                 GameObject cardprefab = OneCardManager.GetCardPrefab(c);
                 GameObject cardObject =

@@ -127,6 +127,26 @@ namespace Model
                 shuffledList.Add(c);
             }
         }
+
+
+        public Card GetRandomCardFromShuffledList(CardType type)
+        {
+
+            Card result = null;
+            while (true)
+            {
+                int r = UnityEngine.Random.Range(0, shuffledList.Count - 1);
+                Card c = shuffledList[r];
+                if (c.type == type)
+                {
+                    result = c;
+                    break;
+                }
+            }
+
+            return result;
+        }
+        
         
         
     }
