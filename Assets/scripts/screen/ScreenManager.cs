@@ -92,5 +92,20 @@ namespace screen
         {
             return currentType;
         }
+
+
+        public Canvas GetCurrentMainCanvas()
+        {
+            foreach (KeyValuePair<ScreenType,Canvas> keyvalue in screens)
+            {
+                Canvas c = keyvalue.Value;
+                if (c.gameObject.active)
+                {
+                    return c;
+                }
+            }
+
+            return null;
+        }
     }
 }

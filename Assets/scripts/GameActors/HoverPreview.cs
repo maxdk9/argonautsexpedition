@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using screen;
 
 public class HoverPreview: MonoBehaviour
 {
@@ -77,13 +78,22 @@ public class HoverPreview: MonoBehaviour
         previewGameObject.SetActive(true);
         // 4) disable if we have what to disable
         if (TurnThisOffWhenPreviewing!=null)
-            TurnThisOffWhenPreviewing.SetActive(false); 
+            TurnThisOffWhenPreviewing.SetActive(false);
+        
+        //gameObject.transform.SetAsLastSibling();
+       previewGameObject.transform.SetParent(ScreenManager.instance.GetCurrentMainCanvas().transform);
+        previewGameObject.transform.SetAsLastSibling();
+        
+        
+        
         // 5) tween to target position
-        previewGameObject.transform.localPosition = Vector3.zero;
-        previewGameObject.transform.localScale = Vector3.one;
-
-        previewGameObject.transform.DOLocalMove(TargetPosition, 1f).SetEase(Ease.OutQuint);
-        previewGameObject.transform.DOScale(TargetScale, 1f).SetEase(Ease.OutQuint);
+       // previewGameObject.transform.localPosition = Vector3.zero;
+        //previewGameObject.transform.localScale = Vector3.one;
+        
+        
+        previewGameObject.transform.DOMove(TargetPosition, 5f).SetEase(Ease.OutQuint);
+        //previewGameObject.transform.DOScale(TargetScale, 5f).SetEase(Ease.OutQuint);
+        
     }
 
     void StopThisPreview()

@@ -2364,12 +2364,17 @@ Prefab:
     - target: {fileID: 114738951170838828, guid: 198fc0e3a37ff2146ae1bceed8a08053,
         type: 2}
       propertyPath: TargetPosition.x
-      value: 400
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114738951170838828, guid: 198fc0e3a37ff2146ae1bceed8a08053,
         type: 2}
       propertyPath: TargetPosition.y
-      value: -100
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114738951170838828, guid: 198fc0e3a37ff2146ae1bceed8a08053,
+        type: 2}
+      propertyPath: TargetScale
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 198fc0e3a37ff2146ae1bceed8a08053, type: 2}
