@@ -83,7 +83,7 @@ public class HoverPreview: MonoBehaviour
         previewGameObject.transform.localPosition = Vector3.zero;
         previewGameObject.transform.localScale = Vector3.one;
        // gameObject.transform.SetAsLastSibling();
-        gameObject.transform.SetParent(ScreenManager.instance.GetCurrentMainCanvas().transform);
+      //  gameObject.transform.SetParent(ScreenManager.instance.GetCurrentMainCanvas().transform);
         
         previewGameObject.transform.DOLocalMove(TargetPosition, 1f).SetEase(Ease.OutQuint);
         previewGameObject.transform.DOScale(TargetScale, 1f).SetEase(Ease.OutQuint);
