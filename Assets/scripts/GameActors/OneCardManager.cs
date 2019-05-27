@@ -125,21 +125,22 @@ public class OneCardManager : MonoBehaviour {
     {
         if (c.type == CardType.monster)
         {
-            return GameManager.instance.MonsterCardPrefab;
+            return Prefabs.instance.MonsterCardPrefab;
         }
 
         if (c.type == CardType.treasure)
         {
-            return GameManager.instance.ItemCardPrefab;
+            return Prefabs.instance.ItemCardPrefab;
+            
         }
 
         if (c.type == CardType.blessing || c.type == CardType.wrath)
         {
-            return GameManager.instance.BlessingCardPrefab;
+            return Prefabs.instance.BlessingCardPrefab;
         }
         
         
-        return GameManager.instance.MonsterCardPrefab;
+        return Prefabs.instance.MonsterCardPrefab;
     }
 
 

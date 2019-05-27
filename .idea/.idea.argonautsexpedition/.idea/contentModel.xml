@@ -25,6 +25,7 @@
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
+        <e p="Prefabs.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="advancedtools" t="Include">
             <e p="CardVisualScripts" t="Include">
@@ -56,6 +57,7 @@
           </e>
           <e p="GameActors" t="Include">
             <e p="CardActor.cs" t="Include" />
+            <e p="DamageEffect.cs" t="Include" />
             <e p="HoverPreview.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
           </e>

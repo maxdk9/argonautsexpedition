@@ -9,9 +9,7 @@ public class GameManager : MonoBehaviour
 {
 
 	public static GameManager instance = null; // Экземпляр объекта
-	public GameObject MonsterCardPrefab;
-	public GameObject ItemCardPrefab;
-	public GameObject BlessingCardPrefab;
+	
 	
 	
 	
