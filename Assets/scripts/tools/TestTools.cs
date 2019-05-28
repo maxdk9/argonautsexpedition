@@ -20,14 +20,14 @@ namespace tools
                 
                 
                 
-                c = CardManager.Instance().shuffledList[i];
+                /*c = CardManager.Instance().shuffledList[i];
                 
                 GameObject cardprefab = OneCardManager.GetCardPrefab(c);
                 GameObject cardObject =
                     GameObject.Instantiate(cardprefab, testGroup, false);
                 OneCardManager cardManager = cardObject.GetComponent<OneCardManager>();
                 cardManager.cardAsset = c;
-                cardManager.ReadCardFromAsset();
+                cardManager.ReadCardFromAsset();*/
             }
                
                 

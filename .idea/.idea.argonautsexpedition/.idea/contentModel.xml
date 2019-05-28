@@ -58,6 +58,7 @@
           <e p="GameActors" t="Include">
             <e p="CardActor.cs" t="Include" />
             <e p="DamageEffect.cs" t="Include" />
+            <e p="DamageEffectTest.cs" t="Include" />
             <e p="HoverPreview.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
           </e>

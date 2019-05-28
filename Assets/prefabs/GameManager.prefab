@@ -57,3 +57,5 @@ MonoBehaviour:
     type: 2}
   BlessingCardPrefab: {fileID: 1859094933921646, guid: 37c7a9eaa50a74b489953a135c27e21f,
     type: 2}
+  DamageEffectPrefab: {fileID: 1012049543433742, guid: debda3e7a58f19e488b85a36db0aa966,
+    type: 2}

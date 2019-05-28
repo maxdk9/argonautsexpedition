@@ -19,7 +19,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4490353254294406}
-  m_Layer: 12
+  - component: {fileID: 114425502063220742}
+  m_Layer: 13
   m_Name: DamageEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +39,7 @@ GameObject:
   - component: {fileID: 114681391490747530}
   - component: {fileID: 114315572565600794}
   - component: {fileID: 225862010914710030}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +57,7 @@ GameObject:
   - component: {fileID: 222971741245287136}
   - component: {fileID: 114615642250589656}
   - component: {fileID: 114783568811435542}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +75,7 @@ GameObject:
   - component: {fileID: 222694799199776154}
   - component: {fileID: 114289819395874932}
   - component: {fileID: 114726055203723884}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: Splash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +139,37 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114425502063220742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1012049543433742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765f50f61e6f78d47b8cef7f98380fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Splashes:
+  - {fileID: 21300000, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300002, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300004, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300006, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300008, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300010, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300012, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300014, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300016, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300018, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300020, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300022, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300024, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300026, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300028, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  - {fileID: 21300030, guid: 28bc49c091de65b4f938fd8384ae4ec1, type: 3}
+  DamageImage: {fileID: 114289819395874932}
+  cg: {fileID: 225862010914710030}
+  AmountText: {fileID: 114615642250589656}
 --- !u!114 &114615642250589656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,7 +238,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2, y: -1}
   m_UseGraphicAlpha: 1
-  m_circleCount: 2
+  m_circleCount: 3
   m_firstSample: 4
   m_sampleIncrement: 2
 --- !u!114 &114783568811435542
@@ -314,7 +346,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &225862010914710030
 CanvasGroup:

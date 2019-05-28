@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Prefabs : MonoBehaviour {
-	public GameObject MonsterCardPrefab;
-	public GameObject ItemCardPrefab;
-	public GameObject BlessingCardPrefab;
-	public GameObject DamageEffectPrefab;
+	
 
 	
 	
