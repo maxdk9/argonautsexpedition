@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour {
 	public void TestGame()
 	{
 		ScreenManager.instance.Show(ScreenManager.ScreenType.Testscreen);
-		TestTools.TestCardList();
+		TestTools.TestCardMove();
 	}
 	
 	

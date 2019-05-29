@@ -40,6 +40,9 @@
               <e p="Outline8.cs" t="Include" />
             </e>
           </e>
+          <e p="command" t="Include">
+            <e p="Command.cs" t="Include" />
+          </e>
           <e p="common" t="Include">
             <e p="CommonController.cs" t="Include" />
             <e p="Const.cs" t="Include" />
@@ -60,6 +63,7 @@
             <e p="DamageEffect.cs" t="Include" />
             <e p="DamageEffectTest.cs" t="Include" />
             <e p="HoverPreview.cs" t="Include" />
+            <e p="MessageManager.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
           </e>
           <e p="Localization" t="Include">

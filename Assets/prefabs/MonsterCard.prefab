@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224346765793003130}
   - component: {fileID: 222482735005637470}
   - component: {fileID: 114324904735394750}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: deadlinessImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,13 +37,13 @@ GameObject:
   m_Component:
   - component: {fileID: 224361567936489212}
   - component: {fileID: 114547749092710180}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: MonsterCardPreview
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1059971181576492
 GameObject:
   m_ObjectHideFlags: 1
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 224508378970601400}
   - component: {fileID: 222489401653332654}
   - component: {fileID: 114354337369164380}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 114812228740265898}
   - component: {fileID: 114322702892212324}
   - component: {fileID: 114738951170838828}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: MonsterCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 224897602837930048}
   - component: {fileID: 222031164521487158}
   - component: {fileID: 114513134720721132}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: namelabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 224535482324129732}
   - component: {fileID: 222211284144741404}
   - component: {fileID: 114354114638136910}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 224361772588086896}
   - component: {fileID: 222491511966696356}
   - component: {fileID: 114895803052555474}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: descriptionLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224781880638970450}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 224043670071282892}
   - component: {fileID: 222421988633389450}
   - component: {fileID: 114024161407229154}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 224529187054496778}
   - component: {fileID: 222672504115569812}
   - component: {fileID: 114829808606934308}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 224089032372528866}
   - component: {fileID: 222808020433947314}
   - component: {fileID: 114853529357741864}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 224080287579714586}
   - component: {fileID: 222363033515828756}
   - component: {fileID: 114742923923382192}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: deadlinessImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 224513380728092894}
   - component: {fileID: 222025000274884470}
   - component: {fileID: 114454763697811818}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: difficultyLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 224026013812774532}
   - component: {fileID: 222533853922783044}
   - component: {fileID: 114952333302588664}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224931973076041628}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224029637985637476}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 224111681917279796}
   - component: {fileID: 222491823355712828}
   - component: {fileID: 114952510825894978}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 224260930463176328}
   - component: {fileID: 222602783040734046}
   - component: {fileID: 114147164140842604}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: difficultyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 224128062649214432}
   - component: {fileID: 222853885350497830}
   - component: {fileID: 114602015611154330}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 223535746490427594}
   - component: {fileID: 114586431126076574}
   - component: {fileID: 114719829836167116}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 224885095235413702}
   - component: {fileID: 222289313104639318}
   - component: {fileID: 114523118345446798}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: deadlinessLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 224795229081722684}
   - component: {fileID: 222328757872490860}
   - component: {fileID: 114504797126755608}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: deadlinessLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224155329543382162}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: FacePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 224365528811484726}
   - component: {fileID: 222988257775863428}
   - component: {fileID: 114994854303294198}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: difficultyLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 224797222844962816}
   - component: {fileID: 222703674497840406}
   - component: {fileID: 114817859918507818}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: descriptionLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 224327668598836400}
   - component: {fileID: 222482172659065956}
   - component: {fileID: 114120070643050874}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: namelabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 223956254400969916}
   - component: {fileID: 114611852598983750}
   - component: {fileID: 114033334144376750}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   - component: {fileID: 224687202470199012}
   - component: {fileID: 222743340773641860}
   - component: {fileID: 114392622417902086}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 224427399660989684}
   - component: {fileID: 222475764435959786}
   - component: {fileID: 114196954303847954}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardimage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 224198865164189862}
   - component: {fileID: 222766740990867820}
   - component: {fileID: 114579828397619798}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: imageframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 224260290027076906}
   - component: {fileID: 222891708445513406}
   - component: {fileID: 114388034820607936}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 224931502587618346}
   - component: {fileID: 222937158468188062}
   - component: {fileID: 114664595710009298}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: difficultyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 224036133518853986}
   - component: {fileID: 222491365723522126}
   - component: {fileID: 114593124722701032}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 224926796647628876}
   - component: {fileID: 222009404978904212}
   - component: {fileID: 114321911789111508}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardimage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   - component: {fileID: 224235025126651612}
   - component: {fileID: 222640349061871600}
   - component: {fileID: 114802077890690512}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: imageframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -611,7 +611,7 @@ GameObject:
   - component: {fileID: 224752700606877942}
   - component: {fileID: 222845471239338516}
   - component: {fileID: 114129974766432210}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -626,7 +626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224189660847050322}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -784,11 +784,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1165,11 +1165,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1278,11 +1278,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1392,11 +1392,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1505,11 +1505,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1895,11 +1895,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2063,11 +2063,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2230,11 +2230,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2481,7 +2481,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1386958927
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &224026013812774532
@@ -2592,7 +2592,7 @@ RectTransform:
   m_GameObject: {fileID: 1065523122443948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_Children:
   - {fileID: 224482654235733666}
   - {fileID: 224155329543382162}
@@ -2600,9 +2600,9 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: 78.42195}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224080287579714586

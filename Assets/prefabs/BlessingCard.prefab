@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224253220103499782}
   - component: {fileID: 222759185977175784}
   - component: {fileID: 114217422365001806}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: descriptionLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 224099317817502396}
   - component: {fileID: 222668241156752310}
   - component: {fileID: 114529935106447990}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardframe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 224842517175089434}
   - component: {fileID: 222110772469290322}
   - component: {fileID: 114092355813942968}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224899988671063732}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: FacePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224080199086674478}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224972528775255826}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardFace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 224365026143506284}
   - component: {fileID: 222368742370417010}
   - component: {fileID: 114478268900859794}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardimage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 224623666826301284}
   - component: {fileID: 222757586121165934}
   - component: {fileID: 114837888740041116}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 224102522003766166}
   - component: {fileID: 222215363616864362}
   - component: {fileID: 114171047819870938}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 65805554596318600}
   - component: {fileID: 114000880487940712}
   - component: {fileID: 114724464038139784}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: BlessingCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 224399153767117764}
   - component: {fileID: 222988516347810662}
   - component: {fileID: 114906356427508488}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: cardbackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 224747466127129204}
   - component: {fileID: 222959319660907108}
   - component: {fileID: 114796859055249520}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: namelabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 223837753543223260}
   - component: {fileID: 114302070272775410}
   - component: {fileID: 114802693876703688}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: CardBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -778,7 +778,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1386958927
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &224080199086674478
@@ -917,15 +917,15 @@ RectTransform:
   m_GameObject: {fileID: 1859094933921646}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000383, y: 1.0000383, z: 1.0000383}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 1.0000384}
   m_Children:
   - {fileID: 224795329117336720}
   - {fileID: 224899988671063732}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

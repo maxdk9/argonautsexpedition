@@ -23,7 +23,15 @@ public class BetterCardRotation : MonoBehaviour {
     // if this is true, our players currently see the card Back
     private bool showingBack = false;
 
-	// Update is called once per frame
+    private HoverPreview preview;
+
+    private void Awake()
+    {
+        preview = GetComponent<HoverPreview>();
+    }
+
+
+    // Update is called once per frame
 	void Update () 
     {
         // Raycast from Camera to a target point on the face of the card
@@ -48,12 +56,20 @@ public class BetterCardRotation : MonoBehaviour {
                 // show the back side
                 CardFront.gameObject.SetActive(false);
                 CardBack.gameObject.SetActive(true);
+                if (preview)
+                {
+                    preview.ThisPreviewEnabled = false;
+                }
             }
             else
             {
                 // show the front side
                 CardFront.gameObject.SetActive(true);
                 CardBack.gameObject.SetActive(false);
+                if (preview)
+                {
+                    preview.ThisPreviewEnabled = true;
+                }
             }
 
         }
