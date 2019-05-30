@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Runtime.ConstrainedExecution;
+using System.Security.Cryptography.X509Certificates;
 using Assets.SimpleLocalization;
 using common;
 using Model;
@@ -7,8 +9,15 @@ using TMPro;
 using UnityEngine.UI;
 
 // holds the refs to all the Text, Images on the card
-public class OneCardManager : MonoBehaviour {
+public class OneCardManager : MonoBehaviour
+{
 
+
+    public static int CardWidth = 360;
+    public static int CardHeight = 504;
+    
+    
+    
     public CardManager.Card cardAsset;
     public OneCardManager PreviewManager;
     private bool m_highlighted = false;
