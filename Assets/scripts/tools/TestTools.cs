@@ -70,6 +70,8 @@ namespace tools
 
             CardManager.Card c;
 
+            Sequence s = DOTween.Sequence();
+            
             for (int i = 0; i < CardManager.Instance().shuffledList.Count; i++)
             {
                 
@@ -77,11 +79,17 @@ namespace tools
                 c = CardManager.Instance().shuffledList[i];
                 
                 GameObject cardObject = OneCardManager.CreateOneCardManager(c, cardPoint);
+
+                s.SetDelay( .1f);
+                s.Append(cardObject.transform.DOMove(Visual.instance.CardDeckFrame.transform.position, duration));
+                s.Join(cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), duration));
+                s.onComplete = () => { cardObject.transform.SetParent(Visual.instance.CardDeckFrame.transform); };
                 
-                MoveCardToAnotherParent(cardObject,Visual.instance.CardDeckFrame.transform);
                 
                 
             }
+
+            s.Play();
         }
         
         

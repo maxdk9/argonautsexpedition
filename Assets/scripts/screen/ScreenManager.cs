@@ -37,7 +37,6 @@ namespace screen
         
         private void InitializeManager()
         {
-
             MainMenuCanvas = GameObject.Find("MainMenuCanvas").GetComponent<Canvas>();
             OptionsCanvas = GameObject.Find("OptionsCanvas").GetComponent<Canvas>();
             CreditsCanvas = GameObject.Find("CreditsCanvas").GetComponent<Canvas>();
@@ -45,10 +44,8 @@ namespace screen
             RollDiceCanvas = GameObject.Find("RollDiceCanvas").GetComponent<Canvas>();
             TestCanvas = GameObject.Find("TestCanvas").GetComponent<Canvas>();
             
-            
             screens.Add(ScreenType.Deckgame,DeckgameCanvas);  
             screens.Add(ScreenType.Credits,CreditsCanvas);
-
             screens.Add(ScreenType.Options,OptionsCanvas);  
             screens.Add(ScreenType.Mainmenu,MainMenuCanvas);
             screens.Add(ScreenType.Rolldice,RollDiceCanvas);
@@ -76,20 +73,26 @@ namespace screen
             {
                 if (keyvalue.Key == screenType)
                 {
-                    keyvalue.Value.gameObject.SetActive(true);
+                    keyvalue.Value.enabled = true;
                     currentType = screenType;
+                    
                 }
                 else
                 {
-                    keyvalue.Value.gameObject.SetActive(false);
-                    if (keyvalue.Value == DeckgameCanvas)
-                    {
-                        Visual.instance.gameObject.SetActive(true);
-                    }
+                    keyvalue.Value.enabled=false;
                 }
+                
             }
+
+            currentType = screenType;
+
+            ShowVisualObjects();
         }
 
+        private void ShowVisualObjects()
+        {
+            Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame|| currentType==ScreenType.Testscreen);
+        }
 
 
         public ScreenType CurrentType()

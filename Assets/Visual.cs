@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using screen;
 using UnityEngine;
 
 public class Visual : MonoBehaviour
@@ -16,7 +17,8 @@ public class Visual : MonoBehaviour
 	private void Awake()
 	{
 		instance = this;
-		instance.gameObject.SetActive(false);
+	
+		
 	}
 
 
