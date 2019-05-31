@@ -50,22 +50,34 @@ namespace tools
             {
                 
                 GameObject cardPoint = Visual.instance.CardPointOutside;
-
                 c = CardManager.Instance().shuffledList[i];
-                GameObject cardprefab = OneCardManager.GetCardPrefab(c);
-                GameObject cardObject = GameObject.Instantiate(cardprefab,cardPoint.transform,false);
-                cardObject.transform.localScale=Vector3.one;
-                cardObject.transform.localPosition=new Vector3(0,0,Visual.instance.transform.position.y);
-                cardObject.transform.SetParent(null);
-                cardObject.SetActive(true);
-                //cardObject.transform.localPosition=Vector3.zero;
-            
-            
-            
-                OneCardManager cardManager = cardObject.GetComponent<OneCardManager>();
-                cardManager.cardAsset = c;
-                cardManager.ReadCardFromAsset();
-            
+                
+                GameObject cardObject = OneCardManager.CreateOneCardManager(c, cardPoint);
+                
+                MoveCardToAnotherParent(cardObject,Visual.instance.CardDeckFrame.transform);
+                
+                
+            }
+        }
+
+
+        public static void TestFillDeck()
+        {
+            CardManager.Instance().Init();
+            CardManager.Instance().Shuffle();
+
+            float duration = 1f;
+
+            CardManager.Card c;
+
+            for (int i = 0; i < CardManager.Instance().shuffledList.Count; i++)
+            {
+                
+                GameObject cardPoint = Visual.instance.CardPointOutside;
+                c = CardManager.Instance().shuffledList[i];
+                
+                GameObject cardObject = OneCardManager.CreateOneCardManager(c, cardPoint);
+                
                 MoveCardToAnotherParent(cardObject,Visual.instance.CardDeckFrame.transform);
                 
                 
@@ -75,17 +87,16 @@ namespace tools
         
         
         
-        
         public static void MoveCardToAnotherParent ( GameObject cardObject, Transform partyStack)
         {
-            float duration = 1f;
+            float duration = .5f;
             
 
             cardObject.transform.SetParent(null);
             Sequence s = DOTween.Sequence();
             
             
-            s.Append(cardObject.transform.DOMove(Visual.instance.CardPoint.transform.position, duration));
+            s.Append(cardObject.transform.DOMove(partyStack.position, duration));
             s.Join(cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), duration));
             s.Play();
             s.onComplete = () => { cardObject.transform.SetParent(partyStack); };

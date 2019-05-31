@@ -16,6 +16,7 @@ public class Visual : MonoBehaviour
 	private void Awake()
 	{
 		instance = this;
+		instance.gameObject.SetActive(false);
 	}
 
 

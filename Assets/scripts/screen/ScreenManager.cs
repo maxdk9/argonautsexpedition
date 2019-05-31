@@ -82,6 +82,10 @@ namespace screen
                 else
                 {
                     keyvalue.Value.gameObject.SetActive(false);
+                    if (keyvalue.Value == DeckgameCanvas)
+                    {
+                        Visual.instance.gameObject.SetActive(true);
+                    }
                 }
             }
         }

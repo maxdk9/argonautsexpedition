@@ -153,6 +153,20 @@ public class OneCardManager : MonoBehaviour
     }
 
 
+    public static GameObject CreateOneCardManager(CardManager.Card c,GameObject point)
+    {
+        GameObject cardprefab = OneCardManager.GetCardPrefab(c);
+        GameObject cardObject = GameObject.Instantiate(cardprefab,point.transform,false);
+        cardObject.transform.localScale=Vector3.one;
+        cardObject.transform.localPosition=new Vector3(0,0,Visual.instance.transform.position.y);
+        cardObject.transform.SetParent(null);
+        cardObject.SetActive(true);
+        OneCardManager cardManager = cardObject.GetComponent<OneCardManager>();
+        cardManager.cardAsset = c;
+        cardManager.ReadCardFromAsset();
+        return cardObject;
+    }
+
     private void Update()
     {
         
