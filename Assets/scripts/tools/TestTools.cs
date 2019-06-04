@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using DG.Tweening;
 using Model;
 using screen;
@@ -66,13 +67,17 @@ namespace tools
             CardManager.Instance().Init();
             CardManager.Instance().Shuffle();
 
-            float duration = 1f;
+            float duration = .5f;
 
             CardManager.Card c;
 
             Sequence s = DOTween.Sequence();
             
-            for (int i = 0; i < CardManager.Instance().shuffledList.Count; i++)
+            
+            
+            List<GameObject> shuffledCards=new List<GameObject>();
+            //for (int i = 0; i < CardManager.Instance().shuffledList.Count; i++)
+            for (int i = 0; i < 5; i++)
             {
                 
                 GameObject cardPoint = Visual.instance.CardPointOutside;
@@ -80,21 +85,40 @@ namespace tools
                 
                 GameObject cardObject = OneCardManager.CreateOneCardManager(c, cardPoint);
 
-                s.SetDelay( .1f);
-                s.Append(cardObject.transform.DOMove(Visual.instance.CardDeckFrame.transform.position, duration));
+                SetCanvasOrderInObject(cardObject, i);
+                
+                
+                shuffledCards.Add(cardObject);
+                
+                s.Append(cardObject.transform.DOMove(Visual.instance.CardDeckFrame.transform.position, duration)).SetEase(Ease.Flash);
                 s.Join(cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), duration));
-                s.onComplete = () => { cardObject.transform.SetParent(Visual.instance.CardDeckFrame.transform); };
+                
                 
                 
                 
             }
+            s.onComplete = () =>
+            {
+                foreach (GameObject go in shuffledCards)
+                {
+                    go.transform.SetParent(Visual.instance.CardDeckFrame.transform);    
+                }
+                
+            };
 
             s.Play();
         }
-        
-        
-        
-        
+
+        private static void SetCanvasOrderInObject(GameObject gameObject, int i)
+        {
+            Canvas[] canvases = gameObject.GetComponentsInChildren<Canvas>();
+            foreach (Canvas canvas in canvases)
+            {
+                canvas.sortingOrder = i;
+            }
+        }
+
+
         public static void MoveCardToAnotherParent ( GameObject cardObject, Transform partyStack)
         {
             float duration = .5f;

@@ -87,8 +87,15 @@ namespace screen
             currentType = screenType;
 
             ShowVisualObjects();
+            ShowDeckBackground();
         }
 
+        private void ShowDeckBackground()
+        {
+            DeckgameCanvas.enabled =( currentType != ScreenType.Mainmenu);
+        }
+        
+        
         private void ShowVisualObjects()
         {
             Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame|| currentType==ScreenType.Testscreen);
