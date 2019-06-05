@@ -65,13 +65,24 @@
             <e p="HoverPreview.cs" t="Include" />
             <e p="MessageManager.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
+            <e p="StateComponent.cs" t="Include" />
           </e>
           <e p="Localization" t="Include">
             <e p="LocalizedTextMeshPro.cs" t="Include" />
           </e>
           <e p="Model" t="Include">
             <e p="CardManager.cs" t="Include" />
-            <e p="GamePhase.cs" t="Include" />
+            <e p="Effect.cs" t="Include" />
+            <e p="Game.cs" t="Include" />
+            <e p="HeroicDeed.cs" t="Include" />
+            <e p="stmanager" t="Include">
+              <e p="GamePhase.cs" t="Include" />
+              <e p="iState.cs" t="Include" />
+              <e p="StateManager.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="Draw3QuestCard.cs" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="screen" t="Include">
             <e p="MainMenu.cs" t="Include" />
@@ -83,6 +94,7 @@
             <e p="JsonHelper.cs" t="Include" />
             <e p="LocalizationLoad.cs" t="Include" />
             <e p="Preferences.cs" t="Include" />
+            <e p="SaveLoadHelper.cs" t="Include" />
             <e p="TestTools.cs" t="Include" />
           </e>
         </e>

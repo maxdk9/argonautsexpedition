@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Model;
@@ -62,7 +63,7 @@ namespace tools
         }
 
 
-        public static void TestFillDeck()
+        public static void TestFillDeckOld()
         {
             CardManager.Instance().Init();
             CardManager.Instance().Shuffle();
@@ -72,6 +73,8 @@ namespace tools
             CardManager.Card c;
 
             Sequence s = DOTween.Sequence();
+            
+            
             
             
             
@@ -109,6 +112,60 @@ namespace tools
             s.Play();
         }
 
+        
+        public static void TestFillDeck()
+        {
+            
+
+
+
+            ScreenManager.instance.StartCoroutine(FillDeckCoroutine());
+            
+            
+            
+
+            
+        }
+
+        private static IEnumerator FillDeckCoroutine()
+        {
+            CardManager.Instance().Init();
+            CardManager.Instance().Shuffle();
+
+            float duration = .5f;
+
+            CardManager.Card c;
+            
+            
+            List<GameObject> shuffledCards=new List<GameObject>();
+            //for (int i = 0; i < CardManager.Instance().shuffledList.Count; i++)
+
+
+            int shuffledCardNumber = 30;
+
+            float smallAmountOfTime = .01f;
+            float moveCardDuration = 0.5f;
+            for (int i = 0; i < shuffledCardNumber; i++)
+            {
+                
+                GameObject cardPoint = Visual.instance.CardPointOutside;
+                c = CardManager.Instance().shuffledList[i];
+                GameObject cardObject = OneCardManager.CreateOneCardManager(c, cardPoint);
+                SetCanvasOrderInObject(cardObject, i);
+                
+                MoveCardToAnotherParent(cardObject,Visual.instance.CardDeckFrame.transform);
+                //shuffledCards.Add(cardObject);
+                
+                yield return new WaitForSeconds(smallAmountOfTime);
+                
+                
+            };
+            yield return new WaitForSeconds(shuffledCardNumber*smallAmountOfTime+moveCardDuration);
+            Debug.Log("End FillDeckCoroutine");
+            
+        }
+
+
         private static void SetCanvasOrderInObject(GameObject gameObject, int i)
         {
             Canvas[] canvases = gameObject.GetComponentsInChildren<Canvas>();
@@ -121,17 +178,11 @@ namespace tools
 
         public static void MoveCardToAnotherParent ( GameObject cardObject, Transform partyStack)
         {
-            float duration = .5f;
-            
-
+            float TimeMovement = .5f;
             cardObject.transform.SetParent(null);
-            Sequence s = DOTween.Sequence();
+            cardObject.transform.DOMove(partyStack.position, TimeMovement);
             
-            
-            s.Append(cardObject.transform.DOMove(partyStack.position, duration));
-            s.Join(cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), duration));
-            s.Play();
-            s.onComplete = () => { cardObject.transform.SetParent(partyStack); };
+            cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), TimeMovement).onStepComplete=()=>{cardObject.transform.SetParent(partyStack);};
 
 
         }

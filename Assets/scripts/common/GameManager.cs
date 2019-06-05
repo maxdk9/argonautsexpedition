@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GameActors;
 using Model;
 using screen;
 using tools;
@@ -34,5 +35,22 @@ public class GameManager : MonoBehaviour
 		
 		CardManager.Instance().Init();
 		ScreenManager.instance.Show(ScreenManager.ScreenType.Mainmenu);
+	}
+
+	public void SetCurrentState(GamePhase type)
+	{
+		throw new System.NotImplementedException();
+	}
+
+	
+	
+
+	public void RemoveStateComponentsFromActor()
+	{
+		StateComponent[] stateComponents = ScreenManager.instance.DeckgameCanvas.GetComponentsInChildren<StateComponent>();
+		foreach (StateComponent sc in stateComponents)
+		{
+			GameObject.Destroy(sc);
+		}
 	}
 }

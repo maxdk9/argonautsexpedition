@@ -11,10 +11,6 @@ namespace Model
 {
     public class CardManager
     {
-
-
-
-
 	    [System.Serializable]
         public class Card:ScriptableObject
         {
@@ -37,7 +33,6 @@ namespace Model
             public int [] deadliness;
             [NonSerialized]
             public Sprite front;
-        
         }
 
         private static CardManager instance;
@@ -49,7 +44,6 @@ namespace Model
                 instance=new CardManager();
                 
             }
-
             return instance;
         }
 
@@ -62,6 +56,7 @@ namespace Model
         {
             LoadDictionary();
         }
+        
 
         private void LoadDictionary()
         {

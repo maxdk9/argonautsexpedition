@@ -12,7 +12,8 @@ namespace Model
         Battle,
         EndTurn,
         DeckWin, 
-        ScyllaEncounter
+        ScyllaEncounter,
+	    ResumeGame
     }
     
     public enum CardType{
