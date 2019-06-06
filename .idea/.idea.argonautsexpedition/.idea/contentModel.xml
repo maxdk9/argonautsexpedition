@@ -76,11 +76,23 @@
             <e p="Game.cs" t="Include" />
             <e p="HeroicDeed.cs" t="Include" />
             <e p="stmanager" t="Include">
+              <e p="GameLogicEvents.cs" t="Include" />
               <e p="GamePhase.cs" t="Include" />
               <e p="iState.cs" t="Include" />
               <e p="StateManager.cs" t="Include" />
               <e p="States" t="Include">
+                <e p="Battle.cs" t="Include" />
+                <e p="BattleView.cs" t="Include" />
+                <e p="CrewAssignment.cs" t="Include" />
+                <e p="DeckWin.cs" t="Include" />
                 <e p="Draw3QuestCard.cs" t="Include" />
+                <e p="DrawWrathCards.cs" t="Include" />
+                <e p="EndTurn.cs" t="Include" />
+                <e p="Lose.cs" t="Include" />
+                <e p="ResumeGame.cs" t="Include" />
+                <e p="ScyllaEncounter.cs" t="Include" />
+                <e p="StartNewTurn.cs" t="Include" />
+                <e p="Win.cs" t="Include" />
               </e>
             </e>
           </e>

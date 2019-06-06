@@ -33,8 +33,17 @@ public class StateManager
 	{
 		dictionary=new Dictionary<GamePhase, iState>();
 		dictionary.Add(GamePhase.Draw3QuestCards,Draw3QuestCard.ourInstance);
-		
-		
+		dictionary.Add(GamePhase.Battle,Battle.ourInstance);		
+		dictionary.Add(GamePhase.Lose,Lose.ourInstance);
+		dictionary.Add(GamePhase.Win,Win.ourInstance);
+		dictionary.Add(GamePhase.BattleView,BattleView.ourInstance);
+		dictionary.Add(GamePhase.CrewAssignment,CrewAssignment.ourInstance);
+		dictionary.Add(GamePhase.DeckWin,DeckWin.ourInstance);
+		dictionary.Add(GamePhase.EndTurn,EndTurn.ourInstance);
+		dictionary.Add(GamePhase.ResumeGame,ResumeGame.ourInstance);
+		dictionary.Add(GamePhase.ScyllaEncounter,ScyllaEncounter.ourInstance);
+		dictionary.Add(GamePhase.DrawWrathCards,DrawWrathCards.ourInstance);
+		dictionary.Add(GamePhase.StartNewTurn,StartNewTurn.ourInstance);
 		
 	}
 
@@ -66,16 +75,13 @@ public class StateManager
 		{
 			try
 			{
-				String commentary = "State manager go to the state " + type.ToString();
-
-				
+				String commentary = "State manager go to the state " + type.ToString();				
 			}
 			catch (Exception e)
 			{
-				
+				Debug.Log(e.Message);
 			}
 			GameLogicEvents.CopyGameActorsToCurrentGame();
-			
 			GameManager.instance.SetCurrentState( type);
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);
 			GameManager.instance.RemoveStateComponentsFromActor();
