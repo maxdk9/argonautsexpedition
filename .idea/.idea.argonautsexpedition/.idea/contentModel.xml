@@ -22,6 +22,8 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="Dice.cs" t="Include" />
+        <e p="DiceSide.cs" t="Include" />
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
