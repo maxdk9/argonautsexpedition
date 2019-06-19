@@ -9,7 +9,7 @@ using TMPro;
 using UnityEngine.UI;
 
 // holds the refs to all the Text, Images on the card
-public class OneCardManager : MonoBehaviour
+public class OneCardManager : DestroyableEntity
 {
 
 

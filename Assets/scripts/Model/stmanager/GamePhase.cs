@@ -13,7 +13,8 @@ namespace Model
         EndTurn,
         DeckWin, 
         ScyllaEncounter,
-	    ResumeGame
+	    ResumeGame,
+	    StartNewGame
     }
     
     public enum CardType{

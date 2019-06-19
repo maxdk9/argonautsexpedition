@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using DG.Tweening;
+using Model;
 using screen;
 
-public class HoverPreview: MonoBehaviour
+public class HoverPreview: DestroyableEntity
 {
     // PUBLIC FIELDS
     public GameObject TurnThisOffWhenPreviewing;  // if this is null, will not turn off anything 

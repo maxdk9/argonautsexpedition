@@ -33,6 +33,8 @@ namespace Model
             public int [] deadliness;
             [NonSerialized]
             public Sprite front;
+
+            
         }
 
         private static CardManager instance;
@@ -141,8 +143,16 @@ namespace Model
 
             return result;
         }
-        
-        
+
+        public static void ResetCard(Card card)
+        {
+            card.level = 0;
+            card.ignore = false;
+            card.crewNumber = 0;
+            card.resolved = ResolvedType.notresolved;
+            card.markApolloBow = false;
+            card.markOrpheusLyre = false;
+        }
         
     }
 }

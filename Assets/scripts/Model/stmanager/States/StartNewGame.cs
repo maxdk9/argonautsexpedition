@@ -1,22 +1,24 @@
 namespace Model.States
 {
-    public class StartNewTurn:iState
+    public class StartNewGame:iState
     {
-        public static StartNewTurn ourInstance=new StartNewTurn();
+        public static StartNewGame ourInstance=new StartNewGame();
         
         public void Execute(double time)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+           
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
+           
         }
     }
+    
+    
 }

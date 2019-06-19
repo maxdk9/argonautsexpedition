@@ -42,8 +42,27 @@ public class GameManager : MonoBehaviour
 		throw new System.NotImplementedException();
 	}
 
-	
-	
+
+
+	public void StartNewGame()
+	{
+		DestroyOldCardObjects();
+		Game.instance.StartNewGame();
+		StateManager.getInstance().MoveNext(GamePhase.StartNewGame);
+
+	}
+
+	private void DestroyOldCardObjects()
+	{
+		DestroyableEntity[] entities = ScreenManager.instance.DeckgameCanvas.GetComponents<DestroyableEntity>();
+
+		foreach (DestroyableEntity entity in entities)
+		{
+			entity.Kill();
+		}
+		
+	}
+
 
 	public void RemoveStateComponentsFromActor()
 	{

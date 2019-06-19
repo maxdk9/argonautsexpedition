@@ -7,5 +7,6 @@ namespace common
         
         public static  string carddescr = "legend_";
         public static string cardsin="sin_";
+        
     }
 }

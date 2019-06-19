@@ -44,6 +44,7 @@ public class StateManager
 		dictionary.Add(GamePhase.ScyllaEncounter,ScyllaEncounter.ourInstance);
 		dictionary.Add(GamePhase.DrawWrathCards,DrawWrathCards.ourInstance);
 		dictionary.Add(GamePhase.StartNewTurn,StartNewTurn.ourInstance);
+		dictionary.Add(GamePhase.StartNewGame,StartNewGame.ourInstance);
 		
 	}
 
@@ -64,10 +65,7 @@ public class StateManager
 
 		if (currentState != null)
 		{
-			
-			
 			Debug.Log("MoveNext first state "+currentState.ToString());
-            
 			currentState.OnExit();
 		}
 
@@ -81,6 +79,7 @@ public class StateManager
 			{
 				Debug.Log(e.Message);
 			}
+			
 			GameLogicEvents.CopyGameActorsToCurrentGame();
 			GameManager.instance.SetCurrentState( type);
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);

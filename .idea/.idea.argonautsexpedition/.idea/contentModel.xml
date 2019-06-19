@@ -64,6 +64,7 @@
             <e p="CardActor.cs" t="Include" />
             <e p="DamageEffect.cs" t="Include" />
             <e p="DamageEffectTest.cs" t="Include" />
+            <e p="DestroyableEntity.cs" t="Include" />
             <e p="HoverPreview.cs" t="Include" />
             <e p="MessageManager.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
@@ -93,6 +94,7 @@
                 <e p="Lose.cs" t="Include" />
                 <e p="ResumeGame.cs" t="Include" />
                 <e p="ScyllaEncounter.cs" t="Include" />
+                <e p="StartNewGame.cs" t="Include" />
                 <e p="StartNewTurn.cs" t="Include" />
                 <e p="Win.cs" t="Include" />
               </e>
@@ -109,6 +111,10 @@
             <e p="LocalizationLoad.cs" t="Include" />
             <e p="Preferences.cs" t="Include" />
             <e p="SaveLoadHelper.cs" t="Include" />
+            <e p="test" t="Include">
+              <e p="Receiver.cs" t="Include" />
+              <e p="Sender.cs" t="Include" />
+            </e>
             <e p="TestTools.cs" t="Include" />
           </e>
         </e>

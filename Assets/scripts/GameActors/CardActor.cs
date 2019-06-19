@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 namespace GameActors
 {
-    public class CardActor :MonoBehaviour
-    {
+    public class CardActor :DestroyableEntity    {
+        
         public CardManager.Card card;
         public Image cardbackground;
         public Image cardimage;
