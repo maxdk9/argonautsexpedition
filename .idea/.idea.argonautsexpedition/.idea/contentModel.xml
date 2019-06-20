@@ -44,6 +44,8 @@
           </e>
           <e p="command" t="Include">
             <e p="Command.cs" t="Include" />
+            <e p="MoveCardsFromOutsideToDeck.cs" t="Include" />
+            <e p="PrepareCardForNewGame.cs" t="Include" />
           </e>
           <e p="common" t="Include">
             <e p="CommonController.cs" t="Include" />
@@ -61,7 +63,6 @@
             </e>
           </e>
           <e p="GameActors" t="Include">
-            <e p="CardActor.cs" t="Include" />
             <e p="DamageEffect.cs" t="Include" />
             <e p="DamageEffectTest.cs" t="Include" />
             <e p="DestroyableEntity.cs" t="Include" />

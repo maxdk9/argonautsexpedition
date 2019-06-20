@@ -4,7 +4,7 @@ using DG.Tweening;
 using Model;
 using screen;
 
-public class HoverPreview: DestroyableEntity
+public class HoverPreview: MonoBehaviour
 {
     // PUBLIC FIELDS
     public GameObject TurnThisOffWhenPreviewing;  // if this is null, will not turn off anything 

@@ -4,7 +4,7 @@ namespace Model
     {
         public static void CopyGameActorsToCurrentGame()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

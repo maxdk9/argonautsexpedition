@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
 	public void SetCurrentState(GamePhase type)
 	{
-		throw new System.NotImplementedException();
+		Game.instance.CurrentState = type;
 	}
 
 
@@ -54,11 +54,13 @@ public class GameManager : MonoBehaviour
 
 	private void DestroyOldCardObjects()
 	{
-		DestroyableEntity[] entities = ScreenManager.instance.DeckgameCanvas.GetComponents<DestroyableEntity>();
+		DestroyableEntity[] entities = ScreenManager.instance.DeckgameCanvas.GetComponentsInChildren<DestroyableEntity>();
 
 		foreach (DestroyableEntity entity in entities)
 		{
-			entity.Kill();
+			//entity.Kill();
+			GameObject.Destroy(entity.gameObject);
+			
 		}
 		
 	}

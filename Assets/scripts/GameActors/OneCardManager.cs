@@ -157,9 +157,13 @@ public class OneCardManager : DestroyableEntity
     {
         GameObject cardprefab = OneCardManager.GetCardPrefab(c);
         GameObject cardObject = GameObject.Instantiate(cardprefab,point.transform,false);
+
+        //GameObject cardObject = ScriptableObject.Instantiate(cardprefab, point.transform, false);
         cardObject.transform.localScale=Vector3.one;
         cardObject.transform.localPosition=new Vector3(0,0,Visual.instance.transform.position.y);
-        cardObject.transform.SetParent(null);
+        //cardObject.transform.localPosition=new Vector3(0,0,0);
+        
+        //cardObject.transform.SetParent(null);
         cardObject.SetActive(true);
         OneCardManager cardManager = cardObject.GetComponent<OneCardManager>();
         cardManager.cardAsset = c;

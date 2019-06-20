@@ -1,7 +1,13 @@
+using command;
+using UnityEngine.Events;
+
 namespace Model.States
 {
     public class StartNewGame:iState
     {
+        
+        
+        
         public static StartNewGame ourInstance=new StartNewGame();
         
         public void Execute(double time)
@@ -9,9 +15,16 @@ namespace Model.States
             
         }
 
+        private void PrepareCardsForNewGame()
+        {
+            new PrepareCardForNewGame().AddToQueue();
+            new MoveCardsFromOutsideToDeck().AddToQueue();
+            
+        }
+
         public void OnEnter()
         {
-           
+            PrepareCardsForNewGame();
         }
 
         public void OnExit()
