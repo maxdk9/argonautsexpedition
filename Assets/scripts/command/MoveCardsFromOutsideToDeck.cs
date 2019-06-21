@@ -9,8 +9,8 @@ namespace command
     {
         
         
-        public static float TimeMovement = .5f;
-        public static float SmallAmountOfTime = .2f;
+        public static float TimeMovement = .4f;
+        public static float SmallAmountOfTime = .05f;
         
         public override void StartCommandExecution()
         {
@@ -31,7 +31,7 @@ namespace command
                 yield return new WaitForSeconds(SmallAmountOfTime);
             }
             
-            yield return new WaitForSeconds(SmallAmountOfTime);
+            yield return new WaitForSeconds(TimeMovement);
             Debug.Log("End MoveCardsOutsideFromDeckCoroutine");
             Command.CommandExecutionComplete();
 

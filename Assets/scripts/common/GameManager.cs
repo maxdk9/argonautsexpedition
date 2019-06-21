@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour
 	}
 
 
-
 	public void StartNewGame()
 	{
 		DestroyOldCardObjects();
@@ -73,5 +72,11 @@ public class GameManager : MonoBehaviour
 		{
 			GameObject.Destroy(sc);
 		}
+	}
+
+
+	private void Update()
+	{
+		StateManager.getInstance().Update(1);
 	}
 }

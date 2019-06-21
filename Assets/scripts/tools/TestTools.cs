@@ -57,8 +57,6 @@ namespace tools
                 GameObject cardObject = OneCardManager.CreateOneCardManager(c, cardPoint);
                 
                 MoveCardToAnotherParent(cardObject,Visual.instance.CardDeckFrame.transform);
-                
-                
             }
         }
 

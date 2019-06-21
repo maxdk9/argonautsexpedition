@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using TMPro;
 using UnityEngine.UI;
 
 public class MessageManager : MonoBehaviour 
 {
-    public Text MessageText;
+    public TextMeshProUGUI MessageText;
     public GameObject MessagePanel;
 
     public static MessageManager Instance;

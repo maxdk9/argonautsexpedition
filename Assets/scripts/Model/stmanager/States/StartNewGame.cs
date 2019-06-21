@@ -19,7 +19,7 @@ namespace Model.States
         {
             new PrepareCardForNewGame().AddToQueue();
             new MoveCardsFromOutsideToDeck().AddToQueue();
-            
+            new GoToNextGamePhase(GamePhase.Draw3QuestCards).AddToQueue();
         }
 
         public void OnEnter()

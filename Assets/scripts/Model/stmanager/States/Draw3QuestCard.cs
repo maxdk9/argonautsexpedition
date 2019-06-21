@@ -1,3 +1,7 @@
+using System.Linq;
+using Assets.SimpleLocalization;
+using UnityEngine.UI;
+
 namespace Model.States
 {
     public class Draw3QuestCard:iState
@@ -6,17 +10,21 @@ namespace Model.States
         
         public void Execute(double time)
         {
-            throw new System.NotImplementedException();
+            
+            
+            
         }
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            GameManager.instance.RemoveStateComponentsFromActor();
+            MessageManager.Instance.ShowMessage(LocalizationManager.Localize("draw3questcard"),10);
+            Visual.instance.CardDeck.gameObject.AddComponent<Draw3CardsTouchListener>();
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

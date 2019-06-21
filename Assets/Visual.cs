@@ -13,6 +13,8 @@ public class Visual : MonoBehaviour
 	public GameObject CardPointOutside;
 	public GameObject CardDeck;
 	public GameObject CardDeckFrame;
+	public GameObject CrewCounter;
+	public GameObject CurrentEncounter;
 
 	private void Awake()
 	{

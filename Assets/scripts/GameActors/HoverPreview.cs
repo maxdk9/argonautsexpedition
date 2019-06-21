@@ -90,6 +90,12 @@ public class HoverPreview: MonoBehaviour
         
         previewGameObject.transform.DOLocalMove(TargetPosition, 1f).SetEase(Ease.OutQuint);
         previewGameObject.transform.DOScale(TargetScale, 1f).SetEase(Ease.OutQuint);
+
+        Canvas c = previewGameObject.GetComponentInChildren<Canvas>();
+        if (c)
+        {
+            c.sortingLayerName = "AboveEverything";
+        }
     }
 
     void StopThisPreview()
