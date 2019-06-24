@@ -29,10 +29,15 @@ public class Draw3CardsTouchListener :StateComponent,UnityEngine.EventSystems.IP
             OneCardManager[] deckcards = Visual.instance.CardDeck.GetComponentsInChildren<OneCardManager>();
             
             SameDistanceChildren distance = Visual.instance.CurrentEncounter.GetComponent<SameDistanceChildren>();
-            distance.CurrentEncounterSize = 3;
+
+
+            int drawCardNumber = 3;
             
             
-            for (int i = 1; i <=3; i++)
+            distance.CurrentEncounterSize = drawCardNumber;
+            
+            
+            for (int i = 1; i <=drawCardNumber; i++)
             {
                 if (deckcards.Length <i)
                 {

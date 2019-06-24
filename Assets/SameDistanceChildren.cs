@@ -7,10 +7,11 @@ using UnityEngine;
 public class SameDistanceChildren : MonoBehaviour
 {
 
-	public int CurrentEncounterLength = 1500;
+	public int CurrentEncounterLength = 2000;
 	private int currentEncounterSize = 3;
 	public int  MaxSpace = 30;
 	public int  Space=30;
+	private int glowBorder = 25;
 	
 	
 	
@@ -33,13 +34,16 @@ public class SameDistanceChildren : MonoBehaviour
 
 	public void SetSlotPositions()
 	{
-		Space = (int)((CurrentEncounterLength - (currentEncounterSize * OneCardManager.CardWidth)) /
-		        (currentEncounterSize - 1));
+		
+		
+		
+		Space = (int)(CurrentEncounterLength - currentEncounterSize*OneCardManager.CardWidthWithoutGlow)/(currentEncounterSize-2);
 		Space = Math.Min(MaxSpace, Space);
+		
 		for (int i = 1; i < currentEncounterSize; i++)
 		{
 			GameObject slot = slots[i];
-			int SlotPositionX = (int)(i * (Space + OneCardManager.CardWidth));
+			int SlotPositionX = (int)(i * (Space + OneCardManager.CardWidthWithoutGlow));
 			slot.transform.DOLocalMoveX(SlotPositionX, 0, false);
 		}
 	}
