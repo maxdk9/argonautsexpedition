@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using common;
 using GameActors;
 using Model;
 using screen;
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
 	
 	private void InitializeManager()
 	{
-		
+		Const.CalculateSize();
 		CardManager.Instance().Init();
 		ScreenManager.instance.Show(ScreenManager.ScreenType.Mainmenu);
 	}

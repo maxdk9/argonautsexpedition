@@ -28,6 +28,7 @@
           <e p="link.xml" t="Include" />
         </e>
         <e p="Prefabs.cs" t="Include" />
+        <e p="SameDistanceChildren.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="advancedtools" t="Include">
             <e p="CardVisualScripts" t="Include">

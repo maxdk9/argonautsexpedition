@@ -41,8 +41,10 @@ public class OneCardManager : DestroyableEntity
     public Image CardFaceGlowImage;
     public Image CardBackGlowImage;
 
+  
     void Awake()
     {
+        
         if (cardAsset != null)
             ReadCardFromAsset();
     }
