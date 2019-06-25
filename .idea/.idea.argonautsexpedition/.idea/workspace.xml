@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d2c4ac1-6d17-46b2-810e-476a80db9510" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.argonautsexpedition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.argonautsexpedition/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SameDistanceChildren.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SameDistanceChildren.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/GameManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/GameManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/ItemCard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/ItemCard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/MonsterCard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/MonsterCard.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/GameActors/OneCardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/GameActors/OneCardManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/common/Const.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/common/Const.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/scripts/statecomponent/Draw3CardsTouchListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/scripts/statecomponent/Draw3CardsTouchListener.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="7d2c4ac1-6d17-46b2-810e-476a80db9510" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +12,7 @@
     <session id="726021093">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="49" />
+          <entry key="project.closed" value="50" />
           <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
@@ -39,7 +27,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="258" />
+          <entry key="cs" value="259" />
           <entry key="csv" value="5" />
           <entry key="html" value="1" />
           <entry key="json" value="5" />
@@ -49,7 +37,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="258" />
+          <entry key="C#" value="259" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="5" />
           <entry key="PLAIN_TEXT" value="7" />
@@ -148,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/scripts/statecomponent/Draw3CardsTouchListener.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
-              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+              <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding>
                 <marker date="1561387119923" expanded="false" signature="11:227" ph="..." />
                 <marker date="1561387119923" expanded="true" signature="326:3364" ph="{...}" />
@@ -162,6 +150,27 @@
                 <marker date="1561387119923" expanded="true" signature="1347:1410" ph="{...}" />
                 <marker date="1561387119923" expanded="true" signature="1825:2895" ph="{...}" />
                 <marker date="1561387119923" expanded="true" signature="3179:3340" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/scripts/Model/Game.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-40">
+              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+              <folding>
+                <marker date="1561025431228" expanded="false" signature="6:91" ph="..." />
+                <marker date="1561025431228" expanded="true" signature="126:2117" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="1210:1279" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="1303:1328" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="1378:1385" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="1440:1447" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="1477:2115" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="1951:2100" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="2009:2046" ph="{...}" />
+                <marker date="1561025431228" expanded="true" signature="2054:2092" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -415,14 +424,6 @@
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Model" type="1045f7f1:UnityExplorerNode" />
-              <item name="stmanager" type="1045f7f1:UnityExplorerNode" />
-              <item name="States" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="StreamingAssets" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
@@ -544,12 +545,12 @@
       <workItem from="1561126155590" duration="2346000" />
       <workItem from="1561301462643" duration="11694000" />
       <workItem from="1561371971544" duration="5067000" />
-      <workItem from="1561386765357" duration="355000" />
+      <workItem from="1561386765357" duration="999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237230000" />
+    <option name="totallyTimeSpent" value="237874000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,9 +563,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2793177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2793177" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -798,13 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/scripts/Model/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1072,7 +1065,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/scripts/statecomponent/Draw3CardsTouchListener.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding>
             <marker date="1561387119923" expanded="false" signature="11:227" ph="..." />
             <marker date="1561387119923" expanded="true" signature="326:3364" ph="{...}" />
@@ -1082,6 +1075,25 @@
             <marker date="1561387119923" expanded="true" signature="1347:1410" ph="{...}" />
             <marker date="1561387119923" expanded="true" signature="1825:2895" ph="{...}" />
             <marker date="1561387119923" expanded="true" signature="3179:3340" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/scripts/Model/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <marker date="1561025431228" expanded="false" signature="6:91" ph="..." />
+            <marker date="1561025431228" expanded="true" signature="126:2117" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="1210:1279" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="1303:1328" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="1378:1385" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="1440:1447" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="1477:2115" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="1951:2100" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="2009:2046" ph="{...}" />
+            <marker date="1561025431228" expanded="true" signature="2054:2092" ph="{...}" />
           </folding>
         </state>
       </provider>
