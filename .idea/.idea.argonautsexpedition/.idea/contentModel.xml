@@ -45,6 +45,7 @@
           </e>
           <e p="command" t="Include">
             <e p="Command.cs" t="Include" />
+            <e p="Draw3Cards.cs" t="Include" />
             <e p="GoToNextGamePhase.cs" t="Include" />
             <e p="MoveCardsFromOutsideToDeck.cs" t="Include" />
             <e p="PrepareCardForNewGame.cs" t="Include" />
@@ -65,6 +66,10 @@
             </e>
           </e>
           <e p="GameActors" t="Include">
+            <e p="crewassigner" t="Include">
+              <e p="CrewAssigner.cs" t="Include" />
+              <e p="CrewItem.cs" t="Include" />
+            </e>
             <e p="DamageEffect.cs" t="Include" />
             <e p="DamageEffectTest.cs" t="Include" />
             <e p="DestroyableEntity.cs" t="Include" />
@@ -108,6 +113,7 @@
             <e p="ScreenManager.cs" t="Include" />
           </e>
           <e p="statecomponent" t="Include">
+            <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
             <e p="StateComponent.cs" t="Include" />
           </e>

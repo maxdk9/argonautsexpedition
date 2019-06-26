@@ -17,7 +17,7 @@ namespace Model.States
 
         public void OnEnter()
         {
-            GameManager.instance.RemoveStateComponentsFromActor();
+            
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("draw3questcard"),10);
             Visual.instance.CardDeck.gameObject.AddComponent<Draw3CardsTouchListener>();
         }

@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 81257648}
   - component: {fileID: 81257650}
   - component: {fileID: 81257649}
+  - component: {fileID: 81257651}
   m_Layer: 10
   m_Name: crewHelm (5)
   m_TagString: Untagged
@@ -308,9 +309,9 @@ RectTransform:
   m_GameObject: {fileID: 81257647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -352,6 +353,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81257647}
   m_CullTransparentMesh: 0
+--- !u!114 &81257651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81257647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 5
 --- !u!1 &110801670
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +375,7 @@ GameObject:
   - component: {fileID: 110801671}
   - component: {fileID: 110801673}
   - component: {fileID: 110801672}
+  - component: {fileID: 110801674}
   m_Layer: 10
   m_Name: crewHelm (1)
   m_TagString: Untagged
@@ -377,9 +391,9 @@ RectTransform:
   m_GameObject: {fileID: 110801670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -421,6 +435,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 110801670}
   m_CullTransparentMesh: 0
+--- !u!114 &110801674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110801670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 1
 --- !u!1 &129428052
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +457,7 @@ GameObject:
   - component: {fileID: 129428053}
   - component: {fileID: 129428055}
   - component: {fileID: 129428054}
+  - component: {fileID: 129428056}
   m_Layer: 10
   m_Name: crewHelm (10)
   m_TagString: Untagged
@@ -446,9 +473,9 @@ RectTransform:
   m_GameObject: {fileID: 129428052}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -490,6 +517,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 129428052}
   m_CullTransparentMesh: 0
+--- !u!114 &129428056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129428052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 10
 --- !u!1001 &178017809
 Prefab:
   m_ObjectHideFlags: 0
@@ -1404,6 +1443,7 @@ GameObject:
   - component: {fileID: 447972259}
   - component: {fileID: 447972261}
   - component: {fileID: 447972260}
+  - component: {fileID: 447972262}
   m_Layer: 10
   m_Name: crewHelm (7)
   m_TagString: Untagged
@@ -1419,9 +1459,9 @@ RectTransform:
   m_GameObject: {fileID: 447972258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1463,6 +1503,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 447972258}
   m_CullTransparentMesh: 0
+--- !u!114 &447972262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 447972258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 7
 --- !u!1 &492049518
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1929,7 @@ GameObject:
   - component: {fileID: 622214147}
   - component: {fileID: 622214149}
   - component: {fileID: 622214148}
+  - component: {fileID: 622214150}
   m_Layer: 10
   m_Name: crewHelm (12)
   m_TagString: Untagged
@@ -1892,9 +1945,9 @@ RectTransform:
   m_GameObject: {fileID: 622214146}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1936,6 +1989,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 622214146}
   m_CullTransparentMesh: 0
+--- !u!114 &622214150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 622214146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 12
 --- !u!1 &635234828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,6 +2058,7 @@ GameObject:
   - component: {fileID: 678992384}
   - component: {fileID: 678992386}
   - component: {fileID: 678992385}
+  - component: {fileID: 678992387}
   m_Layer: 10
   m_Name: crewHelm (4)
   m_TagString: Untagged
@@ -2008,9 +2074,9 @@ RectTransform:
   m_GameObject: {fileID: 678992383}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2052,6 +2118,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 678992383}
   m_CullTransparentMesh: 0
+--- !u!114 &678992387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 678992383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 4
 --- !u!1 &687296619
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,6 +2390,7 @@ GameObject:
   - component: {fileID: 711405291}
   - component: {fileID: 711405293}
   - component: {fileID: 711405292}
+  - component: {fileID: 711405294}
   m_Layer: 10
   m_Name: crewHelm (6)
   m_TagString: Untagged
@@ -2327,9 +2406,9 @@ RectTransform:
   m_GameObject: {fileID: 711405290}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2371,6 +2450,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711405290}
   m_CullTransparentMesh: 0
+--- !u!114 &711405294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711405290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 6
 --- !u!1 &748735654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,6 +2627,7 @@ GameObject:
   - component: {fileID: 777040322}
   - component: {fileID: 777040324}
   - component: {fileID: 777040323}
+  - component: {fileID: 777040325}
   m_Layer: 10
   m_Name: crewHelm (3)
   m_TagString: Untagged
@@ -2551,9 +2643,9 @@ RectTransform:
   m_GameObject: {fileID: 777040321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2595,6 +2687,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 777040321}
   m_CullTransparentMesh: 0
+--- !u!114 &777040325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 777040321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 3
 --- !u!1 &779174749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,6 +2842,7 @@ GameObject:
   - component: {fileID: 781193689}
   - component: {fileID: 781193691}
   - component: {fileID: 781193690}
+  - component: {fileID: 781193692}
   m_Layer: 10
   m_Name: crewHelm (9)
   m_TagString: Untagged
@@ -2753,9 +2858,9 @@ RectTransform:
   m_GameObject: {fileID: 781193688}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2797,75 +2902,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781193688}
   m_CullTransparentMesh: 0
---- !u!1 &782971313
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 782971314}
-  - component: {fileID: 782971316}
-  - component: {fileID: 782971315}
-  m_Layer: 10
-  m_Name: crewHelm (23)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &782971314
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 782971313}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &782971315
+--- !u!114 &781193692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 782971313}
+  m_GameObject: {fileID: 781193688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &782971316
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 782971313}
-  m_CullTransparentMesh: 0
+  crewNumber: 9
 --- !u!1 &789737230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,75 +3060,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageText: {fileID: 848493443}
   MessagePanel: {fileID: 878243282}
---- !u!1 &822493734
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 822493735}
-  - component: {fileID: 822493737}
-  - component: {fileID: 822493736}
-  m_Layer: 10
-  m_Name: crewHelm (19)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &822493735
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 822493734}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &822493736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 822493734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &822493737
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 822493734}
-  m_CullTransparentMesh: 0
 --- !u!1 &842529158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,6 +3254,7 @@ GameObject:
   - component: {fileID: 857206834}
   - component: {fileID: 857206836}
   - component: {fileID: 857206835}
+  - component: {fileID: 857206837}
   m_Layer: 10
   m_Name: crewHelm (17)
   m_TagString: Untagged
@@ -3290,9 +3270,9 @@ RectTransform:
   m_GameObject: {fileID: 857206833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3334,6 +3314,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 857206833}
   m_CullTransparentMesh: 0
+--- !u!114 &857206837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 857206833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 17
 --- !u!1 &861315109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,217 +3621,6 @@ MonoBehaviour:
   CardDeckFrame: {fileID: 1887946750}
   CrewCounter: {fileID: 1196661121}
   CurrentEncounter: {fileID: 29613764}
---- !u!1 &937492741
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 937492742}
-  - component: {fileID: 937492746}
-  - component: {fileID: 937492745}
-  - component: {fileID: 937492744}
-  - component: {fileID: 937492743}
-  m_Layer: 10
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &937492742
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 937492741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1782670668}
-  - {fileID: 110801671}
-  - {fileID: 1028905632}
-  - {fileID: 777040322}
-  - {fileID: 678992384}
-  - {fileID: 81257648}
-  - {fileID: 711405291}
-  - {fileID: 447972259}
-  - {fileID: 988991013}
-  - {fileID: 781193689}
-  - {fileID: 129428053}
-  - {fileID: 1979360100}
-  - {fileID: 622214147}
-  - {fileID: 1429181471}
-  - {fileID: 1496674674}
-  - {fileID: 1216546789}
-  - {fileID: 1268214723}
-  - {fileID: 857206834}
-  - {fileID: 941961310}
-  - {fileID: 822493735}
-  - {fileID: 1188546037}
-  - {fileID: 1632456343}
-  - {fileID: 1520072198}
-  - {fileID: 782971314}
-  - {fileID: 1990865650}
-  m_Father: {fileID: 1573649028}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &937492743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 937492741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_StartCorner: 0
-  m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 10, y: 10}
-  m_Constraint: 0
-  m_ConstraintCount: 2
---- !u!114 &937492744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 937492741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &937492745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 937492741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &937492746
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 937492741}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!1 &941961309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 941961310}
-  - component: {fileID: 941961312}
-  - component: {fileID: 941961311}
-  m_Layer: 10
-  m_Name: crewHelm (18)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &941961310
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 941961309}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &941961311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 941961309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &941961312
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 941961309}
-  m_CullTransparentMesh: 0
 --- !u!1 &947869592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3988,6 +3769,7 @@ GameObject:
   - component: {fileID: 988991013}
   - component: {fileID: 988991015}
   - component: {fileID: 988991014}
+  - component: {fileID: 988991016}
   m_Layer: 10
   m_Name: crewHelm (8)
   m_TagString: Untagged
@@ -4003,9 +3785,9 @@ RectTransform:
   m_GameObject: {fileID: 988991012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4047,6 +3829,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988991012}
   m_CullTransparentMesh: 0
+--- !u!114 &988991016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 988991012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 8
 --- !u!1 &1003685627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4340,6 +4134,7 @@ GameObject:
   - component: {fileID: 1028905632}
   - component: {fileID: 1028905634}
   - component: {fileID: 1028905633}
+  - component: {fileID: 1028905635}
   m_Layer: 10
   m_Name: crewHelm (2)
   m_TagString: Untagged
@@ -4355,9 +4150,9 @@ RectTransform:
   m_GameObject: {fileID: 1028905631}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4399,6 +4194,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028905631}
   m_CullTransparentMesh: 0
+--- !u!114 &1028905635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028905631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 2
 --- !u!1 &1073339055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4673,75 +4480,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159607585}
   m_CullTransparentMesh: 0
---- !u!1 &1188546036
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1188546037}
-  - component: {fileID: 1188546039}
-  - component: {fileID: 1188546038}
-  m_Layer: 10
-  m_Name: crewHelm (20)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1188546037
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188546036}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1188546038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188546036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1188546039
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1188546036}
-  m_CullTransparentMesh: 0
 --- !u!1 &1196661121
 GameObject:
   m_ObjectHideFlags: 0
@@ -4823,6 +4561,7 @@ GameObject:
   - component: {fileID: 1216546789}
   - component: {fileID: 1216546791}
   - component: {fileID: 1216546790}
+  - component: {fileID: 1216546792}
   m_Layer: 10
   m_Name: crewHelm (15)
   m_TagString: Untagged
@@ -4838,9 +4577,9 @@ RectTransform:
   m_GameObject: {fileID: 1216546788}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4882,6 +4621,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1216546788}
   m_CullTransparentMesh: 0
+--- !u!114 &1216546792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216546788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 15
 --- !u!1 &1227015079
 GameObject:
   m_ObjectHideFlags: 0
@@ -5073,6 +4824,7 @@ GameObject:
   - component: {fileID: 1268214723}
   - component: {fileID: 1268214725}
   - component: {fileID: 1268214724}
+  - component: {fileID: 1268214726}
   m_Layer: 10
   m_Name: crewHelm (16)
   m_TagString: Untagged
@@ -5088,9 +4840,9 @@ RectTransform:
   m_GameObject: {fileID: 1268214722}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5132,6 +4884,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268214722}
   m_CullTransparentMesh: 0
+--- !u!114 &1268214726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268214722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 16
 --- !u!1 &1271043537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5642,6 +5406,7 @@ GameObject:
   - component: {fileID: 1429181471}
   - component: {fileID: 1429181473}
   - component: {fileID: 1429181472}
+  - component: {fileID: 1429181474}
   m_Layer: 10
   m_Name: crewHelm (13)
   m_TagString: Untagged
@@ -5657,9 +5422,9 @@ RectTransform:
   m_GameObject: {fileID: 1429181470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5701,6 +5466,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1429181470}
   m_CullTransparentMesh: 0
+--- !u!114 &1429181474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1429181470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 13
 --- !u!1 &1446563980
 GameObject:
   m_ObjectHideFlags: 0
@@ -6066,6 +5843,7 @@ GameObject:
   - component: {fileID: 1496674674}
   - component: {fileID: 1496674676}
   - component: {fileID: 1496674675}
+  - component: {fileID: 1496674677}
   m_Layer: 10
   m_Name: crewHelm (14)
   m_TagString: Untagged
@@ -6081,9 +5859,9 @@ RectTransform:
   m_GameObject: {fileID: 1496674673}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6125,75 +5903,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1496674673}
   m_CullTransparentMesh: 0
---- !u!1 &1520072197
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1520072198}
-  - component: {fileID: 1520072200}
-  - component: {fileID: 1520072199}
-  m_Layer: 10
-  m_Name: crewHelm (22)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1520072198
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1520072197}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1520072199
+--- !u!114 &1496674677
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1520072197}
+  m_GameObject: {fileID: 1496674673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1520072200
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1520072197}
-  m_CullTransparentMesh: 0
+  crewNumber: 14
 --- !u!1 &1527805376
 GameObject:
   m_ObjectHideFlags: 0
@@ -6519,6 +6240,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1573649028}
+  - component: {fileID: 1573649029}
+  - component: {fileID: 1573649030}
   m_Layer: 10
   m_Name: ChooseCrewNumber
   m_TagString: Untagged
@@ -6536,15 +6259,86 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 937492742}
+  - {fileID: 1782670668}
+  - {fileID: 110801671}
+  - {fileID: 1028905632}
+  - {fileID: 777040322}
+  - {fileID: 678992384}
+  - {fileID: 81257648}
+  - {fileID: 711405291}
+  - {fileID: 447972259}
+  - {fileID: 988991013}
+  - {fileID: 781193689}
+  - {fileID: 129428053}
+  - {fileID: 1979360100}
+  - {fileID: 622214147}
+  - {fileID: 1429181471}
+  - {fileID: 1496674674}
+  - {fileID: 1216546789}
+  - {fileID: 1268214723}
+  - {fileID: 857206834}
   m_Father: {fileID: 1003685632}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 400}
+  m_AnchoredPosition: {x: -69.1, y: 61.8}
+  m_SizeDelta: {x: 450, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1573649029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573649027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 70, y: 70}
+  m_Spacing: {x: 5, y: 5}
+  m_Constraint: 0
+  m_ConstraintCount: 2
+--- !u!114 &1573649030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573649027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44cb1bc19ca9b87428fddc52adda115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  CrewItems:
+  - {fileID: 1782670671}
+  - {fileID: 110801674}
+  - {fileID: 1028905635}
+  - {fileID: 777040325}
+  - {fileID: 678992387}
+  - {fileID: 81257651}
+  - {fileID: 711405294}
+  - {fileID: 447972262}
+  - {fileID: 988991016}
+  - {fileID: 781193692}
+  - {fileID: 129428056}
+  - {fileID: 1979360103}
+  - {fileID: 622214150}
+  - {fileID: 1429181474}
+  - {fileID: 1496674677}
+  - {fileID: 1216546792}
+  - {fileID: 1268214726}
+  - {fileID: 857206837}
 --- !u!1 &1592106345
 GameObject:
   m_ObjectHideFlags: 0
@@ -6667,75 +6461,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 60}
   m_Pivot: {x: 0.5, y: 1}
---- !u!1 &1632456342
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1632456343}
-  - component: {fileID: 1632456345}
-  - component: {fileID: 1632456344}
-  m_Layer: 10
-  m_Name: crewHelm (21)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1632456343
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1632456342}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1632456344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1632456342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1632456345
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1632456342}
-  m_CullTransparentMesh: 0
 --- !u!1 &1662851173
 GameObject:
   m_ObjectHideFlags: 0
@@ -7159,6 +6884,7 @@ GameObject:
   - component: {fileID: 1782670668}
   - component: {fileID: 1782670670}
   - component: {fileID: 1782670669}
+  - component: {fileID: 1782670671}
   m_Layer: 10
   m_Name: crewHelm
   m_TagString: Untagged
@@ -7172,11 +6898,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782670667}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7203,7 +6929,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a0fd42ca055e604a8fd6cb5dfd11a3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7218,6 +6944,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1782670667}
   m_CullTransparentMesh: 0
+--- !u!114 &1782670671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1782670667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 0
 --- !u!1 &1785763750
 GameObject:
   m_ObjectHideFlags: 0
@@ -7772,6 +7510,7 @@ GameObject:
   - component: {fileID: 1979360100}
   - component: {fileID: 1979360102}
   - component: {fileID: 1979360101}
+  - component: {fileID: 1979360103}
   m_Layer: 10
   m_Name: crewHelm (11)
   m_TagString: Untagged
@@ -7787,9 +7526,9 @@ RectTransform:
   m_GameObject: {fileID: 1979360099}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 937492742}
+  m_Father: {fileID: 1573649028}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7831,6 +7570,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1979360099}
   m_CullTransparentMesh: 0
+--- !u!114 &1979360103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1979360099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91de406311427fe43bc09d00c4557b45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crewNumber: 11
 --- !u!1 &1983451569
 GameObject:
   m_ObjectHideFlags: 0
@@ -7968,75 +7719,6 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1985915860}
-  m_CullTransparentMesh: 0
---- !u!1 &1990865649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1990865650}
-  - component: {fileID: 1990865652}
-  - component: {fileID: 1990865651}
-  m_Layer: 10
-  m_Name: crewHelm (24)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1990865650
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1990865649}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.999991, y: 0.999991, z: 0.999991}
-  m_Children: []
-  m_Father: {fileID: 937492742}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1990865651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1990865649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0eeb06a2b769c8d4d9291bafc17fd6c4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1990865652
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1990865649}
   m_CullTransparentMesh: 0
 --- !u!1 &2048882710
 GameObject:

@@ -1,3 +1,6 @@
+using Assets.SimpleLocalization;
+using UnityEngine;
+
 namespace Model.States
 {
     public class CrewAssignment:iState
@@ -6,17 +9,28 @@ namespace Model.States
         
         public void Execute(double time)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("CrewAssignment");
+            MessageManager.Instance.ShowMessage(LocalizationManager.Localize("assigncrewmembers"),10);
+            OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
+
+            foreach (OneCardManager card in cards)
+            {
+                card.gameObject.AddComponent<AssignCrewTouchListener>();
+                HoverPreview preview = card.GetComponent<HoverPreview>();
+                preview.ThisPreviewEnabled = false;
+            }
+
+
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
