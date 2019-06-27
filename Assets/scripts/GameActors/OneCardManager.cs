@@ -28,6 +28,7 @@ public class OneCardManager : DestroyableEntity
     public TextMeshProUGUI DifficultyLabel;
     public TextMeshProUGUI DeadlinessLabel;
     public TextMeshProUGUI DescriptionLabel;
+    public TextMeshProUGUI CrewLabel;
     
     [Header ("GameObject References")]
     public GameObject DifficultyImage;
@@ -42,6 +43,8 @@ public class OneCardManager : DestroyableEntity
     
     public Image CardFaceGlowImage;
     public Image CardBackGlowImage;
+    
+    
 
   
     void Awake()
@@ -62,7 +65,6 @@ public class OneCardManager : DestroyableEntity
         set
         {
             canBePlayedNow = value;
-
            // CardFaceGlowImage.enabled = value;
         }
     }
@@ -97,6 +99,20 @@ public class OneCardManager : DestroyableEntity
                 DescriptionLabel.text = LocalizationManager.Localize( Const.carddescr+cardAsset.name);    
             }
                 
+        }
+
+        if (CrewLabel != null)
+        {
+            if (cardAsset.crewNumber == 0)
+            {
+                CrewLabel.enabled = false;
+            }
+            else
+            {
+                CrewLabel.enabled = true;
+                CrewLabel.text = cardAsset.crewNumber.ToString();
+            }
+            
         }
 
         if (DeadlinessLabel != null)
@@ -179,4 +195,6 @@ public class OneCardManager : DestroyableEntity
     {
         
     }
+
+    
 }

@@ -12,6 +12,7 @@ public class HoverPreview: MonoBehaviour
     public float TargetScale;
     public GameObject previewGameObject;
     public bool ActivateInAwake = false;
+    private bool manualStopPreview = false;
 
     // PRIVATE FIELDS
     private static HoverPreview currentlyViewing = null;
@@ -45,7 +46,13 @@ public class HoverPreview: MonoBehaviour
     }
 
     public bool OverCollider { get; set;}
- 
+
+    public bool ManualStopPreview
+    {
+        get { return manualStopPreview; }
+        set { manualStopPreview = value; }
+    }
+
     // MONOBEHVIOUR METHODS
     void Awake()
     {
@@ -64,13 +71,20 @@ public class HoverPreview: MonoBehaviour
         OverCollider = false;
 
         if (!PreviewingSomeCard())
+        {
+            if (manualStopPreview)
+            {
+                return;
+            }
             StopAllPreviews();
+        }
+            
     }
     
     
 
     // OTHER METHODS
-    void PreviewThisObject()
+    public void PreviewThisObject()
     {
         // 1) clone this card 
         // first disable the previous preview if there is one already
@@ -100,6 +114,12 @@ public class HoverPreview: MonoBehaviour
 
     void StopThisPreview()
     {
+        if (!ThisPreviewEnabled)
+        {
+            return;
+        }
+        
+        Debug.Log("StopThisPreview");
         previewGameObject.SetActive(false);
         previewGameObject.transform.localScale = Vector3.one;
         previewGameObject.transform.localPosition = Vector3.zero;
@@ -110,6 +130,8 @@ public class HoverPreview: MonoBehaviour
     // STATIC METHODS
     private static void StopAllPreviews()
     {
+        
+        Debug.Log("StopAllPreviews");
         if (currentlyViewing != null)
         {
             currentlyViewing.previewGameObject.SetActive(false);

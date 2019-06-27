@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using screen;
+using TMPro;
 using UnityEngine;
 
 public class Visual : MonoBehaviour
@@ -33,4 +34,14 @@ public class Visual : MonoBehaviour
 	void Update () {
 		
 	}
+
+
+	public void UpdateCrewCounter()
+	{
+		TextMeshProUGUI t = CrewCounter.GetComponentInChildren<TextMeshProUGUI>();
+		int c = Game.instance.CrewNumber - Game.instance.DeployedCrew;
+		t.text = c.ToString();
+	}
+	
+	
 }

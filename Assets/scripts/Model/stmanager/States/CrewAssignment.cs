@@ -22,7 +22,10 @@ namespace Model.States
             {
                 card.gameObject.AddComponent<AssignCrewTouchListener>();
                 HoverPreview preview = card.GetComponent<HoverPreview>();
-                preview.ThisPreviewEnabled = false;
+                if (preview != null)
+                {
+                    preview.ThisPreviewEnabled = false;    
+                }
             }
 
 

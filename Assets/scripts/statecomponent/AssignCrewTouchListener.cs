@@ -15,13 +15,8 @@ public class AssignCrewTouchListener :StateComponent,UnityEngine.EventSystems.IP
         
         public void OnPointerDown(PointerEventData eventData)
         {
-
             OneCardManager c=this.GetComponent<OneCardManager>();
-            Debug.Log("OneCard "+c.cardAsset.cardnumber.ToString());
-            Debug.Log("AssignCrewTouchListener ");
-            CrewAssigner.instance.Show(c);
-
-               
+            CrewAssigner.instance.Show(c);      
         }
 
        

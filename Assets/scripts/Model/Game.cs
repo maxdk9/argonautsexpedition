@@ -31,10 +31,57 @@ public class Game : MonoBehaviour
 	private int heroicCount=0;
 	private int scyllaCasualties;
 	
-	public int ToWork=0;
-	public int TutorialCounter=0;
+	private int ToWork=0;
+	private int TutorialCounter=0;
 	
 	private GamePhase currentState;
+	
+	private int deployedCrew=0;
+	
+
+	public int CrewNumber
+	{
+		get { return crewNumber; }
+		set { crewNumber = value; }
+	}
+
+	public int Casualties
+	{
+		get { return casualties; }
+		set { casualties = value; }
+	}
+
+	public bool RerollDaedalusWing
+	{
+		get { return rerollDaedalusWing; }
+		set { rerollDaedalusWing = value; }
+	}
+
+	public int WinnedHd
+	{
+		get { return winnedHD; }
+		set { winnedHD = value; }
+	}
+
+	public int HeroicCount
+	{
+		get { return heroicCount; }
+		set { heroicCount = value; }
+	}
+
+	public int ScyllaCasualties
+	{
+		get { return scyllaCasualties; }
+		set { scyllaCasualties = value; }
+	}
+
+	
+
+
+	
+	
+
+	
 	
 	
 	
@@ -43,7 +90,7 @@ public class Game : MonoBehaviour
 	
 	
 	//CONSTANTS
-	public static int CREWNUMBERSTART;
+	public static int CREWNUMBERSTART=12;
 
 
 
@@ -53,6 +100,12 @@ public class Game : MonoBehaviour
 	{
 		get { return currentState; }
 		set { currentState = value; }
+	}
+
+	public int DeployedCrew
+	{
+		get { return deployedCrew; }
+		set { deployedCrew = value; }
 	}
 
 
@@ -90,6 +143,8 @@ public class Game : MonoBehaviour
 		heroicCount=0;
 		scyllaCasualties=0;
 		ToWork=0;
+		deployedCrew = 0;
+		
 		crewNumber = CREWNUMBERSTART;
 		
 		CardManager.Instance().Shuffle();
