@@ -59,6 +59,21 @@ public class Visual : MonoBehaviour
 	{
 		CrewAssignment.ourInstance.ToBattle();
 	}
-	
-	
+
+
+	public static List <OneCardManager> GetCurrentEncounter()
+	{
+		OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
+		List<OneCardManager>  result=new List<OneCardManager>();
+		foreach (OneCardManager card in cards)
+		{
+			HoverPreview preview = card.GetComponent<HoverPreview>();
+			if (preview == null)
+			{
+				continue;    
+			}
+			result.Add(card);
+		}
+		return result;
+	}
 }

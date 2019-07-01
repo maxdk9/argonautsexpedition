@@ -84,6 +84,7 @@ public class StateManager
 			GameManager.instance.SetCurrentState( type);
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);
 			GameManager.instance.RemoveStateComponentsFromActor();
+			Visual.instance.UpdateCrewCounter();
 		}
 
 		currentState = dictionary[type];

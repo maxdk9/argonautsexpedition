@@ -34,7 +34,6 @@ namespace Model.States
                 }
             }
 
-
         }
 
         public void OnExit()

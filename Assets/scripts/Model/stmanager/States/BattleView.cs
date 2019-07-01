@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace Model.States
 {
     public class BattleView:iState
@@ -6,17 +8,36 @@ namespace Model.States
         
         public void Execute(double time)
         {
-            throw new System.NotImplementedException();
+            AutoBattleResolve();
+            UpdateOneCardManagerVisibility();
+
         }
+
+        
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
+            
+        }
+        
+        
+        private void AutoBattleResolve()
+        {
+            List<OneCardManager> currentEncoutnerList = Visual.GetCurrentEncounter();
+            foreach (OneCardManager cardManager in currentEncoutnerList)
+            {
+                if (GameLogic.cardIsMonsterOrTreasure(cardManager.cardAsset))
+                {
+                    int difficulty = GameLogic.GetCurrentDifficulty(cardManager.cardAsset);
+                    int diceresult = GameLogic.GetModifiedDiceResult(cardManager.cardAsset,1);
+
+                }
+            }
         }
     }
 }

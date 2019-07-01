@@ -51,13 +51,15 @@ public class OneCardManager : DestroyableEntity
 
   
     void Awake()
-    {
-        
+    {   
         if (cardAsset != null)
             ReadCardFromAsset();
     }
-
+    
+    
     private bool canBePlayedNow = false;
+    
+    
     public bool CanBePlayedNow
     {
         get
@@ -143,6 +145,7 @@ public class OneCardManager : DestroyableEntity
         CardImage.sprite= Resources.Load<Sprite>(frontpath);
         
       
+        SetVisibility();
 
         if (PreviewManager != null)
         {
@@ -153,6 +156,25 @@ public class OneCardManager : DestroyableEntity
         }
     }
 
+    
+    
+    
+    public void SetVisibility()
+    {
+        if (uiDiceObject == null)
+        {
+            return;
+        }
+        uiDiceObject.SetActive(false);
+        if (Game.instance.CurrentState == GamePhase.Battle)
+        {
+            uiDiceObject.SetActive(true);
+        }
+        
+        
+    }
+    
+    
     public static GameObject GetCardPrefab(CardManager.Card c)
     {
         if (c.type == CardType.monster)
