@@ -108,4 +108,10 @@ public class CrewAssigner : MonoBehaviour
 
 		}
 	}
+
+	public void Hide()
+	{
+		HoverPreview.StopAllPreviews();
+		this.gameObject.SetActive(false);
+	}
 }

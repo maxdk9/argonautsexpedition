@@ -15,11 +15,17 @@ namespace Model.States
         public void OnEnter()
         {
             Debug.Log("CrewAssignment");
+            Visual.instance.buttonToBattle.gameObject.SetActive(true);
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("assigncrewmembers"),10);
             OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
 
             foreach (OneCardManager card in cards)
             {
+
+                if (!GameLogic.cardIsMonsterOrTreasure(card.cardAsset))
+                {
+                    continue;
+                }
                 card.gameObject.AddComponent<AssignCrewTouchListener>();
                 HoverPreview preview = card.GetComponent<HoverPreview>();
                 if (preview != null)
@@ -34,6 +40,11 @@ namespace Model.States
         public void OnExit()
         {
             
+        }
+
+        public void ToBattle()
+        {
+            Debug.Log("ToBattel");
         }
     }
 }

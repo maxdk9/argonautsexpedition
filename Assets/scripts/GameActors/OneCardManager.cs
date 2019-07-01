@@ -33,6 +33,7 @@ public class OneCardManager : DestroyableEntity
     [Header ("GameObject References")]
     public GameObject DifficultyImage;
     public GameObject DeadlinessImage;
+    public GameObject uiDiceObject;
     
     
     [Header("Image References")]
@@ -43,6 +44,8 @@ public class OneCardManager : DestroyableEntity
     
     public Image CardFaceGlowImage;
     public Image CardBackGlowImage;
+    
+    
     
     
 

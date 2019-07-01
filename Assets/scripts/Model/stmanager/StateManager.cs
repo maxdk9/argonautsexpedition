@@ -79,7 +79,7 @@ public class StateManager
 			{
 				Debug.Log(e.Message);
 			}
-			
+			Visual.instance.DisableVisualElementsOnStateEnter();
 			GameLogicEvents.CopyGameActorsToCurrentGame();
 			GameManager.instance.SetCurrentState( type);
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);

@@ -128,7 +128,7 @@ public class HoverPreview: MonoBehaviour
     }
 
     // STATIC METHODS
-    private static void StopAllPreviews()
+    public static void StopAllPreviews()
     {
         
         Debug.Log("StopAllPreviews");

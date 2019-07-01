@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Model.States;
 using screen;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Visual : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class Visual : MonoBehaviour
 	public GameObject CardDeckFrame;
 	public GameObject CrewCounter;
 	public GameObject CurrentEncounter;
+	public Button buttonToBattle;
 
 	private void Awake()
 	{
@@ -36,11 +39,25 @@ public class Visual : MonoBehaviour
 	}
 
 
+	public void DisableVisualElementsOnStateEnter()
+	{
+		buttonToBattle.gameObject.SetActive(false);
+		CardDeck.gameObject.SetActive(false);
+	}
+	
+	
+	
 	public void UpdateCrewCounter()
 	{
 		TextMeshProUGUI t = CrewCounter.GetComponentInChildren<TextMeshProUGUI>();
 		int c = Game.instance.CrewNumber - Game.instance.DeployedCrew;
 		t.text = c.ToString();
+	}
+
+
+	public void ToBattelButtonClick()
+	{
+		CrewAssignment.ourInstance.ToBattle();
 	}
 	
 	

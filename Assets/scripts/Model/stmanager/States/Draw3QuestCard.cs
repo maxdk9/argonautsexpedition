@@ -17,7 +17,7 @@ namespace Model.States
 
         public void OnEnter()
         {
-            
+            Visual.instance.CardDeck.SetActive(true);
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("draw3questcard"),10);
             Visual.instance.CardDeck.gameObject.AddComponent<Draw3CardsTouchListener>();
         }

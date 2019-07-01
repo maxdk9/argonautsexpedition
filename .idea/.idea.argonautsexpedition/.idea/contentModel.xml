@@ -84,6 +84,7 @@
             <e p="CardManager.cs" t="Include" />
             <e p="Effect.cs" t="Include" />
             <e p="Game.cs" t="Include" />
+            <e p="GameLogic.cs" t="Include" />
             <e p="GameLogicEvents.cs" t="Include" />
             <e p="HeroicDeed.cs" t="Include" />
             <e p="stmanager" t="Include">
