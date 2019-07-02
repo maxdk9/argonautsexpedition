@@ -4,6 +4,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography.X509Certificates;
 using Assets.SimpleLocalization;
 using common;
+using DG.Tweening;
 using Model;
 using TMPro;
 using UnityEngine.UI;
@@ -44,8 +45,11 @@ public class OneCardManager : DestroyableEntity
     
     public Image CardFaceGlowImage;
     public Image CardBackGlowImage;
-    
-    
+    public Image CrewImage;
+
+
+    private Sequence diceAnimationSequence;
+
     
     
 
@@ -108,15 +112,8 @@ public class OneCardManager : DestroyableEntity
 
         if (CrewLabel != null)
         {
-            if (cardAsset.crewNumber == 0)
-            {
-                CrewLabel.enabled = false;
-            }
-            else
-            {
-                CrewLabel.enabled = true;
-                CrewLabel.text = cardAsset.crewNumber.ToString();
-            }
+            ShowResolve();
+                
             
         }
 
@@ -127,7 +124,8 @@ public class OneCardManager : DestroyableEntity
 
         if (DifficultyLabel != null)
         {
-            DifficultyLabel.text = cardAsset.difficulty[cardAsset.level].ToString();    
+            DifficultyLabel.text = GameLogic.GetCurrentDifficulty(cardAsset).ToString();    
+            
         }
 
         if (UseTypeImage != null)
@@ -165,16 +163,46 @@ public class OneCardManager : DestroyableEntity
         {
             return;
         }
-        uiDiceObject.SetActive(false);
-        if (Game.instance.CurrentState == GamePhase.Battle)
+
+        if (cardAsset.resolved == ResolvedType.resolved_win||cardAsset.resolved==ResolvedType.resolved_lost)
         {
-            uiDiceObject.SetActive(true);
+            return;
         }
         
+        uiDiceObject.SetActive(false);
+        
+        if (Game.instance.CurrentState == GamePhase.BattleView)
+        {
+            uiDiceObject.SetActive(true);
+            CreateDiceAnimationSequence();
+
+        }
+        else
+        {
+            if (diceAnimationSequence != null)
+            {
+                diceAnimationSequence.Kill();
+            }
+            
+            
+        }
         
     }
-    
-    
+
+    private void CreateDiceAnimationSequence()
+    {
+        if (diceAnimationSequence == null)
+        {
+            diceAnimationSequence= DOTween.Sequence();
+            Vector3 startRotation = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
+            diceAnimationSequence.Append(uiDiceObject.transform.DORotate(startRotation,0 ).SetEase(Ease.InOutSine));
+            diceAnimationSequence.Append(uiDiceObject.transform.DORotate(new Vector3(10,360,10),1 ).SetEase(Ease.InOutSine));            
+            diceAnimationSequence.SetLoops(-1,LoopType.Yoyo);
+        }
+        diceAnimationSequence.Play();
+    }
+
+
     public static GameObject GetCardPrefab(CardManager.Card c)
     {
         if (c.type == CardType.monster)
@@ -221,5 +249,46 @@ public class OneCardManager : DestroyableEntity
         
     }
 
+
+    public void ShowResolve()
+    {
+        
+        CrewLabel.enabled = false;
+        
+        
+        
+        if (cardAsset.resolved == ResolvedType.resolved_win)
+        {
+            CrewImage.sprite = Visual.instance.ThumbsUp;
+        
+        }
+
+        if (cardAsset.resolved == ResolvedType.resolved_lost)
+        {
+            CrewImage.sprite = Visual.instance.ThumbsDown;
+        }
+            
+            
+        if (cardAsset.resolved == ResolvedType.notresolved)
+        {
+            if (cardAsset.crewNumber > 0)
+            {
+                CrewLabel.enabled = true;
+                CrewLabel.text = cardAsset.crewNumber.ToString();
+            }
+        }      
+    }
+
+    public void AnimateResolve()
+    {
+        if (cardAsset.resolved == ResolvedType.resolved_win||cardAsset.resolved==ResolvedType.resolved_lost)
+        {
+            Sequence sequence= DOTween.Sequence();
+            sequence.Append(CrewImage.transform.DORotate(new Vector3(0,0,360),1 ));            
+            sequence.SetLoops(-1);
+            sequence.Play();
+        }
+    }
+    
     
 }

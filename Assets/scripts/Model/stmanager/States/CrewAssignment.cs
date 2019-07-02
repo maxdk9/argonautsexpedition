@@ -41,9 +41,6 @@ namespace Model.States
             
         }
 
-        public void ToBattle()
-        {
-            Debug.Log("ToBattel");
-        }
+        
     }
 }

@@ -18,7 +18,7 @@ public class Draw3CardsTouchListener :StateComponent,UnityEngine.EventSystems.IP
 
            // OneCardManager c=this.GetComponent<OneCardManager>();
             Debug.Log("Draw3CardsTouchListener ");
-            new Draw3Cards().AddToQueue();
+            new Draw3CardsCommand().AddToQueue();
             new GoToNextGamePhase(GamePhase.CrewAssignment).AddToQueue();
 
             // GameManager.instance.StartCoroutine(this.Draw3Cards());   

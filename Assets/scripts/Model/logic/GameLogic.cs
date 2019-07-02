@@ -34,13 +34,14 @@ namespace Model
                 if(HaveEffectByType(Effect.EffectType.Mirrored_Shield)){
                     return 0;
                 }
-                if(card.name.Equals("skeleton")){
-                    res=GetMonsterNumberInEncounter(card)-1;
+                if(card.name.Equals("skeleton")||card.name.Equals("harpy")){
+                    int monsternumber=GetMonsterNumberInEncounter(card)-1;
+                    if (monsternumber >= 2)
+                    {
+                        res = monsternumber - 1;
+                    }
                 }
-                if(card.name.Equals("harpy")){
-                   res= GetMonsterNumberInEncounter( card)-1;
-                }
-		
+                res = Math.Max(0, res);
                 return res;
             
         }
@@ -51,7 +52,9 @@ namespace Model
             List<OneCardManager> currentEncounter = Visual.instance.GetCurrentEncounter();
             foreach (OneCardManager enc in currentEncounter)
             {
-                if (enc.name.Equals(card.name))
+                
+                
+                if (enc.cardAsset.name.Equals(card.name))
                 {
                     res++;
                 }

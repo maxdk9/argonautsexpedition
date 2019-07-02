@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 namespace Model.States
 {
@@ -6,11 +7,11 @@ namespace Model.States
     {
         public static BattleView ourInstance=new BattleView();
         
+        private UnityEvent AutoResolveEvent=new UnityEvent();
+        
+        
         public void Execute(double time)
         {
-            AutoBattleResolve();
-            UpdateOneCardManagerVisibility();
-
         }
 
         
@@ -18,7 +19,9 @@ namespace Model.States
 
         public void OnEnter()
         {
-            
+            HoverPreview.StopAllPreviews();
+            AutoBattleResolve();
+            UpdateOneCardManagerVisibility();
         }
 
         public void OnExit()
@@ -39,16 +42,33 @@ namespace Model.States
         
         private void AutoBattleResolve()
         {
+            
+            AutoResolveEvent.RemoveAllListeners();
             List<OneCardManager> currentEncoutnerList = Visual.instance.GetCurrentEncounter();
+            
+            
             foreach (OneCardManager cardManager in currentEncoutnerList)
             {
                 if (GameLogic.cardIsMonsterOrTreasure(cardManager.cardAsset))
                 {
-                    int difficulty = GameLogic.GetCurrentDifficulty(cardManager.cardAsset);
-                    int diceresult = GameLogic.GetModifiedDiceResult(cardManager.cardAsset,1);
-
+                    GameLogicModifyGame.AutoResolveCard(cardManager.cardAsset);
+                    AutoResolveEvent.AddListener(cardManager.ShowResolve);
+                    AutoResolveEvent.AddListener(cardManager.AnimateResolve);
                 }
             }
+            AutoResolveEvent.Invoke();
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 }

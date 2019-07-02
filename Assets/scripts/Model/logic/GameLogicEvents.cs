@@ -29,7 +29,6 @@ namespace Model
         public static int GetDeployedCrew()
         {
             OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
-
             int deployedCrew = 0;
             foreach (OneCardManager card in cards)
             {
@@ -39,7 +38,6 @@ namespace Model
                 }
                 deployedCrew += card.cardAsset.crewNumber;
             }
-
             return deployedCrew;
         }
         public static void DeployCrew()

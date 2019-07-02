@@ -1375,6 +1375,7 @@ MonoBehaviour:
   UseTypeImage: {fileID: 0}
   CardFaceGlowImage: {fileID: 114189310548531788}
   CardBackGlowImage: {fileID: 0}
+  CrewImage: {fileID: 114586740168483134}
 --- !u!114 &114076087849178084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2079,6 +2080,7 @@ MonoBehaviour:
   UseTypeImage: {fileID: 0}
   CardFaceGlowImage: {fileID: 114076087849178084}
   CardBackGlowImage: {fileID: 0}
+  CrewImage: {fileID: 0}
 --- !u!114 &114467812780642490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2258,14 +2260,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.9716981, g: 0.9579477, b: 0.9579477, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: aee52e3e9ec95f64ebbf0ddcbcf063dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

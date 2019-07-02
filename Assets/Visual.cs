@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Model;
 using Model.States;
 using screen;
 using TMPro;
@@ -19,6 +20,10 @@ public class Visual : MonoBehaviour
 	public GameObject CrewCounter;
 	public GameObject CurrentEncounter;
 	public Button buttonToBattle;
+
+	public Sprite ThumbsUp;
+	public Sprite ThumbsDown;
+
 
 	private void Awake()
 	{
@@ -43,6 +48,7 @@ public class Visual : MonoBehaviour
 	{
 		buttonToBattle.gameObject.SetActive(false);
 		CardDeckFrame.gameObject.SetActive(false);
+		CrewAssigner.instance.Hide();
 	}
 	
 	
@@ -57,7 +63,7 @@ public class Visual : MonoBehaviour
 
 	public void ToBattelButtonClick()
 	{
-		CrewAssignment.ourInstance.ToBattle();
+		new GoToNextGamePhase(GamePhase.BattleView).AddToQueue();
 	}
 
 

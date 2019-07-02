@@ -18,7 +18,7 @@ public class HoverPreview: MonoBehaviour
     private static HoverPreview currentlyViewing = null;
 
     // PROPERTIES WITH UNDERLYING PRIVATE FIELDS
-    private static bool _PreviewsAllowed = true;
+    private static bool _PreviewsAllowed = false;
     public static bool PreviewsAllowed
     {
         get { return _PreviewsAllowed;}

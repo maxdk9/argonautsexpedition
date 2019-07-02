@@ -6,6 +6,7 @@ using Model;
 using screen;
 using tools;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -46,9 +47,13 @@ public class GameManager : MonoBehaviour
 
 	public void StartNewGame()
 	{
+		StopAllCoroutines();
+		Command.ClearCommandQueue();
 		DestroyOldCardObjects();
+		
 		Game.instance.StartNewGame();
-		StateManager.getInstance().MoveNext(GamePhase.StartNewGame);
+
+		new GoToNextGamePhase(GamePhase.StartNewGame).AddToQueue();
 
 	}
 
@@ -68,7 +73,11 @@ public class GameManager : MonoBehaviour
 
 	public void RemoveStateComponentsFromActor()
 	{
-		StateComponent[] stateComponents = ScreenManager.instance.DeckgameCanvas.GetComponentsInChildren<StateComponent>();
+		StateComponent[] stateComponents =Resources.FindObjectsOfTypeAll<StateComponent>();
+
+		
+		
+		
 		foreach (StateComponent sc in stateComponents)
 		{
 			GameObject.Destroy(sc);

@@ -47,4 +47,9 @@ public class Command
         }
         return false;
     }
+
+    public static void ClearCommandQueue()
+    {
+        CommandQueue.Clear();
+    }
 }
