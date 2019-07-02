@@ -14,7 +14,7 @@ public class Visual : MonoBehaviour
 	
 	public GameObject CardPoint;
 	public GameObject CardPointOutside;
-	public GameObject CardDeck;
+	
 	public GameObject CardDeckFrame;
 	public GameObject CrewCounter;
 	public GameObject CurrentEncounter;
@@ -42,7 +42,7 @@ public class Visual : MonoBehaviour
 	public void DisableVisualElementsOnStateEnter()
 	{
 		buttonToBattle.gameObject.SetActive(false);
-		CardDeck.gameObject.SetActive(false);
+		CardDeckFrame.gameObject.SetActive(false);
 	}
 	
 	
@@ -61,7 +61,7 @@ public class Visual : MonoBehaviour
 	}
 
 
-	public static List <OneCardManager> GetCurrentEncounter()
+	public  List <OneCardManager> GetCurrentEncounter()
 	{
 		OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
 		List<OneCardManager>  result=new List<OneCardManager>();
@@ -75,5 +75,17 @@ public class Visual : MonoBehaviour
 			result.Add(card);
 		}
 		return result;
+	}
+	
+	
+	
+
+	public void UpdateOneCardManagerVisibility()
+	{
+		List<OneCardManager> encList = GetCurrentEncounter();
+		foreach (OneCardManager enc in encList)
+		{
+			enc.SetVisibility();
+		}
 	}
 }

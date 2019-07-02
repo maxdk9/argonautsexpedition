@@ -19,7 +19,7 @@ namespace command
         {
             
             List<OneCardManager> drawlist=new List<OneCardManager>();
-            OneCardManager[] deckcards = Visual.instance.CardDeck.GetComponentsInChildren<OneCardManager>();
+            OneCardManager[] deckcards = Visual.instance.CardDeckFrame.GetComponentsInChildren<OneCardManager>();
             SameDistanceChildren distance = Visual.instance.CurrentEncounter.GetComponent<SameDistanceChildren>();
             int drawCardNumber = 3;
             distance.CurrentEncounterSize = drawCardNumber;

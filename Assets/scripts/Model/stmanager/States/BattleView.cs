@@ -15,6 +15,7 @@ namespace Model.States
 
         
 
+
         public void OnEnter()
         {
             
@@ -26,9 +27,19 @@ namespace Model.States
         }
         
         
+        private void UpdateOneCardManagerVisibility()
+        {
+            List<OneCardManager> encList = Visual.instance.GetCurrentEncounter();
+            foreach (OneCardManager card in encList)
+            {
+                card.SetVisibility();
+            }
+        }
+        
+        
         private void AutoBattleResolve()
         {
-            List<OneCardManager> currentEncoutnerList = Visual.GetCurrentEncounter();
+            List<OneCardManager> currentEncoutnerList = Visual.instance.GetCurrentEncounter();
             foreach (OneCardManager cardManager in currentEncoutnerList)
             {
                 if (GameLogic.cardIsMonsterOrTreasure(cardManager.cardAsset))

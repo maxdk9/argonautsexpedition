@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEditor;
 
 namespace Model
@@ -19,9 +20,42 @@ namespace Model
             int res=basic+monsterTypeDiff;
             if (HaveEffectByType(Effect.EffectType.CloakOfHeracles_monsterdifficulty_m1_cont))
             {
-                res = Math.max(7, res - 1);
+                res = Math.Max(7, res - 1);
             }
             
+
+            return res;
+        }
+
+        private static int GetMonsterDifficultyModifier(CardManager.Card card)
+        {
+            
+                int res=0;
+                if(HaveEffectByType(Effect.EffectType.Mirrored_Shield)){
+                    return 0;
+                }
+                if(card.name.Equals("skeleton")){
+                    res=GetMonsterNumberInEncounter(card)-1;
+                }
+                if(card.name.Equals("harpy")){
+                   res= GetMonsterNumberInEncounter( card)-1;
+                }
+		
+                return res;
+            
+        }
+
+        private static int GetMonsterNumberInEncounter(CardManager.Card card)
+        {
+            int res = 0;
+            List<OneCardManager> currentEncounter = Visual.instance.GetCurrentEncounter();
+            foreach (OneCardManager enc in currentEncounter)
+            {
+                if (enc.name.Equals(card.name))
+                {
+                    res++;
+                }
+            }
 
             return res;
         }
@@ -38,5 +72,25 @@ namespace Model
 
             return false;
         }
+
+        public static int GetModifiedDiceResult(CardManager.Card card, int diceresult)
+        {
+            int res;
+            int bonus=0;
+            if(card.type==CardType.monster&&HaveEffectByType(Effect.EffectType.SwordOfPeleus_MonsterRolls_p1_cont))
+            {
+                bonus+=1;
+            }
+            if(card.type==CardType.treasure&&HaveEffectByType(Effect.EffectType.Argo_TreasureRolls_p1_cont))
+            {
+                bonus+=1;
+            }	
+            if(card.type==CardType.treasure&&HaveEffectByType(Effect.EffectType.Defeat_ColchianDragon_single)){
+                bonus+=2;
+            }
+            res=Math.Min(diceresult+bonus,6);
+            return res;
+        }
     }
+
 }

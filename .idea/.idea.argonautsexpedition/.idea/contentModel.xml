@@ -43,13 +43,6 @@
               <e p="Outline8.cs" t="Include" />
             </e>
           </e>
-          <e p="command" t="Include">
-            <e p="Command.cs" t="Include" />
-            <e p="Draw3Cards.cs" t="Include" />
-            <e p="GoToNextGamePhase.cs" t="Include" />
-            <e p="MoveCardsFromOutsideToDeck.cs" t="Include" />
-            <e p="PrepareCardForNewGame.cs" t="Include" />
-          </e>
           <e p="common" t="Include">
             <e p="CommonController.cs" t="Include" />
             <e p="Const.cs" t="Include" />
@@ -82,6 +75,13 @@
           </e>
           <e p="Model" t="Include">
             <e p="CardManager.cs" t="Include" />
+            <e p="command" t="Include">
+              <e p="Command.cs" t="Include" />
+              <e p="Draw3Cards.cs" t="Include" />
+              <e p="GoToNextGamePhase.cs" t="Include" />
+              <e p="MoveCardsFromOutsideToDeck.cs" t="Include" />
+              <e p="PrepareCardForNewGame.cs" t="Include" />
+            </e>
             <e p="Effect.cs" t="Include" />
             <e p="Game.cs" t="Include" />
             <e p="GameLogic.cs" t="Include" />

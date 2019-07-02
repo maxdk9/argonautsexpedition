@@ -31,6 +31,7 @@ namespace screen
         public Canvas DeckgameCanvas;
         public Canvas RollDiceCanvas;
         public Canvas TestCanvas;
+        public Canvas BackgroundCanvas;
 
         private ScreenType currentType;
         
@@ -42,6 +43,7 @@ namespace screen
             CreditsCanvas = GameObject.Find("CreditsCanvas").GetComponent<Canvas>();
             DeckgameCanvas = GameObject.Find("DeckgameCanvas").GetComponent<Canvas>();
             RollDiceCanvas = GameObject.Find("RollDiceCanvas").GetComponent<Canvas>();
+            BackgroundCanvas = GameObject.Find("BackgroundCanvas").GetComponent<Canvas>();
             TestCanvas = GameObject.Find("TestCanvas").GetComponent<Canvas>();
             
             screens.Add(ScreenType.Deckgame,DeckgameCanvas);  
@@ -87,18 +89,16 @@ namespace screen
             currentType = screenType;
 
             ShowVisualObjects();
-            ShowDeckBackground();
+      
         }
 
-        private void ShowDeckBackground()
-        {
-            DeckgameCanvas.enabled =( currentType != ScreenType.Mainmenu);
-        }
+      
         
         
         private void ShowVisualObjects()
         {
-            Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame|| currentType==ScreenType.Testscreen);
+            Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame);
+            
         }
 
 

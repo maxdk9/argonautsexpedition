@@ -15,7 +15,7 @@ namespace Model
         public class Card:ScriptableObject
         {
             public int cardnumber;
-            public EffectType effecttype;
+            public Effect.EffectType effecttype;
             public CardType type;
             public UseType useType;
             public bool reserve;
