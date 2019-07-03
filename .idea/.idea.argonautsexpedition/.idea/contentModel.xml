@@ -81,6 +81,7 @@
               <e p="GoToNextGamePhase.cs" t="Include" />
               <e p="MoveCardsFromOutsideToDeck.cs" t="Include" />
               <e p="PrepareCardForNewGame.cs" t="Include" />
+              <e p="PrepareCardResumeGame.cs" t="Include" />
             </e>
             <e p="Effect.cs" t="Include" />
             <e p="Game.cs" t="Include" />

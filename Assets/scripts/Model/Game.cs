@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using Model;
 using UnityEngine;
 
-public class Game : MonoBehaviour
+[System.Serializable]
+public class Game 
 {
-	private int currentEnemyIndex = 0;
+	
 	public List <CardManager.Card> currentDeck=new List<CardManager.Card>();
 	
 	public List <CardManager.Card> reserveDeck=new List<CardManager.Card>();
@@ -23,19 +24,27 @@ public class Game : MonoBehaviour
 	public List<HeroicDeed> HeroicDeedList=new List<HeroicDeed>();
 	public List <Effect> CardEffects=new List<Effect>();
 	
-	
+	[SerializeField]
+	private int currentEnemyIndex = 0;
+	[SerializeField]
 	private int crewNumber;
+	[SerializeField]
 	private int casualties;
+	[SerializeField]
 	private bool rerollDaedalusWing=false;
+	[SerializeField]
 	private int winnedHD;
+	[SerializeField]
 	private int heroicCount=0;
+	[SerializeField]
 	private int scyllaCasualties;
-	
+	[SerializeField]
 	private int ToWork=0;
+	[SerializeField]
 	private int TutorialCounter=0;
-	
+	[SerializeField]
 	private GamePhase currentState;
-	
+	[SerializeField]
 	private int deployedCrew=0;
 	
 
@@ -71,30 +80,24 @@ public class Game : MonoBehaviour
 
 	public int ScyllaCasualties
 	{
-		get { return scyllaCasualties; }
+		get
+		{
+			return scyllaCasualties; 
+		}
 		set { scyllaCasualties = value; }
 	}
-
-	
-
-
-	
-	
-
-	
-	
-	
-	
-	
-	
 	
 	
 	//CONSTANTS
 	public static int CREWNUMBERSTART=12;
-
-
-
+	
+	
 	public static Game instance;
+
+	public Game()
+	{
+		instance = this;
+	}
 
 	public GamePhase CurrentState
 	{
@@ -106,23 +109,6 @@ public class Game : MonoBehaviour
 	{
 		get { return deployedCrew; }
 		set { deployedCrew = value; }
-	}
-
-
-	private void Awake()
-	{
-		instance = this;
-	}
-
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public  void StartNewGame()

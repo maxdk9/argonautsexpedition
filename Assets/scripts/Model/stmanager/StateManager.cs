@@ -80,8 +80,8 @@ public class StateManager
 				Debug.Log(e.Message);
 			}
 			Visual.instance.DisableVisualElementsOnStateEnter();
-			GameLogicEvents.CopyGameActorsToCurrentGame();
 			GameManager.instance.SetCurrentState( type);
+			GameLogicEvents.CopyGameActorsToCurrentGame();
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);
 			GameManager.instance.RemoveStateComponentsFromActor();
 			Visual.instance.UpdateCrewCounter();

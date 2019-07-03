@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using screen;
 using UnityEngine.Events;
 
 namespace Model.States
@@ -19,6 +20,8 @@ namespace Model.States
 
         public void OnEnter()
         {
+            
+            ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
             HoverPreview.StopAllPreviews();
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();

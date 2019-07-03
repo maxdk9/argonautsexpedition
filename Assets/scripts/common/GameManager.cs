@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 {
 
 	public static GameManager instance = null; // Экземпляр объекта
+	private Game currentGame;
+	
 	
 	public GameObject MonsterCardPrefab;
 	public GameObject ItemCardPrefab;
@@ -23,7 +25,8 @@ public class GameManager : MonoBehaviour
 	
 	void Start () {
 		if (instance == null) { 
-			instance = this;  
+			instance = this; 
+			currentGame=new Game();
 		} else if(instance == this){ 
 			Destroy(gameObject); 
 		}

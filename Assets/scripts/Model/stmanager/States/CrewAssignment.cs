@@ -1,4 +1,5 @@
 using Assets.SimpleLocalization;
+using screen;
 using UnityEngine;
 
 namespace Model.States
@@ -14,6 +15,7 @@ namespace Model.States
 
         public void OnEnter()
         {
+            ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
             Debug.Log("CrewAssignment");
             Visual.instance.buttonToBattle.gameObject.SetActive(true);
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("assigncrewmembers"),10);

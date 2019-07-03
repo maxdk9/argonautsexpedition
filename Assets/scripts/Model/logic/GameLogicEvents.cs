@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,9 +22,30 @@ namespace Model
         
         public static void CopyGameActorsToCurrentGame()
         {
+            if (Game.instance.CurrentState == GamePhase.ResumeGame)
+            {
+                return;
+            }
+            if (Game.instance.CurrentState == GamePhase.StartNewGame)
+            {
+                return;
+            }
+            
+            
+            UpdateCardList(Visual.instance.CurrentEncounter, Game.instance.currentEncounter);
+            UpdateCardList(Visual.instance.CardDeckFrame, Game.instance.currentDeck);
             
         }
 
+        private static void UpdateCardList(GameObject objectGroup, List<CardManager.Card> cardlist)
+        {
+            cardlist.Clear();
+            OneCardManager[] array = objectGroup.GetComponentsInChildren<OneCardManager>();
+            foreach (OneCardManager cardManager in array)
+            {
+                cardlist.Add(cardManager.cardAsset);
+            }
+        }
 
 
         public static int GetDeployedCrew()

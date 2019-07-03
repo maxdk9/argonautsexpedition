@@ -67,7 +67,6 @@ namespace command
         private void MoveCardToCurrentEncounterGroup([CanBeNull] OneCardManager card, Transform parent)
         {
             card.transform.SetParent(parent);
-            Debug.Log("Draw3CardsCoroutine card moved " + card.cardAsset.cardnumber.ToString());
         }
     }
 }

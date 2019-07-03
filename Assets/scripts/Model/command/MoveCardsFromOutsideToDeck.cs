@@ -58,8 +58,18 @@ namespace command
                 cardObject.transform.SetParent(partyStack);
                 Debug.Log("MoveCardToAnotherParent "+cardObject.GetInstanceID());    
             };
-            
-
         }
+        
+        
+        public static void SimpleMoveCardToAnotherParent ( GameObject cardObject, Transform partyStack)
+        {   
+            cardObject.transform.SetParent(null);
+            cardObject.transform.DOMove(partyStack.position, 0).onComplete= () =>
+            {
+                cardObject.transform.SetParent(partyStack);    
+            };
+        }
+        
+        
     }
 }

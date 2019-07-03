@@ -1,29 +1,20 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.Experimental.Audio.Google;
 
 
 [System.Serializable]
 public class SaveLoadHelper
 {
-
     private static SaveLoadHelper instance=new SaveLoadHelper();
-
     public static string defaultPrefixString ="defaultSave";
     private static string gameStringConstant = "game";    
     
 
-    public static void MakeMementoCurrentGame()
-    {
-     
-
-    }
-
-    public static void InitializeGameFromMemento()
-    {
-    }
-
+ 
     
 
     
@@ -31,8 +22,9 @@ public class SaveLoadHelper
 
     public static void Save(string prefix)
     {
-        MakeMementoCurrentGame();
-        string gameString = UnityEngine.JsonUtility.ToJson(instance);
+ 
+        string gameString = UnityEngine.JsonUtility.ToJson(Game.instance);
+        Debug.Log(gameString);
         PlayerPrefs.SetString(prefix + gameStringConstant, gameString);
         PlayerPrefs.Save();
     }
@@ -41,8 +33,9 @@ public class SaveLoadHelper
     public static void Load(string prefix)
     {
         string gameString = PlayerPrefs.GetString(prefix + gameStringConstant);
-        instance = UnityEngine.JsonUtility.FromJson<SaveLoadHelper>(gameString);
-        InitializeGameFromMemento();
+        UnityEngine.JsonUtility.FromJson<Game>(gameString);
+        String currstring = "sdfsdf";
+
     }
 
 
@@ -50,6 +43,6 @@ public class SaveLoadHelper
     {
         
         instance = UnityEngine.JsonUtility.FromJson<SaveLoadHelper>(tutorialString);
-        InitializeGameFromMemento();
+ 
     }
 }

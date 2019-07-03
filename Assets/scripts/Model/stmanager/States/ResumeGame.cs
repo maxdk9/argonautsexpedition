@@ -6,17 +6,19 @@ namespace Model.States
         
         public void Execute(double time)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            new PrepareCardResumeGame().AddToQueue();
+            
+            new GoToNextGamePhase(Game.instance.CurrentState).AddToQueue();
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

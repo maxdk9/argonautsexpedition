@@ -71,6 +71,7 @@ namespace screen
 
         public void Show(ScreenType screenType)
         {
+            
             foreach (KeyValuePair<ScreenType,Canvas> keyvalue in screens)
             {
                 if (keyvalue.Key == screenType)

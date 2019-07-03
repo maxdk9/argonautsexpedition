@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Model;
 using screen;
 using tools;
 using UnityEngine;
@@ -37,12 +38,14 @@ public class MainMenu : MonoBehaviour {
 	public void ResumeGame()
 	{
 		
+		SaveLoadHelper.Load(SaveLoadHelper.defaultPrefixString);
+		StateManager.getInstance().MoveNext(GamePhase.ResumeGame);
 	}
 
 	public void TestGame()
 	{
 		ScreenManager.instance.Show(ScreenManager.ScreenType.Testscreen);
-		TestTools.TestFillDeck();
+		TestTools.MainTest();
 	}
 	
 	

@@ -184,8 +184,21 @@ namespace tools
 
 
         }
-        
+
+
+
+        public static void ShowRollDice()
+        {
+            ScreenManager.instance.Show(ScreenManager.ScreenType.Rolldice);
+        }
+
+        public static void MainTest()
+        {
+            ShowRollDice();
+        }
     }
+    
+    
     
     
     

@@ -55,9 +55,12 @@ public class OneCardManager : DestroyableEntity
 
   
     void Awake()
-    {   
+    {
         if (cardAsset != null)
-            ReadCardFromAsset();
+        {
+            
+        }
+            //ReadCardFromAsset();
     }
     
     
@@ -283,9 +286,16 @@ public class OneCardManager : DestroyableEntity
     {
         if (cardAsset.resolved == ResolvedType.resolved_win||cardAsset.resolved==ResolvedType.resolved_lost)
         {
+            if (CrewImage == null)
+            {
+                return;
+            }
             Sequence sequence= DOTween.Sequence();
-            sequence.Append(CrewImage.transform.DORotate(new Vector3(0,0,360),1 ));            
-            sequence.SetLoops(-1);
+            
+            sequence.Append(CrewImage.transform.DOBlendableMoveBy(new Vector3(0,2), .3f));
+            
+            sequence.Append(CrewImage.transform.DOBlendableMoveBy(new Vector3(0,-2), .3f));
+            sequence.SetLoops(2);
             sequence.Play();
         }
     }

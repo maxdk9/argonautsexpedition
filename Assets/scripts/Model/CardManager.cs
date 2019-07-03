@@ -12,7 +12,7 @@ namespace Model
     public class CardManager
     {
 	    [System.Serializable]
-        public class Card:ScriptableObject
+        public class Card
         {
             public int cardnumber;
             public Effect.EffectType effecttype;
