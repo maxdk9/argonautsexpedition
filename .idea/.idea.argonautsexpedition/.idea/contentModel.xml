@@ -22,12 +22,11 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
-        <e p="Dice.cs" t="Include" />
-        <e p="DiceSide.cs" t="Include" />
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
         <e p="Prefabs.cs" t="Include" />
+        <e p="RollDiceManager.cs" t="Include" />
         <e p="SameDistanceChildren.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="advancedtools" t="Include">
@@ -48,6 +47,13 @@
             <e p="Const.cs" t="Include" />
             <e p="GameLoader.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+          </e>
+          <e p="Dice" t="Include">
+            <e p="ApplyForceInRandomDirection.cs" t="Include" />
+            <e p="Dice.cs" t="Include" />
+            <e p="DiceSide.cs" t="Include" />
+            <e p="DieValue.cs" t="Include" />
+            <e p="DisplayCurrentDiceValue.cs" t="Include" />
           </e>
           <e p="dragging" t="Include">
             <e p="DraggingTest" t="Include">
