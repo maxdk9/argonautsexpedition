@@ -25,6 +25,26 @@ namespace Model.States
             HoverPreview.StopAllPreviews();
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();
+            AddResolveCardByRollDiceComponent();
+
+        }
+
+        private void AddResolveCardByRollDiceComponent()
+        {
+            List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
+            foreach (OneCardManager cm in enclist)
+            {
+                if (cm.cardAsset.resolved == ResolvedType.resolved_lost |
+                    cm.cardAsset.resolved == ResolvedType.resolved_win)
+                {
+                    continue;
+                }
+
+                cm.gameObject.AddComponent<ResolveCardByDiceRoll>();
+
+
+            }
+            
         }
 
         public void OnExit()

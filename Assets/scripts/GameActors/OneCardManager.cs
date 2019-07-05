@@ -257,21 +257,24 @@ public class OneCardManager : DestroyableEntity
     {
         
         CrewLabel.enabled = false;
-        
-        
-        
-        if (cardAsset.resolved == ResolvedType.resolved_win)
+
+
+        if (CrewImage != null)
         {
-            CrewImage.sprite = Visual.instance.ThumbsUp;
-        
+
+
+            if (cardAsset.resolved == ResolvedType.resolved_win)
+            {
+                CrewImage.sprite = Visual.instance.ThumbsUp;
+
+            }
+
+            if (cardAsset.resolved == ResolvedType.resolved_lost)
+            {
+                CrewImage.sprite = Visual.instance.ThumbsDown;
+            }
         }
 
-        if (cardAsset.resolved == ResolvedType.resolved_lost)
-        {
-            CrewImage.sprite = Visual.instance.ThumbsDown;
-        }
-            
-            
         if (cardAsset.resolved == ResolvedType.notresolved)
         {
             if (cardAsset.crewNumber > 0)

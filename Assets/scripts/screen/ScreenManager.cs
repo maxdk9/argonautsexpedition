@@ -18,12 +18,6 @@ namespace screen
             DontDestroyOnLoad(gameObject);
             InitializeManager();
         }
-
-	
-        
-
-        
-
         
         public Canvas MainMenuCanvas;
         public Canvas OptionsCanvas;
@@ -32,7 +26,6 @@ namespace screen
         public Canvas RollDiceCanvas;
         public Canvas TestCanvas;
         public Canvas BackgroundCanvas;
-
         private ScreenType currentType;
         
         
@@ -76,30 +69,34 @@ namespace screen
             {
                 if (keyvalue.Key == screenType)
                 {
-                    keyvalue.Value.enabled = true;
+
+                    TurnOnCanvas(keyvalue.Value,true);
+                    
+                    
                     currentType = screenType;
                     
                 }
                 else
                 {
-                    keyvalue.Value.enabled=false;
-                }
-                
+                    TurnOnCanvas(keyvalue.Value,false);
+                    
+                }   
             }
-
             currentType = screenType;
-
             ShowVisualObjects();
       
         }
 
-      
-        
-        
+        private void TurnOnCanvas(Canvas canvas, bool enabled)
+        {
+            canvas.enabled=enabled;
+            canvas.gameObject.SetActive(enabled);
+        }
+
+
         private void ShowVisualObjects()
         {
-            Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame);
-            
+            Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame);            
         }
 
 

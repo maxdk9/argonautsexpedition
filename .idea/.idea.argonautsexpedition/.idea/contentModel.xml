@@ -126,6 +126,7 @@
           <e p="statecomponent" t="Include">
             <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
+            <e p="ResolveCardByRollDice.cs" t="Include" />
             <e p="StateComponent.cs" t="Include" />
           </e>
           <e p="tools" t="Include">

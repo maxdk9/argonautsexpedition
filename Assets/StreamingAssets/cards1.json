@@ -3,6 +3,7 @@
 
 {
 	
+	"cardnumber": 1,
 	"type": "monster",
 	"resolved": "notresolved",
 	"name": "skeleton",
@@ -10,91 +11,91 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 2,
 	"type": "monster",
 	"name": "skeleton",
 	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 3,
 	"type": "monster",
 	"name": "skeleton",
 	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 4,
 	"type": "monster",
 	"name": "harpy",
 	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 5,
 	"type": "monster",
 	"name": "harpy",
 	"difficulty": [ 6, 6, 6, 7, 7, 8 ],
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 6,
 	"type": "monster",
 	"name": "hydra",
 	"difficulty": [ 7, 8, 9, 10, 11, 11 ],
 	"deadliness": [ 1, 2, 2, 3, 3, 4 ]
 },
 {
-	
+	"cardnumber": 7,
 	"type": "monster",
 	"name": "gorgon",
 	"difficulty": [ 7, 7, 8, 7, 8, 8 ],
 	"deadliness": [ 1, 1, 1, 2, 2, 2 ]
 },
 {
-	
+	"cardnumber": 8,	
 	"type": "monster",
 	"name": "typhon",
 	"difficulty": [ 10, 9, 9, 8, 8, 8 ],
 	"deadliness": [ 3, 2, 2, 2, 2, 1 ]
 },
 {
-	
+	"cardnumber": 9,
 	"type": "monster",
 	"name": "echidna",
 	"difficulty": [ 9, 9, 8, 8, 7, 7 ],
 	"deadliness": [ 2, 2, 2, 2, 2, 1 ]
 },
 {
-	
+	"cardnumber": 10,
 	"type": "monster",
 	"name": "minotaur",
 	"difficulty": [ 8, 9, 8, 9, 9, 9 ],
 	"deadliness": [ 1, 2, 2, 2, 2, 3 ]
 },
 {
-	
+	"cardnumber": 11,
 	"type": "monster",
 	"name": "cyclops",
 	"difficulty": [ 9, 9, 9, 9, 9, 9 ],
 	"deadliness": [ 1, 2, 2, 2, 2, 2 ]
 },
 {
-	
+	"cardnumber": 12,
 	"type": "monster",
 	"name": "cerberus",
 	"difficulty": [ 8, 8, 8, 10, 9, 9 ],
 	"deadliness": [ 1, 1, 2, 2, 2, 2 ]
 },
 {
-	
+	"cardnumber": 13,
 	"type": "monster",
 	"name": "manticore",
 	"difficulty": [ 8, 8, 9, 9, 9, 10 ],
 	"deadliness": [ 1, 2, 1, 2, 2, 2 ]
 },
 {
-	
+	"cardnumber": 14,
 	"effecttype":  "Defeat_ColchianDragon_single",
 	"type": "monster",
 	"name": "colchiandragon",
@@ -102,7 +103,7 @@
 	"deadliness": [ 1, 1, 2, 2, 2, 3 ]
 },
 {
-	
+	"cardnumber": 15,
 	"effecttype":  "Ignore_Scylla",
 	"type": "monster",
 	"name": "scylla",
@@ -110,7 +111,7 @@
 	"deadliness": [ 2, 2, 2, 2, 2, 2 ]
 },
 {
-	
+	"cardnumber": 16,
 	"effecttype":  "Ignore_Charybdis",
 	"type": "monster",
 	"name": "charybdis",
@@ -118,35 +119,35 @@
 	"deadliness": [ 2, 2, 2, 2, 2, 2 ]
 },
 {
-	
+	"cardnumber": 17,
 	"type": "monster",
 	"name": "ketos",
 	"difficulty": [ 8, 8, 8, 10, 9, 9 ],
 	"deadliness": [ 1, 1, 2, 1, 1, 2 ]
 },
 {
-	
+	"cardnumber": 18,
 	"type": "monster",
 	"name": "khalkotaurus",
 	"difficulty": [ 7, 8, 8, 9, 9, 9 ],
 	"deadliness": [ 1, 1, 2, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 19,
 	"type": "monster",
 	"name": "khalkotaurus",
 	"difficulty": [ 7, 8, 8, 9, 9, 9 ],
 	"deadliness": [ 1, 1, 2, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 20,
 	"type": "monster",
 	"name": "sirens",
 	"difficulty": [ 7, 7, 7, 7, 8, 8 ],
 	"deadliness": [ 1, 1, 1, 1, 1, 1 ]
 },
 {
-	
+	"cardnumber": 21,
 	"effecttype":  "Argo_TreasureRolls_p1_cont",
 	"type": "treasure",
 	"useType": "continuous",
@@ -155,7 +156,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 22,
 	"effecttype":  "SwordOfPeleus_MonsterRolls_p1_cont",
 	"type": "treasure",
 	"useType": "continuous",
@@ -164,7 +165,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 23,
 	"effecttype":  "WingedSandals_ReturnAdventureCard_single",
 	"type": "treasure",
 	"useType": "single",
@@ -173,9 +174,8 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 24,
 	"effecttype":  "Cornucopia_Recover2Crew_single",
-
 	"type": "treasure",
 	"useType": "single",
 	"name": "cornucopia",
@@ -183,7 +183,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 25,
 	"type": "treasure",
 	"useType": "single",
 	"name": "goldenfleece",
@@ -191,7 +191,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 26,
 	"effecttype":  "PansFlute_DiscardTop2Cards_single",
 	"type": "treasure",
 	"useType": "single",
@@ -200,7 +200,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 27,
 	"type": "treasure",
 	"useType": "continuous",
 	"name": "mirroredshield",
@@ -208,7 +208,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 28,
 	"effecttype":  "OrpheusLyre_StopLevelUpMonsterInVictoryPile_single",
 	"type": "treasure",
 	"useType": "single",
@@ -217,7 +217,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 29,
 	"type": "monster",
 	"reserve": true,
 	"name": "chimera",
@@ -225,7 +225,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 30,	
 	"type": "monster",
 	"reserve": true,
 	"name": "nemeanlion",
@@ -233,7 +233,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 31,
 	"type": "monster",
 	"reserve": true,
 	"name": "sphinx",
@@ -241,7 +241,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 32,
 	"type": "monster",
 	"reserve": true,
 	"name": "harpy",
@@ -249,7 +249,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 33,
 	"type": "monster",
 	"reserve": true,
 	"name": "harpy",
@@ -257,7 +257,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 34,
 	"type": "monster",
 	"reserve": true,
 	"name": "harpy",
@@ -265,7 +265,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 35,
 	"type": "monster",
 	"reserve": true,
 	"name": "harpy",
@@ -273,7 +273,7 @@
 	"deadliness": [ 1, 1, 1, 1, 2, 2 ]
 },
 {
-	
+	"cardnumber": 36,
 	"effecttype":  "HelmOfHades_MoveMonsterToDiscardPile_single",
 	"type": "treasure",
 	"useType": "single",
@@ -283,7 +283,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 37,
 	"effecttype":  "CloakOfHeracles_monsterdifficulty_m1_cont",
 	"type": "treasure",
 	"useType": "single",
@@ -293,7 +293,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 38,
 	"effecttype":  "PoseydonTrident_ConvertWrathToBlessing_cont",
 	"type": "treasure",
 	"useType": "continuous",
@@ -303,7 +303,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 39,
 	"effecttype":  "Ambrosia_Recover3Crew_single",
 	"type": "treasure",
 	"useType": "single",
@@ -313,7 +313,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 40,
 	"effecttype":  "DaedalusWing_RerollDieOncePerTurn_cont",
 	"type": "treasure",
 	"useType": "single",
@@ -323,7 +323,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 41,
 	"effecttype":  "AegisOfZeus_IgnoreDeadliness_single",
 	"type": "treasure",
 	"useType": "single",
@@ -333,7 +333,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 42,
 	"effecttype":  "ApolloBow_RollDice6_single",
 	"type": "treasure",
 	"useType": "single",
@@ -343,7 +343,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 43,
 	"type": "blessing",
 	"useType": "single",
 	"name": "hera_blessing",
@@ -351,7 +351,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 44,
 	"type": "blessing",
 	"useType": "single",
 	"name": "hera_blessing",
@@ -359,7 +359,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 45,
 	"type": "wrath",
 	"useType": "single",
 	"reserve": true,
@@ -369,7 +369,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 46,
 	"type": "wrath",
 	"useType": "single",
 	"reserve": true,
@@ -379,7 +379,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 47,
 	"type": "wrath",
 	"useType": "single",
 	"reserve": true,
@@ -389,7 +389,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 48,
 	"type": "wrath",
 	"useType": "single",
 	"reserve": true,
@@ -399,7 +399,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 49,
 	"type": "blessing",
 	"useType": "single",
 	"reserve": true,
@@ -408,7 +408,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 50,
 	"type": "blessing",
 	"useType": "single",
 	"reserve": true,
@@ -417,7 +417,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 51,
 	"type": "blessing",
 	"useType": "single",
 	"reserve": true,
@@ -426,7 +426,7 @@
 	"deadliness": [ 0, 0, 0, 0, 0, 0 ]
 },
 {
-	
+	"cardnumber": 52,
 	"type": "blessing",
 	"useType": "single",
 	"reserve": true,

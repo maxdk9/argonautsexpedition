@@ -201,10 +201,10 @@ illegaltilepositiontempleentranceoutdoor,Illegal. Temple entrance must be free!,
 sin_echidna,Echidna,Echidna
 legend_typhon,ADD 3 - CHIMERA,ADD 3 - CHIMERA
 legend_mirroredshield,"Ignore effects
- printed on monsters
- Does not stop ADD","Ignore effects
- printed on monsters
- Does not stop ADD"
+printed on monsters
+Does not stop ADD","Ignore effects
+printed on monsters
+Does not stop ADD"
 youscore,You score,You score
 youfeelasparkofhope,You feel a spark of hope,You feel a spark of hope
 doyouwantactivate,Are you going to activate?,Are you going to activate?
@@ -229,7 +229,9 @@ ignore,Ignore,Ignore
 tutorial,Tutorial,Tutorial
 spendheroicdeed,Spend your heroic deed,Spend your heroic deed
 losehealthwhilerunaway,You lost 1 health while running away,You lost 1 health while running away
-legend_echidna,ADD 2 -NEMEAN LION ADD 4 - SPHINX,ADD 2 -NEMEAN LION ADD 4 - SPHINX
+legend_echidna,"ADD 2 -NEMEAN LION
+ADD 4 - SPHINX","ADD 2 -NEMEAN LION
+ADD 4 - SPHINX"
 victory,Victory,Victory
 go,GO-GO,GO-GO
 choosecardtostayontop,Choose a card that  go bottom,Choose a card that  go bottom
@@ -300,10 +302,10 @@ dontshowthiswindow,"Don't show
  this window"
 sin_apollo_blessing,APOLLO'S,APOLLO'S
 legend_cerberus,"ADD 3-HADES WRATH
- ADD 5-HADES WRATH
- ADD 5-HELM OF HADES","ADD 3-HADES WRATH
- ADD 5-HADES WRATH
- ADD 5-HELM OF HADES"
+ADD 5-HADES WRATH
+ADD 5-HELM OF HADES","ADD 3-HADES WRATH
+ADD 5-HADES WRATH
+ADD 5-HELM OF HADES"
 crew,Crew,Crew
 artistvalue,JregNonk ArtVenture,JregNonk ArtVenture
 discardmonsterbyhadeshelm,"Touch monster to
@@ -355,7 +357,11 @@ legend_orpheuslyre,"Stop a monster in
  level up at the end","Stop a monster in
  victory pile from
  level up at the end"
-legend_ketos,ADD3-POSEIDON WRATH  ADD5-POSEIDON WRATH  ADD5-POSEIDON TRIDENT,ADD3-POSEIDON WRATH  ADD5-POSEIDON WRATH  ADD5-POSEIDON TRIDENT
+legend_ketos,"ADD3-POSEIDON WRATH
+ADD5-POSEIDON WRATH
+ADD5-POSEIDON TRIDENT","ADD3-POSEIDON WRATH
+ADD5-POSEIDON WRATH
+ADD5-POSEIDON TRIDENT"
 gobattle,Attack!!! To the battle.,Attack!!! To the battle.
 newgame,New Game,New Game
 continuous,CONTINUOUS,CONTINUOUS
@@ -386,7 +392,9 @@ needmoreheroicdeed,"Need more
  heroic deed"
 plus3crew, +3 crew, +3 crew
 endgameheader,GAME OVER,GAME OVER
-legend_harpy," +1 difficulty for each  other harpy in play  ADD 3,5 - HARPY"," +1 difficulty for each  other harpy in play  ADD 3,5 - HARPY"
+legend_harpy," +1 difficulty for each  other harpy in play
+ADD 3,5 - HARPY"," +1 difficulty for each  other harpy in play
+ADD 3,5 - HARPY"
 ok,OK,OK
 win,Win,Win
 disarmtrap,You disarm trap with lockpick,You disarm trap with lockpick

@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RollDiceManager : MonoBehaviour {
+public class RollDiceManager : MonoBehaviour
+{
+	private RollDiceManager instance;
+	public GameObject MainDice;
+
+	private void Awake()
+	{
+		instance = this;
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -14,12 +22,5 @@ public class RollDiceManager : MonoBehaviour {
 	void Update () {
 		
 	}
-
-	public void GoToDeckScene()
-	{
-		int i = 0;
-		SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(0));
-	}
-	
 	
 }

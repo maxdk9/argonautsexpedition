@@ -23,7 +23,8 @@ public class DisplayCurrentDiceValue : MonoBehaviour
 		
 		
 
-		if (Physics.Raycast(transform.position, Vector3.up, out hit, Mathf.Infinity, dieValueColliderLayer))
+		Vector3 direction=new Vector3(0,0,-1);
+		if (Physics.Raycast(transform.position, direction, out hit, Mathf.Infinity, dieValueColliderLayer))
 		{
 				Value=hit.collider.GetComponent<DieValue>().Value;	
 		}

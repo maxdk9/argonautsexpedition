@@ -20,6 +20,10 @@ public class Visual : MonoBehaviour
 	public GameObject CrewCounter;
 	public GameObject CurrentEncounter;
 	public Button buttonToBattle;
+	
+	public GameObject currentDiceEncounter;
+	public GameObject mainDice;
+	
 
 	public Sprite ThumbsUp;
 	public Sprite ThumbsDown;
@@ -48,7 +52,11 @@ public class Visual : MonoBehaviour
 	{
 		buttonToBattle.gameObject.SetActive(false);
 		CardDeckFrame.gameObject.SetActive(false);
-		CrewAssigner.instance.Hide();
+		if (CrewAssigner.instance != null)
+		{
+			CrewAssigner.instance.Hide();	
+		}
+		
 	}
 	
 	
@@ -93,5 +101,19 @@ public class Visual : MonoBehaviour
 		{
 			enc.SetVisibility();
 		}
+	}
+
+	public CardManager.Card GetCardByNumberFromCurrentEncounter(int argnumber)
+	{
+		List<OneCardManager> encList = GetCurrentEncounter();
+		foreach (OneCardManager cm in encList)
+		{
+			if (cm.cardAsset.cardnumber == argnumber)
+			{
+				return cm.cardAsset;
+			}
+		}
+
+		return null;
 	}
 }

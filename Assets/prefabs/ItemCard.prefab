@@ -1319,7 +1319,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 1.9155288, z: 0, w: -0.67614216}
+  m_margin: {x: 0, y: -3.5451374, z: 0, w: 15.705856}
   m_textInfo:
     textComponent: {fileID: 114015236289135238}
     characterCount: 44
@@ -1330,7 +1330,7 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -1359,7 +1359,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b082068e1716674a937d11b77854052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardAsset: {fileID: 0}
+  cardAsset:
+    cardnumber: 0
+    effecttype: 0
+    type: 0
+    useType: 0
+    reserve: 0
+    wrath: 0
+    level: 0
+    crewNumber: 0
+    rollResult: 0
+    resolved: 0
+    ignore: 0
+    IgnoreDeadliness: 0
+    markApolloBow: 0
+    markOrpheusLyre: 0
+    name: 
+    difficulty: 
+    deadliness: 
   PreviewManager: {fileID: 114438415923045450}
   NameLabel: {fileID: 114735618425627492}
   DifficultyLabel: {fileID: 114397274485207062}
@@ -1922,11 +1939,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -2064,7 +2081,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b082068e1716674a937d11b77854052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardAsset: {fileID: 0}
+  cardAsset:
+    cardnumber: 0
+    effecttype: 0
+    type: 0
+    useType: 0
+    reserve: 0
+    wrath: 0
+    level: 0
+    crewNumber: 0
+    rollResult: 0
+    resolved: 0
+    ignore: 0
+    IgnoreDeadliness: 0
+    markApolloBow: 0
+    markOrpheusLyre: 0
+    name: 
+    difficulty: 
+    deadliness: 
   PreviewManager: {fileID: 0}
   NameLabel: {fileID: 114801314820756548}
   DifficultyLabel: {fileID: 114558193335554666}
@@ -2230,7 +2264,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -2287,7 +2321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05660379, g: 0.0536668, b: 0.0536668, a: 0.21568628}
+  m_Color: {r: 0.7169812, g: 0.6865433, b: 0.6865433, a: 0.32941177}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2375,7 +2409,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 23.5
+  m_fontSize: 23.2
   m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2413,7 +2447,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 1.9155288, z: 0, w: -0.67614216}
+  m_margin: {x: 0, y: -1.9848338, z: 0, w: -0.67614216}
   m_textInfo:
     textComponent: {fileID: 114663341787871566}
     characterCount: 44
@@ -2454,7 +2488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.05660379, g: 0.0536668, b: 0.0536668, a: 0.21568628}
+  m_Color: {r: 0.5754717, g: 0.53475434, b: 0.53475434, a: 0.32941177}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2704,7 +2738,7 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -3254,8 +3288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 65}
-  m_SizeDelta: {x: -10, y: 90}
+  m_AnchoredPosition: {x: -0, y: 49.15}
+  m_SizeDelta: {x: -10, y: 98.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224221417174759582
 RectTransform:
@@ -3292,8 +3326,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 65}
-  m_SizeDelta: {x: -10, y: 90}
+  m_AnchoredPosition: {x: -1.800003, y: 51.97}
+  m_SizeDelta: {x: -10, y: 92.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224229650666719120
 RectTransform:
@@ -3459,8 +3493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -12.2}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1.800003, y: -1.2799988}
+  m_SizeDelta: {x: -3.6, y: -21.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224502593208072206
 RectTransform:
