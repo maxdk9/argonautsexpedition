@@ -23,6 +23,8 @@ public class Visual : MonoBehaviour
 	
 	public GameObject currentDiceEncounter;
 	public GameObject mainDice;
+	public Image RollDiceImage;
+	
 	
 
 	public Sprite ThumbsUp;
@@ -52,6 +54,8 @@ public class Visual : MonoBehaviour
 	{
 		buttonToBattle.gameObject.SetActive(false);
 		CardDeckFrame.gameObject.SetActive(false);
+		ResultPanel.instance.panelCanvas.gameObject.SetActive(false);
+		
 		if (CrewAssigner.instance != null)
 		{
 			CrewAssigner.instance.Hide();	

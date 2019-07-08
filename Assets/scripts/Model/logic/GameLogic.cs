@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using Assets.SimpleLocalization;
 using UnityEditor;
 
 namespace Model
@@ -93,6 +95,13 @@ namespace Model
             }
             res=Math.Min(diceresult+bonus,6);
             return res;
+        }
+
+        
+        
+        public static string GetResultMessage()
+        {
+            return LocalizationManager.Localize("WIN");
         }
     }
 

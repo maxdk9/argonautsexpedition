@@ -9,7 +9,7 @@ public class DieValue : MonoBehaviour,IPointerDownHandler
 	
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		Debug.Log("ApplyForceInRandomDirection"+eventData.position);
+		
 	
 	}
 }

@@ -50,7 +50,6 @@
           </e>
           <e p="Dice" t="Include">
             <e p="ApplyForceInRandomDirection.cs" t="Include" />
-            <e p="Dice.cs" t="Include" />
             <e p="DiceSide.cs" t="Include" />
             <e p="DieValue.cs" t="Include" />
             <e p="DisplayCurrentDiceValue.cs" t="Include" />
@@ -73,7 +72,6 @@
             <e p="DamageEffectTest.cs" t="Include" />
             <e p="DestroyableEntity.cs" t="Include" />
             <e p="HoverPreview.cs" t="Include" />
-            <e p="MessageManager.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
           </e>
           <e p="Localization" t="Include">
@@ -127,7 +125,8 @@
             <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
             <e p="ResolveCardByRollDice.cs" t="Include" />
-            <e p="StateComponent.cs" t="Include" />
+            <e p="RollDiceTouchListener.cs" t="Include" />
+            <e p="tempTouchComponent.cs" t="Include" />
           </e>
           <e p="tools" t="Include">
             <e p="GetStreamingAssetsFilePath.cs" t="Include" />
@@ -140,6 +139,10 @@
               <e p="Sender.cs" t="Include" />
             </e>
             <e p="TestTools.cs" t="Include" />
+          </e>
+          <e p="ui" t="Include">
+            <e p="MessageManager.cs" t="Include" />
+            <e p="ResultPanel.cs" t="Include" />
           </e>
         </e>
         <e p="SimpleLocalization" t="Include">

@@ -10,7 +10,7 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class ResolveCardByDiceRoll :StateComponent,UnityEngine.EventSystems.IPointerDownHandler
+public class ResolveCardByDiceRoll :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
     {
         
         public void OnPointerDown(PointerEventData eventData)

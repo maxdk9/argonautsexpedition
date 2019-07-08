@@ -26,7 +26,7 @@ namespace Model.States
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();
             AddResolveCardByRollDiceComponent();
-
+            
         }
 
         private void AddResolveCardByRollDiceComponent()

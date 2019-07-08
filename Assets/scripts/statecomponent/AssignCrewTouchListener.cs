@@ -10,7 +10,7 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class AssignCrewTouchListener :StateComponent,UnityEngine.EventSystems.IPointerDownHandler
+public class AssignCrewTouchListener :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
     {
         
         public void OnPointerDown(PointerEventData eventData)

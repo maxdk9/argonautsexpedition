@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace GameActors
 {
-    public class StateComponent:MonoBehaviour
+    public class tempTouchComponent:MonoBehaviour
     {
         
     }

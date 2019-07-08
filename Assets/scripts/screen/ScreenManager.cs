@@ -96,7 +96,7 @@ namespace screen
 
         private void ShowVisualObjects()
         {
-            Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame);            
+           // Visual.instance.gameObject.SetActive(currentType==ScreenType.Deckgame);            
         }
 
 

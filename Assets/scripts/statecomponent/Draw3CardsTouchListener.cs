@@ -10,7 +10,7 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class Draw3CardsTouchListener :StateComponent,UnityEngine.EventSystems.IPointerDownHandler
+public class Draw3CardsTouchListener :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
     {
         
         public void OnPointerDown(PointerEventData eventData)

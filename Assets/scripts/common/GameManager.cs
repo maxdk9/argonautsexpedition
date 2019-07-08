@@ -76,12 +76,12 @@ public class GameManager : MonoBehaviour
 
 	public void RemoveStateComponentsFromActor()
 	{
-		StateComponent[] stateComponents =Resources.FindObjectsOfTypeAll<StateComponent>();
+		tempTouchComponent[] tempTouchComponents =Resources.FindObjectsOfTypeAll<tempTouchComponent>();
 
 		
 		
 		
-		foreach (StateComponent sc in stateComponents)
+		foreach (tempTouchComponent sc in tempTouchComponents)
 		{
 			GameObject.Destroy(sc);
 		}
