@@ -1,7 +1,10 @@
+using System;
+
 namespace Model
 {
     public class GameLogicModifyGame
     {
+        
         public static void AutoResolveCard(CardManager.Card card)
         {
             int difficulty = GameLogic.GetCurrentDifficulty(card);
@@ -15,7 +18,15 @@ namespace Model
             {
                 card.resolved = ResolvedType.resolved_lost;
             }
-        }        
+        }
+
+
+        public static void CalculateDiceRollResult()
+        {
+            Game.instance.DiceEncounterNumber =
+                Visual.instance.mainDice.GetComponentInParent<DisplayCurrentDiceValue>().Value;
+            
+        }
     }
     
     

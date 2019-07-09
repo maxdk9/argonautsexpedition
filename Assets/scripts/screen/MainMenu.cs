@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void ResumeGame()
 	{
-		
+		GameManager.instance.DestroyOldObjects();
 		SaveLoadHelper.Load(SaveLoadHelper.defaultPrefixString);
 		StateManager.getInstance().MoveNext(GamePhase.ResumeGame);
 	}

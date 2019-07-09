@@ -48,12 +48,17 @@ public class GameManager : MonoBehaviour
 	}
 
 
-	public void StartNewGame()
+	public void DestroyOldObjects()
 	{
 		StopAllCoroutines();
 		Command.ClearCommandQueue();
 		DestroyOldCardObjects();
+	}
+
+	public void StartNewGame()
+	{
 		
+		DestroyOldObjects();
 		Game.instance.StartNewGame();
 
 		new GoToNextGamePhase(GamePhase.StartNewGame).AddToQueue();

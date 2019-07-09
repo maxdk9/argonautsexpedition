@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Assets.SimpleLocalization;
 using UnityEditor;
+using UnityEngine;
 
 namespace Model
 {
@@ -101,7 +102,24 @@ namespace Model
         
         public static string GetResultMessage()
         {
-            return LocalizationManager.Localize("WIN");
+            if (GameLogic.CurrentChallengeWin())
+            {
+                return LocalizationManager.Localize("victory");
+            }
+            else
+            {
+
+                return LocalizationManager.Localize("defeat");
+
+            }
+        }
+
+        private static bool CurrentChallengeWin()
+        {
+            int res = Game.instance.DiceEncounterNumber % 2;
+            Debug.Log("result "+res);
+            return res == 0;
+            
         }
     }
 

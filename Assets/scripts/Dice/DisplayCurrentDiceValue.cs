@@ -11,6 +11,7 @@ public class DisplayCurrentDiceValue : MonoBehaviour
 	
 	public bool rollComplete;
 	public bool diceRolled = false;
+	private bool eventInvoked = false;
 	
 	
 	
@@ -22,7 +23,7 @@ public class DisplayCurrentDiceValue : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody>();
 		diceRolled = false;
-
+		eventInvoked = false;
 	}
 
 	// Update is called once per frame
@@ -48,11 +49,12 @@ public class DisplayCurrentDiceValue : MonoBehaviour
 
 			if (diceRolled && rollComplete)
 			{
-				Battle.ourInstance.diceRolledEvent.Invoke();
+				if (!eventInvoked)
+				{
+					Battle.ourInstance.diceRolledEvent.Invoke();
+					eventInvoked = true;
+				}
 			}
-			
-			
-			
 		}
 		
 	}

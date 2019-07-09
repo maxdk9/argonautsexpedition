@@ -36,6 +36,7 @@ namespace Model.States
 
             diceRolledEvent.RemoveAllListeners();
           //  diceRolledEvent.AddListener(()=>{ Visual.instance.mainDice.SetActive(false); });
+            diceRolledEvent.AddListener(new UnityAction(delegate { GameLogicModifyGame.CalculateDiceRollResult(); }));
             diceRolledEvent.AddListener(new UnityAction(delegate { ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage()); }));
             diceRolledEvent.AddListener(new UnityAction(delegate { ShowDetailedResult(); }));
             diceRolledEvent.AddListener(new UnityAction(delegate { ShowUIAfterDiceRolled(); }));

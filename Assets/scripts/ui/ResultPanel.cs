@@ -3,18 +3,25 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class ResultPanel : MonoBehaviour
 {
 
 	public Canvas panelCanvas;
 	public TextMeshProUGUI label;
+	public Image backgroundImage;
 
+	private int hiddenY = 400;
+	private int showY = 220;
+	
 	public static ResultPanel instance;
 
 	private void Awake()
 	{
 		instance = this;
+		this.backgroundImage.transform.DOLocalMoveY(hiddenY, 0);
 		panelCanvas.gameObject.SetActive(false);
 	}
 	public void ShowMessage(string Message)
@@ -33,8 +40,11 @@ public class ResultPanel : MonoBehaviour
 	{
 		label.text = Message;
 		panelCanvas.gameObject.SetActive(true);
-		panelCanvas.transform.DOScale(.2f, 0);
-		panelCanvas.transform.DOScale(1, 1.5f);
-		yield return new WaitForSeconds(.1f); 
+		Sequence sequence= DOTween.Sequence();
+		sequence.Append(backgroundImage.transform.DOLocalMoveY(220, .3f));
+		sequence.Play();
+		
+		
+		yield return new WaitForSeconds(1.1f); 
 	}
 }
