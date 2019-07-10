@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
 	private void DestroyOldCardObjects()
 	{
-		DestroyableEntity[] entities = ScreenManager.instance.DeckgameCanvas.GetComponentsInChildren<DestroyableEntity>();
+		DestroyableEntity[] entities = Resources.FindObjectsOfTypeAll<DestroyableEntity>();
 
 		foreach (DestroyableEntity entity in entities)
 		{

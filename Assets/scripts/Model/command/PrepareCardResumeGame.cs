@@ -22,10 +22,14 @@ public class PrepareCardResumeGame : Command {
         {    
             GameObject cardObject =  OneCardManager.CreateOneCardManager(card, Visual.instance.CardDeckFrame);
         }
+
+        SameDistanceChildren distance=Visual.instance.CurrentEncounter.GetComponent<SameDistanceChildren>();
         
         foreach (CardManager.Card card in Game.instance.currentEncounter)
-        {    
-            GameObject cardObject =  OneCardManager.CreateOneCardManager(card, Visual.instance.CurrentEncounter);
+        {
+            int index = Game.instance.currentEncounter.IndexOf(card);
+            GameObject slot = distance.slots[index];
+            GameObject cardObject =  OneCardManager.CreateOneCardManager(card, slot);
         }
         
         yield return new WaitForSeconds(.01f);

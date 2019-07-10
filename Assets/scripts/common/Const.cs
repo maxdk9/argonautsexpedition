@@ -16,9 +16,9 @@ namespace common
             RectTransform monsterRect=GameManager.instance.MonsterCardPrefab.transform.Find("CardBody").GetComponent<RectTransform>();
             OneCardManager.CardWidth = (int)monsterRect.rect.width;
             OneCardManager.CardHeight = (int) monsterRect.rect.height;
-        OneCardManager.CardWidthWithoutGlow = OneCardManager.CardWidth - 50;
-        
-        OneCardManager.CardHeightWithoutGlow = OneCardManager.CardHeight-50;
+            OneCardManager.CardWidthWithoutGlow = OneCardManager.CardWidth - 50;
+            OneCardManager.CardHeightWithoutGlow = OneCardManager.CardHeight-50;
+            
         }
     }
 }

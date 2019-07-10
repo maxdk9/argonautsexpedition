@@ -60,7 +60,7 @@ namespace command
             }
 
             yield return new WaitForSeconds(TimeMovement1 + TimeMovement2 + DelayTime);
-            Debug.Log("Draw3CardsCoroutine End");
+            
             Command.CommandExecutionComplete();
         }
 
