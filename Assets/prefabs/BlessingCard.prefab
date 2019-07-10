@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 114724464038139784}
   m_Layer: 13
   m_Name: BlessingCard
-  m_TagString: Untagged
+  m_TagString: prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,20 +508,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b082068e1716674a937d11b77854052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardAsset: {fileID: 0}
+  cardAsset:
+    cardnumber: 0
+    effecttype: 0
+    type: 0
+    useType: 0
+    reserve: 0
+    wrath: 0
+    level: 0
+    crewNumber: 0
+    rollResult: 0
+    resolved: 0
+    ignore: 0
+    IgnoreDeadliness: 0
+    markApolloBow: 0
+    markOrpheusLyre: 0
+    name: 
+    difficulty: 
+    deadliness: 
   PreviewManager: {fileID: 0}
   NameLabel: {fileID: 114796859055249520}
   DifficultyLabel: {fileID: 0}
   DeadlinessLabel: {fileID: 0}
   DescriptionLabel: {fileID: 114217422365001806}
+  CrewLabel: {fileID: 0}
   DifficultyImage: {fileID: 0}
   DeadlinessImage: {fileID: 0}
+  uiDiceObject: {fileID: 0}
   CardBackground: {fileID: 114837888740041116}
   CardImage: {fileID: 114478268900859794}
   CardFrame: {fileID: 114529935106447990}
   UseTypeImage: {fileID: 0}
   CardFaceGlowImage: {fileID: 0}
   CardBackGlowImage: {fileID: 0}
+  CrewImage: {fileID: 0}
 --- !u!114 &114796859055249520
 MonoBehaviour:
   m_ObjectHideFlags: 1

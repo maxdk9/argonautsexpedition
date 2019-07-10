@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using common;
 using GameActors;
@@ -69,12 +70,23 @@ public class GameManager : MonoBehaviour
 	{
 		DestroyableEntity[] entities = Resources.FindObjectsOfTypeAll<DestroyableEntity>();
 
+		
+		
 		foreach (DestroyableEntity entity in entities)
 		{
-			//entity.Kill();
-			GameObject.Destroy(entity.gameObject);
+			if (entity.gameObject.tag.Equals("prefab"))
+			{
+				continue;
+			}
+			else
+			{
+				GameObject.Destroy(entity.gameObject);
+			}
+				
 			
 		}
+		
+		
 		
 	}
 

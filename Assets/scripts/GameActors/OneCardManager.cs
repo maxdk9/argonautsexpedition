@@ -234,6 +234,12 @@ public class OneCardManager : DestroyableEntity
         GameObject cardprefab = OneCardManager.GetCardPrefab(c);
         GameObject cardObject = GameObject.Instantiate(cardprefab,point.transform,false);
 
+        OneCardManager cardManager = cardObject.GetComponent<OneCardManager>();
+        cardObject.tag = "Untagged";
+        if (cardManager.PreviewManager != null)
+        {
+            cardManager.tag = "Untagged";
+        }
         //GameObject cardObject = ScriptableObject.Instantiate(cardprefab, point.transform, false);
         cardObject.transform.localScale=Vector3.one;
         cardObject.transform.localPosition=new Vector3(0,0,Visual.instance.transform.position.y);
@@ -241,7 +247,7 @@ public class OneCardManager : DestroyableEntity
         
         //cardObject.transform.SetParent(null);
         cardObject.SetActive(true);
-        OneCardManager cardManager = cardObject.GetComponent<OneCardManager>();
+        
         cardManager.cardAsset = c;
         cardManager.ReadCardFromAsset();
         return cardObject;

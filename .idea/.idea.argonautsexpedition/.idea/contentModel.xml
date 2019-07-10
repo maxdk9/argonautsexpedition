@@ -22,11 +22,13 @@
             <e p="readme.txt" t="Include" />
           </e>
         </e>
+        <e p="IconCrewCounter.cs" t="Include" />
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
         <e p="Prefabs.cs" t="Include" />
         <e p="RollDiceManager.cs" t="Include" />
+        <e p="RollDiceResultBar.cs" t="Include" />
         <e p="SameDistanceChildren.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="advancedtools" t="Include">
@@ -101,6 +103,7 @@
               <e p="StateManager.cs" t="Include" />
               <e p="States" t="Include">
                 <e p="Battle.cs" t="Include" />
+                <e p="BattleEnd.cs" t="Include" />
                 <e p="BattleView.cs" t="Include" />
                 <e p="CrewAssignment.cs" t="Include" />
                 <e p="DeckWin.cs" t="Include" />

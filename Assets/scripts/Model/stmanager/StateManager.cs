@@ -33,7 +33,8 @@ public class StateManager
 	{
 		dictionary=new Dictionary<GamePhase, iState>();
 		dictionary.Add(GamePhase.Draw3QuestCards,Draw3QuestCard.ourInstance);
-		dictionary.Add(GamePhase.Battle,Battle.ourInstance);		
+		dictionary.Add(GamePhase.Battle,Battle.ourInstance);
+		dictionary.Add(GamePhase.BattleEnd,BattleEnd.ourInstance);
 		dictionary.Add(GamePhase.Lose,Lose.ourInstance);
 		dictionary.Add(GamePhase.Win,Win.ourInstance);
 		dictionary.Add(GamePhase.BattleView,BattleView.ourInstance);

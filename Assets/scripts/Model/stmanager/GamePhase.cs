@@ -14,7 +14,8 @@ namespace Model
         DeckWin, 
         ScyllaEncounter,
 	    ResumeGame,
-	    StartNewGame
+	    StartNewGame,
+        BattleEnd
     }
     
     public enum CardType{

@@ -7,9 +7,10 @@ namespace Model.States
     public class Battle:iState
     {
         public static Battle ourInstance=new Battle();
-        private GameObject currentDiceEncounterObject;
         public UnityEvent diceRolledEvent=new UnityEvent();
         
+        public GameObject currentDiceEncounterObject;
+        public OneCardManager currentDiceEncounterOneCardManager;
         
         
         
@@ -23,10 +24,9 @@ namespace Model.States
             ScreenManager.instance.Show(ScreenManager.ScreenType.Rolldice);
             Visual.instance.mainDice.SetActive(true);
 
-            CardManager.Card diceEncounterCard =
-                Visual.instance.GetCardByNumberFromCurrentEncounter(Game.instance.DiceEncounterNumber);
-            GameObject currentDiceEncounterObject =
-                OneCardManager.CreateOneCardManager(diceEncounterCard,Visual.instance.currentDiceEncounter);
+
+            SetCurrentDiceEncounterObject();
+            
             
             RollDiceTouchListener rollDiceTouchListener =
                 Visual.instance.RollDiceImage.gameObject.AddComponent<RollDiceTouchListener>();
@@ -35,32 +35,33 @@ namespace Model.States
     
 
             diceRolledEvent.RemoveAllListeners();
-          //  diceRolledEvent.AddListener(()=>{ Visual.instance.mainDice.SetActive(false); });
             diceRolledEvent.AddListener(new UnityAction(delegate { GameLogicModifyGame.CalculateDiceRollResult(); }));
             diceRolledEvent.AddListener(new UnityAction(delegate { ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage()); }));
-            diceRolledEvent.AddListener(new UnityAction(delegate { ShowDetailedResult(); }));
-            diceRolledEvent.AddListener(new UnityAction(delegate { ShowUIAfterDiceRolled(); }));
+            
+            diceRolledEvent.AddListener(new UnityAction(delegate { RollDiceResultBar.instance.Show(); }));
+            diceRolledEvent.AddListener(new UnityAction(delegate { new GoToNextGamePhase(GamePhase.BattleEnd).StartCommandExecution(); }));
             
             
-        }
-
-        private void ShowDetailedResult()
-        {
             
         }
 
-        private void ShowUIAfterDiceRolled()
+        public void SetCurrentDiceEncounterObject()
         {
+            CardManager.Card diceEncounterCard =
+                Visual.instance.GetCardByNumberFromCurrentEncounter(Game.instance.DiceEncounterNumber);
+            currentDiceEncounterObject =
+                OneCardManager.CreateOneCardManager(diceEncounterCard,Visual.instance.currentDiceEncounter);
+            currentDiceEncounterOneCardManager = currentDiceEncounterObject.GetComponent<OneCardManager>();
             
         }
+
+        
+        
 
 
         public void OnExit()
         {
-            if (currentDiceEncounterObject != null)
-            {
-                GameObject.Destroy(currentDiceEncounterObject);
-            }
+           
         }
     }
 }

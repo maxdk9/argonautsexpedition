@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Resources;
 using Assets.SimpleLocalization;
+using Model.States;
 using UnityEditor;
 using UnityEngine;
 
@@ -82,22 +84,31 @@ namespace Model
         public static int GetModifiedDiceResult(CardManager.Card card, int diceresult)
         {
             int res;
-            int bonus=0;
-            if(card.type==CardType.monster&&HaveEffectByType(Effect.EffectType.SwordOfPeleus_MonsterRolls_p1_cont))
-            {
-                bonus+=1;
-            }
-            if(card.type==CardType.treasure&&HaveEffectByType(Effect.EffectType.Argo_TreasureRolls_p1_cont))
-            {
-                bonus+=1;
-            }	
-            if(card.type==CardType.treasure&&HaveEffectByType(Effect.EffectType.Defeat_ColchianDragon_single)){
-                bonus+=2;
-            }
-            res=Math.Min(diceresult+bonus,6);
+            int powerup=GetPowerUp(card);
+            
+            res=Math.Min(diceresult+powerup,6);
             return res;
         }
 
+
+
+        public static int GetPowerUp(CardManager.Card card)
+        {
+            int result = 0;
+            if(card.type==CardType.monster&&HaveEffectByType(Effect.EffectType.SwordOfPeleus_MonsterRolls_p1_cont))
+            {
+                result+=1;
+            }
+            if(card.type==CardType.treasure&&HaveEffectByType(Effect.EffectType.Argo_TreasureRolls_p1_cont))
+            {
+                result+=1;
+            }	
+            if(card.type==CardType.treasure&&HaveEffectByType(Effect.EffectType.Defeat_ColchianDragon_single)){
+                result+=2;
+            }
+
+            return result;
+        }
         
         
         public static string GetResultMessage()
@@ -114,12 +125,16 @@ namespace Model
             }
         }
 
-        private static bool CurrentChallengeWin()
+        public static bool CurrentChallengeWin()
         {
-            int res = Game.instance.DiceEncounterNumber % 2;
-            Debug.Log("result "+res);
-            return res == 0;
-            
+
+            CardManager.Card currentEncounter = Battle.ourInstance.currentDiceEncounterOneCardManager.cardAsset;
+
+            int playerResult = currentEncounter.crewNumber + Game.instance.DiceEncounterNumber + GameLogic.GetPowerUp(currentEncounter);
+            int monsterResult = GameLogic.GetCurrentDifficulty(currentEncounter);
+            return playerResult >= monsterResult;
+
+
         }
     }
 
