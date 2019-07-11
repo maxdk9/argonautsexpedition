@@ -27,6 +27,21 @@ namespace Model
                 Visual.instance.mainDice.GetComponentInParent<DisplayCurrentDiceValue>().Value;
             
         }
+
+        public static void ResolveDiceEncounter()
+        {
+            bool isResolved = GameLogic.CurrentChallengeWin();
+            CardManager.Card card = Visual.instance.GetCardByNumberFromCurrentEncounter();
+            
+            if (isResolved)
+            {
+                card.resolved = ResolvedType.resolved_win;
+            }
+            else
+            {
+                card.resolved = ResolvedType.resolved_lost;
+            }
+        }
     }
     
     

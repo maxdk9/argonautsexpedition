@@ -19,11 +19,16 @@ namespace Model.States
 
         public void OnEnter()
         {
+
+            GameLogicModifyGame.ResolveDiceEncounter();
+            CardManager.Card card = Visual.instance.GetCardByNumberFromCurrentEncounter();
+            
             ScreenManager.instance.Show(ScreenManager.ScreenType.Rolldice);
             Visual.instance.mainDice.SetActive(false);
             Battle.ourInstance.SetCurrentDiceEncounterObject();
             ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage());
             RollDiceResultBar.instance.Show();
+            RollDiceControlPanel.instance.Show();
         }
 
         private void ShowDetailedResult()

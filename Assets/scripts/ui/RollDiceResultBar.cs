@@ -20,8 +20,10 @@ public class RollDiceResultBar : MonoBehaviour
 	public Image PowerUpImage;
 	public TextMeshProUGUI PowerUpCounter;
 	public Sprite [] FlatDiceImages;
-	private int ShowY = -100;
+	private int ShowY = -50;
 	private int HideY = -400;
+
+	public Canvas canvas;
 
 
 	public static RollDiceResultBar instance;
@@ -29,13 +31,13 @@ public class RollDiceResultBar : MonoBehaviour
 	private void Awake()
 	{
 		instance = this;
-		this.gameObject.SetActive(false);
+		this.canvas.enabled = false;
 	}
 
 	public void Show()
 	{
 		this.transform.DOLocalMoveY(HideY, 0);
-		
+		this.canvas.enabled = true;
 		CardManager.Card card = Battle.ourInstance.currentDiceEncounterOneCardManager.cardAsset;
 
 		bool showPowerUp = GameLogic.GetPowerUp(card) != 0;		
@@ -51,14 +53,14 @@ public class RollDiceResultBar : MonoBehaviour
 		}
 
 		IconDice.sprite = FlatDiceImages[Game.instance.DiceEncounterNumber-1];
-		this.gameObject.SetActive(true);
+		
 		this.transform.DOLocalMoveY(ShowY,.7f);
 
 	}
 
 	public void Hide()
 	{
-		this.gameObject.SetActive(false);
+		canvas.enabled = false;
 	}
 	
 }

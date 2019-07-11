@@ -26,6 +26,7 @@ namespace Model.States
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();
             AddResolveCardByRollDiceComponent();
+            DeckGameControlPanel.instance.Show();
             
         }
 

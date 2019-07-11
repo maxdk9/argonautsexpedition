@@ -22,7 +22,7 @@ public class ResultPanel : MonoBehaviour
 	{
 		instance = this;
 		this.backgroundImage.transform.DOLocalMoveY(hiddenY, 0);
-		panelCanvas.gameObject.SetActive(false);
+		panelCanvas.enabled=false;
 	}
 	public void ShowMessage(string Message)
 	{
@@ -39,12 +39,16 @@ public class ResultPanel : MonoBehaviour
 	IEnumerator ShowMessageCoroutine(string Message)
 	{
 		label.text = Message;
-		panelCanvas.gameObject.SetActive(true);
+		panelCanvas.enabled = true;
 		Sequence sequence= DOTween.Sequence();
 		sequence.Append(backgroundImage.transform.DOLocalMoveY(220, .3f));
 		sequence.Play();
-		
-		
 		yield return new WaitForSeconds(1.1f); 
 	}
+
+	public void Hide()
+	{
+		panelCanvas.enabled = false;
+	}
+	
 }

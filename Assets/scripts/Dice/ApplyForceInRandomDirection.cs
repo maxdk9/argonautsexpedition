@@ -13,7 +13,12 @@ public class ApplyForceInRandomDirection : MonoBehaviour
 	public string ButtonName = "Fire1";
 
 	private Rigidbody rigidbody;
-
+	private Vector3 startPosition;
+	
+	
+	
+	
+	
 	private Vector3[] diceDirections =
 	{
 		new Vector3(-2, -2, 1),
@@ -28,11 +33,26 @@ public class ApplyForceInRandomDirection : MonoBehaviour
 	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody>();
+		
 	}
 
-	// Use this for initialization
-	void Start () {
+
+	public void SetStartPosition()
+	{
+		this.transform.transform.position = startPosition;
 		
+	}
+
+	public void Reset()
+	{
+		SetStartPosition();
+		rigidbody.useGravity = false;
+	}
+	
+	// Use this for initialization
+	void Start ()
+	{
+		startPosition = this.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -67,6 +87,7 @@ public class ApplyForceInRandomDirection : MonoBehaviour
 		DisplayCurrentDiceValue displayCurrentDiceValue = this.GetComponent<DisplayCurrentDiceValue>();
 		displayCurrentDiceValue.rollComplete = false;
 		displayCurrentDiceValue.diceRolled = true;
+		displayCurrentDiceValue.eventInvoked = false;
 
 	}
 

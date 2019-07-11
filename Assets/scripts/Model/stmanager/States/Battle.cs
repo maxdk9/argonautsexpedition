@@ -23,6 +23,7 @@ namespace Model.States
         {
             ScreenManager.instance.Show(ScreenManager.ScreenType.Rolldice);
             Visual.instance.mainDice.SetActive(true);
+            Visual.instance.mainDice.GetComponent<ApplyForceInRandomDirection>().Reset();
 
 
             SetCurrentDiceEncounterObject();

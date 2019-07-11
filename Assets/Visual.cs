@@ -54,7 +54,10 @@ public class Visual : MonoBehaviour
 	{
 		buttonToBattle.gameObject.SetActive(false);
 		CardDeckFrame.gameObject.SetActive(false);
-		ResultPanel.instance.panelCanvas.gameObject.SetActive(false);
+		ResultPanel.instance.Hide();
+		RollDiceResultBar.instance.Hide();
+		RollDiceControlPanel.instance.Hide();
+		DeckGameControlPanel.instance.Hide();
 		
 		if (CrewAssigner.instance != null)
 		{
@@ -112,7 +115,7 @@ public class Visual : MonoBehaviour
 		List<OneCardManager> encList = GetCurrentEncounter();
 		foreach (OneCardManager cm in encList)
 		{
-			if (cm.cardAsset.cardnumber == Game.instance.nu)
+			if (cm.cardAsset.cardnumber == Game.instance.CurrentEnemyIndex)
 			{
 				return cm.cardAsset;
 			}
@@ -120,4 +123,7 @@ public class Visual : MonoBehaviour
 
 		return null;
 	}
+	
+	
+	
 }

@@ -11,7 +11,7 @@ public class DisplayCurrentDiceValue : MonoBehaviour
 	
 	public bool rollComplete;
 	public bool diceRolled = false;
-	private bool eventInvoked = false;
+	public bool eventInvoked = false;
 	
 	
 	

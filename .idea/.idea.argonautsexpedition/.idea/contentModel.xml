@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="DeckGameControlPanel.cs" t="Include" />
         <e p="Demigiant" t="Include">
           <e p="DOTween" t="Include">
             <e p="Modules" t="Include">
@@ -27,9 +28,6 @@
           <e p="link.xml" t="Include" />
         </e>
         <e p="Prefabs.cs" t="Include" />
-        <e p="RollDiceManager.cs" t="Include" />
-        <e p="RollDiceResultBar.cs" t="Include" />
-        <e p="SameDistanceChildren.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="advancedtools" t="Include">
             <e p="CardVisualScripts" t="Include">
@@ -146,6 +144,9 @@
           <e p="ui" t="Include">
             <e p="MessageManager.cs" t="Include" />
             <e p="ResultPanel.cs" t="Include" />
+            <e p="RollDiceControlPanel.cs" t="Include" />
+            <e p="RollDiceResultBar.cs" t="Include" />
+            <e p="SameDistanceChildren.cs" t="Include" />
           </e>
         </e>
         <e p="SimpleLocalization" t="Include">

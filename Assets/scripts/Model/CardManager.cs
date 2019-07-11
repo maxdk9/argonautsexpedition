@@ -33,8 +33,8 @@ namespace Model
             public int [] deadliness;
             [NonSerialized]
             public Sprite front;
+            public bool needToUpdate;
 
-            
         }
 
         private static CardManager instance;

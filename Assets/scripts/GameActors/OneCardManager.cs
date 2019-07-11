@@ -169,6 +169,7 @@ public class OneCardManager : DestroyableEntity
 
         if (cardAsset.resolved == ResolvedType.resolved_win||cardAsset.resolved==ResolvedType.resolved_lost)
         {
+            uiDiceObject.SetActive(false);
             return;
         }
         
@@ -255,7 +256,14 @@ public class OneCardManager : DestroyableEntity
 
     private void Update()
     {
-        
+        if (cardAsset != null)
+        {
+            if (cardAsset.needToUpdate)
+            {
+                ReadCardFromAsset();
+                cardAsset.needToUpdate = false;
+            }
+        }
     }
 
 

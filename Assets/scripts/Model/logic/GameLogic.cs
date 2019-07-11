@@ -128,7 +128,7 @@ namespace Model
         public static bool CurrentChallengeWin()
         {
 
-            CardManager.Card currentEncounter = Battle.ourInstance.currentDiceEncounterOneCardManager.cardAsset;
+            CardManager.Card currentEncounter = Visual.instance.GetCardByNumberFromCurrentEncounter();
 
             int playerResult = currentEncounter.crewNumber + Game.instance.DiceEncounterNumber + GameLogic.GetPowerUp(currentEncounter);
             int monsterResult = GameLogic.GetCurrentDifficulty(currentEncounter);

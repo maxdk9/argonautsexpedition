@@ -91,6 +91,18 @@ namespace screen
         {
             canvas.enabled=enabled;
             canvas.gameObject.SetActive(enabled);
+            if (enabled)
+            {
+                if (NotGameCanvas(canvas))
+                {
+                    Visual.instance.DisableVisualElementsOnStateEnter();
+                }
+            }
+        }
+
+        private bool NotGameCanvas(Canvas canvas)
+        {
+          return  canvas == DeckgameCanvas || canvas == RollDiceCanvas;
         }
 
 
