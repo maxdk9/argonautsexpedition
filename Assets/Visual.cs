@@ -107,12 +107,12 @@ public class Visual : MonoBehaviour
 		}
 	}
 
-	public CardManager.Card GetCardByNumberFromCurrentEncounter(int argnumber)
+	public CardManager.Card GetCardByNumberFromCurrentEncounter()
 	{
 		List<OneCardManager> encList = GetCurrentEncounter();
 		foreach (OneCardManager cm in encList)
 		{
-			if (cm.cardAsset.cardnumber == argnumber)
+			if (cm.cardAsset.cardnumber == Game.instance.nu)
 			{
 				return cm.cardAsset;
 			}

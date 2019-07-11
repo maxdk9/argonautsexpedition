@@ -19,7 +19,7 @@ public class ResolveCardByDiceRoll :tempTouchComponent,UnityEngine.EventSystems.
            // OneCardManager c=this.GetComponent<OneCardManager>();
             Debug.Log("ResolveCardByDiceRoll ");
             OneCardManager c = this.GetComponent<OneCardManager>();
-            Game.instance.DiceEncounterNumber = c.cardAsset.cardnumber;
+            Game.instance.CurrentEnemyIndex = c.cardAsset.cardnumber;
             new GoToNextGamePhase(GamePhase.Battle).AddToQueue();
             
             // GameManager.instance.StartCoroutine(this.Draw3Cards());   

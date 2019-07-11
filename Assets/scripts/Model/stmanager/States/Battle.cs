@@ -48,7 +48,7 @@ namespace Model.States
         public void SetCurrentDiceEncounterObject()
         {
             CardManager.Card diceEncounterCard =
-                Visual.instance.GetCardByNumberFromCurrentEncounter(Game.instance.DiceEncounterNumber);
+                Visual.instance.GetCardByNumberFromCurrentEncounter();
             currentDiceEncounterObject =
                 OneCardManager.CreateOneCardManager(diceEncounterCard,Visual.instance.currentDiceEncounter);
             currentDiceEncounterOneCardManager = currentDiceEncounterObject.GetComponent<OneCardManager>();

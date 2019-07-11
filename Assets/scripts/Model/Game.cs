@@ -120,6 +120,12 @@ public class Game
 		set { diceEncounterNumber = value; }
 	}
 
+	public int CurrentEnemyIndex
+	{
+		get { return currentEnemyIndex; }
+		set { currentEnemyIndex = value; }
+	}
+
 	public  void StartNewGame()
 	{
 		currentDeck.Clear();
