@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 	private void InitializeManager()
 	{
 		Const.CalculateSize();
+		GameLogicEvents.SubscribeEvents();
 		CardManager.Instance().Init();
 		ScreenManager.instance.Show(ScreenManager.ScreenType.Mainmenu);
 	}
@@ -68,11 +69,8 @@ public class GameManager : MonoBehaviour
 
 	private void DestroyOldCardObjects()
 	{
-		DestroyableEntity[] entities = Resources.FindObjectsOfTypeAll<DestroyableEntity>();
-
-		
-		
-		foreach (DestroyableEntity entity in entities)
+		OneCardManager[] entities = Resources.FindObjectsOfTypeAll<OneCardManager>();
+		foreach (OneCardManager entity in entities)
 		{
 			if (entity.gameObject.tag.Equals("prefab"))
 			{
@@ -80,14 +78,9 @@ public class GameManager : MonoBehaviour
 			}
 			else
 			{
-				GameObject.Destroy(entity.gameObject);
-			}
-				
-			
+				GameObject.DestroyImmediate(entity.gameObject);
+			}		
 		}
-		
-		
-		
 	}
 
 

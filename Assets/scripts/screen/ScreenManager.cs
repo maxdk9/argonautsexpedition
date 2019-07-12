@@ -102,7 +102,7 @@ namespace screen
 
         private bool NotGameCanvas(Canvas canvas)
         {
-          return  canvas == DeckgameCanvas || canvas == RollDiceCanvas;
+          return  !(canvas == DeckgameCanvas || canvas == RollDiceCanvas);
         }
 
 

@@ -23,6 +23,7 @@ public class OneCardManager : DestroyableEntity
     
     public CardManager.Card cardAsset;
     public OneCardManager PreviewManager;
+    public bool isPreview;
     private bool m_highlighted = false;
     [Header("Text Component References")]
     public TextMeshProUGUI NameLabel;
@@ -122,7 +123,7 @@ public class OneCardManager : DestroyableEntity
 
         if (DeadlinessLabel != null)
         {
-            DeadlinessLabel.text = cardAsset.deadliness[cardAsset.level].ToString();    
+            DeadlinessLabel.text = GameLogic.GetDeadliness(cardAsset).ToString();    
         }
 
         if (DifficultyLabel != null)

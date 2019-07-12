@@ -33,6 +33,7 @@ public class PrepareCardResumeGame : Command {
         }
         
         yield return new WaitForSeconds(.01f);
+        GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
         Command.CommandExecutionComplete();
     }
     

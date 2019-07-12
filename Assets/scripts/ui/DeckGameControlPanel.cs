@@ -2,28 +2,42 @@
 using System.Collections.Generic;
 using Model;
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
+using UnityEngine.UI;
+
 
 public class DeckGameControlPanel : MonoBehaviour {
 
-	public Canvas canvas;
 	public static DeckGameControlPanel instance;
+	
+	public Canvas canvas;
+	public Button EndTurnButton;
 
+	
 
 	private void Awake()
 	{
+		
 		instance = this;
 		Hide();
 	}
 
 	private void Update()
 	{
-		Debug.Log("UpdateDeckgameControl");
+		
 	}
 
 	public void Show()
 	{
 		canvas.enabled = true;
+		SetButtonsVisibility();
+	}
+
+	private void SetButtonsVisibility()
+	{
+		
+		
+		EndTurnButton.gameObject.SetActive(GameLogic.CurrentEncounterResolved());
+		
 	}
 
 	public void Hide()
@@ -32,7 +46,7 @@ public class DeckGameControlPanel : MonoBehaviour {
 	}
 
 
-	public void EndTurn()
+	public void EndTurnButtonClick()
 	{
 		new 	 GoToNextGamePhase(GamePhase.EndTurn).StartCommandExecution();
 	}

@@ -18,6 +18,7 @@ public class Visual : MonoBehaviour
 	
 	public GameObject CardDeckFrame;
 	public GameObject CrewCounter;
+	public GameObject LossCounter;
 	public GameObject CurrentEncounter;
 	public Button buttonToBattle;
 	
@@ -75,6 +76,22 @@ public class Visual : MonoBehaviour
 		t.text = c.ToString();
 	}
 
+	public void UpdateLossCounter()
+	{
+		TextMeshProUGUI t = LossCounter.GetComponentInChildren<TextMeshProUGUI>();
+		if (t != null)
+		{
+			if (Game.instance.Casualties == 0)
+			{
+				LossCounter.gameObject.SetActive(false);
+				return;
+			}
+			LossCounter.gameObject.SetActive(true);
+			
+			t.text = Game.instance.Casualties.ToString();	
+		}
+		
+	}
 
 	public void ToBattelButtonClick()
 	{
@@ -88,8 +105,8 @@ public class Visual : MonoBehaviour
 		List<OneCardManager>  result=new List<OneCardManager>();
 		foreach (OneCardManager card in cards)
 		{
-			HoverPreview preview = card.GetComponent<HoverPreview>();
-			if (preview == null)
+			
+			if (card.isPreview)
 			{
 				continue;    
 			}
@@ -123,7 +140,11 @@ public class Visual : MonoBehaviour
 
 		return null;
 	}
-	
-	
-	
+
+
+	public void UpdateCounters()
+	{
+		UpdateCrewCounter();
+		UpdateLossCounter();
+	}
 }

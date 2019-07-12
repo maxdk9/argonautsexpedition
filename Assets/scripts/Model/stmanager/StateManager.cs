@@ -85,7 +85,8 @@ public class StateManager
 			GameLogicEvents.CopyGameActorsToCurrentGame();
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);
 			GameManager.instance.RemoveStateComponentsFromActor();
-			Visual.instance.UpdateCrewCounter();
+			
+			Visual.instance.UpdateCounters();
 		}
 
 		currentState = dictionary[type];

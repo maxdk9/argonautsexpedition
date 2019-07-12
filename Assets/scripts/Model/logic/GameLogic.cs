@@ -20,8 +20,6 @@ namespace Model
         {
             int basic= card.difficulty[card.level];
             int monsterTypeDiff = GetMonsterDifficultyModifier(card);
-            
-            
             int res=basic+monsterTypeDiff;
             if (HaveEffectByType(Effect.EffectType.CloakOfHeracles_monsterdifficulty_m1_cont))
             {
@@ -40,7 +38,7 @@ namespace Model
                     return 0;
                 }
                 if(card.name.Equals("skeleton")||card.name.Equals("harpy")){
-                    int monsternumber=GetMonsterNumberInEncounter(card)-1;
+                    int monsternumber=GetMonsterNumberInEncounter(card);
                     if (monsternumber >= 2)
                     {
                         res = monsternumber - 1;
@@ -135,6 +133,25 @@ namespace Model
             return playerResult >= monsterResult;
 
 
+        }
+
+        public static bool CurrentEncounterResolved()
+        {
+            
+            foreach (CardManager.Card card in Game.instance.currentEncounter)
+            {
+                if (card.resolved == ResolvedType.notresolved)
+                {
+                    return false;
+                }    
+            }
+
+            return true;
+        }
+
+        public static int  GetDeadliness(CardManager.Card card)
+        {
+            return  card.deadliness[card.level];
         }
     }
 

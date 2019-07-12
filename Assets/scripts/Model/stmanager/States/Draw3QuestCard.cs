@@ -18,8 +18,7 @@ namespace Model.States
 
         public void OnEnter()
         {
-            ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
-            
+            ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);            
             Visual.instance.CardDeckFrame.SetActive(true);
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("draw3questcard"),10);
             Visual.instance.CardDeckFrame.gameObject.AddComponent<Draw3CardsTouchListener>();

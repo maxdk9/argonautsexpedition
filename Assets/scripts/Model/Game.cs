@@ -60,7 +60,12 @@ public class Game
 	public int Casualties
 	{
 		get { return casualties; }
-		set { casualties = value; }
+		set
+		{
+			
+			casualties = value;
+			GameLogicEvents.eventUpdateLossCounter.Invoke();
+		}
 	}
 
 	public bool RerollDaedalusWing

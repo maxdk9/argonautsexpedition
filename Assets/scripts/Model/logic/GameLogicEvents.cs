@@ -6,20 +6,29 @@ namespace Model
 {
     public class GameLogicEvents
     {
-        
-        
 
+        public static UnityEvent eventUpdateCurrentEncounter=new UnityEvent();
+        public static UnityEvent eventUpdateLossCounter=new UnityEvent();
+
+        
 
         public static void SubscribeEvents()
         {
-        
-            
+            eventUpdateCurrentEncounter.RemoveAllListeners();
+            eventUpdateCurrentEncounter.AddListener(new UnityAction(GameLogicEvents.UpdateCurrentEncounter));
+            eventUpdateLossCounter.RemoveAllListeners();
+            eventUpdateLossCounter.AddListener(new UnityAction(Visual.instance.UpdateLossCounter));
         }
-        
-        
-        
-        
-        
+
+        private static void UpdateCurrentEncounter()
+        {
+            foreach (CardManager.Card card in Game.instance.currentEncounter)
+            {
+                card.needToUpdate = true;
+            }
+        }
+
+
         public static void CopyGameActorsToCurrentGame()
         {
             if (Game.instance.CurrentState == GamePhase.ResumeGame)

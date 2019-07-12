@@ -7,6 +7,11 @@ namespace Model
         
         public static void AutoResolveCard(CardManager.Card card)
         {
+
+            if (card.resolved != ResolvedType.notresolved)
+            {
+                return;
+            }
             int difficulty = GameLogic.GetCurrentDifficulty(card);
             int diceresult = card.crewNumber+GameLogic.GetModifiedDiceResult(card,1);
             if (diceresult >= difficulty)
@@ -17,6 +22,16 @@ namespace Model
             if (card.crewNumber == 0)
             {
                 card.resolved = ResolvedType.resolved_lost;
+                UpdateCasualties(card);
+            }
+            
+        }
+
+        private static void UpdateCasualties(CardManager.Card card)
+        {
+            if (card.resolved == ResolvedType.resolved_lost)
+            {
+                Game.instance.Casualties += GameLogic.GetDeadliness(card);
             }
         }
 
@@ -30,16 +45,17 @@ namespace Model
 
         public static void ResolveDiceEncounter()
         {
-            bool isResolved = GameLogic.CurrentChallengeWin();
-            CardManager.Card card = Visual.instance.GetCardByNumberFromCurrentEncounter();
             
-            if (isResolved)
+            CardManager.Card card = Visual.instance.GetCardByNumberFromCurrentEncounter();
+            bool win = GameLogic.CurrentChallengeWin();
+            if (win)
             {
                 card.resolved = ResolvedType.resolved_win;
             }
             else
             {
                 card.resolved = ResolvedType.resolved_lost;
+                UpdateCasualties(card);
             }
         }
     }

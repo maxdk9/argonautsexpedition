@@ -1377,7 +1377,9 @@ MonoBehaviour:
     name: 
     difficulty: 
     deadliness: 
+    needToUpdate: 0
   PreviewManager: {fileID: 114438415923045450}
+  isPreview: 0
   NameLabel: {fileID: 114735618425627492}
   DifficultyLabel: {fileID: 114397274485207062}
   DeadlinessLabel: {fileID: 0}
@@ -2099,7 +2101,9 @@ MonoBehaviour:
     name: 
     difficulty: 
     deadliness: 
+    needToUpdate: 0
   PreviewManager: {fileID: 0}
+  isPreview: 1
   NameLabel: {fileID: 114801314820756548}
   DifficultyLabel: {fileID: 114558193335554666}
   DeadlinessLabel: {fileID: 0}

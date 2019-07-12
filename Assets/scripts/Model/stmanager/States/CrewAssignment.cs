@@ -35,7 +35,8 @@ namespace Model.States
                     preview.ThisPreviewEnabled = false;    
                 }
             }
-
+            GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
+            
         }
 
         public void OnExit()

@@ -28,6 +28,7 @@ namespace Model.States
             AddResolveCardByRollDiceComponent();
             DeckGameControlPanel.instance.Show();
             
+            
         }
 
         private void AddResolveCardByRollDiceComponent()
