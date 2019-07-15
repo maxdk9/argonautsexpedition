@@ -13,11 +13,8 @@ public class ApplyForceInRandomDirection : MonoBehaviour
 	public string ButtonName = "Fire1";
 
 	private Rigidbody rigidbody;
-	private Vector3 startPosition;
-	
-	
-	
-	
+	private Vector3 startPosition=new Vector3(-0.8f,9.4f,-570);
+	//private Vector3 startPosition;
 	
 	private Vector3[] diceDirections =
 	{
@@ -33,43 +30,28 @@ public class ApplyForceInRandomDirection : MonoBehaviour
 	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody>();
-		
+		Reset();
 	}
 
 
-	public void SetStartPosition()
-	{
-		this.transform.transform.position = startPosition;
-		
-	}
+	
 
 	public void Reset()
 	{
-		SetStartPosition();
+		this.transform.transform.localPosition = startPosition;
+		//this.transform.rotation.Set(Random.Range(0,90),Random.Range(0,90),Random.Range(0,90),0);
+		
 		rigidbody.useGravity = false;
 	}
 	
-	// Use this for initialization
-	void Start ()
-	{
-		startPosition = this.transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-//		if (Input.GetKeyDown(KeyCode.Space))
-//		{
-//			Roll();
-//		}
-	}
+
 
 	public void Roll()
 	{
 		
 		
 		rigidbody.useGravity = true;
-
+		this.transform.rotation = Random.rotation;
 		//int directionIndex = Random.Range(0, diceDirections.Length);
 		int directionIndex = 0;
 		Vector3 direction= diceDirections[directionIndex];

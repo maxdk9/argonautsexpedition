@@ -140,6 +140,11 @@ namespace Model
             
             foreach (CardManager.Card card in Game.instance.currentEncounter)
             {
+
+                if (card.type == CardType.wrath || card.type == CardType.blessing)
+                {
+                    continue;
+                }
                 if (card.resolved == ResolvedType.notresolved)
                 {
                     return false;

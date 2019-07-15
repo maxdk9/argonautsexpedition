@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using command;
 using screen;
 using UnityEngine.Events;
 
@@ -26,12 +27,15 @@ namespace Model.States
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();
             
+            new MoveTreasureToHand().StartCommandExecution();
+            new CustomActionCommand(new UnityAction(delegate { UpdateUIElements(); })).StartCommandExecution();            
+            
+        }
+
+        private void UpdateUIElements()
+        {
             AddResolveCardByRollDiceComponent();
-            
-            
-            
             DeckGameControlPanel.instance.Show();
-            
             
         }
 
@@ -79,12 +83,6 @@ namespace Model.States
                     GameLogicModifyGame.AutoResolveCard(cardManager.cardAsset);
                     AutoResolveEvent.AddListener(cardManager.ShowResolve);
                     AutoResolveEvent.AddListener(cardManager.AnimateResolve);
-
-                    if (cardManager.cardAsset.type == CardType.treasure)
-                    {
-                        AutoResolveEvent.AddListener(MoveCardManagerToTreasure(cardManager));
-                    }
-                    
                 }
             }
             AutoResolveEvent.Invoke();

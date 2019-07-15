@@ -25,7 +25,6 @@ public class GoToNextGamePhase : Command
     
     private IEnumerator GoToNextGamePhaseCoroutine()
     {
-        
         StateManager.getInstance().MoveNext(newgamephase);
         yield return new WaitForSeconds(.01f);
         Command.CommandExecutionComplete();

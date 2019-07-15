@@ -47,6 +47,20 @@ public class SameDistanceChildren : MonoBehaviour
 			slot.transform.DOLocalMoveX(SlotPositionX, 0, false);
 		}
 	}
+
+	public int GetOccupiedSlotsNumber()
+	{
+		OneCardManager[] array = this.GetComponentsInChildren<OneCardManager>();
+		int result = 0;
+		foreach (OneCardManager cardmanager in array)
+		{
+			if(cardmanager.isPreview){continue;}
+
+			result++;
+		}
+
+		return result;
+	}
 	
 	
 	

@@ -80,9 +80,11 @@
             <e p="CardManager.cs" t="Include" />
             <e p="command" t="Include">
               <e p="Command.cs" t="Include" />
+              <e p="CustomActionCommand.cs" t="Include" />
               <e p="Draw3CardsCommand.cs" t="Include" />
               <e p="GoToNextGamePhase.cs" t="Include" />
               <e p="MoveCardsFromOutsideToDeck.cs" t="Include" />
+              <e p="MoveTreasureToHand.cs" t="Include" />
               <e p="PrepareCardForNewGame.cs" t="Include" />
               <e p="PrepareCardResumeGame.cs" t="Include" />
             </e>

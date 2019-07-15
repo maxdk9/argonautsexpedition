@@ -20,6 +20,8 @@ public class Visual : MonoBehaviour
 	public GameObject CrewCounter;
 	public GameObject LossCounter;
 	public GameObject CurrentEncounter;
+	public GameObject TreasureHand;
+	
 	public Button buttonToBattle;
 	
 	public GameObject currentDiceEncounter;
