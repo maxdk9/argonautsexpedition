@@ -58,6 +58,13 @@ namespace Model
                 UpdateCasualties(card);
             }
         }
+
+        public static void DoCasualties()
+        {
+            Game.instance.DeployedCrew = 0;
+            Game.instance.CrewNumber = Game.instance.CrewNumber - Game.instance.Casualties;
+            Game.instance.Casualties = 0;
+        }
     }
     
     

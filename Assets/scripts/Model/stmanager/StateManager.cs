@@ -21,7 +21,6 @@ public class StateManager
 			instance=new StateManager();
 			instance.init();
 		}
-
 		return instance;
 	}
 	

@@ -36,7 +36,7 @@ public class DamageEffect : MonoBehaviour {
         // make this effect non-transparent
         cg.alpha = 1f;
         // wait for 1 second before fading
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
         // gradually fade the effect by changing its alpha value
         while (cg.alpha > 0)
         {

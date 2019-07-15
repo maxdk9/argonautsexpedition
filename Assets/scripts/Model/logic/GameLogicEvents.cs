@@ -9,6 +9,7 @@ namespace Model
 
         public static UnityEvent eventUpdateCurrentEncounter=new UnityEvent();
         public static UnityEvent eventUpdateLossCounter=new UnityEvent();
+        public static UnityEvent eventUpdateCrewCounter=new UnityEvent();
 
         
 
@@ -18,6 +19,9 @@ namespace Model
             eventUpdateCurrentEncounter.AddListener(new UnityAction(GameLogicEvents.UpdateCurrentEncounter));
             eventUpdateLossCounter.RemoveAllListeners();
             eventUpdateLossCounter.AddListener(new UnityAction(Visual.instance.UpdateLossCounter));
+            eventUpdateCrewCounter.RemoveAllListeners();
+            eventUpdateCrewCounter.AddListener(new UnityAction(Visual.instance.UpdateCrewCounter));
+            
         }
 
         private static void UpdateCurrentEncounter()

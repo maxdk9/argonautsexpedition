@@ -15,10 +15,29 @@ public class ResolveCardByDiceRoll :tempTouchComponent,UnityEngine.EventSystems.
         
         public void OnPointerDown(PointerEventData eventData)
         {
+            
+            
+            
 
            // OneCardManager c=this.GetComponent<OneCardManager>();
             Debug.Log("ResolveCardByDiceRoll ");
             OneCardManager c = this.GetComponent<OneCardManager>();
+            
+            if (c.cardAsset.resolved == ResolvedType.resolved_lost |
+                c.cardAsset.resolved == ResolvedType.resolved_win)
+            {
+                return;
+            }
+
+            if (c.cardAsset.type == CardType.wrath)
+            {
+                return;
+            }
+            if (c.cardAsset.type == CardType.blessing)
+            {
+                return;
+            }
+            
             Game.instance.CurrentEnemyIndex = c.cardAsset.cardnumber;
             new GoToNextGamePhase(GamePhase.Battle).AddToQueue();
             

@@ -25,7 +25,11 @@ namespace Model.States
             HoverPreview.StopAllPreviews();
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();
+            
             AddResolveCardByRollDiceComponent();
+            
+            
+            
             DeckGameControlPanel.instance.Show();
             
             
@@ -36,14 +40,10 @@ namespace Model.States
             List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
             foreach (OneCardManager cm in enclist)
             {
-                if (cm.cardAsset.resolved == ResolvedType.resolved_lost |
-                    cm.cardAsset.resolved == ResolvedType.resolved_win)
-                {
-                    continue;
-                }
 
-                cm.gameObject.AddComponent<ResolveCardByDiceRoll>();
-
+                
+                    cm.gameObject.AddComponent<ResolveCardByDiceRoll>();
+                
 
             }
             
@@ -79,21 +79,20 @@ namespace Model.States
                     GameLogicModifyGame.AutoResolveCard(cardManager.cardAsset);
                     AutoResolveEvent.AddListener(cardManager.ShowResolve);
                     AutoResolveEvent.AddListener(cardManager.AnimateResolve);
+
+                    if (cardManager.cardAsset.type == CardType.treasure)
+                    {
+                        AutoResolveEvent.AddListener(MoveCardManagerToTreasure(cardManager));
+                    }
+                    
                 }
             }
             AutoResolveEvent.Invoke();
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        private void MoveCardManagerToTreasure(OneCardManager cardManager)
+        {
+            
+        }
     }
 }

@@ -64,7 +64,7 @@ namespace command
             Command.CommandExecutionComplete();
         }
 
-        private void MoveCardToCurrentEncounterGroup([CanBeNull] OneCardManager card, Transform parent)
+        public void MoveCardToCurrentEncounterGroup([CanBeNull] OneCardManager card, Transform parent)
         {
             card.transform.SetParent(parent);
         }
