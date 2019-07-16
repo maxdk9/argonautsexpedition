@@ -26,11 +26,8 @@ namespace Model.States
             Debug.Log("EndTurn");
             ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
             
-            new CommandDoCasualties().StartCommandExecution();
-            
-           
-            
-            new GoToNextGamePhase(GamePhase.StartNewTurn);
+            new CommandDoCasualties().AddToQueue(); 
+            new GoToNextGamePhase(GamePhase.StartNewTurn).AddToQueue();
         }
 
         public void OnExit()
@@ -64,7 +61,7 @@ namespace Model.States
                     
                 }
                 yield return new WaitForSeconds(TimeMovement1  + DelayTime);
-                
+                Debug.Log("CommandDoCasualties");
                 GameLogicModifyGame.DoCasualties();
                 GameLogicEvents.eventUpdateLossCounter.Invoke();
                 GameLogicEvents.eventUpdateCrewCounter.Invoke();

@@ -149,4 +149,20 @@ public class Visual : MonoBehaviour
 		UpdateCrewCounter();
 		UpdateLossCounter();
 	}
+
+	public List<OneCardManager> GetCurrentDeck()
+	{
+		OneCardManager[] cards = Visual.instance.CardDeckFrame.GetComponentsInChildren<OneCardManager>();
+		List<OneCardManager>  result=new List<OneCardManager>();
+		foreach (OneCardManager card in cards)
+		{
+			
+			if (card.isPreview)
+			{
+				continue;    
+			}
+			result.Add(card);
+		}
+		return result;		
+	}
 }

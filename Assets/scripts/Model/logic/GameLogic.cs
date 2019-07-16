@@ -158,6 +158,14 @@ namespace Model
         {
             return  card.deadliness[card.level];
         }
+
+        
+        
+        public static bool EndDeck()
+        {
+            List<OneCardManager> currentDeck = Visual.instance.GetCurrentDeck();
+            return currentDeck.Count == 0;
+        }
     }
 
 }

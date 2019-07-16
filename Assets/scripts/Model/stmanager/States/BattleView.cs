@@ -27,8 +27,8 @@ namespace Model.States
             AutoBattleResolve();
             UpdateOneCardManagerVisibility();
             
-            new MoveTreasureToHand().StartCommandExecution();
-            new CustomActionCommand(new UnityAction(delegate { UpdateUIElements(); })).StartCommandExecution();            
+            new MoveTreasureToHand().AddToQueue();
+            new CustomActionCommand(new UnityAction(delegate { UpdateUIElements(); })).AddToQueue();            
             
         }
 

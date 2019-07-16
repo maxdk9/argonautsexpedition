@@ -40,7 +40,7 @@ public class RollDiceControlPanel : MonoBehaviour
 
 	public void BackButtonClick()
 	{
-		new 	 GoToNextGamePhase(GamePhase.BattleView).StartCommandExecution();
+		new 	 GoToNextGamePhase(GamePhase.BattleView).AddToQueue();
 	}
 	
 }

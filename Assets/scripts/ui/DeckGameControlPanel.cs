@@ -48,6 +48,6 @@ public class DeckGameControlPanel : MonoBehaviour {
 
 	public void EndTurnButtonClick()
 	{
-		new 	 GoToNextGamePhase(GamePhase.EndTurn).StartCommandExecution();
+		new 	 GoToNextGamePhase(GamePhase.EndTurn).AddToQueue();
 	}
 }

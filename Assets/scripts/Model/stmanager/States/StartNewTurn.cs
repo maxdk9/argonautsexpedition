@@ -6,17 +6,25 @@ namespace Model.States
         
         public void Execute(double time)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void OnEnter()
         {
-            throw new System.NotImplementedException();
+            if (GameLogic.EndDeck())
+            {
+                new GoToNextGamePhase(GamePhase.DeckWin);
+                
+            }
+            else
+            {
+                new GoToNextGamePhase(GamePhase.Draw3QuestCards).AddToQueue();
+            }
         }
 
         public void OnExit()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

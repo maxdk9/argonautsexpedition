@@ -40,7 +40,7 @@ namespace Model.States
             diceRolledEvent.AddListener(new UnityAction(delegate { ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage()); }));
             
             diceRolledEvent.AddListener(new UnityAction(delegate { RollDiceResultBar.instance.Show(); }));
-            diceRolledEvent.AddListener(new UnityAction(delegate { new GoToNextGamePhase(GamePhase.BattleEnd).StartCommandExecution(); }));
+            diceRolledEvent.AddListener(new UnityAction(delegate { new GoToNextGamePhase(GamePhase.BattleEnd).AddToQueue(); }));
             
             
             

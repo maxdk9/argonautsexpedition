@@ -1,6 +1,7 @@
 using System.Linq;
 using Assets.SimpleLocalization;
 using screen;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Model.States
@@ -18,6 +19,8 @@ namespace Model.States
 
         public void OnEnter()
         {
+            
+            Debug.Log("Draw3QuestCard");
             ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);            
             Visual.instance.CardDeckFrame.SetActive(true);
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("draw3questcard"),10);
