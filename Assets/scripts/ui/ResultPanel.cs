@@ -9,27 +9,31 @@ using Image = UnityEngine.UI.Image;
 public class ResultPanel : MonoBehaviour
 {
 
-	public Canvas panelCanvas;
+	
 	public TextMeshProUGUI label;
 	public Image backgroundImage;
 
-	private int hiddenY = 400;
-	private int showY = 220;
+	private float defaultY=190;
+	private float viewMoveDuration = .2f;
 	
 	public static ResultPanel instance;
 
 	private void Awake()
 	{
+		
+		Debug.Log("ResultImageY "+defaultY.ToString());
 		instance = this;
-		this.backgroundImage.transform.DOLocalMoveY(hiddenY, 0);
-		panelCanvas.enabled=false;
+		Hide();
+		
+		
 	}
+
+
+	
+
 	public void ShowMessage(string Message)
 	{
-		
-		
-		
-		
+		this.gameObject.SetActive(true);
 		GameManager.instance.StartCoroutine(ShowMessageCoroutine(Message));
 	}
 
@@ -39,16 +43,17 @@ public class ResultPanel : MonoBehaviour
 	IEnumerator ShowMessageCoroutine(string Message)
 	{
 		label.text = Message;
-		panelCanvas.enabled = true;
+		yield return new WaitForSeconds(.1f);
 		Sequence sequence= DOTween.Sequence();
-		sequence.Append(backgroundImage.transform.DOLocalMoveY(220, .3f));
+		sequence.Append(this.transform.DOLocalMoveY(defaultY, viewMoveDuration));
 		sequence.Play();
-		yield return new WaitForSeconds(1.1f); 
+		yield return new WaitForSeconds(viewMoveDuration+.01f); 
 	}
 
 	public void Hide()
 	{
-		panelCanvas.enabled = false;
+		this.transform.DOLocalMoveY(defaultY+200, 0);
+		this.gameObject.SetActive(false);
 	}
 	
 }

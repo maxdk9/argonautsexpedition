@@ -13,11 +13,12 @@ public class MessageManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        MessagePanel.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 
     public void ShowMessage(string Message, float Duration)
     {
+        this.gameObject.SetActive(true);
         StartCoroutine(ShowMessageCoroutine(Message, Duration));
     }
 
@@ -25,9 +26,9 @@ public class MessageManager : MonoBehaviour
     {
       
         MessageText.text = Message;
-        MessagePanel.SetActive(true);
+        
         yield return new WaitForSeconds(Duration);
-        MessagePanel.SetActive(false);
+        this.gameObject.SetActive(false);
       
     }
 

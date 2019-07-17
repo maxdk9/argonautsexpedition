@@ -9,7 +9,7 @@ public class DeckGameControlPanel : MonoBehaviour {
 
 	public static DeckGameControlPanel instance;
 	
-	public Canvas canvas;
+	
 	public Button EndTurnButton;
 
 	
@@ -28,7 +28,7 @@ public class DeckGameControlPanel : MonoBehaviour {
 
 	public void Show()
 	{
-		canvas.enabled = true;
+		this.gameObject.SetActive(true);
 		SetButtonsVisibility();
 	}
 
@@ -42,7 +42,8 @@ public class DeckGameControlPanel : MonoBehaviour {
 
 	public void Hide()
 	{
-		canvas.enabled = false;
+		this.gameObject.SetActive(false);
+		//canvas.enabled = false;
 	}
 
 

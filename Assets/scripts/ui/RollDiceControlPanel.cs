@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class RollDiceControlPanel : MonoBehaviour
 {
-	public Canvas canvas;
+	
 	public Button buttonBack;
 	public static RollDiceControlPanel instance;
 
@@ -29,12 +29,12 @@ public class RollDiceControlPanel : MonoBehaviour
 
 	public void Show()
 	{
-		canvas.enabled = true;
+		this.gameObject.SetActive(true);
 	}
 
 	public void Hide()
 	{
-		canvas.enabled = false;
+		this.gameObject.SetActive(false);
 	}
 
 

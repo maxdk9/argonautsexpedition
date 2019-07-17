@@ -149,6 +149,7 @@
             <e p="RollDiceControlPanel.cs" t="Include" />
             <e p="RollDiceResultBar.cs" t="Include" />
             <e p="SameDistanceChildren.cs" t="Include" />
+            <e p="Tooltipable.cs" t="Include" />
           </e>
         </e>
         <e p="SimpleLocalization" t="Include">
@@ -188,6 +189,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="Tooltip.cs" t="Include" />
         <e p="Visual.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />

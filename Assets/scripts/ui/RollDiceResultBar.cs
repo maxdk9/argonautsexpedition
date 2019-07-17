@@ -23,21 +23,19 @@ public class RollDiceResultBar : MonoBehaviour
 	private int ShowY = -50;
 	private int HideY = -400;
 
-	public Canvas canvas;
-
 
 	public static RollDiceResultBar instance;
 
 	private void Awake()
 	{
 		instance = this;
-		this.canvas.enabled = false;
+		Hide();
 	}
 
 	public void Show()
 	{
 		this.transform.DOLocalMoveY(HideY, 0);
-		this.canvas.enabled = true;
+		this.gameObject.SetActive(true);
 		CardManager.Card card = Battle.ourInstance.currentDiceEncounterOneCardManager.cardAsset;
 
 		bool showPowerUp = GameLogic.GetPowerUp(card) != 0;		
@@ -60,7 +58,7 @@ public class RollDiceResultBar : MonoBehaviour
 
 	public void Hide()
 	{
-		canvas.enabled = false;
+		this.gameObject.SetActive(false);
 	}
 	
 }
