@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
 	public GameObject ItemCardPrefab;
 	public GameObject BlessingCardPrefab;
 	public GameObject DamageEffectPrefab;
-	
+	public Camera MainCamera;
+	public Camera UICamera;
 	
 
 	
@@ -38,6 +39,9 @@ public class GameManager : MonoBehaviour
 	
 	private void InitializeManager()
 	{
+
+		MainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
+		UICamera = GameObject.Find("UIcamera").GetComponent<Camera>();
 		Const.CalculateSize();
 		GameLogicEvents.SubscribeEvents();
 		CardManager.Instance().Init();

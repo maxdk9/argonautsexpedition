@@ -10,6 +10,8 @@ public class Tooltipable:MonoBehaviour,UnityEngine.EventSystems.IPointerDownHand
     
      public void OnPointerDown(PointerEventData eventData)
     {
-        Tooltip.instance.ShowTooltip(LocalizationManager.Localize(tooltipKey));
+        
+        
+        Tooltip.instance.ShowTooltip(LocalizationManager.Localize(tooltipKey),eventData.position);
     }
 }

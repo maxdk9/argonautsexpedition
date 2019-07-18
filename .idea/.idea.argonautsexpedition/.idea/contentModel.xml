@@ -144,6 +144,7 @@
           </e>
           <e p="ui" t="Include">
             <e p="DeckGameControlPanel.cs" t="Include" />
+            <e p="FadeAlphaGraphicUI.cs" t="Include" />
             <e p="MessageManager.cs" t="Include" />
             <e p="ResultPanel.cs" t="Include" />
             <e p="RollDiceControlPanel.cs" t="Include" />
