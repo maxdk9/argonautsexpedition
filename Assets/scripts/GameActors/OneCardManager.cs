@@ -14,9 +14,9 @@ public class OneCardManager : DestroyableEntity
 {
 
 
-    public static int CardWidth = 360;
+    public static int CardWidth = 324;
     public static int CardWidthWithoutGlow = CardWidth - 25;
-    public static int CardHeight = 504;
+    public static int CardHeight = 453;
     public static int CardHeightWithoutGlow = CardHeight-25;
     
     

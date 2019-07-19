@@ -32,6 +32,15 @@ public class PrepareCardResumeGame : Command {
             GameObject cardObject =  OneCardManager.CreateOneCardManager(card, slot);
         }
         
+        SameDistanceChildren treasureHand=Visual.instance.TreasureHand.GetComponent<SameDistanceChildren>();
+        
+        foreach (CardManager.Card card in Game.instance.TreasureHand)
+        {
+            int index = Game.instance.TreasureHand.IndexOf(card);
+            GameObject slot = treasureHand.slots[index];
+            GameObject cardObject =  OneCardManager.CreateOneCardManager(card, slot);
+        }
+        
         yield return new WaitForSeconds(.01f);
         GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
         Command.CommandExecutionComplete();

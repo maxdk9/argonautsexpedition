@@ -27,7 +27,8 @@ public class Tooltip : MonoBehaviour,IPointerDownHandler
 
 		
 		Vector3 newposition=GameManager.instance.UICamera.ScreenToWorldPoint(new Vector3(pos.x,pos.y,GameManager.instance.UICamera.nearClipPlane));
-		newposition += new Vector3(30, -10, 0);
+		Vector3 offsetPosition=Vector3.Scale(new Vector3(30,10,0),GetOffset(pos));
+		newposition += offsetPosition;
 		//Vector3 newposition1 = GameManager.instance.UICamera.WorldToScreenPoint(newposition);
 		
 		this.transform.position = newposition;
@@ -53,4 +54,37 @@ public class Tooltip : MonoBehaviour,IPointerDownHandler
 	{
 		HideTooltip();
 	}
+
+
+	public static Vector3 GetOffset(Vector2 position)
+	{
+		if (position.x > (Screen.width / 2))
+		{
+			if (position.y > (Screen.height / 2))
+			{
+				return  new Vector3(-1,-1,0);
+			}
+			else
+			{
+				return  new Vector3(-1,1,0);
+
+			}
+		}
+		else
+		{
+			if (position.y > (Screen.height / 2))
+			{
+				return  new Vector3(1,-1,0);
+			}
+			else
+			{
+				return  new Vector3(1,1,0);
+			}
+		}
+		
+		
+		
+	}
+	
+	
 }

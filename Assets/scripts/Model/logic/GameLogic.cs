@@ -130,6 +130,10 @@ namespace Model
 
             int playerResult = currentEncounter.crewNumber + Game.instance.DiceEncounterNumber + GameLogic.GetPowerUp(currentEncounter);
             int monsterResult = GameLogic.GetCurrentDifficulty(currentEncounter);
+            if (Game.instance.DiceEncounterNumber == 6)
+            {
+                return true;
+            }
             return playerResult >= monsterResult;
 
 

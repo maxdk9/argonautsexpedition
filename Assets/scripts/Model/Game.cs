@@ -15,7 +15,7 @@ public class Game
 	
 	public List <CardManager.Card> wrathCards=new List<CardManager.Card>();
 	
-	public List <CardManager.Card> userItems=new List<CardManager.Card>();
+	public List <CardManager.Card> TreasureHand=new List<CardManager.Card>();
 	
 	public List <CardManager.Card> discardPile=new List<CardManager.Card>();
 	
@@ -137,7 +137,7 @@ public class Game
 		reserveDeck.Clear();
 		currentEncounter.Clear();
 		wrathCards.Clear();
-		userItems.Clear();
+		TreasureHand.Clear();
 		discardPile.Clear();
 		winningPile.Clear();
 		HeroicDeedList.Clear();

@@ -3200,7 +3200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentEncounterLength: 1600
-  MaxSpace: 30
+  MaxSpace: 5
   Space: 30
   slots:
   - {fileID: 634766256}

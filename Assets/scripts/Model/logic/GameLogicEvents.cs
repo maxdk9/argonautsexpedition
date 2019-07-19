@@ -47,6 +47,7 @@ namespace Model
             
             UpdateCardList(Visual.instance.CurrentEncounter, Game.instance.currentEncounter);
             UpdateCardList(Visual.instance.CardDeckFrame, Game.instance.currentDeck);
+            UpdateCardList(Visual.instance.TreasureHand,Game.instance.TreasureHand);
             
         }
 
