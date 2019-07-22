@@ -43,7 +43,12 @@ namespace Model
             {
                 return;
             }
+
+            AddToCardList(Visual.instance.CardPointDiscard, Game.instance.discardPile);
+            AddToCardList(Visual.instance.CardPointWinning, Game.instance.winningPile);
             
+            DestroyOneCardManager(Visual.instance.CardPointDiscard);
+            DestroyOneCardManager(Visual.instance.CardPointWinning);
             
             UpdateCardList(Visual.instance.CurrentEncounter, Game.instance.currentEncounter);
             UpdateCardList(Visual.instance.CardDeckFrame, Game.instance.currentDeck);
@@ -51,12 +56,39 @@ namespace Model
             
         }
 
+        private static void AddToCardList(GameObject objectGroup, List<CardManager.Card> cardlist)
+        {
+            OneCardManager[] array = objectGroup.GetComponentsInChildren<OneCardManager>();
+            foreach (OneCardManager cardManager in array)
+            {
+                if (cardManager.isPreview)
+                {
+                    continue;
+                }
+                cardlist.Add(cardManager.cardAsset);
+            }
+        }
+
+        private static void DestroyOneCardManager(GameObject parent)
+        {
+            OneCardManager[] entities = parent.GetComponentsInChildren<OneCardManager>();
+            foreach (OneCardManager entity in entities)
+            {
+                    GameObject.DestroyImmediate(entity.gameObject);   		
+            }
+        }
+        
+
         private static void UpdateCardList(GameObject objectGroup, List<CardManager.Card> cardlist)
         {
             cardlist.Clear();
             OneCardManager[] array = objectGroup.GetComponentsInChildren<OneCardManager>();
             foreach (OneCardManager cardManager in array)
             {
+                if (cardManager.isPreview)
+                {
+                    continue;
+                }
                 cardlist.Add(cardManager.cardAsset);
             }
         }

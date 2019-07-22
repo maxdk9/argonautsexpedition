@@ -416,3 +416,9 @@ draw3questcard,"Touch on deck, for draw 3 adventure card. This will be your chal
 assigncrewmembers,Assign crew members to current encounters...,Assign crew members to current encounters...
 ttip_crewcounter,"The number of your crew. You can assign crew member on adventure card to resolve challenge.If all team members die, you lose","The number of your crew. You can assign crew member on adventure card to resolve challenge.If all team members die, you lose"
 ttip_losscounter,The number of your casualties. You will lose this crewmen at the end of the round,The number of your casualties. You will lose this crewmen at the end of the round
+ttip_deadliness,"Deadliness - If you lost battle, monster kill this number of crew.","Deadliness - If you lost battle, monster kill this number of crew."
+ttip_difficulty,Difficulty mean what result (dice roll+crew number assigned) can be achieved to resolve current challenge.,Difficulty mean what result (dice roll+crew number assigned) can be achieved to resolve current challenge.
+ttip_typecontinuous, Continuous type of treasure - have permanent effect., Continuous type of treasure - have permanent effect.
+ttip_typesingleuse,"Single-use treasures may be used at any time is appropriate for their effect.
+After use, the card must be discarded.","Single-use treasures may be used at any time is appropriate for their effect.
+After use, the card must be discarded."

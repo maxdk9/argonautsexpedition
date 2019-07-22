@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 224804567818460388}
   - component: {fileID: 222418850300203890}
   - component: {fileID: 114892374026926918}
+  - component: {fileID: 114955218163415390}
   m_Layer: 13
   m_Name: usetypeimage
   m_TagString: Untagged
@@ -296,6 +297,7 @@ GameObject:
   - component: {fileID: 224729513206721672}
   - component: {fileID: 222495829033649878}
   - component: {fileID: 114175114104253008}
+  - component: {fileID: 114530798601242606}
   m_Layer: 13
   m_Name: difficultyImage
   m_TagString: Untagged
@@ -2146,6 +2148,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114530798601242606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1418060661697130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058af19a20b648aebf661feac6c16a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipKey: ttip_difficulty
 --- !u!114 &114543930373202458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2905,6 +2919,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114955218163415390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1088144384278686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058af19a20b648aebf661feac6c16a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipKey: ttip_typetreasure
 --- !u!222 &222010430691141514
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Model;
+using tools;
 using UnityEngine;
 
 [System.Serializable]
@@ -150,6 +151,8 @@ public class Game
 		scyllaCasualties=0;
 		ToWork=0;
 		deployedCrew = 0;
+
+		
 		
 		crewNumber = CREWNUMBERSTART;
 		

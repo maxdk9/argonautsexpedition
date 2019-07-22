@@ -13,7 +13,7 @@ public class ResultPanel : MonoBehaviour
 	public TextMeshProUGUI label;
 	public Image backgroundImage;
 
-	private float defaultY=190;
+	private float defaultY=230;
 	private float viewMoveDuration = .2f;
 	
 	public static ResultPanel instance;

@@ -17,7 +17,7 @@ namespace Model.States
         {
             ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
             Debug.Log("CrewAssignment");
-            Visual.instance.buttonToBattle.gameObject.SetActive(true);
+            DeckGameControlPanel.instance.Show();
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("assigncrewmembers"),10);
             OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
 

@@ -57,7 +57,9 @@ namespace Model.States
                 foreach(OneCardManager cm in curEnc)
                 {
                     yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
-                    DiscardCard(cm);
+
+                    bool isResolved = cm.cardAsset.resolved == ResolvedType.resolved_win;
+                    DiscardCard(cm,isResolved);
                     
                 }
                 yield return new WaitForSeconds(TimeMovement1  + DelayTime);
@@ -72,14 +74,17 @@ namespace Model.States
         
         
    
-        public static void DiscardCard(OneCardManager card)
+        public static void DiscardCard(OneCardManager card,bool toWinningPile)
         {                
             card.transform.SetParent(null);
 
             Sequence sequence = DOTween.Sequence();
+            GameObject destination =
+                toWinningPile ? Visual.instance.CardPointWinning : Visual.instance.CardPointWinning;
             sequence.Append(card.transform.DOLocalMove(Visual.instance.CardPointOutside.transform.position, TimeMovement1));
             sequence.Insert(0f, card.transform.DORotate(new Vector3(0f, 179f, 0f), TimeMovement1*.5f));
-            sequence.OnComplete(() => { card.transform.SetParent(Visual.instance.CardPointOutside.transform); });
+            
+            sequence.OnComplete(() => { card.transform.SetParent(Visual.instance.CardPointDiscard.transform); });
             sequence.Play();
                 
         }

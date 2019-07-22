@@ -28,7 +28,7 @@ namespace Model.States
             Battle.ourInstance.SetCurrentDiceEncounterObject();
             ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage());
             RollDiceResultBar.instance.Show();
-            RollDiceControlPanel.instance.Show();
+            DeckGameControlPanel.instance.Show();
         }
 
         private void ShowDetailedResult()

@@ -5,6 +5,12 @@ namespace Model
 	[System.Serializable]
     public class Effect
 	{
+		public Effect(EffectType t)
+		{
+			type = t;
+		}
+		
+		
 		private EffectType[] singleUsedEffects =
 		{
 			EffectType.Defeat_ColchianDragon_single,
@@ -15,7 +21,8 @@ namespace Model
 			EffectType.HelmOfHades_MoveMonsterToDiscardPile_single,
 			EffectType.Ambrosia_Recover3Crew_single,
 			EffectType.AegisOfZeus_IgnoreDeadliness_single,
-			EffectType.ApolloBow_RollDice6_single
+			EffectType.ApolloBow_RollDice6_single,
+			
 		};
 	    
 		private EffectType[] contEffects =
@@ -45,7 +52,8 @@ namespace Model
 		DaedalusWing_RerollDieOncePerTurn_cont ,
 		Ignore_Scylla ,
 		Mirrored_Shield ,
-		Ignore_Charybdis
+		Ignore_Charybdis,
+	    empty
 	}
 
 	    private EffectType type;

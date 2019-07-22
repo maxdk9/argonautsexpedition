@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Model;
 using Model.States;
 using screen;
+using tools;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,14 +16,16 @@ public class Visual : MonoBehaviour
 	
 	public GameObject CardPoint;
 	public GameObject CardPointOutside;
+	public GameObject CardPointDiscard;
+	public GameObject CardPointWinning;
 	
 	public GameObject CardDeckFrame;
 	public GameObject CrewCounter;
 	public GameObject LossCounter;
 	public GameObject CurrentEncounter;
 	public GameObject TreasureHand;
+	public GameObject EffectGroup;
 	
-	public Button buttonToBattle;
 	
 	public GameObject currentDiceEncounter;
 	public GameObject mainDice;
@@ -32,6 +35,7 @@ public class Visual : MonoBehaviour
 
 	public Sprite ThumbsUp;
 	public Sprite ThumbsDown;
+	
 
 
 	private void Awake()
@@ -55,11 +59,10 @@ public class Visual : MonoBehaviour
 
 	public void DisableVisualElementsOnStateEnter()
 	{
-		buttonToBattle.gameObject.SetActive(false);
+		
 		CardDeckFrame.gameObject.SetActive(false);
 		ResultPanel.instance.Hide();
 		RollDiceResultBar.instance.Hide();
-		RollDiceControlPanel.instance.Hide();
 		DeckGameControlPanel.instance.Hide();
 		
 		if (CrewAssigner.instance != null)
@@ -95,10 +98,6 @@ public class Visual : MonoBehaviour
 		
 	}
 
-	public void ToBattelButtonClick()
-	{
-		new GoToNextGamePhase(GamePhase.BattleView).AddToQueue();
-	}
 
 
 	public  List <OneCardManager> GetCurrentEncounter()
@@ -164,5 +163,11 @@ public class Visual : MonoBehaviour
 			result.Add(card);
 		}
 		return result;		
+	}
+
+
+	public void MainVisualTest()
+	{
+		TestTools.VisualTest();
 	}
 }

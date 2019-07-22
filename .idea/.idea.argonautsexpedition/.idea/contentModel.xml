@@ -70,6 +70,7 @@
             <e p="DamageEffect.cs" t="Include" />
             <e p="DamageEffectTest.cs" t="Include" />
             <e p="DestroyableEntity.cs" t="Include" />
+            <e p="EffectActor.cs" t="Include" />
             <e p="HoverPreview.cs" t="Include" />
             <e p="OneCardManager.cs" t="Include" />
           </e>
@@ -147,7 +148,6 @@
             <e p="FadeAlphaGraphicUI.cs" t="Include" />
             <e p="MessageManager.cs" t="Include" />
             <e p="ResultPanel.cs" t="Include" />
-            <e p="RollDiceControlPanel.cs" t="Include" />
             <e p="RollDiceResultBar.cs" t="Include" />
             <e p="SameDistanceChildren.cs" t="Include" />
             <e p="Tooltipable.cs" t="Include" />

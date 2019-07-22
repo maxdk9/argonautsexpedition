@@ -8,6 +8,7 @@ using screen;
 using tools;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,11 +21,12 @@ public class GameManager : MonoBehaviour
 	public GameObject ItemCardPrefab;
 	public GameObject BlessingCardPrefab;
 	public GameObject DamageEffectPrefab;
+	public GameObject EffectActorPrefab;
 	public Camera MainCamera;
 	public Camera UICamera;
-	
+	 
 
-	
+
 	void Start () {
 		if (instance == null) { 
 			instance = this; 
@@ -85,7 +87,18 @@ public class GameManager : MonoBehaviour
 				GameObject.DestroyImmediate(entity.gameObject);
 			}		
 		}
+		EffectActor[] actors = Visual.instance.EffectGroup.GetComponentsInChildren<EffectActor>();
+		foreach (EffectActor entity in actors)
+		{
+			
+			
+				GameObject.DestroyImmediate(entity.gameObject);
+					
+		}
 	}
+	
+	
+	
 
 
 	public void RemoveStateComponentsFromActor()

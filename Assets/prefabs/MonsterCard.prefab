@@ -157,6 +157,7 @@ GameObject:
   - component: {fileID: 224064287571039860}
   - component: {fileID: 222292268914789344}
   - component: {fileID: 114066782636051890}
+  - component: {fileID: 114773612992732926}
   m_Layer: 13
   m_Name: deadlinessImage
   m_TagString: Untagged
@@ -548,6 +549,7 @@ GameObject:
   - component: {fileID: 224921065546094644}
   - component: {fileID: 222178447223758464}
   - component: {fileID: 114851128366071998}
+  - component: {fileID: 114746122680141480}
   m_Layer: 13
   m_Name: difficultyImage
   m_TagString: Untagged
@@ -2706,6 +2708,30 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114746122680141480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1669645733361700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058af19a20b648aebf661feac6c16a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipKey: ttip_difficulty
+--- !u!114 &114773612992732926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225956042026586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058af19a20b648aebf661feac6c16a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tooltipKey: ttip_deadliness
 --- !u!114 &114816195973389766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3616,7 +3642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -4.348805, y: -373.1961}
+  m_AnchoredPosition: {x: 86, y: -369}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224039333069757494

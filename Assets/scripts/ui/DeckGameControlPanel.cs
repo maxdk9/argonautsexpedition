@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Model;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ public class DeckGameControlPanel : MonoBehaviour {
 	
 	
 	public Button EndTurnButton;
+	public Button buttonToBatte;
+	public Button buttonBackFromRollDice;
 
 	
 
@@ -34,10 +37,14 @@ public class DeckGameControlPanel : MonoBehaviour {
 
 	private void SetButtonsVisibility()
 	{
+
 		
 		
-		EndTurnButton.gameObject.SetActive(GameLogic.CurrentEncounterResolved());
+		EndTurnButton.gameObject.SetActive(Game.instance.CurrentState == GamePhase.BattleView && GameLogic.CurrentEncounterResolved());	
 		
+		
+		buttonToBatte.gameObject.SetActive(Game.instance.CurrentState==GamePhase.CrewAssignment);
+		buttonBackFromRollDice.gameObject.SetActive(Game.instance.CurrentState==GamePhase.BattleEnd);
 	}
 
 	public void Hide()
@@ -50,5 +57,18 @@ public class DeckGameControlPanel : MonoBehaviour {
 	public void EndTurnButtonClick()
 	{
 		new 	 GoToNextGamePhase(GamePhase.EndTurn).AddToQueue();
+	}
+	
+	
+	
+	public void ToBattelButtonClick()
+	{
+		new GoToNextGamePhase(GamePhase.BattleView).AddToQueue();
+	}
+	
+	
+	public void buttonBackFromRollDiceClick()
+	{
+		new GoToNextGamePhase(GamePhase.BattleView).AddToQueue();
 	}
 }

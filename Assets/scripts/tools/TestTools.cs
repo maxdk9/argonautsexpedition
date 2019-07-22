@@ -198,8 +198,17 @@ namespace tools
         }
 
 
-        
-        
+        public static void GenerateEffects()
+        {
+            Game.instance.CardEffects.Add(new Effect(Effect.EffectType.Ignore_Charybdis));
+            Game.instance.CardEffects.Add(new Effect(Effect.EffectType.Argo_TreasureRolls_p1_cont));
+        }
+
+
+        public static void VisualTest()
+        {
+            Debug.Log("VisualTest");
+        }
     }
     
     
