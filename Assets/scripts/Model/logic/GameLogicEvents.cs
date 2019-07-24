@@ -23,7 +23,7 @@ namespace Model
             eventUpdateCrewCounter.RemoveAllListeners();
             eventUpdateCrewCounter.AddListener(new UnityAction(Visual.instance.UpdateCrewCounter));
             eventNewEffect.RemoveAllListeners();
-            eventNewEffect.AddListener(EffectActor.CreateNewEffectActor);
+      //      eventNewEffect.AddListener(EffectActor.CreateNewEffectActor);
             
         }
 

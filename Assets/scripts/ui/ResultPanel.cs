@@ -13,7 +13,7 @@ public class ResultPanel : MonoBehaviour
 	public TextMeshProUGUI label;
 	public Image backgroundImage;
 
-	private float defaultY=230;
+	
 	private float viewMoveDuration = .2f;
 	
 	public static ResultPanel instance;
@@ -21,7 +21,7 @@ public class ResultPanel : MonoBehaviour
 	private void Awake()
 	{
 		
-		Debug.Log("ResultImageY "+defaultY.ToString());
+
 		instance = this;
 		Hide();
 		
@@ -45,14 +45,14 @@ public class ResultPanel : MonoBehaviour
 		label.text = Message;
 		yield return new WaitForSeconds(.1f);
 		Sequence sequence= DOTween.Sequence();
-		sequence.Append(this.transform.DOLocalMoveY(defaultY, viewMoveDuration));
+		sequence.Append(this.transform.DOLocalMoveY(250, viewMoveDuration));
 		sequence.Play();
 		yield return new WaitForSeconds(viewMoveDuration+.01f); 
 	}
 
 	public void Hide()
 	{
-		this.transform.DOLocalMoveY(defaultY+200, 0);
+		this.transform.DOLocalMoveY(400, 0);
 		this.gameObject.SetActive(false);
 	}
 	
