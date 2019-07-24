@@ -26,7 +26,7 @@ public class EffectActor : MonoBehaviour
 	{
 		GameObject effectActorObject=GameObject.Instantiate(GameManager.instance.EffectActorPrefab,Visual.instance.EffectGroup.transform);
 		effectActorObject.GetComponent<EffectActor>().ReadEffect(e);
-		
+		GameLogicEvents
 		return effectActorObject;
 	}
 

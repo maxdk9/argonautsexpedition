@@ -14,7 +14,6 @@ namespace Model.States
         public void OnEnter()
         {
             
-            TestTools.GenerateEffects();
             new PrepareCardResumeGame().AddToQueue();
             
             new GoToNextGamePhase(Game.instance.CurrentState).AddToQueue();

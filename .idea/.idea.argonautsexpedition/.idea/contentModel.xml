@@ -96,6 +96,7 @@
               <e p="GameLogic.cs" t="Include" />
               <e p="GameLogicEvents.cs" t="Include" />
               <e p="GameLogicModifyGame.cs" t="Include" />
+              <e p="myEvents.cs" t="Include" />
             </e>
             <e p="stmanager" t="Include">
               <e p="GamePhase.cs" t="Include" />

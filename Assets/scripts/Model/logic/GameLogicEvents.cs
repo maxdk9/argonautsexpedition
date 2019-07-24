@@ -10,6 +10,7 @@ namespace Model
         public static UnityEvent eventUpdateCurrentEncounter=new UnityEvent();
         public static UnityEvent eventUpdateLossCounter=new UnityEvent();
         public static UnityEvent eventUpdateCrewCounter=new UnityEvent();
+        public static myEvents.EffectEvent<Effect.EffectType> eventNewEffect =new myEvents.EffectEvent<Effect.EffectType>();
 
         
 
@@ -21,6 +22,8 @@ namespace Model
             eventUpdateLossCounter.AddListener(new UnityAction(Visual.instance.UpdateLossCounter));
             eventUpdateCrewCounter.RemoveAllListeners();
             eventUpdateCrewCounter.AddListener(new UnityAction(Visual.instance.UpdateCrewCounter));
+            eventNewEffect.RemoveAllListeners();
+            eventNewEffect.AddListener(EffectActor.CreateNewEffectActor);
             
         }
 

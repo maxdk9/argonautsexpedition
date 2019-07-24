@@ -208,6 +208,7 @@ namespace tools
         public static void VisualTest()
         {
             Debug.Log("VisualTest");
+            EffectActor.CreateNewEffectActor(new Effect(Effect.EffectType.Argo_TreasureRolls_p1_cont));
         }
     }
     
