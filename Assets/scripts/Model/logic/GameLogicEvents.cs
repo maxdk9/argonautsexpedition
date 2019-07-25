@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Model
 {
@@ -17,14 +20,24 @@ namespace Model
         public static void SubscribeEvents()
         {
             eventUpdateCurrentEncounter.RemoveAllListeners();
-            eventUpdateCurrentEncounter.AddListener(new UnityAction(GameLogicEvents.UpdateCurrentEncounter));
+            eventUpdateCurrentEncounter.AddListener(GameLogicEvents.UpdateCurrentEncounter);
             eventUpdateLossCounter.RemoveAllListeners();
-            eventUpdateLossCounter.AddListener(new UnityAction(Visual.instance.UpdateLossCounter));
+            eventUpdateLossCounter.AddListener(Visual.instance.UpdateLossCounter);
             eventUpdateCrewCounter.RemoveAllListeners();
-            eventUpdateCrewCounter.AddListener(new UnityAction(Visual.instance.UpdateCrewCounter));
+            eventUpdateCrewCounter.AddListener(Visual.instance.UpdateCrewCounter);
             eventNewEffect.RemoveAllListeners();
-      //      eventNewEffect.AddListener(EffectActor.CreateNewEffectActor);
             
+            
+            eventNewEffect.AddListener((int n) =>
+            {
+                if (n <= 0) throw new ArgumentOutOfRangeException("n");
+                raiseNewEffect(n);
+            });
+            
+        }
+         static  void raiseNewEffect(int n)
+        {
+            Debug.Log(n.ToString());
         }
 
         private static void UpdateCurrentEncounter()
