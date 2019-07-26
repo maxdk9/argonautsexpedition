@@ -50,7 +50,13 @@ namespace command
                     GameObject slot = distance.slots[emptySlotIndex];
                     emptySlotIndex++;
                     sequence.Append(cardManager.transform.DOMove(slot.transform.position, TimeMovement1));
-                    sequence.OnComplete(() => MoveCardToCurrentEncounterGroup(cardManager, slot.transform));
+                    sequence.OnComplete(() =>
+                    {
+                        MoveCardToCurrentEncounterGroup(cardManager, slot.transform);
+                        
+                        GameLogicEvents.eventNewEffect.Invoke(cardManager.cardAsset.effecttype);
+                           
+                    });
                     
                 }
                 yield return new WaitForSeconds(TimeMovement1 );

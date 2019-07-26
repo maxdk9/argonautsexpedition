@@ -1,13 +1,18 @@
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Model
 {
     public class myEvents
     {
-        public class EffectEvent<EffectType>:UnityEvent
+        public class EffectEvent:UnityEvent<Effect.EffectType>
         {
-            
+            public EffectEvent()
+            {
+                
+            }
         }
+
         
         
     }

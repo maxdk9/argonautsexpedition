@@ -83,10 +83,14 @@ namespace Model.States
                     GameLogicModifyGame.AutoResolveCard(cardManager.cardAsset);
                     AutoResolveEvent.AddListener(cardManager.ShowResolve);
                     AutoResolveEvent.AddListener(cardManager.AnimateResolve);
+                             
                 }
             }
             AutoResolveEvent.Invoke();
         }
+        
+        
+        
 
         private void MoveCardManagerToTreasure(OneCardManager cardManager)
         {

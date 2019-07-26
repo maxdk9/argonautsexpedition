@@ -13,7 +13,7 @@ namespace Model
         public static UnityEvent eventUpdateCurrentEncounter=new UnityEvent();
         public static UnityEvent eventUpdateLossCounter=new UnityEvent();
         public static UnityEvent eventUpdateCrewCounter=new UnityEvent();
-        public static myEvents.EffectEvent<Effect.EffectType> eventNewEffect =new myEvents.EffectEvent<Effect.EffectType>();
+        public static myEvents.EffectEvent eventNewEffect=new myEvents.EffectEvent();
 
         
 
@@ -27,18 +27,18 @@ namespace Model
             eventUpdateCrewCounter.AddListener(Visual.instance.UpdateCrewCounter);
             eventNewEffect.RemoveAllListeners();
             
+            eventNewEffect.AddListener(raiseNewEffect);
             
-            eventNewEffect.AddListener((int n) =>
-            {
-                if (n <= 0) throw new ArgumentOutOfRangeException("n");
-                raiseNewEffect(n);
-            });
             
         }
-         static  void raiseNewEffect(int n)
+
+        private static void raiseNewEffect(Effect.EffectType effectType)
         {
-            Debug.Log(n.ToString());
+            Effect effect=new Effect(effectType);
+            EffectActor.CreateNewEffectActor(effect);
+            
         }
+
 
         private static void UpdateCurrentEncounter()
         {
