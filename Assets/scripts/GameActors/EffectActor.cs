@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using DG.Tweening;
 using Model;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,8 +10,10 @@ using UnityEngine.UI;
 public class EffectActor : MonoBehaviour
 {
 
-	private Effect effect;
+	public  Effect effect;
 	public Image image;
+	public GameObject halo;
+	public Transform root;
 	
 	// Use this for initialization
 	void Start () {
@@ -24,8 +28,10 @@ public class EffectActor : MonoBehaviour
 
 	public static GameObject CreateNewEffectActor(Effect e)
 	{
+		
 		GameObject effectActorObject=GameObject.Instantiate(GameManager.instance.EffectActorPrefab,Visual.instance.EffectGroup.transform);
 		effectActorObject.GetComponent<EffectActor>().ReadEffect(e);
+		
 		return effectActorObject;
 	}
 
@@ -37,4 +43,31 @@ public class EffectActor : MonoBehaviour
 
 		this.image.sprite = Resources.Load<Sprite>(path);
 	}
+	
+	public void ShowHalo()
+	{
+		halo.SetActive(true);
+		root.DOScale(.1f, 0);
+		Sequence sequence = DOTween.Sequence();
+		sequence.Append(root.DOScale(1, .5f));
+		sequence.AppendInterval(2);
+		
+		sequence.OnComplete(() =>
+		{
+			HideHalo();
+                           
+		});
+
+
+
+
+	}
+
+	public void HideHalo()
+	{
+		Debug.Log("HideHalo");
+			
+		halo.SetActive(false);
+	}
+	
 }

@@ -64,6 +64,15 @@ public class Visual : MonoBehaviour
 		ResultPanel.instance.Hide();
 		RollDiceResultBar.instance.Hide();
 		DeckGameControlPanel.instance.Hide();
+		Tooltip.instance.HideTooltip();
+		if (Game.instance.CurrentState == GamePhase.Draw3QuestCards)
+		{
+			Visual.instance.EffectGroup.SetActive(false);
+		}
+		else
+		{
+			Visual.instance.EffectGroup.SetActive(true);
+		}
 		
 		if (CrewAssigner.instance != null)
 		{

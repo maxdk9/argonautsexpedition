@@ -79,8 +79,9 @@ public class StateManager
 			{
 				Debug.Log(e.Message);
 			}
-			Visual.instance.DisableVisualElementsOnStateEnter();
+			
 			GameManager.instance.SetCurrentState( type);
+			Visual.instance.DisableVisualElementsOnStateEnter();
 			GameLogicEvents.CopyGameActorsToCurrentGame();
 			SaveLoadHelper.Save(SaveLoadHelper.defaultPrefixString);
 			GameManager.instance.RemoveStateComponentsFromActor();

@@ -35,8 +35,8 @@ namespace Model
         private static void raiseNewEffect(Effect.EffectType effectType)
         {
             Effect effect=new Effect(effectType);
-            EffectActor.CreateNewEffectActor(effect);
-            
+            EffectActor actor=EffectActor.CreateNewEffectActor(effect).GetComponent<EffectActor>();
+            actor.ShowHalo();
         }
 
 

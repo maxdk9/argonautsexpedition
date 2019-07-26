@@ -15,11 +15,11 @@ namespace command
 
        public override void StartCommandExecution()
         {
-            GameManager.instance.StartCoroutine(Draw3CardsCoroutine());
+            GameManager.instance.StartCoroutine(MoveTreasureToHandCoroutine());
         }
 
 
-        private IEnumerator Draw3CardsCoroutine()
+        private IEnumerator MoveTreasureToHandCoroutine()
         {
             List<OneCardManager> trList = new List<OneCardManager>();
 

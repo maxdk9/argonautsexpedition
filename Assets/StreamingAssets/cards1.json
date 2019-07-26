@@ -201,7 +201,7 @@
 },
 {
 	"cardnumber": 25,
-	"effecttype":  "empty",
+	"effecttype":  "Golden_Fleece",
 	"type": "treasure",
 	"useType": "single",
 	"name": "goldenfleece",
@@ -219,7 +219,7 @@
 },
 {
 	"cardnumber": 27,
-	"effecttype":  "empty",
+	"effecttype":  "Mirrored_Shield",
 	"type": "treasure",
 	"useType": "continuous",
 	"name": "mirroredshield",

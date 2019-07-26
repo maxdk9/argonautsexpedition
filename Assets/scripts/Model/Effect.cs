@@ -33,6 +33,8 @@ namespace Model
 			EffectType.PoseydonTrident_ConvertWrathToBlessing_cont,
 			EffectType.DaedalusWing_RerollDieOncePerTurn_cont,
 			EffectType.Mirrored_Shield,
+			EffectType.Golden_Fleece
+			
 		};
 	    
         public enum EffectType{
@@ -53,6 +55,7 @@ namespace Model
 		Ignore_Scylla ,
 		Mirrored_Shield ,
 		Ignore_Charybdis,
+	    Golden_Fleece,
 	    empty
 	}
 

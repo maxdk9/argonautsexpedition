@@ -59,7 +59,7 @@ MonoBehaviour:
     type: 2}
   DamageEffectPrefab: {fileID: 1012049543433742, guid: debda3e7a58f19e488b85a36db0aa966,
     type: 2}
-  EffectActorPrefab: {fileID: 1640146889424190, guid: 4a8fa92f18ead98489f753bae32faaa4,
+  EffectActorPrefab: {fileID: 1978129356772722, guid: 4a8fa92f18ead98489f753bae32faaa4,
     type: 2}
   MainCamera: {fileID: 0}
   UICamera: {fileID: 0}
