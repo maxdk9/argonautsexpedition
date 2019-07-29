@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using JetBrains.Annotations;
 using Model;
+using Model.States;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -54,7 +55,12 @@ namespace command
                     {
                         MoveCardToCurrentEncounterGroup(cardManager, slot.transform);
                         
-                        GameLogicEvents.eventNewEffect.Invoke(cardManager.cardAsset.effecttype);
+                        if (cardManager.cardAsset.useType == UseType.continuous)
+                        {
+                            GameLogicEvents.eventNewEffect.Invoke(cardManager.cardAsset.effecttype);    
+                        }
+                        
+                        //GameLogicEvents.eventNewEffect.Invoke(cardManager.cardAsset.effecttype);
                            
                     });
                     

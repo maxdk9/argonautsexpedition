@@ -46,7 +46,7 @@ namespace Model
         public static void ResolveDiceEncounter()
         {
             
-            CardManager.Card card = Visual.instance.GetCardByNumberFromCurrentEncounter();
+            CardManager.Card card = Visual.instance.GetCurrentEnemyCard();
             bool win = GameLogic.CurrentChallengeWin();
             if (win)
             {

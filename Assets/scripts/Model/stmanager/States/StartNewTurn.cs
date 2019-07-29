@@ -11,6 +11,8 @@ namespace Model.States
 
         public void OnEnter()
         {
+
+            ResetGameParameters();
             if (GameLogic.EndDeck())
             {
                 new GoToNextGamePhase(GamePhase.DeckWin);
@@ -20,6 +22,11 @@ namespace Model.States
             {
                 new GoToNextGamePhase(GamePhase.Draw3QuestCards).AddToQueue();
             }
+        }
+
+        private void ResetGameParameters()
+        {
+            Game.instance.CurrentEnemyIndex = -1;
         }
 
         public void OnExit()

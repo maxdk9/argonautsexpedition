@@ -49,7 +49,7 @@ namespace Model.States
         public void SetCurrentDiceEncounterObject()
         {
             CardManager.Card diceEncounterCard =
-                Visual.instance.GetCardByNumberFromCurrentEncounter();
+                Visual.instance.GetCurrentEnemyCard();
             currentDiceEncounterObject =
                 OneCardManager.CreateOneCardManager(diceEncounterCard,Visual.instance.currentDiceEncounter);
             currentDiceEncounterOneCardManager = currentDiceEncounterObject.GetComponent<OneCardManager>();

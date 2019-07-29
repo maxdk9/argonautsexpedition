@@ -25,7 +25,7 @@ namespace Model.States
         {
             Debug.Log("EndTurn");
             ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
-            
+            Visual.instance.EffectGroup.SetActive(true);
             new CommandDoCasualties().AddToQueue(); 
             new GoToNextGamePhase(GamePhase.StartNewTurn).AddToQueue();
         }
@@ -45,6 +45,8 @@ namespace Model.States
             private IEnumerator DoCasualtiesCoroutine()
             {
                 yield return  new WaitForSeconds(.2f);
+                
+                GameLogicEvents.eventRemoveSingleEffects.Invoke();
                 if (Game.instance.Casualties > 0)
                 {
                     Vector2 pos = Visual.instance.LossCounter.transform.localPosition;

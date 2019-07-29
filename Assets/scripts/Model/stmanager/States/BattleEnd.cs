@@ -21,7 +21,7 @@ namespace Model.States
         {
 
             GameLogicModifyGame.ResolveDiceEncounter();
-            CardManager.Card card = Visual.instance.GetCardByNumberFromCurrentEncounter();
+            CardManager.Card card = Visual.instance.GetCurrentEnemyCard();
             
             ScreenManager.instance.Show(ScreenManager.ScreenType.Rolldice);
             Visual.instance.mainDice.SetActive(false);

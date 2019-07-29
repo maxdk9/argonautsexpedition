@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Model;
+using tools;
 using UnityEngine;
 
 public class PrepareCardForNewGame : Command {
@@ -16,7 +17,8 @@ public class PrepareCardForNewGame : Command {
     
     private IEnumerator PrepareCardForNewGameCoroutine()
     {
-        CardManager.Instance().Shuffle();    
+        
+        TestTools.DeckCorrection();
         new WaitForSeconds(.01f);
         foreach (CardManager.Card card in Game.instance.currentDeck)
         {
@@ -26,5 +28,8 @@ public class PrepareCardForNewGame : Command {
         yield return new WaitForSeconds(.01f);
         Command.CommandExecutionComplete();
     }
+    
+    
+    
     
 }

@@ -11,7 +11,7 @@ namespace Model
 		}
 		
 		
-		private EffectType[] singleUsedEffects =
+		public static  EffectType[] singleUsedEffects =
 		{
 			EffectType.Defeat_ColchianDragon_single,
 			EffectType.WingedSandals_ReturnAdventureCard_single,
@@ -25,7 +25,7 @@ namespace Model
 			
 		};
 	    
-		private EffectType[] contEffects =
+		public static EffectType[] contEffects =
 		{
 			EffectType.CloakOfHeracles_monsterdifficulty_m1_cont,
 			EffectType.Argo_TreasureRolls_p1_cont,
@@ -61,8 +61,13 @@ namespace Model
 
 	    private EffectType type;
 
+		public static EffectType[] monsterSingleUsedEffects =
+		{
+			EffectType.Defeat_ColchianDragon_single,
+		};
 
-	    public EffectType Type
+
+		public EffectType Type
 	    {
 		    get { return type; }
 		    set { type = value; }

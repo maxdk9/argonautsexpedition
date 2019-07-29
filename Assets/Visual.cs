@@ -137,12 +137,12 @@ public class Visual : MonoBehaviour
 		}
 	}
 
-	public CardManager.Card GetCardByNumberFromCurrentEncounter()
+	public CardManager.Card GetCardByNumberFromCurrentEncounter(int index)
 	{
 		List<OneCardManager> encList = GetCurrentEncounter();
 		foreach (OneCardManager cm in encList)
 		{
-			if (cm.cardAsset.cardnumber == Game.instance.CurrentEnemyIndex)
+			if (cm.cardAsset.cardnumber == index)
 			{
 				return cm.cardAsset;
 			}
@@ -150,6 +150,12 @@ public class Visual : MonoBehaviour
 
 		return null;
 	}
+
+	public CardManager.Card GetCurrentEnemyCard()
+	{
+		return GetCardByNumberFromCurrentEncounter(Game.instance.CurrentEnemyIndex);
+	}
+	
 
 
 	public void UpdateCounters()

@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using common;
 using DG.Tweening;
 using Model;
 using screen;
@@ -194,7 +196,45 @@ namespace tools
 
         public static void MainTest()
         {
-            ShowRollDice();
+        
+        }
+
+
+       
+
+        private static void MoveCardToUp(string cardname)
+        {
+            
+            CardManager.Card chosenCard = null;
+            
+            foreach (CardManager.Card card in Game.instance.currentDeck)
+            {
+
+                
+                if (card.name.Equals(cardname))
+                {
+                    chosenCard = card;
+                    break;
+                }
+            }
+
+            if (chosenCard != null)
+            {
+                Game.instance.currentDeck.Remove(chosenCard);
+                Game.instance.currentDeck.Insert(Game.instance.currentDeck.Count-1,chosenCard);
+            }
+            
+        }
+
+        public static void DeckCorrection()
+        {
+         CorrectDeck1();   
+        }
+        
+        
+        private static void CorrectDeck1()
+        {
+            MoveCardToUp("colchiandragon");
         }
 
 
@@ -210,6 +250,8 @@ namespace tools
             Debug.Log("VisualTest");
             EffectActor.CreateNewEffectActor(new Effect(Effect.EffectType.Argo_TreasureRolls_p1_cont));
         }
+
+        
     }
     
     

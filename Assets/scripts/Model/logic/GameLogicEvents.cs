@@ -1,5 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -14,8 +17,8 @@ namespace Model
         public static UnityEvent eventUpdateLossCounter=new UnityEvent();
         public static UnityEvent eventUpdateCrewCounter=new UnityEvent();
         public static myEvents.EffectEvent eventNewEffect=new myEvents.EffectEvent();
+        public static UnityEvent eventRemoveSingleEffects=new UnityEvent();
 
-        
 
         public static void SubscribeEvents()
         {
@@ -28,9 +31,47 @@ namespace Model
             eventNewEffect.RemoveAllListeners();
             
             eventNewEffect.AddListener(raiseNewEffect);
+            eventRemoveSingleEffects.RemoveAllListeners();
+            
+            eventRemoveSingleEffects.AddListener(removeSingleEffects);
             
             
         }
+
+        private static void removeSingleEffects()
+        {
+            EffectActor[] listOfEffectActors = Visual.instance.EffectGroup.GetComponentsInChildren<EffectActor>();
+            foreach (EffectActor effectActor in listOfEffectActors)
+            {
+                Effect.EffectType t = effectActor.effect.Type;
+                if (Effect.contEffects.Contains(t))
+                {
+                    continue;
+                }
+
+                GameManager.instance.StartCoroutine(RemoveSingleEffectCoroutine(effectActor));
+
+
+
+            }
+        }
+
+        private static IEnumerator RemoveSingleEffectCoroutine(EffectActor effectActor)
+        {
+            float duration = 1.5f;
+            yield return new WaitForSeconds(.01f);
+            Sequence sequence = DOTween.Sequence();
+            effectActor.transform.parent = null;
+            sequence.Append(effectActor.transform.DOScale(.1f, duration));
+            sequence.Insert(0, effectActor.transform.DORotate(new Vector3(0,0,355), duration));
+            sequence.Append(effectActor.transform.DOMove(Visual.instance.CardPointDiscard.transform.position, .01f));
+            sequence.AppendCallback(() =>
+            {
+                effectActor.transform.SetParent(Visual.instance.CardPointDiscard.transform);
+            });
+
+        }
+
 
         private static void raiseNewEffect(Effect.EffectType effectType)
         {
@@ -131,8 +172,7 @@ namespace Model
             Visual.instance.UpdateCrewCounter();
         }
 
-       
-        
-        
+
+ 
     }
 }
