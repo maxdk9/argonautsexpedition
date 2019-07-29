@@ -11,6 +11,6 @@ public class DieValue : MonoBehaviour,IPointerDownHandler
 	public void OnPointerDown(PointerEventData eventData)
 	{
 		
-	
+			
 	}
 }
