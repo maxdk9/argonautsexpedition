@@ -185,4 +185,20 @@ public class Visual : MonoBehaviour
 	{
 		TestTools.VisualTest();
 	}
+
+	public List<OneCardManager> GetCurrentTreasures()
+	{
+		OneCardManager[] cards = Visual.instance.TreasureHand.GetComponentsInChildren<OneCardManager>();
+		List<OneCardManager>  result=new List<OneCardManager>();
+		foreach (OneCardManager card in cards)
+		{
+			
+			if (card.isPreview)
+			{
+				continue;    
+			}
+			result.Add(card);
+		}
+		return result;
+	}
 }

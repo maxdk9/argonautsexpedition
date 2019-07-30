@@ -234,7 +234,7 @@ namespace tools
         
         private static void CorrectDeck1()
         {
-            MoveCardToUp("colchiandragon");
+            MoveCardToUp("pansflute");
         }
 
 

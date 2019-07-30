@@ -20,7 +20,7 @@ namespace Model.States
             DeckGameControlPanel.instance.Show();
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("assigncrewmembers"),10);
             OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
-
+            ActivateSingleUsedTreasureTouchListener.AddComponentToCurrentHand();
             foreach (OneCardManager card in cards)
             {
 

@@ -25,6 +25,7 @@ namespace Model.States
             Visual.instance.CardDeckFrame.SetActive(true);
             MessageManager.Instance.ShowMessage(LocalizationManager.Localize("draw3questcard"),10);
             Visual.instance.CardDeckFrame.gameObject.AddComponent<Draw3CardsTouchListener>();
+            ActivateSingleUsedTreasureTouchListener.AddComponentToCurrentHand();
         }
 
         public void OnExit()

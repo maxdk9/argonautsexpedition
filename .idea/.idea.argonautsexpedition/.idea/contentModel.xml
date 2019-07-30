@@ -126,6 +126,7 @@
             <e p="ScreenManager.cs" t="Include" />
           </e>
           <e p="statecomponent" t="Include">
+            <e p="ActivateSingleUsedTreasureTouchListener.cs" t="Include" />
             <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
             <e p="ResolveCardByRollDice.cs" t="Include" />
@@ -152,6 +153,7 @@
             <e p="ResultPanel.cs" t="Include" />
             <e p="RollDiceResultBar.cs" t="Include" />
             <e p="SameDistanceChildren.cs" t="Include" />
+            <e p="Tooltip.cs" t="Include" />
             <e p="Tooltipable.cs" t="Include" />
           </e>
         </e>
@@ -192,7 +194,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="Tooltip.cs" t="Include" />
         <e p="UI_Test" t="Include">
           <e p="ImageEffects" t="Include">
             <e p="Scripts" t="Include">
