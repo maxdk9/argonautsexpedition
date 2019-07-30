@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Model
@@ -36,6 +37,13 @@ namespace Model
 			EffectType.Golden_Fleece
 			
 		};
+		
+		
+		
+
+		
+
+
 	    
         public enum EffectType{
 		Defeat_ColchianDragon_single ,

@@ -76,6 +76,7 @@ namespace command
         public void MoveCardToCurrentEncounterGroup([CanBeNull] OneCardManager card, Transform parent)
         {
             card.transform.SetParent(parent);
+            GameLogicEvents.eventAddSingleUsedTreausreTouchListener.Invoke();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace Model.States
             UpdateCurrentEncounterCMs();
             
             new MoveTreasureToHand().AddToQueue();
-            ActivateSingleUsedTreasureTouchListener.AddComponentToCurrentHand();
+            GameLogicEvents.eventAddSingleUsedTreausreTouchListener.Invoke();
             ResolveCurrentEnemyEffect();
             new CustomActionCommand(new UnityAction(delegate { UpdateUIElements(); })).AddToQueue();            
             

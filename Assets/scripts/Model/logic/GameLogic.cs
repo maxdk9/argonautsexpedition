@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Resources;
 using Assets.SimpleLocalization;
 using Model.States;
@@ -170,6 +171,45 @@ namespace Model
             List<OneCardManager> currentDeck = Visual.instance.GetCurrentDeck();
             return currentDeck.Count == 0;
         }
+
+
+        public static bool CanUseEffectInThisPhase(Effect.EffectType effectType)
+        {
+            GamePhase[] phases = StateManager.dictEnabledPhases[effectType];
+            return phases.Contains(Game.instance.CurrentState);
+        }
+        
+        
+        
+        
+        public static int  GetCrewStartingCount(){
+            int res=Game.CREWNUMBERSTART;
+            
+            if(HDReceived(HeroicDeed.hdtype.startingcrew1)){
+                res+=1;
+            }
+            if(HDReceived(HeroicDeed.hdtype.startingcrew2)){
+                res+=1;
+            }
+            if(HDReceived(HeroicDeed.hdtype.startingcrew3)){
+                res+=1;
+            }
+            return res;
+        }
+
+        private static bool HDReceived(HeroicDeed.hdtype hdtype)
+        {
+            foreach (HeroicDeed hd in Game.instance.HeroicDeedList)
+            {
+                if (hd.Received)
+                {
+                    return true;
+                }   
+            }
+            return false;
+        }
+        
+        
     }
 
 }

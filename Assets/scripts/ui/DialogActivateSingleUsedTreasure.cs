@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Assets.SimpleLocalization;
+using Model;
 using TMPro;
+using ui;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DialogActivateSingleUsedTreasure : MonoBehaviour
+public class DialogActivateSingleUsedTreasure : ModalPanel
 {
 
 	public static DialogActivateSingleUsedTreasure instance;
@@ -13,48 +17,53 @@ public class DialogActivateSingleUsedTreasure : MonoBehaviour
 	public Button buttonCancel;
 	public GameObject EffectActorObject;
 	public OneCardManager activatedCard;
+	public EffectActor effectActor;
+	
 	
 
+	
 
 	private void Awake()
 	{
 		instance = this;
+		effectActor = this.EffectActorObject.GetComponent<EffectActor>();
 		Hide();
 	}
 
+
 	public void Hide()
 	{
+		base.Hide();
 		this.gameObject.SetActive(false);
 	}
 
-	public void Show()
+	public void Show(Vector2 pos)
 	{
-		Vector2 pos = activatedCard.transform.position;
+		base.Show();
+		effectActor.ReadEffect(new Effect(activatedCard.cardAsset.effecttype));
 		Vector3 newposition=GameManager.instance.UICamera.ScreenToWorldPoint(new Vector3(pos.x,pos.y,GameManager.instance.UICamera.nearClipPlane));
 		Vector3 offsetPosition=Vector3.Scale(new Vector3(30,10,0), new Vector3(1,1,0));
 		newposition += offsetPosition;
-		//Vector3 newposition1 = GameManager.instance.UICamera.WorldToScreenPoint(newposition);
-		
+		newposition.z = 0;
 		this.transform.position = newposition;
-		this.gameObject.SetActive(true);
-		
-		this.gameObject.SetActive(true);
-	}
+		bool effectUsable=GameLogic.CanUseEffectInThisPhase(activatedCard.cardAsset.effecttype);
+		buttonOk.gameObject.SetActive(effectUsable);
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-	
-	
-	
-	
+		LocalizedTextMeshPro locale = header.GetComponent<LocalizedTextMeshPro>();
+		if (effectUsable)
+		{
+			locale.SetLocalizationKey("questionActivate");
+			
+		}
+		else
+		{
+			locale.SetLocalizationKey( "effectNotUsable");
+		}
+		
+		
+		this.gameObject.SetActive(true);
+	}
 	
 	public void ButtonOk()
 	{
@@ -63,7 +72,8 @@ public class DialogActivateSingleUsedTreasure : MonoBehaviour
 
 	public void ButtonCancel()
 	{
-		
+		Hide();
 	}
+
 	
 }

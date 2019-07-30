@@ -110,7 +110,6 @@ tutorial027,"There are two types of treasure. Continuous (uroboros) and sigle us
  
  Touch to roll dice."
 tutorial024,You won the second battle automatically. Harpy dealiness equal to assigned number of crew +minimal dice result 1. So now you go to third card -Cornucopia. Touch it.,You won the second battle automatically. Harpy dealiness equal to assigned number of crew +minimal dice result 1. So now you go to third card -Cornucopia. Touch it.
-youactivatedam,You activated the ancient mechanism,You activated the ancient mechanism
 tutorial025,"This example of second kind of card -treasure. It does not have deadliness, so treasure cannot harm your crew. But if you treasure resolves succesfully, it come on your control. And you can use treasure's modifiers that you own. 
  
  Touch to continue.","This example of second kind of card -treasure. It does not have deadliness, so treasure cannot harm your crew. But if you treasure resolves succesfully, it come on your control. And you can use treasure's modifiers that you own. 
@@ -422,3 +421,5 @@ ttip_typecontinuous, Continuous type of treasure - have permanent effect., Conti
 ttip_typesingleuse,"Single-use treasures may be used at any time is appropriate for their effect.
 After use, the card must be discarded.","Single-use treasures may be used at any time is appropriate for their effect.
 After use, the card must be discarded."
+ttip_typetreasure,ttip_typetreasure,ttip_typetreasure
+questionActivate,Activate treasure?,Activate treasure?

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -21,5 +22,12 @@ namespace Assets.SimpleLocalization
         {
             GetComponent<TextMeshProUGUI>().text = LocalizationManager.Localize(LocalizationKey);
         }
+
+        public void SetLocalizationKey(String k)
+        {
+            LocalizationKey = k;
+            Localize();
+        }
+        
     }
 }

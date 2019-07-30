@@ -7,6 +7,7 @@
     using GameActors;
     using JetBrains.Annotations;
     using Model;
+    using ui;
     using UnityEngine;
    using UnityEngine.EventSystems;
 
@@ -16,7 +17,7 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
     {
         OneCardManager oneCardManager = this.GetComponent<OneCardManager>();
         DialogActivateSingleUsedTreasure.instance.activatedCard = oneCardManager;
-        DialogActivateSingleUsedTreasure.instance.Show();
+        DialogActivateSingleUsedTreasure.instance.Show(eventData.position);
     }
 
     public static void AddComponentToCurrentHand()

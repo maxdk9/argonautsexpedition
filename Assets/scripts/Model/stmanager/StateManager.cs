@@ -12,6 +12,7 @@ public class StateManager
 
 	private iState currentState;
 	private IDictionary<GamePhase,iState> dictionary;
+	public static Dictionary<Effect.EffectType,GamePhase []> dictEnabledPhases=new Dictionary<Effect.EffectType, GamePhase[]>();
 	
 
 	public static StateManager getInstance()
@@ -45,6 +46,25 @@ public class StateManager
 		dictionary.Add(GamePhase.DrawWrathCards,DrawWrathCards.ourInstance);
 		dictionary.Add(GamePhase.StartNewTurn,StartNewTurn.ourInstance);
 		dictionary.Add(GamePhase.StartNewGame,StartNewGame.ourInstance);
+
+		fillDictEnabledPhases();
+
+	}
+
+	private void fillDictEnabledPhases()
+	{
+		dictEnabledPhases.Clear();
+		
+		
+		dictEnabledPhases.Add(Effect.EffectType.WingedSandals_ReturnAdventureCard_single,new GamePhase[]{GamePhase.Draw3QuestCards});
+		dictEnabledPhases.Add(Effect.EffectType.OrpheusLyre_StopLevelUpMonsterInVictoryPile_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
+		dictEnabledPhases.Add(Effect.EffectType.Cornucopia_Recover2Crew_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
+		dictEnabledPhases.Add(Effect.EffectType.PansFlute_DiscardTop2Cards_single,new GamePhase[]{GamePhase.Draw3QuestCards});
+		dictEnabledPhases.Add(Effect.EffectType.HelmOfHades_MoveMonsterToDiscardPile_single,new GamePhase[]{GamePhase.BattleView,GamePhase.CrewAssignment});
+		dictEnabledPhases.Add(Effect.EffectType.Ambrosia_Recover3Crew_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
+		dictEnabledPhases.Add(Effect.EffectType.AegisOfZeus_IgnoreDeadliness_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
+		dictEnabledPhases.Add(Effect.EffectType.ApolloBow_RollDice6_single,new GamePhase[]{GamePhase.BattleView});
+		
 		
 	}
 

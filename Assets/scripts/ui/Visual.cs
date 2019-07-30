@@ -5,6 +5,7 @@ using Model.States;
 using screen;
 using tools;
 using TMPro;
+using ui;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,8 @@ public class Visual : MonoBehaviour
 	public GameObject CurrentEncounter;
 	public GameObject TreasureHand;
 	public GameObject EffectGroup;
+
+	public GameObject transparentModalWindow;
 	
 	
 	public GameObject currentDiceEncounter;
@@ -78,6 +81,7 @@ public class Visual : MonoBehaviour
 		{
 			CrewAssigner.instance.Hide();	
 		}
+		DialogActivateSingleUsedTreasure.instance.Hide();
 		
 	}
 	

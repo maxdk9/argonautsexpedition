@@ -150,11 +150,13 @@
             <e p="DialogActivateSingleUsedTreasure.cs" t="Include" />
             <e p="FadeAlphaGraphicUI.cs" t="Include" />
             <e p="MessageManager.cs" t="Include" />
+            <e p="ModalPanel.cs" t="Include" />
             <e p="ResultPanel.cs" t="Include" />
             <e p="RollDiceResultBar.cs" t="Include" />
             <e p="SameDistanceChildren.cs" t="Include" />
             <e p="Tooltip.cs" t="Include" />
             <e p="Tooltipable.cs" t="Include" />
+            <e p="Visual.cs" t="Include" />
           </e>
         </e>
         <e p="SimpleLocalization" t="Include">
@@ -352,7 +354,6 @@
             <e p="UIParticleRenderer.cs" t="Include" />
           </e>
         </e>
-        <e p="Visual.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />

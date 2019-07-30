@@ -35,7 +35,7 @@ public class EffectActor : MonoBehaviour
 		return effectActorObject;
 	}
 
-	private void ReadEffect(Effect e)
+	public void ReadEffect(Effect e)
 	{
 		this.effect = e;
 		this.GetComponent<Tooltipable>().tooltipKey = "ttip_" + effect.Type.ToString();

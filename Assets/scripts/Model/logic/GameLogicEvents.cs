@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using Model.States;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -18,6 +19,8 @@ namespace Model
         public static UnityEvent eventUpdateCrewCounter=new UnityEvent();
         public static myEvents.EffectEvent eventNewEffect=new myEvents.EffectEvent();
         public static UnityEvent eventRemoveSingleEffects=new UnityEvent();
+        public static  UnityEvent eventAddSingleUsedTreausreTouchListener=new UnityEvent();
+        
 
 
         public static void SubscribeEvents()
@@ -35,7 +38,15 @@ namespace Model
             
             eventRemoveSingleEffects.AddListener(removeSingleEffects);
             
+            eventAddSingleUsedTreausreTouchListener.RemoveAllListeners();
+            eventAddSingleUsedTreausreTouchListener.AddListener(AddSingleUsedTreasureTouchListener);
             
+            
+        }
+
+        private static void AddSingleUsedTreasureTouchListener()
+        {
+            ActivateSingleUsedTreasureTouchListener.AddComponentToCurrentHand();
         }
 
         private static void removeSingleEffects()
