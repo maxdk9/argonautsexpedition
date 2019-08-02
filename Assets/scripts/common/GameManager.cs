@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 	public GameObject EffectActorPrefab;
 	public Camera MainCamera;
 	public Camera UICamera;
+	public List<GameObject> listToDestroy;
 	 
 
 
@@ -112,6 +113,13 @@ public class GameManager : MonoBehaviour
 		{
 			GameObject.Destroy(sc);
 		}
+
+		foreach (GameObject ob in GameManager.instance.listToDestroy)
+		{
+			GameObject.Destroy(ob);
+		}
+		
+
 	}
 
 

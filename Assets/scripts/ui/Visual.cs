@@ -38,6 +38,9 @@ public class Visual : MonoBehaviour
 
 	public Sprite ThumbsUp;
 	public Sprite ThumbsDown;
+
+
+	public GameObject particleHeal;
 	
 
 

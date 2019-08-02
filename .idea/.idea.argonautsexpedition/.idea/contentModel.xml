@@ -26,6 +26,7 @@
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
         </e>
+        <e p="ParticleToDestroy.cs" t="Include" />
         <e p="Prefabs.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="advancedtools" t="Include">
