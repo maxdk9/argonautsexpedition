@@ -19,7 +19,7 @@ public class ParticleToDestroy : MonoBehaviour
 	void Update () {
 		if (!this._particleSystem.IsAlive())
 		{
-			GameObject.DestroyImmediate(this.gameObject);
+			//GameObject.DestroyImmediate(this.gameObject);
 		}
 	}
 }

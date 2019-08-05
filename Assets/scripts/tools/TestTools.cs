@@ -248,7 +248,14 @@ namespace tools
         public static void VisualTest()
         {
             Debug.Log("VisualTest");
-            GameObject particleHeal = GameObject.Instantiate(Visual.instance.particleHeal,ScreenManager.instance.DeckgameCanvas.transform);
+            List<OneCardManager> cmlist = Visual.instance.GetCurrentEncounter();
+            if (cmlist.Count > 0)
+            {
+                OneCardManager cm = cmlist[0];
+                GameObject particleHeal = GameObject.Instantiate(Visual.instance.particleHeal,cm.CardImage.transform);    
+            }
+            
+            
            // GameManager.instance.listToDestroy.Add(particleHeal);
         }
 
