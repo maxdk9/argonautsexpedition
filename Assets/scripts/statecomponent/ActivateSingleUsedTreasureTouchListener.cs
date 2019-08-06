@@ -26,6 +26,10 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
 
         foreach (OneCardManager cm in trCM)
         {
+            if (cm.cardAsset.useType == UseType.continuous)
+            {
+                continue;
+            }
             if (cm.gameObject.GetComponent<ActivateSingleUsedTreasureTouchListener>() == null)
             {
                 cm.gameObject.AddComponent<ActivateSingleUsedTreasureTouchListener>();

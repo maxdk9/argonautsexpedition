@@ -208,4 +208,9 @@ public class Visual : MonoBehaviour
 		}
 		return result;
 	}
+
+	public void disableInput(bool p0)
+	{
+		transparentModalWindow.SetActive(p0);
+	}
 }

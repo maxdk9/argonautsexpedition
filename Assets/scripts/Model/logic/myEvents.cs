@@ -13,6 +13,12 @@ namespace Model
             }
         }
 
+
+        public class CardVisualEvent : UnityEvent<OneCardManager>
+        {
+            
+        }
+
         
         
     }

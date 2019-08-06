@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Assets.SimpleLocalization;
 using Model;
+using Model.States;
 using TMPro;
 using ui;
 using UnityEngine;
@@ -48,13 +49,10 @@ public class DialogActivateSingleUsedTreasure : ModalPanel
 		this.transform.position = newposition;
 		bool effectUsable=GameLogic.CanUseEffectInThisPhase(activatedCard.cardAsset.effecttype);
 		buttonOk.gameObject.SetActive(effectUsable);
-
-
 		LocalizedTextMeshPro locale = header.GetComponent<LocalizedTextMeshPro>();
 		if (effectUsable)
 		{
 			locale.SetLocalizationKey("questionActivate");
-			
 		}
 		else
 		{
@@ -67,7 +65,28 @@ public class DialogActivateSingleUsedTreasure : ModalPanel
 	
 	public void ButtonOk()
 	{
+
+		this.Hide();
+		GameManager.instance.StartCoroutine(ActivateEffectCoroutine());
 		
+	}
+
+	private IEnumerator ActivateEffectCoroutine()
+	{
+		Visual.instance.disableInput(true);
+		float firstTimeDuration = .7f;
+		GameLogicEvents.eventCardVisual.Invoke(this.activatedCard);
+		GameLogicEvents.eventNewEffect.Invoke(this.activatedCard.cardAsset.effecttype);
+		yield return new WaitForSeconds(firstTimeDuration);
+		EndTurn.DiscardCard(this.activatedCard,true);
+		
+		yield return new WaitForSeconds(.2f);
+		Visual.instance.disableInput(true);
+	}
+
+	private GameObject GetCardEffectPrefab(OneCardManager oneCardManager)
+	{
+		return Visual.instance.particleHeal;
 	}
 
 	public void ButtonCancel()
@@ -75,5 +94,8 @@ public class DialogActivateSingleUsedTreasure : ModalPanel
 		Hide();
 	}
 
+	
+	
+	
 	
 }

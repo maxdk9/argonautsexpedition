@@ -20,6 +20,11 @@ namespace Model
         public static myEvents.EffectEvent eventNewEffect=new myEvents.EffectEvent();
         public static UnityEvent eventRemoveSingleEffects=new UnityEvent();
         public static  UnityEvent eventAddSingleUsedTreausreTouchListener=new UnityEvent();
+        public static myEvents.CardVisualEvent eventCardVisual =new myEvents.CardVisualEvent();
+        
+        
+        
+        
         
 
 
@@ -42,6 +47,22 @@ namespace Model
             eventAddSingleUsedTreausreTouchListener.AddListener(AddSingleUsedTreasureTouchListener);
             
             
+            eventCardVisual.RemoveAllListeners();
+            eventCardVisual.AddListener(ShowCardVisualEvent);
+            
+            
+            
+        }
+
+        private static void ShowCardVisualEvent(OneCardManager cardManager)
+        {
+            GameObject cardVisualEffectPrefab = GetCardVisualEffectPrefab(cardManager);
+            GameObject cardVisualEffect = GameObject.Instantiate(cardVisualEffectPrefab, cardManager.transform);
+        }
+
+        private static GameObject GetCardVisualEffectPrefab(OneCardManager cardManager)
+        {
+            return Visual.instance.particleHeal;
         }
 
         private static void AddSingleUsedTreasureTouchListener()
@@ -89,7 +110,13 @@ namespace Model
             Effect effect=new Effect(effectType);
             EffectActor actor=EffectActor.CreateNewEffectActor(effect).GetComponent<EffectActor>();
             actor.ShowHalo();
+
+            EffectEvents.DoEffect(effectType);
+
+
         }
+
+       
 
 
         private static void UpdateCurrentEncounter()

@@ -234,7 +234,7 @@ namespace tools
         
         private static void CorrectDeck1()
         {
-            MoveCardToUp("pansflute");
+            MoveCardToUp("wingedsandals");
         }
 
 
@@ -252,7 +252,7 @@ namespace tools
             if (cmlist.Count > 0)
             {
                 OneCardManager cm = cmlist[0];
-                GameObject particleHeal = GameObject.Instantiate(Visual.instance.particleHeal,cm.CardImage.transform);    
+                GameObject particleHeal = GameObject.Instantiate(Visual.instance.particleHeal,cm.transform);    
             }
             
             

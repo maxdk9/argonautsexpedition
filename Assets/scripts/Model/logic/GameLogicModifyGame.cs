@@ -65,6 +65,14 @@ namespace Model
             Game.instance.CrewNumber = Game.instance.CrewNumber - Game.instance.Casualties;
             Game.instance.Casualties = 0;
         }
+
+
+        public static void ResetParametersOnStartNewTurn()
+        {
+            Game.instance.DeployedCrew = 0;
+            Game.instance.CrewNumber = Game.instance.CrewNumber;
+            Game.instance.Casualties = 0;
+        }
     }
     
     
