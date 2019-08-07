@@ -19,6 +19,7 @@ public class Visual : MonoBehaviour
 	public GameObject CardPointOutside;
 	public GameObject CardPointDiscard;
 	public GameObject CardPointWinning;
+	public GameObject CardPointShuffle;
 	
 	public GameObject CardDeckFrame;
 	public GameObject CrewCounter;

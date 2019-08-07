@@ -41,7 +41,8 @@ namespace Model
 
             private IEnumerator DiscardCoroutine()
             {
-                float TimeMovement = .6f;
+                float TimeMovement = .4f;
+                float DelayTime = .1f;
                 DeckGameControlPanel.instance.Hide();
                 Visual.instance.CardDeckFrame.SetActive(true);
                     
@@ -50,24 +51,48 @@ namespace Model
                 foreach(OneCardManager cm in curEnc)
                 {
                     yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
-                    MoveCardToDeck(cm);                    
+                    MoveCardToPoint(cm,Visual.instance.CardPointShuffle,true);                    
                 }
-                yield return new WaitForSeconds(TimeMovement  + EndTurn.DelayTime);
+
+                List<OneCardManager> currentDeck = Visual.instance.GetCurrentDeck();
+                foreach(OneCardManager cm in currentDeck)
+                {
+                    yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
+                    MoveCardToPoint(cm,Visual.instance.CardPointShuffle,false);                    
+                }
+                yield return new WaitForSeconds(TimeMovement  + DelayTime);
+
+                OneCardManager[] shuffledArray =
+                    Visual.instance.CardPointShuffle.GetComponentsInChildren<OneCardManager>();
+                foreach (OneCardManager cm in shuffledArray)
+                {
+                    if (cm.isPreview)
+                    {
+                        continue;
+                    }
+                    
+                    
+                }
+                
+                
                 Command.CommandExecutionComplete();
             }
         }
         
         
-        public static void MoveCardToDeck(OneCardManager card)
+        public static void MoveCardToPoint(OneCardManager card,GameObject destination,bool rotation)
         {                
             card.transform.SetParent(null);
 
             Sequence sequence = DOTween.Sequence();
-            GameObject destination =
-                Visual.instance.CardDeckFrame;
+            
             
             sequence.Append(card.transform.DOLocalMove(destination.transform.position, EndTurn.TimeMovement1));
-            sequence.Insert(0, card.transform.DORotate(new Vector3(0f, 179f, 0f), EndTurn.TimeMovement1*.5f));
+            if (rotation)
+            {
+                sequence.Insert(0, card.transform.DORotate(new Vector3(0f, 179f, 0f), EndTurn.TimeMovement1*.5f));    
+            }
+            
             
             sequence.OnComplete(() => { card.transform.SetParent(destination.transform); });
             sequence.Play();
