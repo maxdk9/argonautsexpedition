@@ -228,7 +228,7 @@ namespace tools
 
         public static void DeckCorrection()
         {
-         CorrectDeck1();   
+            CorrectDeck2_AddItemToHand();   
         }
         
         
@@ -237,6 +237,34 @@ namespace tools
             MoveCardToUp("wingedsandals");
         }
 
+
+
+        private static void CorrectDeck2_AddItemToHand()
+        {
+
+            string cardname = "cornucopia";
+            CardManager.Card chosenCard = null;
+            
+            foreach (CardManager.Card card in Game.instance.currentDeck)
+            {
+
+                
+                if (card.name.Equals(cardname))
+                {
+                    chosenCard = card;
+                    break;
+                }
+            }
+
+            if (chosenCard != null)
+            {
+                Game.instance.currentDeck.Remove(chosenCard);
+                SameDistanceChildren distance = Visual.instance.TreasureHand.GetComponent<SameDistanceChildren>();
+                int emptySlotIndex = distance.GetOccupiedSlotsNumber();
+                GameObject treasureslot = distance.slots[emptySlotIndex];
+                OneCardManager.CreateOneCardManager(chosenCard, treasureslot);
+            }
+        }
 
         public static void GenerateEffects()
         {
