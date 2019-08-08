@@ -42,37 +42,49 @@ namespace Model
             private IEnumerator DiscardCoroutine()
             {
                 float TimeMovement = .4f;
+                float TimeMovement2 = .2f;
                 float DelayTime = .1f;
+                float SmallAmountOfTime = .01f;
                 DeckGameControlPanel.instance.Hide();
                 Visual.instance.CardDeckFrame.SetActive(true);
                     
-                yield return  new WaitForSeconds(EndTurn.SmallAmountOfTime);
+                yield return  new WaitForSeconds(SmallAmountOfTime);
                 List<OneCardManager> curEnc = Visual.instance.GetCurrentEncounter();
                 foreach(OneCardManager cm in curEnc)
                 {
-                    yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
-                    MoveCardToPoint(cm,Visual.instance.CardPointShuffle,true);                    
+                    yield return new WaitForSeconds(SmallAmountOfTime);
+                    MoveCardToPoint(cm,Visual.instance.CardPointShuffle,TimeMovement,true);                    
                 }
 
                 List<OneCardManager> currentDeck = Visual.instance.GetCurrentDeck();
                 foreach(OneCardManager cm in currentDeck)
                 {
-                    yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
-                    MoveCardToPoint(cm,Visual.instance.CardPointShuffle,false);                    
+                    yield return new WaitForSeconds(SmallAmountOfTime);
+                    MoveCardToPoint(cm,Visual.instance.CardPointShuffle,TimeMovement,false);                    
                 }
                 yield return new WaitForSeconds(TimeMovement  + DelayTime);
 
                 OneCardManager[] shuffledArray =
                     Visual.instance.CardPointShuffle.GetComponentsInChildren<OneCardManager>();
+                int shuffledSize = shuffledArray.Length;
                 foreach (OneCardManager cm in shuffledArray)
                 {
                     if (cm.isPreview)
                     {
                         continue;
                     }
-                    
-                    
+
+                    int newIndex = UnityEngine.Random.Range(0, shuffledSize);
+                    cm.transform.SetSiblingIndex(newIndex);
                 }
+                
+                foreach (OneCardManager cm in shuffledArray)
+                {
+                    yield return new WaitForSeconds(SmallAmountOfTime);
+                    MoveCardToPoint(cm,Visual.instance.CardDeckFrame,TimeMovement2,false);
+                }
+                
+                
                 
                 
                 Command.CommandExecutionComplete();
@@ -80,17 +92,17 @@ namespace Model
         }
         
         
-        public static void MoveCardToPoint(OneCardManager card,GameObject destination,bool rotation)
+        public static void MoveCardToPoint(OneCardManager card,GameObject destination,float timemovement,bool rotation)
         {                
             card.transform.SetParent(null);
 
             Sequence sequence = DOTween.Sequence();
             
             
-            sequence.Append(card.transform.DOLocalMove(destination.transform.position, EndTurn.TimeMovement1));
+            sequence.Append(card.transform.DOLocalMove(destination.transform.position, timemovement));
             if (rotation)
             {
-                sequence.Insert(0, card.transform.DORotate(new Vector3(0f, 179f, 0f), EndTurn.TimeMovement1*.5f));    
+                sequence.Insert(0, card.transform.DORotate(new Vector3(0f, 179f, 0f), timemovement*.6f));    
             }
             
             
