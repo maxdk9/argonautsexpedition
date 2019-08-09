@@ -7,7 +7,9 @@ using Model;
 using screen;
 using tools;
 using UnityEngine;
+
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
 public class GameManager : MonoBehaviour
@@ -127,4 +129,35 @@ public class GameManager : MonoBehaviour
 	{
 		StateManager.getInstance().Update(1);
 	}
+
+	public void turnTempTouchComponents(bool b)
+	{
+		
+			tempTouchComponent[] tempTouchComponents =Resources.FindObjectsOfTypeAll<tempTouchComponent>();
+		
+		
+			foreach (tempTouchComponent sc in tempTouchComponents)
+			{
+				sc.enabled = b;
+			}
+		
+	}
+	
+	
+	
+	public void turnButtons(bool b)
+	{
+		
+		Button[] tempTouchComponents =Resources.FindObjectsOfTypeAll<Button>();
+		
+		
+		foreach (Button sc in tempTouchComponents)
+		{
+			sc.enabled = b;
+		}
+		
+	}
+	
+	
+	
 }

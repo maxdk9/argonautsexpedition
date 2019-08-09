@@ -182,6 +182,26 @@ namespace Model
         
         
         
+        public static bool CanUseEffect(Effect.EffectType effectType)
+        {
+            bool canUseInPhase = CanUseEffectInThisPhase(effectType);
+            if (!canUseInPhase)
+            {
+                return false;
+            }
+            if (effectType == Effect.EffectType.AegisOfZeus_IgnoreDeadliness_single)
+            {
+                if (Game.instance.Casualties == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        
+        
+        
+        
         public static int  GetCrewStartingCount(){
             int res=Game.CREWNUMBERSTART;
             
@@ -208,8 +228,8 @@ namespace Model
             }
             return false;
         }
-        
-        
+
+
     }
 
 }

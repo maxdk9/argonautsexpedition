@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 224613666479495028}
   - component: {fileID: 198893836244173580}
   - component: {fileID: 199771492800045040}
+  - component: {fileID: 114776195122110236}
   m_Layer: 10
   m_Name: HealCrewEffect
   m_TagString: Untagged
@@ -45,6 +46,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114776195122110236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1880309638078218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e3d391e6bf4f4419fbe003045945fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198525143187087006
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -55,7 +67,7 @@ ParticleSystem:
   lengthInSec: 4
   simulationSpeed: 3
   stopAction: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -4588,7 +4600,7 @@ ParticleSystem:
   lengthInSec: 4
   simulationSpeed: 3
   stopAction: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0

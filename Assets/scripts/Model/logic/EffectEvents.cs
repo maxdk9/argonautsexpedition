@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using Model.States;
+using screen;
 using UnityEngine;
 
 namespace Model
@@ -24,6 +25,12 @@ namespace Model
                 new CommmandDiscardCurrentEncounter().AddToQueue(); 
                 new GoToNextGamePhase(GamePhase.StartNewTurn).AddToQueue();
             }
+
+            if (effectType == Effect.EffectType.Cornucopia_Recover2Crew_single)
+            {
+                GameLogicEvents.eventRestoreCrew.Invoke(effectType);
+            }
+            
         }
         
 
@@ -135,7 +142,12 @@ namespace Model
         }
 
 
-        
+        public static void ShowRestoreCrew()
+        {
+            GameObject healCrewEffect = GameObject.Instantiate(Visual.instance.particleHealCrew,
+                ScreenManager.instance.DeckgameCanvas.transform);
+            healCrewEffect.transform.position = Visual.instance.CrewCounter.transform.position-new Vector3(0,10,0);
+        }
     }
     
 }

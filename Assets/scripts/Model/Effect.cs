@@ -74,6 +74,22 @@ namespace Model
 			EffectType.Defeat_ColchianDragon_single,
 		};
 
+		public static EffectType[] arrayOfViewableEffects =
+		{
+			
+			EffectType.Defeat_ColchianDragon_single,
+			EffectType.AegisOfZeus_IgnoreDeadliness_single,
+			EffectType.ApolloBow_RollDice6_single,
+			EffectType.CloakOfHeracles_monsterdifficulty_m1_cont,
+			EffectType.SwordOfPeleus_MonsterRolls_p1_cont,
+			EffectType.PoseydonTrident_ConvertWrathToBlessing_cont,
+			EffectType.DaedalusWing_RerollDieOncePerTurn_cont,
+			EffectType.Mirrored_Shield,
+			EffectType.Golden_Fleece,
+			EffectType.Argo_TreasureRolls_p1_cont,
+			
+		};
+
 
 		public EffectType Type
 	    {

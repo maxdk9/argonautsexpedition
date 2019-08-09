@@ -129,6 +129,8 @@
           </e>
           <e p="statecomponent" t="Include">
             <e p="ActivateSingleUsedTreasureTouchListener.cs" t="Include" />
+            <e p="AegisOfZeusActivated.cs" t="Include" />
+            <e p="AegisOfZeusTarget.cs" t="Include" />
             <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
             <e p="ResolveCardByRollDice.cs" t="Include" />

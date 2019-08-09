@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using common;
 using DG.Tweening;
+using GameActors;
 using Model;
 using screen;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace tools
 {
@@ -242,7 +244,7 @@ namespace tools
         private static void CorrectDeck2_AddItemToHand()
         {
 
-            string cardname = "cornucopia";
+            string cardname = "aegisofzeus";
             CardManager.Card chosenCard = null;
             
             foreach (CardManager.Card card in Game.instance.currentDeck)
@@ -255,6 +257,18 @@ namespace tools
                     break;
                 }
             }
+            
+            foreach (CardManager.Card card in Game.instance.reserveDeck)
+            {
+
+                if (card.name.Equals(cardname))
+                {
+                    chosenCard = card;
+                    break;
+                }
+            }
+            
+            
 
             if (chosenCard != null)
             {
@@ -276,14 +290,30 @@ namespace tools
         public static void VisualTest()
         {
             Debug.Log("VisualTest");
-            GameObject healCrewEffect = GameObject.Instantiate(Visual.instance.particleHealCrew,
-                ScreenManager.instance.DeckgameCanvas.transform);
-            healCrewEffect.transform.position = Visual.instance.CrewCounter.transform.position-new Vector3(0,10,0);
-
+            ModalGameEvent();
 
             // GameManager.instance.listToDestroy.Add(particleHeal);
         }
 
+
+
+        private static void ModalGameEvent()
+        {
+
+            GameManager.instance.turnButtons(true);
+            GameManager.instance.turnTempTouchComponents(false);
+
+        }
+
+        
+
+        private void HealVisualTest()
+        {
+           
+            GameObject healCrewEffect = GameObject.Instantiate(Visual.instance.particleHealCrew,
+                ScreenManager.instance.DeckgameCanvas.transform);
+            healCrewEffect.transform.position = Visual.instance.CrewCounter.transform.position-new Vector3(0,10,0);
+        }
         
     }
     

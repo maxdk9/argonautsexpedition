@@ -23,6 +23,11 @@ namespace Model
         public static myEvents.CardVisualEvent eventCardVisual =new myEvents.CardVisualEvent();
         
         
+        public static myEvents.EffectEvent eventRestoreCrew=new myEvents.EffectEvent();
+        
+        
+        
+        
         
         
         
@@ -50,8 +55,19 @@ namespace Model
             eventCardVisual.RemoveAllListeners();
             eventCardVisual.AddListener(ShowCardVisualEvent);
             
+            eventRestoreCrew.RemoveAllListeners();
+            eventRestoreCrew.AddListener(RestoreCrewByCard);
             
             
+            
+        }
+
+        private static void RestoreCrewByCard(Effect.EffectType type)
+        {
+            GameLogicModifyGame.RestoreCrew(type);
+            EffectEvents.ShowRestoreCrew();
+            Visual.instance.UpdateCrewCounter();
+
         }
 
         private static void ShowCardVisualEvent(OneCardManager cardManager)
@@ -107,9 +123,13 @@ namespace Model
 
         private static void raiseNewEffect(Effect.EffectType effectType)
         {
-            Effect effect=new Effect(effectType);
-            EffectActor actor=EffectActor.CreateNewEffectActor(effect).GetComponent<EffectActor>();
-            actor.ShowHalo();
+
+            if (Effect.arrayOfViewableEffects.Contains(effectType))
+            {
+                Effect effect=new Effect(effectType);
+                EffectActor actor=EffectActor.CreateNewEffectActor(effect).GetComponent<EffectActor>();
+                actor.ShowHalo();    
+            }
 
             EffectEvents.DoEffect(effectType);
 

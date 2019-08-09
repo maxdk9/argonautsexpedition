@@ -47,7 +47,10 @@ public class DialogActivateSingleUsedTreasure : ModalPanel
 		newposition += offsetPosition;
 		newposition.z = 0;
 		this.transform.position = newposition;
-		bool effectUsable=GameLogic.CanUseEffectInThisPhase(activatedCard.cardAsset.effecttype);
+		bool effectUsable = GameLogic.CanUseEffect(activatedCard.cardAsset.effecttype);
+			
+			
+			
 		buttonOk.gameObject.SetActive(effectUsable);
 		LocalizedTextMeshPro locale = header.GetComponent<LocalizedTextMeshPro>();
 		if (effectUsable)
@@ -81,7 +84,7 @@ public class DialogActivateSingleUsedTreasure : ModalPanel
 		EndTurn.DiscardCard(this.activatedCard,true);
 		
 		yield return new WaitForSeconds(.2f);
-		Visual.instance.disableInput(true);
+		Visual.instance.disableInput(false);
 	}
 
 	private GameObject GetCardEffectPrefab(OneCardManager oneCardManager)

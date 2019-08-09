@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224119800694134818}
   - component: {fileID: 198344408658560258}
   - component: {fileID: 199813705537231296}
+  - component: {fileID: 114749964148163192}
   m_Layer: 0
   m_Name: PS_Smoke
   m_TagString: Untagged
@@ -28,6 +29,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114749964148163192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1329653402227000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e3d391e6bf4f4419fbe003045945fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!198 &198344408658560258
 ParticleSystem:
   m_ObjectHideFlags: 1

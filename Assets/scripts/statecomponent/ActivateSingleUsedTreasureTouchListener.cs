@@ -16,8 +16,28 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
     public void OnPointerDown(PointerEventData eventData)
     {
         OneCardManager oneCardManager = this.GetComponent<OneCardManager>();
-        DialogActivateSingleUsedTreasure.instance.activatedCard = oneCardManager;
-        DialogActivateSingleUsedTreasure.instance.Show(eventData.position);
+
+        if (oneCardManager.cardAsset.effecttype == Effect.EffectType.AegisOfZeus_IgnoreDeadliness_single&&GameLogic.CanUseEffect(oneCardManager.cardAsset.effecttype))
+        {
+            oneCardManager.gameObject.AddComponent<AegisOfZeusActivated>();
+
+            List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
+            foreach (OneCardManager cm in enclist)
+            {
+                if (cm.cardAsset.resolved == ResolvedType.resolved_lost && cm.cardAsset.type == CardType.monster)
+                {
+                    cm.gameObject.AddComponent<AegisOfZeusTarget>();
+                }
+            }
+
+        }
+        else
+        {
+            DialogActivateSingleUsedTreasure.instance.activatedCard = oneCardManager;
+            DialogActivateSingleUsedTreasure.instance.Show(eventData.position);    
+        }
+        
+        
     }
 
     public static void AddComponentToCurrentHand()

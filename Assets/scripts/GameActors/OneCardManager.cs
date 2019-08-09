@@ -48,6 +48,8 @@ public class OneCardManager : DestroyableEntity
     public Image CardBackGlowImage;
     public Image CrewImage;
 
+    public bool ShowUiDice;
+
 
     private Sequence diceAnimationSequence;
 
@@ -168,6 +170,12 @@ public class OneCardManager : DestroyableEntity
             return;
         }
 
+        
+        
+        
+        
+        
+        
         if (cardAsset.resolved == ResolvedType.resolved_win||cardAsset.resolved==ResolvedType.resolved_lost)
         {
             uiDiceObject.SetActive(false);
@@ -188,7 +196,7 @@ public class OneCardManager : DestroyableEntity
             {
                 diceAnimationSequence.Kill();
             }
-            
+            uiDiceObject.SetActive(false);    
             
         }
         

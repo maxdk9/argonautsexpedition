@@ -7069,6 +7069,11 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114706083916011166, guid: f1b9d74a086f13f40a5679232cb3d84b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1b9d74a086f13f40a5679232cb3d84b, type: 2}
   m_IsPrefabAsset: 0
@@ -9874,6 +9879,15 @@ Prefab:
       propertyPath: m_FontData.m_FontSize
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1091864923301022, guid: f1b9d74a086f13f40a5679232cb3d84b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114706083916011166, guid: f1b9d74a086f13f40a5679232cb3d84b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1b9d74a086f13f40a5679232cb3d84b, type: 2}
   m_IsPrefabAsset: 0
@@ -10343,7 +10357,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 130839
 --- !u!114 &1612235833
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -70,8 +70,26 @@ namespace Model
         public static void ResetParametersOnStartNewTurn()
         {
             Game.instance.DeployedCrew = 0;
-            Game.instance.CrewNumber = Game.instance.CrewNumber;
             Game.instance.Casualties = 0;
+        }
+
+        public static void RestoreCrew(Effect.EffectType effectType)
+        {
+            int treasureCrewValue = 0;
+            if (effectType == Effect.EffectType.Ambrosia_Recover3Crew_single)
+            {
+                treasureCrewValue = 3;
+            }
+
+            if (effectType == Effect.EffectType.Cornucopia_Recover2Crew_single)
+            {
+                treasureCrewValue = 2;
+            }
+
+
+            int newCrewValue = Game.instance.CrewNumber + treasureCrewValue;
+            newCrewValue = Math.Min(newCrewValue, GameLogic.GetCrewStartingCount());
+            Game.instance.CrewNumber = newCrewValue;
         }
     }
     

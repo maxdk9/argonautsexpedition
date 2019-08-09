@@ -211,8 +211,15 @@ public class Visual : MonoBehaviour
 		return result;
 	}
 
-	public void disableInput(bool p0)
+	
+
+	public void TestButtonAboveEverything()
 	{
-		transparentModalWindow.SetActive(p0);
+		Debug.Log("ButtonAboveEverything Worked!");
+	}
+
+	public void disableInput(bool b)
+	{
+		transparentModalWindow.SetActive(b);
 	}
 }
