@@ -7,6 +7,7 @@
     using GameActors;
     using JetBrains.Annotations;
     using Model;
+    using tools;
     using UnityEngine;
    using UnityEngine.EventSystems;
 
@@ -20,7 +21,6 @@ public class AssignCrewTouchListener :tempTouchComponent,UnityEngine.EventSystem
             {
                 CrewAssigner.instance.Hide();
                 CrewAssigner.instance.Show(c);
-                
             }
             else
             {

@@ -33,6 +33,11 @@ public class MessageManager : MonoBehaviour
     }
 
 
+    public void Hide()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Y))

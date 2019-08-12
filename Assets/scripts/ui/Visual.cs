@@ -222,4 +222,10 @@ public class Visual : MonoBehaviour
 	{
 		transparentModalWindow.SetActive(b);
 	}
+
+	public static bool CardIsEncounter(OneCardManager oneCardManager)
+	{
+		List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
+		return enclist.Contains(oneCardManager);
+	}
 }

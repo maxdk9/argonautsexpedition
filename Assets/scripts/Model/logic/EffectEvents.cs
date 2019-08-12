@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using common;
 using DG.Tweening;
 using Model.States;
 using screen;
@@ -128,15 +129,21 @@ namespace Model
             
             //int numberofdiscard=Math.Min(2,Visual.instance.GetCurrentDeck().Count)
             yield return new WaitForSeconds(.01f);
+
+            float firstMoveDuration = .35f;
             List<OneCardManager> decklist = Visual.instance.GetCurrentDeck();
             int discardNumber = Math.Min(2, decklist.Count);
             for (int i = 0; i < discardNumber; i++)
             {
                 OneCardManager cm = decklist[decklist.Count - i-1];
+                
+                
                 yield return new WaitForSeconds(.1f);
-                EndTurn.DiscardCard(cm,false);
+                cm.transform.DOMove(Visual.instance.CardPointShuffle.transform.position, firstMoveDuration);
+                yield return new WaitForSeconds(.05f);
+                EndTurn.DiscardCard(cm,false,firstMoveDuration);
             }
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(firstMoveDuration*3);
 
 
         }

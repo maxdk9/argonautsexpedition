@@ -59,7 +59,7 @@ public class StateManager
 		dictEnabledPhases.Add(Effect.EffectType.WingedSandals_ReturnAdventureCard_single,new GamePhase[]{GamePhase.CrewAssignment,GamePhase.BattleView});
 		dictEnabledPhases.Add(Effect.EffectType.OrpheusLyre_StopLevelUpMonsterInVictoryPile_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
 		dictEnabledPhases.Add(Effect.EffectType.Cornucopia_Recover2Crew_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
-		dictEnabledPhases.Add(Effect.EffectType.PansFlute_DiscardTop2Cards_single,new GamePhase[]{GamePhase.CrewAssignment});
+		dictEnabledPhases.Add(Effect.EffectType.PansFlute_DiscardTop2Cards_single,new GamePhase[]{GamePhase.Draw3QuestCards});
 		dictEnabledPhases.Add(Effect.EffectType.HelmOfHades_MoveMonsterToDiscardPile_single,new GamePhase[]{GamePhase.BattleView,GamePhase.CrewAssignment});
 		dictEnabledPhases.Add(Effect.EffectType.Ambrosia_Recover3Crew_single,new GamePhase[]{GamePhase.Draw3QuestCards,GamePhase.BattleView,GamePhase.CrewAssignment});
 		dictEnabledPhases.Add(Effect.EffectType.AegisOfZeus_IgnoreDeadliness_single,new GamePhase[]{GamePhase.BattleView});

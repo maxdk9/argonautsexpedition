@@ -10,7 +10,7 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class AegisOfZeusActivated :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
+public class HelmOfHadesActivated :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
 {
         private OneCardManager cardManager;
         
@@ -20,10 +20,7 @@ public class AegisOfZeusActivated :tempTouchComponent,UnityEngine.EventSystems.I
         {
 
 
-                AegisOfZeusTarget.DeactivateTargets();
-                GameManager.instance.turnButtons(true);
-                GameManager.instance.turnTempTouchComponents(true);
-                List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
+                
                 this.enabled = false;
                 HighlightCardManager();
         
@@ -56,6 +53,6 @@ public class AegisOfZeusActivated :tempTouchComponent,UnityEngine.EventSystems.I
     {
         enabled = true;
         HighlightCardManager();
-        AegisOfZeusTarget.ActivateTargets();
+        HelmOfHadesTarget.ActivateTargets();
     }
 }

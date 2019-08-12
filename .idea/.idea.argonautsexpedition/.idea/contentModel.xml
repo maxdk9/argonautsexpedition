@@ -133,6 +133,8 @@
             <e p="AegisOfZeusTarget.cs" t="Include" />
             <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
+            <e p="HelmOfHadesActivated.cs" t="Include" />
+            <e p="HelmOfHadesTarget.cs" t="Include" />
             <e p="ResolveCardByRollDice.cs" t="Include" />
             <e p="RollDiceTouchListener.cs" t="Include" />
             <e p="tempTouchComponent.cs" t="Include" />

@@ -17,14 +17,32 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
     {
         OneCardManager oneCardManager = this.GetComponent<OneCardManager>();
 
+        bool customActivation = false;
+        
         if (oneCardManager.cardAsset.effecttype == Effect.EffectType.AegisOfZeus_IgnoreDeadliness_single&&GameLogic.CanUseEffect(oneCardManager.cardAsset.effecttype))
         {
-            oneCardManager.gameObject.AddComponent<AegisOfZeusActivated>();
+            AegisOfZeusActivated component = oneCardManager.gameObject.GetComponent<AegisOfZeusActivated>();
+            if (!component.enabled)
+            {
+                component.Activate();
+            }
 
-            
+            customActivation = true;
+        };
+        
+        if (oneCardManager.cardAsset.effecttype == Effect.EffectType.HelmOfHades_MoveMonsterToDiscardPile_single&&GameLogic.CanUseEffect(oneCardManager.cardAsset.effecttype))
+        {
+            HelmOfHadesActivated component = oneCardManager.gameObject.GetComponent<HelmOfHadesActivated>();
+            if (!component.enabled)
+            {
+                component.Activate();
+            }
 
-        }
-        else
+            customActivation = true;
+        };
+        
+        
+        if(!customActivation)
         {
             DialogActivateSingleUsedTreasure.instance.activatedCard = oneCardManager;
             DialogActivateSingleUsedTreasure.instance.Show(eventData.position);    
@@ -47,6 +65,17 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
             {
                 cm.gameObject.AddComponent<ActivateSingleUsedTreasureTouchListener>();
             }
+
+            if (cm.cardAsset.effecttype == Effect.EffectType.AegisOfZeus_IgnoreDeadliness_single)
+            {
+                cm.gameObject.AddComponent<AegisOfZeusActivated>().enabled = false;
+            }
+            
+            if (cm.cardAsset.effecttype == Effect.EffectType.HelmOfHades_MoveMonsterToDiscardPile_single)
+            {
+                cm.gameObject.AddComponent<HelmOfHadesActivated>().enabled = false;
+            }
+            
         }
     }
     

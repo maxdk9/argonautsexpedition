@@ -34,7 +34,8 @@ namespace Model
     public enum ResolvedType{
         notresolved,
         resolved_win,
-        resolved_lost
+        resolved_lost,
+        
     }
     
     

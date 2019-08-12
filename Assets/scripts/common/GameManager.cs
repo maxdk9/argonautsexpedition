@@ -157,7 +157,19 @@ public class GameManager : MonoBehaviour
 		}
 		
 	}
-	
-	
-	
+
+
+	public void RemoveTouchComponentsExceptSelf(OneCardManager target, tempTouchComponent exceptionComponent)
+	{
+		tempTouchComponent[] arrTouchcomponent = target.GetComponents<tempTouchComponent>();
+		foreach (var VARIABLE in arrTouchcomponent)
+		{
+			if (VARIABLE == exceptionComponent)
+			{
+				continue;
+			}
+			GameObject.DestroyImmediate(VARIABLE);
+		}
+		
+	}
 }

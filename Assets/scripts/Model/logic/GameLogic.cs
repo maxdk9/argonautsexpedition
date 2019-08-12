@@ -200,6 +200,19 @@ namespace Model
                     return false;
                 }
             }
+            
+            if (effectType == Effect.EffectType.HelmOfHades_MoveMonsterToDiscardPile_single)
+            {
+                List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
+                foreach (var VARIABLE in enclist)
+                {
+                    if (VARIABLE.cardAsset.type == CardType.monster)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
             return true;
         }
         

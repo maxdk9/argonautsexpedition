@@ -13,18 +13,20 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
+public class HelmOfHadesTarget :tempTouchComponent,UnityEngine.EventSystems.IPointerDownHandler
 {
         private OneCardManager cardManager;
         public void OnPointerDown(PointerEventData eventData)
         {
-            ActivateAegisOfZeusTarget t=new ActivateAegisOfZeusTarget();
+            
+            GameManager.instance.RemoveTouchComponentsExceptSelf(cardManager,this);
+            ActivateHelmOfHadesTarget t=new ActivateHelmOfHadesTarget();
             t.target = cardManager;
             t.AddToQueue();
         }
     
     
-    private class  ActivateAegisOfZeusTarget:Command
+    private class  ActivateHelmOfHadesTarget:Command
     {
         public OneCardManager target;
         
@@ -42,9 +44,9 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
             
             Visual.instance.disableInput(true);
             float timeMovement = Const.mediumCardTimeMovement;
-            AegisOfZeusTarget targetcomponent = target.GetComponent<AegisOfZeusTarget>();
+            HelmOfHadesTarget targetcomponent = target.GetComponent<HelmOfHadesTarget>();
 
-            AegisOfZeusTarget[] targetsarray = GameObject.FindObjectsOfType<AegisOfZeusTarget>();
+            HelmOfHadesTarget[] targetsarray = GameObject.FindObjectsOfType<HelmOfHadesTarget>();
             foreach (var VARIABLE in targetsarray)
             {
                 if (VARIABLE != targetcomponent)
@@ -53,12 +55,19 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
                 }
             }
             
-            AegisOfZeusActivated[] arractivated = GameObject.FindObjectsOfType<AegisOfZeusActivated>();
-            AegisOfZeusActivated activated = arractivated[0];
-            OneCardManager aegis = activated.GetComponent<OneCardManager>();
-            EndTurn.DiscardCard(aegis,true);
+            
+            
 
-            GameLogicModifyGame.SetIgnoreDeadliness(target.cardAsset);
+             
+            
+            HelmOfHadesActivated[] arractivated = GameObject.FindObjectsOfType<HelmOfHadesActivated>();
+            HelmOfHadesActivated activated = arractivated[0];
+            OneCardManager helmcm= activated.GetComponent<OneCardManager>();
+            EndTurn.DiscardCard(helmcm,true);
+            
+            
+
+            EndTurn.DiscardCard(target,false);
             GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
             GameLogicEvents.eventUpdateLossCounter.Invoke();
 
@@ -90,26 +99,23 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
 
     public static void ActivateTargets()
     {
-        
         GameManager.instance.turnButtons(false);
         GameManager.instance.turnTempTouchComponents(false);
-        
             List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
             foreach (OneCardManager cm in enclist)
             {
-                if (cm.cardAsset.resolved == ResolvedType.resolved_lost && cm.cardAsset.type == CardType.monster)
+                if ( cm.cardAsset.type == CardType.monster)
                 {
-                    cm.gameObject.AddComponent<AegisOfZeusTarget>();
+                    cm.gameObject.AddComponent<HelmOfHadesTarget>();
                 }
             }
-        
         
         MessageManager.Instance.ShowMessage(LocalizationManager.Localize("choosemonstertoignoredeadliness"),2);
     }
 
     public static void DeactivateTargets()
     {
-        AegisOfZeusTarget[] comparray = GameObject.FindObjectsOfType<AegisOfZeusTarget>();
+        HelmOfHadesTarget[] comparray = GameObject.FindObjectsOfType<HelmOfHadesTarget>();
         foreach (var VARIABLE in comparray)
         {
             GameObject.DestroyImmediate(VARIABLE);            

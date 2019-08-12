@@ -174,8 +174,6 @@ public class OneCardManager : DestroyableEntity
         
         
         
-        
-        
         if (cardAsset.resolved == ResolvedType.resolved_win||cardAsset.resolved==ResolvedType.resolved_lost)
         {
             uiDiceObject.SetActive(false);
@@ -186,12 +184,21 @@ public class OneCardManager : DestroyableEntity
         
         if (Game.instance.CurrentState == GamePhase.BattleView)
         {
+            if (!Visual.CardIsEncounter(this))
+            {
+                uiDiceObject.SetActive(false);
+                return;
+            }
             uiDiceObject.SetActive(true);
             CreateDiceAnimationSequence();
 
         }
         else
         {
+                
+            
+            
+            
             if (diceAnimationSequence != null)
             {
                 diceAnimationSequence.Kill();

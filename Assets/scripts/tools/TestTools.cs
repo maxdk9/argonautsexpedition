@@ -244,7 +244,7 @@ namespace tools
         private static void CorrectDeck2_AddItemToHand()
         {
 
-            string cardname = "aegisofzeus";
+            string cardname = "helmofhades";
             CardManager.Card chosenCard = null;
             
             foreach (CardManager.Card card in Game.instance.currentDeck)
