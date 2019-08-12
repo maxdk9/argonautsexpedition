@@ -21,14 +21,7 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
         {
             oneCardManager.gameObject.AddComponent<AegisOfZeusActivated>();
 
-            List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
-            foreach (OneCardManager cm in enclist)
-            {
-                if (cm.cardAsset.resolved == ResolvedType.resolved_lost && cm.cardAsset.type == CardType.monster)
-                {
-                    cm.gameObject.AddComponent<AegisOfZeusTarget>();
-                }
-            }
+            
 
         }
         else

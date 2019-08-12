@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Model
 {
@@ -35,6 +36,8 @@ namespace Model
             }
         }
 
+        
+        
 
         public static void CalculateDiceRollResult()
         {
@@ -57,6 +60,18 @@ namespace Model
                 card.resolved = ResolvedType.resolved_lost;
                 UpdateCasualties(card);
             }
+        }
+
+
+        public static void UpdateCasualtiesCurrentEncounter()
+        {
+            Game.instance.Casualties = 0;
+            List<OneCardManager> cmlist = Visual.instance.GetCurrentEncounter();
+            foreach (var VARIABLE in cmlist)
+            {
+                UpdateCasualties(VARIABLE.cardAsset);
+            }
+            
         }
 
         public static void DoCasualties()
@@ -90,6 +105,12 @@ namespace Model
             int newCrewValue = Game.instance.CrewNumber + treasureCrewValue;
             newCrewValue = Math.Min(newCrewValue, GameLogic.GetCrewStartingCount());
             Game.instance.CrewNumber = newCrewValue;
+        }
+
+        public static void SetIgnoreDeadliness(CardManager.Card target)
+        {
+            target.IgnoreDeadliness = true;
+            UpdateCasualtiesCurrentEncounter();
         }
     }
     

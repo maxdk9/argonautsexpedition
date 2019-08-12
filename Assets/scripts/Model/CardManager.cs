@@ -148,6 +148,7 @@ namespace Model
         {
             card.level = 0;
             card.ignore = false;
+            card.IgnoreDeadliness = false;
             card.crewNumber = 0;
             card.resolved = ResolvedType.notresolved;
             card.markApolloBow = false;

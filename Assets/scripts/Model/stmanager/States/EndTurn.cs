@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using common;
 using DG.Tweening;
 using screen;
 using UnityEngine;
@@ -84,8 +85,8 @@ namespace Model.States
             GameObject destination =
                 toWinningPile ? Visual.instance.CardPointWinning : Visual.instance.CardPointWinning;
             sequence.SetDelay(delay);
-            sequence.Append(card.transform.DOLocalMove(Visual.instance.CardPointOutside.transform.position, TimeMovement1));
-            sequence.Insert(delay, card.transform.DORotate(new Vector3(0f, 179f, 0f), TimeMovement1*.5f));
+            sequence.Append(card.transform.DOLocalMove(Visual.instance.CardPointOutside.transform.position, Const.mediumCardTimeMovement));
+            sequence.Insert(delay, card.transform.DORotate(new Vector3(0f, 179f, 0f), Const.mediumCardTimeMovement*.5f));
             
             sequence.OnComplete(() => { card.transform.SetParent(destination.transform); });
             sequence.Play();

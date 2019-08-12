@@ -161,6 +161,10 @@ namespace Model
 
         public static int  GetDeadliness(CardManager.Card card)
         {
+            if (card.IgnoreDeadliness)
+            {
+                return 0;
+            }
             return  card.deadliness[card.level];
         }
 
