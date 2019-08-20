@@ -152,6 +152,7 @@
             <e p="TestTools.cs" t="Include" />
           </e>
           <e p="ui" t="Include">
+            <e p="CardListChooser.cs" t="Include" />
             <e p="DeckGameControlPanel.cs" t="Include" />
             <e p="DialogActivateSingleUsedTreasure.cs" t="Include" />
             <e p="FadeAlphaGraphicUI.cs" t="Include" />

@@ -14,23 +14,21 @@ public class Visual : MonoBehaviour
 
 	public static Visual instance;
 	
-	
+	[Header("CardPoints")]
 	public GameObject CardPoint;
 	public GameObject CardPointOutside;
 	public GameObject CardPointDiscard;
 	public GameObject CardPointWinning;
 	public GameObject CardPointShuffle;
 	
+	[Header("VisualObjects")]
 	public GameObject CardDeckFrame;
 	public GameObject CrewCounter;
 	public GameObject LossCounter;
 	public GameObject CurrentEncounter;
 	public GameObject TreasureHand;
 	public GameObject EffectGroup;
-
 	public GameObject transparentModalWindow;
-	
-	
 	public GameObject currentDiceEncounter;
 	public GameObject mainDice;
 	public Image RollDiceImage;
@@ -40,9 +38,10 @@ public class Visual : MonoBehaviour
 	public Sprite ThumbsUp;
 	public Sprite ThumbsDown;
 
-
+	[Header("Prefabs")]
 	public GameObject particleHeal;
 	public GameObject particleHealCrew;
+	public GameObject prefabCardListChooser;
 	
 
 
