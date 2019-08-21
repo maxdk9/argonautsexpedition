@@ -5053,6 +5053,7 @@ MonoBehaviour:
   currentDiceEncounter: {fileID: 884072990}
   mainDice: {fileID: 523960871}
   RollDiceImage: {fileID: 1646056836}
+  cardListChooser: {fileID: 0}
   ThumbsUp: {fileID: 21300000, guid: 3782712a6bd415c4e8c8a7283551a56a, type: 3}
   ThumbsDown: {fileID: 21300000, guid: 44f34d0bc04c00745bd7b21e58171e76, type: 3}
   particleHeal: {fileID: 1329653402227000, guid: 12f2a30a587e0ac408c31a26f072d784,

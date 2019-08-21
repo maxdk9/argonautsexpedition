@@ -49,31 +49,15 @@ public class Visual : MonoBehaviour
 	private void Awake()
 	{
 
-		if (instance == null)
-		{
-			InitializeGameObjects();
-		}
+		
 
 		instance = this;
 		
 		
 	}
 
-	private void InitializeGameObjects()
-	{
-		cardListChooser = Instantiate(prefabCardListChooser,);
-	}
 
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 
 	public void DisableVisualElementsOnStateEnter()
@@ -238,5 +222,10 @@ public class Visual : MonoBehaviour
 	{
 		List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
 		return enclist.Contains(oneCardManager);
+	}
+
+	public void InitializeGameObjects()
+	{
+		cardListChooser = Instantiate(prefabCardListChooser,ScreenManager.instance.DeckgameCanvas.transform,false);
 	}
 }

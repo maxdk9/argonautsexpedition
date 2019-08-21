@@ -7,6 +7,7 @@ namespace common
     {
         public GameManager gameManager;
         public ScreenManager screenManager;
+        
 
         private void Awake()
         {
@@ -22,7 +23,11 @@ namespace common
             }
 
             
-            
         }
+        
+        
+        
+        
     }
+    
 }

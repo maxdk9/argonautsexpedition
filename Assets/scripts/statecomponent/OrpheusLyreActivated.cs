@@ -10,7 +10,7 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class HelmOfHadesActivated :tempTouchComponent
+public class OrpheusLyreActivated :tempTouchComponent
 {
    private OneCardManager cardManager;
 
@@ -42,15 +42,14 @@ public class HelmOfHadesActivated :tempTouchComponent
     {
         isActivated = false;
         HighlightCardManager();
-        HelmOfHadesTarget.DeactivateTargets();
+        
     }
     
 
     public void Activate()
     {
         isActivated = true;
-        
         HighlightCardManager();
-        HelmOfHadesTarget.ActivateTargets();
+        
     }
 }

@@ -244,7 +244,7 @@ namespace tools
         private static void CorrectDeck2_AddItemToHand()
         {
 
-            string cardname = "helmofhades";
+            string cardname = "orpheuslyre";
             CardManager.Card chosenCard = null;
             
             foreach (CardManager.Card card in Game.instance.currentDeck)
@@ -297,6 +297,7 @@ namespace tools
 
         private static void CardListChooserTest()
         {
+            CardListChooser.instance.FillByCards(Game.instance.winningPile);
             CardListChooser.instance.Show();
         }
 

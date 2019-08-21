@@ -45,6 +45,7 @@ namespace screen
             screens.Add(ScreenType.Mainmenu,MainMenuCanvas);
             screens.Add(ScreenType.Rolldice,RollDiceCanvas);
             screens.Add(ScreenType.Testscreen,TestCanvas);
+            Visual.instance.InitializeGameObjects();
             
         }
 

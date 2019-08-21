@@ -213,6 +213,18 @@ namespace Model
                 }
                 return false;
             }
+
+            if (effectType == Effect.EffectType.OrpheusLyre_StopLevelUpMonsterInVictoryPile_single)
+            {
+                if (Game.instance.winningPile.Count > 0)
+                {
+                    return true;
+                }
+
+                return false;
+            }
+            
+            
             return true;
         }
         

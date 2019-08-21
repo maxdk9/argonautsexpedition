@@ -132,8 +132,6 @@ namespace Model
             }
 
             EffectEvents.DoEffect(effectType);
-
-
         }
 
        
