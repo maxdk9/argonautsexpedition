@@ -290,11 +290,15 @@ namespace tools
         public static void VisualTest()
         {
             Debug.Log("VisualTest");
-            ModalGameEvent();
+            CardListChooserTest();
 
             // GameManager.instance.listToDestroy.Add(particleHeal);
         }
 
+        private static void CardListChooserTest()
+        {
+            CardListChooser.instance.Show();
+        }
 
 
         private static void ModalGameEvent()

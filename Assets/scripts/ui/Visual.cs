@@ -32,6 +32,7 @@ public class Visual : MonoBehaviour
 	public GameObject currentDiceEncounter;
 	public GameObject mainDice;
 	public Image RollDiceImage;
+	public GameObject cardListChooser;
 	
 	
 
@@ -47,9 +48,20 @@ public class Visual : MonoBehaviour
 
 	private void Awake()
 	{
+
+		if (instance == null)
+		{
+			InitializeGameObjects();
+		}
+
 		instance = this;
-	
 		
+		
+	}
+
+	private void InitializeGameObjects()
+	{
+		cardListChooser = Instantiate(prefabCardListChooser,);
 	}
 
 

@@ -10,10 +10,19 @@ public class CardListChooser : MonoBehaviour
 
 	private void Awake()
 	{
+
+
 		instance = this;
 		this.gameObject.SetActive(false);
 	}
 
+	public void Show()
+	{
+		this.gameObject.SetActive(true);
+	}
 
-	
+	public void Hide()
+	{
+		this.gameObject.SetActive(false);
+	}
 }
