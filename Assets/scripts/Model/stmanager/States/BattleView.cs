@@ -25,7 +25,6 @@ namespace Model.States
         {
             
             ScreenManager.instance.Show(ScreenManager.ScreenType.Deckgame);
-            HoverPreview.StopAllPreviews();
             AutoBattleResolve();
             UpdateCurrentEncounterCMs();
             

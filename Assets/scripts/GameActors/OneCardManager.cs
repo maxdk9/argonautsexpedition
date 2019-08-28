@@ -230,6 +230,7 @@ public class OneCardManager : DestroyableEntity
             return GameManager.instance.MonsterCardPrefab;
         }
 
+       
         if (c.type == CardType.treasure)
         {
             return GameManager.instance.ItemCardPrefab;

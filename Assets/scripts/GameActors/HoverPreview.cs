@@ -76,7 +76,7 @@ public class HoverPreview: MonoBehaviour
             {
                 return;
             }
-            StopAllPreviews();
+           // StopAllPreviews();
         }
             
     }

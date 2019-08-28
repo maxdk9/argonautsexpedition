@@ -7,49 +7,49 @@
     using GameActors;
     using JetBrains.Annotations;
     using Model;
+    using tools;
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class OrpheusLyreActivated :tempTouchComponent
+public class OrpheusLyreActivated:MonoBehaviour 
 {
-   private OneCardManager cardManager;
-
-   private bool activated = false;
-   public bool isActivated { get; set; }
-
-
-   
-
-    private void HighlightCardManager()
-    {
-        cardManager.Highlighted = this.isActivated;
-
-    }
 
     private void Awake()
     {
-        cardManager=this.GetComponent<OneCardManager>();
-        activated = false;
+   
     }
 
 
     private void OnDestroy()
     {
-        cardManager.Highlighted = false;
+
     }
 
-    public void DeActivate()
-    {
-        isActivated = false;
-        HighlightCardManager();
-        
-    }
+   
     
 
     public void Activate()
     {
-        isActivated = true;
-        HighlightCardManager();
-        
+        CardListChooser.instance.FillByCards(Game.instance.winningPile);
+        CardListChooser.instance.Show();
+        CardListChooser.instance.AddComponentToCards<OrpheusLyreActivatedTarget>();
     }
+
+
+    public class OrpheusLyreActivatedTarget : MonoBehaviour,UnityEngine.EventSystems.IPointerDownHandler
+    {
+        private OneCardManager cm;
+
+        private void Awake()
+        {
+            cm = GetComponent<OneCardManager>();
+        }
+
+        public void OnPointerDown(PointerEventData eventData)
+        {
+                Debug.Log("OrpheusLyreActivatedTarget");
+        }
+    }
+    
+    
 }

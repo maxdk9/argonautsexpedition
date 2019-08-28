@@ -68,6 +68,7 @@ public class Visual : MonoBehaviour
 		RollDiceResultBar.instance.Hide();
 		DeckGameControlPanel.instance.Hide();
 		Tooltip.instance.HideTooltip();
+		HoverPreview.StopAllPreviews();
 		if (Game.instance.CurrentState == GamePhase.Draw3QuestCards)
 		{
 			Visual.instance.EffectGroup.SetActive(false);
@@ -115,18 +116,7 @@ public class Visual : MonoBehaviour
 
 	public  List <OneCardManager> GetCurrentEncounter()
 	{
-		OneCardManager[] cards = Visual.instance.CurrentEncounter.GetComponentsInChildren<OneCardManager>();
-		List<OneCardManager>  result=new List<OneCardManager>();
-		foreach (OneCardManager card in cards)
-		{
-			
-			if (card.isPreview)
-			{
-				continue;    
-			}
-			result.Add(card);
-		}
-		return result;
+		return GetCardManagerListFromParent(Visual.instance.CurrentEncounter.transform);
 	}
 	
 	
@@ -170,18 +160,8 @@ public class Visual : MonoBehaviour
 
 	public List<OneCardManager> GetCurrentDeck()
 	{
-		OneCardManager[] cards = Visual.instance.CardDeckFrame.GetComponentsInChildren<OneCardManager>();
-		List<OneCardManager>  result=new List<OneCardManager>();
-		foreach (OneCardManager card in cards)
-		{
-			
-			if (card.isPreview)
-			{
-				continue;    
-			}
-			result.Add(card);
-		}
-		return result;		
+		
+		return GetCardManagerListFromParent(Visual.instance.CardDeckFrame.transform);
 	}
 
 
@@ -192,18 +172,7 @@ public class Visual : MonoBehaviour
 
 	public List<OneCardManager> GetCurrentTreasures()
 	{
-		OneCardManager[] cards = Visual.instance.TreasureHand.GetComponentsInChildren<OneCardManager>();
-		List<OneCardManager>  result=new List<OneCardManager>();
-		foreach (OneCardManager card in cards)
-		{
-			
-			if (card.isPreview)
-			{
-				continue;    
-			}
-			result.Add(card);
-		}
-		return result;
+		return GetCardManagerListFromParent(Visual.instance.TreasureHand.transform);
 	}
 
 	
@@ -227,5 +196,21 @@ public class Visual : MonoBehaviour
 	public void InitializeGameObjects()
 	{
 		cardListChooser = Instantiate(prefabCardListChooser,ScreenManager.instance.DeckgameCanvas.transform,false);
+	}
+
+	public List<OneCardManager> GetCardManagerListFromParent(Transform parent)
+	{
+		OneCardManager[] cards = parent.GetComponentsInChildren<OneCardManager>();
+		List<OneCardManager>  result=new List<OneCardManager>();
+		foreach (OneCardManager card in cards)
+		{
+			
+			if (card.isPreview)
+			{
+				continue;    
+			}
+			result.Add(card);
+		}
+		return result;
 	}
 }

@@ -60,6 +60,7 @@ namespace Model
             
             
             
+            
         }
 
         private static void RestoreCrewByCard(Effect.EffectType type)

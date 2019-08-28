@@ -48,17 +48,8 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
         
         if (oneCardManager.cardAsset.effecttype == Effect.EffectType.OrpheusLyre_StopLevelUpMonsterInVictoryPile_single&&GameLogic.CanUseEffect(oneCardManager.cardAsset.effecttype))
         {
-            HelmOfHadesActivated component = oneCardManager.gameObject.GetComponent<HelmOfHadesActivated>();
-            if (!component.isActivated)
-            {
-                GameLogicEvents.eventCardVisual.Invoke(oneCardManager);
-                component.Activate();
-            }
-            else
-            {
-                component.DeActivate();
-            }
-
+            OrpheusLyreActivated component = oneCardManager.gameObject.GetComponent<OrpheusLyreActivated>();
+             component.Activate();
             customActivation = true;
         };
         

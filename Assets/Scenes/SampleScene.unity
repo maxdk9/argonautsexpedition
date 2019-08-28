@@ -1636,7 +1636,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 418131665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -154}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2026316888}
@@ -5060,7 +5060,7 @@ MonoBehaviour:
     type: 2}
   particleHealCrew: {fileID: 1880309638078218, guid: 4e3078396e4620748abc3207f948a974,
     type: 2}
-  prefabCardListChooser: {fileID: 1104896368844922, guid: 23687eace61f3b94b87e4d9734851d05,
+  prefabCardListChooser: {fileID: 1001365936580214, guid: 23687eace61f3b94b87e4d9734851d05,
     type: 2}
 --- !u!1 &931626503
 GameObject:
