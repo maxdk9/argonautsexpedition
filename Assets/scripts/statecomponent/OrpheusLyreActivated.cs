@@ -11,25 +11,32 @@
     using UnityEngine;
    using UnityEngine.EventSystems;
 
-public class OrpheusLyreActivated:MonoBehaviour 
+public class OrpheusLyreActivated:MonoBehaviour
 {
 
-    private void Awake()
+    private bool activated;
+
+    public bool Activated
     {
-   
+        get { return activated; }
+        set { activated = value; }
     }
 
 
-    private void OnDestroy()
+
+
+    public void Deactivate()
     {
-
+        activated = false;
+        CardListChooser.instance.Hide();
+        VisualTool.SwitchAllControls(true);
     }
-
-   
     
 
     public void Activate()
     {
+        VisualTool.SwitchAllControls(false);
+        activated = true;
         CardListChooser.instance.FillByCards(Game.instance.winningPile);
         CardListChooser.instance.Show();
         CardListChooser.instance.AddComponentToCards<OrpheusLyreActivatedTarget>();

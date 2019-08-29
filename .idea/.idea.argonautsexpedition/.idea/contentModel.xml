@@ -165,6 +165,7 @@
             <e p="Tooltip.cs" t="Include" />
             <e p="Tooltipable.cs" t="Include" />
             <e p="Visual.cs" t="Include" />
+            <e p="VisualTool.cs" t="Include" />
           </e>
         </e>
         <e p="SimpleLocalization" t="Include">

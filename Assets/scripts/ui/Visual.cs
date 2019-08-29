@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GameActors;
 using Model;
 using Model.States;
 using screen;
@@ -48,17 +49,8 @@ public class Visual : MonoBehaviour
 
 	private void Awake()
 	{
-
-		
-
-		instance = this;
-		
-		
+		instance = this;	
 	}
-
-
-
-
 
 	public void DisableVisualElementsOnStateEnter()
 	{
@@ -177,10 +169,7 @@ public class Visual : MonoBehaviour
 
 	
 
-	public void TestButtonAboveEverything()
-	{
-		Debug.Log("ButtonAboveEverything Worked!");
-	}
+	
 
 	public void disableInput(bool b)
 	{
@@ -213,4 +202,8 @@ public class Visual : MonoBehaviour
 		}
 		return result;
 	}
+	
+	
+	
+	
 }

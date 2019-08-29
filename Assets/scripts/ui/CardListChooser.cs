@@ -27,43 +27,20 @@ public class CardListChooser : ModalPanel{
 	{
 		//base.Show();
 		this.gameObject.SetActive(true);
-		turnControls(false);
 	}
 
-	public void turnControls(bool enable)
-	{
-
-		Tooltipable[] tooltipables = ScreenManager.instance.DeckgameCanvas.GetComponentsInChildren<Tooltipable>();
-		foreach (var VARIABLE in tooltipables)
-		{
-			VARIABLE.enabled = enable;
-		}
-
-		tempTouchComponent[] tempTouchComponents =
-			ScreenManager.instance.DeckgameCanvas.GetComponentsInChildren<tempTouchComponent>();
-		foreach (var VARIABLE in tempTouchComponents)
-		{
-			VARIABLE.enabled = enable;
-		}
 	
-		Button[] buttons =
-			Visual.instance.GetComponentsInChildren<Button>();
-		foreach (var VARIABLE in tempTouchComponents)
-		{
-			VARIABLE.enabled = enable;
-		}
-
-	}
 	
 	
 	public void Hide()
 	{
 		//base.Hide();
-		turnControls(true);
 		this.gameObject.SetActive(false);
 	}
 	public void FillByCards(List<CardManager.Card> cards)
 	{
+		VisualTool.RemoveChildrensFromTransform(CardListContent.transform);
+		
 		foreach (CardManager.Card VARIABLE in cards)
 
 		{
@@ -77,7 +54,6 @@ public class CardListChooser : ModalPanel{
 		foreach (OneCardManager cm in cardList)
 		{
 			cm.gameObject.AddComponent<T>();
-			
 		}
 		
 	}
