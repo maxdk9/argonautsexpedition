@@ -21,8 +21,7 @@ public class AegisOfZeusActivated :tempTouchComponent,UnityEngine.EventSystems.I
 
 
                 AegisOfZeusTarget.DeactivateTargets();
-                GameManager.instance.turnButtons(true);
-                GameManager.instance.turnTempTouchComponents(true);
+                VisualTool.SwitchAllControls(true);
                 List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
                 this.enabled = false;
                 HighlightCardManager();

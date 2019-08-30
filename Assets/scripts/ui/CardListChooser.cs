@@ -10,13 +10,15 @@ using ui;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using Object = System.Object;
 
 public class CardListChooser : ModalPanel{
 
 	public static CardListChooser instance;
-	public GameObject CardScrollList;
 	public GameObject CardListContent;
-
+	
+	
+	
 	private void Awake()
 	{
 		instance = this;
@@ -43,8 +45,13 @@ public class CardListChooser : ModalPanel{
 		
 		foreach (CardManager.Card VARIABLE in cards)
 
-		{
-			GameObject cmObject = OneCardManager.CreateOneCardManager(VARIABLE, CardListContent);
+		{	
+			GameObject slot=Instantiate(Visual.instance.prefabBasicRect,CardListContent.transform);
+			RectTransform transform  =slot.GetComponent<RectTransform>();
+			VisualTool.SetAnchorPreset(transform);
+			
+			GameObject cmObject = OneCardManager.CreateOneCardManager(VARIABLE, slot);
+			VisualTool.SetAnchorPreset(cmObject.GetComponent<RectTransform>());
 		}
 	}
 

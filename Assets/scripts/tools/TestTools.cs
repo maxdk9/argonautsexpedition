@@ -302,14 +302,7 @@ namespace tools
         }
 
 
-        private static void ModalGameEvent()
-        {
-
-            GameManager.instance.turnButtons(true);
-            GameManager.instance.turnTempTouchComponents(false);
-
-        }
-
+       
         
 
         private void HealVisualTest()

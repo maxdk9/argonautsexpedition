@@ -36,6 +36,8 @@ public class Visual : MonoBehaviour
 	public GameObject cardListChooser;
 	
 	
+	
+	
 
 	public Sprite ThumbsUp;
 	public Sprite ThumbsDown;
@@ -43,7 +45,9 @@ public class Visual : MonoBehaviour
 	[Header("Prefabs")]
 	public GameObject particleHeal;
 	public GameObject particleHealCrew;
-	public GameObject prefabCardListChooser;
+	public GameObject prefabCardListScrollView;
+	public GameObject prefabBasicRect;
+	
 	
 
 
@@ -184,7 +188,7 @@ public class Visual : MonoBehaviour
 
 	public void InitializeGameObjects()
 	{
-		cardListChooser = Instantiate(prefabCardListChooser,ScreenManager.instance.DeckgameCanvas.transform,false);
+		cardListChooser = Instantiate(prefabCardListScrollView,ScreenManager.instance.DeckgameCanvas.transform,false);
 	}
 
 	public List<OneCardManager> GetCardManagerListFromParent(Transform parent)

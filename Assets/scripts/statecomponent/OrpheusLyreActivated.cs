@@ -2,11 +2,14 @@
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
+    using Assets.SimpleLocalization;
     using command;
+    using common;
     using DG.Tweening;
     using GameActors;
     using JetBrains.Annotations;
     using Model;
+    using Model.States;
     using tools;
     using UnityEngine;
    using UnityEngine.EventSystems;
@@ -40,6 +43,8 @@ public class OrpheusLyreActivated:MonoBehaviour
         CardListChooser.instance.FillByCards(Game.instance.winningPile);
         CardListChooser.instance.Show();
         CardListChooser.instance.AddComponentToCards<OrpheusLyreActivatedTarget>();
+        MessageManager.Instance.ShowMessage(LocalizationManager.Localize("chooseCardOrpheusLyre"),10);
+        
     }
 
 
@@ -54,7 +59,65 @@ public class OrpheusLyreActivated:MonoBehaviour
 
         public void OnPointerDown(PointerEventData eventData)
         {
-                Debug.Log("OrpheusLyreActivatedTarget");
+                ActivateOrpheusLyreCommand c=new ActivateOrpheusLyreCommand();
+                c.target = cm;
+                c.AddToQueue();
+            
+        }
+    }
+    
+    
+    
+    private class  ActivateOrpheusLyreCommand:Command
+    {
+        public OneCardManager target;
+        
+        public override void StartCommandExecution()
+        {
+
+            GameManager.instance.StartCoroutine(ActivateAegisOfZeusCoroutine());
+            
+        }
+
+        private IEnumerator ActivateAegisOfZeusCoroutine()
+        {
+            
+            
+            
+            Visual.instance.disableInput(true);
+            float timeMovement = Const.mediumCardTimeMovement;
+            HelmOfHadesTarget targetcomponent = target.GetComponent<HelmOfHadesTarget>();
+
+            HelmOfHadesTarget[] targetsarray = GameObject.FindObjectsOfType<HelmOfHadesTarget>();
+            foreach (var VARIABLE in targetsarray)
+            {
+                if (VARIABLE != targetcomponent)
+                {
+                    GameObject.DestroyImmediate(VARIABLE);
+                }
+            }
+            
+            
+            
+
+             
+            
+            HelmOfHadesActivated[] arractivated = GameObject.FindObjectsOfType<HelmOfHadesActivated>();
+            HelmOfHadesActivated activated = arractivated[0];
+            OneCardManager helmcm= activated.GetComponent<OneCardManager>();
+            EndTurn.DiscardCard(helmcm,true);
+            
+            
+
+            EndTurn.DiscardCard(target,false);
+            GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
+            GameLogicEvents.eventUpdateLossCounter.Invoke();
+
+            yield return Const.mediumCardTimeMovement + EndTurn.SmallAmountOfTime;
+
+            VisualTool.SwitchAllControls(true);
+            Visual.instance.disableInput(false);
+            Command.CommandExecutionComplete();
         }
     }
     

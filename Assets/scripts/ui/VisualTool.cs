@@ -39,6 +39,13 @@ public class VisualTool
         }
         
     }
-    
-    
+
+
+    public static void SetAnchorPreset(RectTransform rectTransform)
+    {
+        rectTransform.anchorMin=new Vector2(.5f,.5f);
+        rectTransform.anchorMax=new Vector2(.5f,.5f);
+			
+        rectTransform.pivot=new Vector2(.5f,.5f);
+    }
 }

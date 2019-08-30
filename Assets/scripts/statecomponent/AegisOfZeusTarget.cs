@@ -64,8 +64,7 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
 
             yield return Const.mediumCardTimeMovement + EndTurn.SmallAmountOfTime;
 
-            GameManager.instance.turnButtons(true);
-            GameManager.instance.turnTempTouchComponents(true);
+            VisualTool.SwitchAllControls(true);
             Visual.instance.disableInput(false);
             Command.CommandExecutionComplete();
         }
@@ -91,8 +90,8 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
     public static void ActivateTargets()
     {
         
-        GameManager.instance.turnButtons(false);
-        GameManager.instance.turnTempTouchComponents(false);
+        
+        VisualTool.SwitchAllControls(false);
         
             List<OneCardManager> enclist = Visual.instance.GetCurrentEncounter();
             foreach (OneCardManager cm in enclist)
@@ -114,8 +113,7 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
         {
             GameObject.DestroyImmediate(VARIABLE);            
         }
-        GameManager.instance.turnButtons(true);
-        GameManager.instance.turnTempTouchComponents(true);
+        VisualTool.SwitchAllControls(true);
         MessageManager.Instance.Hide();
     }
 }
