@@ -10,6 +10,7 @@ namespace common
         public static  string carddescr = "legend_";
         public static string cardsin="sin_";
         public static float mediumCardTimeMovement = .6f;
+        public static string orpheuslyre = "orpheuslyre";
 
         public static void CalculateSize()
         {

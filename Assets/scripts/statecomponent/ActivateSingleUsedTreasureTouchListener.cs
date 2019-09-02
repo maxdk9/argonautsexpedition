@@ -66,6 +66,7 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
         {
             DialogActivateSingleUsedTreasure.instance.activatedCard = oneCardManager;
             DialogActivateSingleUsedTreasure.instance.Show(eventData.position);    
+            
         }
         
         

@@ -25,9 +25,6 @@ public class OrpheusLyreActivated:MonoBehaviour
         set { activated = value; }
     }
 
-
-
-
     public void Deactivate()
     {
         activated = false;
@@ -39,6 +36,7 @@ public class OrpheusLyreActivated:MonoBehaviour
     public void Activate()
     {
         VisualTool.SwitchAllControls(false);
+        GameLogicEvents.eventCardVisual.Invoke(this.GetComponent<OneCardManager>());
         activated = true;
         CardListChooser.instance.FillByCards(Game.instance.winningPile);
         CardListChooser.instance.Show();
@@ -62,7 +60,6 @@ public class OrpheusLyreActivated:MonoBehaviour
                 ActivateOrpheusLyreCommand c=new ActivateOrpheusLyreCommand();
                 c.target = cm;
                 c.AddToQueue();
-            
         }
     }
     
@@ -75,46 +72,24 @@ public class OrpheusLyreActivated:MonoBehaviour
         public override void StartCommandExecution()
         {
 
-            GameManager.instance.StartCoroutine(ActivateAegisOfZeusCoroutine());
+            GameManager.instance.StartCoroutine(ActivateOrpheusLyreCoroutine());
             
         }
 
-        private IEnumerator ActivateAegisOfZeusCoroutine()
+        private IEnumerator ActivateOrpheusLyreCoroutine()
         {
             
             
             
             Visual.instance.disableInput(true);
             float timeMovement = Const.mediumCardTimeMovement;
-            HelmOfHadesTarget targetcomponent = target.GetComponent<HelmOfHadesTarget>();
-
-            HelmOfHadesTarget[] targetsarray = GameObject.FindObjectsOfType<HelmOfHadesTarget>();
-            foreach (var VARIABLE in targetsarray)
-            {
-                if (VARIABLE != targetcomponent)
-                {
-                    GameObject.DestroyImmediate(VARIABLE);
-                }
-            }
+            OneCardManager orpheusLyreCM =
+                Visual.instance.GetOneCardManagerByName(Const.orpheuslyre, Visual.instance.TreasureHand.transform);
             
-            
-            
-
-             
-            
-            HelmOfHadesActivated[] arractivated = GameObject.FindObjectsOfType<HelmOfHadesActivated>();
-            HelmOfHadesActivated activated = arractivated[0];
-            OneCardManager helmcm= activated.GetComponent<OneCardManager>();
-            EndTurn.DiscardCard(helmcm,true);
-            
-            
-
-            EndTurn.DiscardCard(target,false);
-            GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
-            GameLogicEvents.eventUpdateLossCounter.Invoke();
-
+            VisualTool.MoveCardToAnotherParent(target.gameObject,Visual.instance.CardPointDiscard.transform,timeMovement);
+            VisualTool.MoveCardToAnotherParent(orpheusLyreCM.gameObject,Visual.instance.CardPointDiscard.transform,timeMovement);
             yield return Const.mediumCardTimeMovement + EndTurn.SmallAmountOfTime;
-
+            CardListChooser.instance.Hide();
             VisualTool.SwitchAllControls(true);
             Visual.instance.disableInput(false);
             Command.CommandExecutionComplete();

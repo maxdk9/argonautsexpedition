@@ -1,3 +1,5 @@
+using command;
+using DG.Tweening;
 using GameActors;
 using screen;
 using UnityEngine;
@@ -47,5 +49,30 @@ public class VisualTool
         rectTransform.anchorMax=new Vector2(.5f,.5f);
 			
         rectTransform.pivot=new Vector2(.5f,.5f);
+    }
+    
+    
+    
+    public static void MoveCardToAnotherParent ( GameObject cardObject, Transform partyStack,float duration)
+    {   
+        cardObject.transform.SetParent(null);
+        cardObject.transform.DOMove(partyStack.position, duration);
+            
+        cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), duration).onComplete= () =>
+        {
+            cardObject.transform.SetParent(partyStack);
+                
+        };
+    }
+
+    
+
+    public static void SimpleMoveCardToAnotherParent ( GameObject cardObject, Transform partyStack)
+    {   
+        cardObject.transform.SetParent(null);
+        cardObject.transform.DOMove(partyStack.position, 0).onComplete= () =>
+        {
+            cardObject.transform.SetParent(partyStack);    
+        };
     }
 }

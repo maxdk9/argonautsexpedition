@@ -206,8 +206,19 @@ public class Visual : MonoBehaviour
 		}
 		return result;
 	}
-	
-	
-	
-	
+
+
+	public OneCardManager GetOneCardManagerByName(string cardname, Transform parentTransform)
+	{
+		List<OneCardManager> cardlist = GetCardManagerListFromParent(parentTransform);
+		foreach (var VARIABLE in cardlist)
+		{
+			if (VARIABLE.cardAsset.name.Equals(cardname))
+			{
+				return VARIABLE;
+			}
+		}
+
+		return null;
+	}
 }
