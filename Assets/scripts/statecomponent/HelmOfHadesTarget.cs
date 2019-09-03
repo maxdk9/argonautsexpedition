@@ -63,11 +63,11 @@ public class HelmOfHadesTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
             HelmOfHadesActivated[] arractivated = GameObject.FindObjectsOfType<HelmOfHadesActivated>();
             HelmOfHadesActivated activated = arractivated[0];
             OneCardManager helmcm= activated.GetComponent<OneCardManager>();
-            EndTurn.DiscardCard(helmcm,true);
+            VisualTool.DiscardCard(helmcm,true);
             
             
 
-            EndTurn.DiscardCard(target,false);
+            VisualTool.DiscardCard(target,false);
             GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
             GameLogicEvents.eventUpdateLossCounter.Invoke();
 

@@ -147,6 +147,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1224384571437554
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224374868201024764}
+  - component: {fileID: 222825856930859512}
+  - component: {fileID: 114642169357871352}
+  m_Layer: 13
+  m_Name: DiceImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1225956042026586
 GameObject:
   m_ObjectHideFlags: 1
@@ -1376,6 +1393,7 @@ MonoBehaviour:
     name: 
     difficulty: 
     deadliness: 
+    diceResult: 0
     needToUpdate: 0
   PreviewManager: {fileID: 114913795567847060}
   isPreview: 0
@@ -1394,6 +1412,7 @@ MonoBehaviour:
   CardFaceGlowImage: {fileID: 114297018895292104}
   CardBackGlowImage: {fileID: 0}
   CrewImage: {fileID: 114738842340304334}
+  DiceImage: {fileID: 114642169357871352}
 --- !u!114 &114051780251240706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2525,6 +2544,33 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114642169357871352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224384571437554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: a70248ffb05aefa4191d37b2a39db7d8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114653413969632798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2999,6 +3045,7 @@ MonoBehaviour:
     name: 
     difficulty: 
     deadliness: 
+    diceResult: 0
     needToUpdate: 0
   PreviewManager: {fileID: 0}
   isPreview: 1
@@ -3017,6 +3064,7 @@ MonoBehaviour:
   CardFaceGlowImage: {fileID: 114063878188823342}
   CardBackGlowImage: {fileID: 0}
   CrewImage: {fileID: 0}
+  DiceImage: {fileID: 0}
 --- !u!114 &114923345281727922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3494,6 +3542,13 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1608869497185764}
   m_CullTransparentMesh: 0
+--- !u!222 &222825856930859512
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224384571437554}
+  m_CullTransparentMesh: 0
 --- !u!222 &222863925076711558
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -3886,6 +3941,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 8.5}
   m_SizeDelta: {x: 0, y: 17}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224374868201024764
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224384571437554}
+  m_LocalRotation: {x: 0, y: 0, z: 0.3420201, w: 0.9396927}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224880248087793938}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 40}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224387535530675166
 RectTransform:
   m_ObjectHideFlags: 1
@@ -4267,6 +4340,7 @@ RectTransform:
   - {fileID: 224016381294207364}
   - {fileID: 4184197893765270}
   - {fileID: 224300464995550156}
+  - {fileID: 224374868201024764}
   m_Father: {fileID: 224863953456435670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -62,7 +62,7 @@ namespace Model.States
                     yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
 
                     bool isResolved = cm.cardAsset.resolved == ResolvedType.resolved_win;
-                    DiscardCard(cm,isResolved);
+                    VisualTool.DiscardCard(cm,isResolved);
                     
                 }
                 yield return new WaitForSeconds(TimeMovement1  + DelayTime);
@@ -73,27 +73,6 @@ namespace Model.States
                 Command.CommandExecutionComplete();
             }
         }
-        
-        
-        
-   
-        public static void DiscardCard(OneCardManager card,bool toWinningPile,float delay=0f)
-        {                
-            card.transform.SetParent(null);
-
-            Sequence sequence = DOTween.Sequence();
-            GameObject destination =
-                toWinningPile ? Visual.instance.CardPointWinning : Visual.instance.CardPointWinning;
-            sequence.SetDelay(delay);
-            sequence.Append(card.transform.DOLocalMove(Visual.instance.CardPointOutside.transform.position, Const.mediumCardTimeMovement));
-            sequence.Insert(delay, card.transform.DORotate(new Vector3(0f, 179f, 0f), Const.mediumCardTimeMovement*.5f));
-            
-            sequence.OnComplete(() => { card.transform.SetParent(destination.transform); });
-            sequence.Play();
-                
-        }
-        
-        
     }
     
    

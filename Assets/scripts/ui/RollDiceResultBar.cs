@@ -37,7 +37,7 @@ public class RollDiceResultBar : MonoBehaviour
 	{
 		this.transform.DOLocalMoveY(HideY, 0);
 		this.gameObject.SetActive(true);
-		CardManager.Card card = Battle.ourInstance.currentDiceEncounterOneCardManager.cardAsset;
+		CardManager.Card card = Visual.instance.GetCurrentEnemyCard();
 
 		bool showPowerUp = GameLogic.GetPowerUp(card) != 0;		
 		PowerUpImage.gameObject.SetActive(showPowerUp);
@@ -63,17 +63,13 @@ public class RollDiceResultBar : MonoBehaviour
 		
 		this.transform.DOLocalMoveY(ShowY,0f);
 		this.gameObject.SetActive(true);
-		
-		
-
 		CanvasGroup canvasgroup = this.GetComponent<CanvasGroup>();
-
 		canvasgroup.alpha = 0;
 		
 		 
 		
 		
-		CardManager.Card card = Battle.ourInstance.currentDiceEncounterOneCardManager.cardAsset;
+		CardManager.Card card = Visual.instance.GetCurrentEnemyCard();
 
 		bool showPowerUp = GameLogic.GetPowerUp(card) != 0;		
 		PowerUpImage.gameObject.SetActive(showPowerUp);

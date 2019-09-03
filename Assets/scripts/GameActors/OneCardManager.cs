@@ -47,8 +47,9 @@ public class OneCardManager : DestroyableEntity
     public Image CardFaceGlowImage;
     public Image CardBackGlowImage;
     public Image CrewImage;
+    public Image DiceImage;
 
-    public bool ShowUiDice;
+    
 
 
     private Sequence diceAnimationSequence;
@@ -179,6 +180,18 @@ public class OneCardManager : DestroyableEntity
             uiDiceObject.SetActive(false);
             return;
         }
+
+        if (cardAsset.rollResult > 0)
+        {
+            uiDiceObject.SetActive(false);
+            DiceImage.gameObject.SetActive(true);    
+            DiceImage.sprite = RollDiceResultBar.instance.FlatDiceImages[Game.instance.DiceEncounterNumber-1];
+        }
+        else
+        {
+            DiceImage.gameObject.SetActive(false);
+        }
+        
         
         uiDiceObject.SetActive(false);
         

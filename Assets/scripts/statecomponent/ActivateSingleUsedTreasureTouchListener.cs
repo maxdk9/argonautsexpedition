@@ -45,6 +45,25 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
 
             customActivation = true;
         };
+        if (oneCardManager.cardAsset.effecttype == Effect.EffectType.ApolloBow_RollDice6_single&&GameLogic.CanUseEffect(oneCardManager.cardAsset.effecttype))
+        {
+
+
+            ApolloBowActivated component = oneCardManager.gameObject.GetComponent<ApolloBowActivated>();
+            if (component.Activated)
+            {
+                component.Deactivate();
+            }
+            else
+            {
+                component.Activate();
+            }
+            
+            customActivation = true;
+
+        }
+            
+        
         
         if (oneCardManager.cardAsset.effecttype == Effect.EffectType.OrpheusLyre_StopLevelUpMonsterInVictoryPile_single&&GameLogic.CanUseEffect(oneCardManager.cardAsset.effecttype))
         {
@@ -100,6 +119,12 @@ public class ActivateSingleUsedTreasureTouchListener:MonoBehaviour,UnityEngine.E
             {
                 cm.gameObject.AddComponent<OrpheusLyreActivated>().enabled = false;
             }
+            
+            if (cm.cardAsset.effecttype == Effect.EffectType.ApolloBow_RollDice6_single)
+            {
+                cm.gameObject.AddComponent<ApolloBowActivated>().enabled = false;
+            }
+            
             
         }
     }

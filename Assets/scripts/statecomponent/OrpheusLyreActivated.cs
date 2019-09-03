@@ -87,7 +87,7 @@ public class OrpheusLyreActivated:MonoBehaviour
                 Visual.instance.GetOneCardManagerByName(Const.orpheuslyre, Visual.instance.TreasureHand.transform);
             
             VisualTool.MoveCardToAnotherParent(target.gameObject,Visual.instance.CardPointDiscard.transform,timeMovement);
-            VisualTool.MoveCardToAnotherParent(orpheusLyreCM.gameObject,Visual.instance.CardPointDiscard.transform,timeMovement);
+            VisualTool.MoveCardToAnotherParent(orpheusLyreCM.gameObject,Visual.instance.CardPointWinning.transform,timeMovement);
             yield return Const.mediumCardTimeMovement + EndTurn.SmallAmountOfTime;
             CardListChooser.instance.Hide();
             VisualTool.SwitchAllControls(true);

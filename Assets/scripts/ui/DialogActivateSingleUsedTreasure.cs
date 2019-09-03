@@ -81,7 +81,7 @@ public class DialogActivateSingleUsedTreasure : ModalPanel
 		GameLogicEvents.eventCardVisual.Invoke(this.activatedCard);
 		GameLogicEvents.eventNewEffect.Invoke(this.activatedCard.cardAsset.effecttype);
 		yield return new WaitForSeconds(firstTimeDuration);
-		EndTurn.DiscardCard(this.activatedCard,true);
+		VisualTool.DiscardCard(this.activatedCard,true);
 		
 		yield return new WaitForSeconds(.2f);
 		Visual.instance.disableInput(false);

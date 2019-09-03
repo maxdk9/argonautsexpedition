@@ -31,6 +31,9 @@ namespace Model
             public String name;
             public int [] difficulty;
             public int [] deadliness;
+            public int diceResult;
+            
+            
             [NonSerialized]
             public Sprite front;
             public bool needToUpdate;
@@ -153,6 +156,7 @@ namespace Model
             card.resolved = ResolvedType.notresolved;
             card.markApolloBow = false;
             card.markOrpheusLyre = false;
+            card.diceResult = 0;
         }
         
     }

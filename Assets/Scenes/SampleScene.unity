@@ -2198,6 +2198,39 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &522178662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 522178663}
+  m_Layer: 15
+  m_Name: TreasureHandPointRollDice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &522178663
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522178662}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000284, y: 1.0000284, z: 1.0000284}
+  m_Children: []
+  m_Father: {fileID: 1150103730}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -782, y: -260.1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &523960871 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: ee5484425092d2f4092499a02dead138,
@@ -3383,7 +3416,7 @@ RectTransform:
   m_GameObject: {fileID: 699762004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000284, y: 1.0000284, z: 1.0000284}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 634766257}
   - {fileID: 107007282}
@@ -3393,12 +3426,12 @@ RectTransform:
   - {fileID: 811808560}
   - {fileID: 955041760}
   - {fileID: 805862914}
-  m_Father: {fileID: 1003685632}
-  m_RootOrder: 9
+  m_Father: {fileID: 1447628882}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -782, y: -260.1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &699762006
@@ -4986,15 +5019,15 @@ RectTransform:
   m_GameObject: {fileID: 884072990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1150103730}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 14}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 340, y: -450}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &922113760
 GameObject:
@@ -5043,6 +5076,8 @@ MonoBehaviour:
   CardPointDiscard: {fileID: 389204356}
   CardPointWinning: {fileID: 1934117195}
   CardPointShuffle: {fileID: 1471767834}
+  TreasureHandPoint: {fileID: 1447628881}
+  TreasureHandPointRollDice: {fileID: 522178662}
   CardDeckFrame: {fileID: 1887946750}
   CrewCounter: {fileID: 1196661121}
   LossCounter: {fileID: 1714935272}
@@ -5535,7 +5570,7 @@ RectTransform:
   - {fileID: 29613766}
   - {fileID: 861315110}
   - {fileID: 1714935273}
-  - {fileID: 699762005}
+  - {fileID: 1447628882}
   - {fileID: 1013442945}
   - {fileID: 1573649028}
   m_Father: {fileID: 0}
@@ -6525,12 +6560,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -6569,6 +6604,7 @@ RectTransform:
   - {fileID: 523960872}
   - {fileID: 884072991}
   - {fileID: 1646056838}
+  - {fileID: 522178663}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7107,7 +7143,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee5484425092d2f4092499a02dead138, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -570.81
+      value: -1205.81
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee5484425092d2f4092499a02dead138, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8524,6 +8560,40 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1446563980}
   m_CullTransparentMesh: 0
+--- !u!1 &1447628881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1447628882}
+  m_Layer: 10
+  m_Name: TreasureHandPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1447628882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447628881}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000284, y: 1.0000284, z: 1.0000284}
+  m_Children:
+  - {fileID: 699762005}
+  m_Father: {fileID: 1003685632}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -782, y: -260.1}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1457866875
 GameObject:
   m_ObjectHideFlags: 0
@@ -12132,7 +12202,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875074844}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 24.9, y: -10, z: -537.5}
+  m_LocalPosition: {x: 24.9, y: -10, z: -1172.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1696107420}

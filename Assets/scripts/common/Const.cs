@@ -11,6 +11,7 @@ namespace common
         public static string cardsin="sin_";
         public static float mediumCardTimeMovement = .6f;
         public static string orpheuslyre = "orpheuslyre";
+        public static string apollobow ="apollobow";
 
         public static void CalculateSize()
         {

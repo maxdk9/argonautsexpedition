@@ -13,7 +13,7 @@ public class ApplyForceInRandomDirection : MonoBehaviour
 	public string ButtonName = "Fire1";
 
 	private Rigidbody rigidbody;
-	private Vector3 startPosition=new Vector3(-0.8f,9.4f,-570);
+	private Vector3 startPosition=new Vector3(-0.8f,9.4f,-1205);
 	//private Vector3 startPosition;
 	
 	private Vector3[] diceDirections =

@@ -223,6 +223,25 @@ namespace Model
 
                 return false;
             }
+
+            if (effectType == Effect.EffectType.ApolloBow_RollDice6_single)
+            {
+                List<OneCardManager> encList = Visual.instance.GetCurrentEncounter();
+                foreach (var VARIABLE in encList)
+                {
+
+
+                    if (VARIABLE.cardAsset.resolved == ResolvedType.notresolved)
+                    {
+                        if (VARIABLE.cardAsset.type == CardType.monster || VARIABLE.cardAsset.type == CardType.treasure)
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
             
             
             return true;

@@ -21,6 +21,8 @@ public class Visual : MonoBehaviour
 	public GameObject CardPointDiscard;
 	public GameObject CardPointWinning;
 	public GameObject CardPointShuffle;
+	public GameObject TreasureHandPoint;
+	public GameObject TreasureHandPointRollDice;
 	
 	[Header("VisualObjects")]
 	public GameObject CardDeckFrame;
@@ -28,6 +30,7 @@ public class Visual : MonoBehaviour
 	public GameObject LossCounter;
 	public GameObject CurrentEncounter;
 	public GameObject TreasureHand;
+	
 	public GameObject EffectGroup;
 	public GameObject transparentModalWindow;
 	public GameObject currentDiceEncounter;

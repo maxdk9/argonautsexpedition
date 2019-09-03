@@ -9,8 +9,8 @@ namespace Model.States
         public static Battle ourInstance=new Battle();
         public UnityEvent diceRolledEvent=new UnityEvent();
         
-        public GameObject currentDiceEncounterObject;
-        public OneCardManager currentDiceEncounterOneCardManager;
+        private GameObject currentDiceEncounterObject;
+        private OneCardManager currentDiceEncounterOneCardManager;
         
         
         
@@ -25,9 +25,7 @@ namespace Model.States
             Visual.instance.mainDice.SetActive(true);
             Visual.instance.mainDice.GetComponent<ApplyForceInRandomDirection>().Reset();
 
-
             SetCurrentDiceEncounterObject();
-            
             
             RollDiceTouchListener rollDiceTouchListener =
                 Visual.instance.RollDiceImage.gameObject.AddComponent<RollDiceTouchListener>();
@@ -48,10 +46,8 @@ namespace Model.States
 
         public void SetCurrentDiceEncounterObject()
         {
-            CardManager.Card diceEncounterCard =
-                Visual.instance.GetCurrentEnemyCard();
-            currentDiceEncounterObject =
-                OneCardManager.CreateOneCardManager(diceEncounterCard,Visual.instance.currentDiceEncounter);
+            CardManager.Card diceEncounterCard = Visual.instance.GetCurrentEnemyCard();
+            currentDiceEncounterObject =  OneCardManager.CreateOneCardManager(diceEncounterCard,Visual.instance.currentDiceEncounter);
             currentDiceEncounterOneCardManager = currentDiceEncounterObject.GetComponent<OneCardManager>();
             
         }

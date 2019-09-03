@@ -233,18 +233,15 @@ namespace tools
             CorrectDeck2_AddItemToHand();   
         }
         
-        
         private static void CorrectDeck1()
         {
             MoveCardToUp("wingedsandals");
         }
 
-
-
         private static void CorrectDeck2_AddItemToHand()
         {
 
-            string cardname = "orpheuslyre";
+            string cardname = "apollobow";
             CardManager.Card chosenCard = null;
             
             foreach (CardManager.Card card in Game.instance.currentDeck)

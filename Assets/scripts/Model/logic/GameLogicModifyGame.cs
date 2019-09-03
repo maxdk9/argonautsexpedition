@@ -112,6 +112,11 @@ namespace Model
             target.IgnoreDeadliness = true;
             UpdateCasualtiesCurrentEncounter();
         }
+
+        public static void ApolloBowEffect(CardManager.Card target)
+        {
+            target.diceResult = 6;
+        }
     }
     
     

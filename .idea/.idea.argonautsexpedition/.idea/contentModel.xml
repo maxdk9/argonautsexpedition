@@ -131,6 +131,7 @@
             <e p="ActivateSingleUsedTreasureTouchListener.cs" t="Include" />
             <e p="AegisOfZeusActivated.cs" t="Include" />
             <e p="AegisOfZeusTarget.cs" t="Include" />
+            <e p="ApolloBowActivated.cs" t="Include" />
             <e p="AssignCrewTouchListener.cs" t="Include" />
             <e p="Draw3CardsTouchListener.cs" t="Include" />
             <e p="HelmOfHadesActivated.cs" t="Include" />

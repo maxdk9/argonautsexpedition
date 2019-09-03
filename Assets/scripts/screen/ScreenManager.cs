@@ -98,6 +98,8 @@ namespace screen
                 {
                     Visual.instance.DisableVisualElementsOnStateEnter();
                 }
+
+                
             }
         }
 
