@@ -62,7 +62,14 @@ namespace Model.States
                     yield return new WaitForSeconds(EndTurn.SmallAmountOfTime);
 
                     bool isResolved = cm.cardAsset.resolved == ResolvedType.resolved_win;
-                    VisualTool.DiscardCard(cm,isResolved);
+                    if (isResolved)
+                    {
+                        VisualTool.DiscardCardToWinningPile(cm);    
+                    }
+                    else
+                    {
+                        VisualTool.DiscardCardToDiscardPile(cm);
+                    }
                     
                 }
                 yield return new WaitForSeconds(TimeMovement1  + DelayTime);

@@ -39,10 +39,14 @@ namespace Model
         
         
 
-        public static void CalculateDiceRollResult()
+        public static void CalculateDiceRollResult(CardManager.Card card)
         {
-            Game.instance.DiceEncounterNumber =
+            card.rollResult =
                 Visual.instance.mainDice.GetComponentInParent<DisplayCurrentDiceValue>().Value;
+            if (card.rollResult == 6)
+            {
+                card.criticalHit = true;
+            }
             
         }
 
@@ -115,7 +119,7 @@ namespace Model
 
         public static void ApolloBowEffect(CardManager.Card target)
         {
-            target.diceResult = 6;
+            target.rollResult=6;
         }
     }
     

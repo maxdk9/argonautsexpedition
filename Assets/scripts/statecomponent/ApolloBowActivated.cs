@@ -50,8 +50,12 @@ public class ApolloBowActivated:MonoBehaviour
     {
         public void OnPointerDown(PointerEventData eventData)
         {
-               Debug.Log("ApolloBowTargetActivated");
-       }
+            CommandActivateApolloBowTarget command=new CommandActivateApolloBowTarget();
+            command.target = this.GetComponent<OneCardManager>();
+            command.StartCommandExecution();
+            
+            
+        }
 
         private void Awake()
         {
@@ -82,18 +86,17 @@ public class ApolloBowActivated:MonoBehaviour
             
             Visual.instance.disableInput(true);
             float timeMovement = Const.mediumCardTimeMovement;
-
             OneCardManager apolloBowCM = Visual.instance.GetOneCardManagerByName(Const.apollobow,Visual.instance.TreasureHand.transform);
             
             GameLogicModifyGame.ApolloBowEffect(target.cardAsset);
             target.ReadCardFromAsset();
-            
-            VisualTool.MoveCardToAnotherParent(apolloBowCM.gameObject,Visual.instance.CardPointWinning.transform,Const.mediumCardTimeMovement);
+            VisualTool.DiscardCardToDiscardPile(apolloBowCM,0);
             
             yield return timeMovement + EndTurn.SmallAmountOfTime;
-
+            ApolloBowActivated.DeactivateTargets();
             VisualTool.SwitchAllControls(true);
             Visual.instance.disableInput(false);
+            
             Command.CommandExecutionComplete();
         }
     }

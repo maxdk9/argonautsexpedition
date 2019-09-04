@@ -105,7 +105,7 @@
               <e p="iState.cs" t="Include" />
               <e p="StateManager.cs" t="Include" />
               <e p="States" t="Include">
-                <e p="Battle.cs" t="Include" />
+                <e p="BattleDiceRoll.cs" t="Include" />
                 <e p="BattleEnd.cs" t="Include" />
                 <e p="BattleView.cs" t="Include" />
                 <e p="CrewAssignment.cs" t="Include" />

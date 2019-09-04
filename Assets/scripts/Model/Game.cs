@@ -25,8 +25,7 @@ public class Game
 	public List<HeroicDeed> HeroicDeedList=new List<HeroicDeed>();
 	public List <Effect> CardEffects=new List<Effect>();
 	
-	[SerializeField]
-	private int diceEncounterNumber = 0;
+	
 	
 	[SerializeField]
 	private int currentEnemyIndex = 0;
@@ -120,11 +119,6 @@ public class Game
 		set { deployedCrew = value; }
 	}
 
-	public int DiceEncounterNumber
-	{
-		get { return diceEncounterNumber; }
-		set { diceEncounterNumber = value; }
-	}
 
 	public int CurrentEnemyIndex
 	{

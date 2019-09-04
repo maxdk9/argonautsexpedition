@@ -22,7 +22,7 @@ public class ResolveCardByDiceRoll :tempTouchComponent,UnityEngine.EventSystems.
            // OneCardManager c=this.GetComponent<OneCardManager>();
             Debug.Log("ResolveCardByDiceRoll ");
             OneCardManager c = this.GetComponent<OneCardManager>();
-            
+
             if (c.cardAsset.resolved == ResolvedType.resolved_lost |
                 c.cardAsset.resolved == ResolvedType.resolved_win)
             {
@@ -33,13 +33,22 @@ public class ResolveCardByDiceRoll :tempTouchComponent,UnityEngine.EventSystems.
             {
                 return;
             }
+
             if (c.cardAsset.type == CardType.blessing)
             {
                 return;
             }
-            
+
             Game.instance.CurrentEnemyIndex = c.cardAsset.cardnumber;
-            new GoToNextGamePhase(GamePhase.Battle).AddToQueue();
+            if (c.cardAsset.rollResult > 0)
+            {
+                new GoToNextGamePhase(GamePhase.BattleEnd).AddToQueue();
+            }
+            else
+            {
+                new GoToNextGamePhase(GamePhase.Battle).AddToQueue();
+            }
+            
             
             // GameManager.instance.StartCoroutine(this.Draw3Cards());   
         }

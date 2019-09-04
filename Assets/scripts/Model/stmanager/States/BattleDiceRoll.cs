@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 namespace Model.States
 {
-    public class Battle:iState
+    public class BattleDiceRoll:iState
     {
-        public static Battle ourInstance=new Battle();
+        public static BattleDiceRoll ourInstance=new BattleDiceRoll();
         public UnityEvent diceRolledEvent=new UnityEvent();
         
         private GameObject currentDiceEncounterObject;
@@ -31,10 +31,11 @@ namespace Model.States
                 Visual.instance.RollDiceImage.gameObject.AddComponent<RollDiceTouchListener>();
             rollDiceTouchListener.dice = Visual.instance.mainDice;
             rollDiceTouchListener.RollEnabled = true;
-    
 
+            CardManager.Card opponentCard = currentDiceEncounterOneCardManager.cardAsset;
             diceRolledEvent.RemoveAllListeners();
-            diceRolledEvent.AddListener(new UnityAction(delegate { GameLogicModifyGame.CalculateDiceRollResult(); }));
+            diceRolledEvent.AddListener(new UnityAction(delegate{GameLogicModifyGame.CalculateDiceRollResult(currentDiceEncounterOneCardManager.cardAsset); } ));
+            
             diceRolledEvent.AddListener(new UnityAction(delegate { ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage()); }));
             
             diceRolledEvent.AddListener(new UnityAction(delegate { RollDiceResultBar.instance.Show(); }));

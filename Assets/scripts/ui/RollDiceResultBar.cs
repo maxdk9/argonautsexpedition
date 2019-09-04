@@ -51,7 +51,7 @@ public class RollDiceResultBar : MonoBehaviour
 			PowerUpCounter.text = GameLogic.GetPowerUp(card).ToString();
 		}
 
-		IconDice.sprite = FlatDiceImages[Game.instance.DiceEncounterNumber-1];
+		IconDice.sprite = FlatDiceImages[card.rollResult-1];
 		
 		this.transform.DOLocalMoveY(ShowY,.7f);
 
@@ -83,7 +83,7 @@ public class RollDiceResultBar : MonoBehaviour
 			PowerUpCounter.text = GameLogic.GetPowerUp(card).ToString();
 		}
 
-		IconDice.sprite = FlatDiceImages[Game.instance.DiceEncounterNumber-1];
+		IconDice.sprite = FlatDiceImages[card.rollResult-1];
 		FadeAlphaGraphicUI.CrossFadeAlphaFixed(canvasgroup,100,.7f,null);
 		
 

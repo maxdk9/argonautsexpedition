@@ -51,7 +51,7 @@ public class DisplayCurrentDiceValue : MonoBehaviour
 			{
 				if (!eventInvoked)
 				{
-					Battle.ourInstance.diceRolledEvent.Invoke();
+					BattleDiceRoll.ourInstance.diceRolledEvent.Invoke();
 					eventInvoked = true;
 				}
 			}

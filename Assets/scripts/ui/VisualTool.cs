@@ -54,16 +54,34 @@ public class VisualTool
     
     
     
-    public static void MoveCardToAnotherParent ( GameObject cardObject, Transform partyStack,float duration)
+    
+    public static void MoveCardToAnotherParentNoSequence ( GameObject cardObject, Transform partyStack,float duration)
     {   
         cardObject.transform.SetParent(null);
-        cardObject.transform.DOMove(partyStack.position, duration);
-            
+        cardObject.transform.DOMove(partyStack.position, duration);            
         cardObject.transform.DORotate(new Vector3(0f, 179f, 0f), duration).onComplete= () =>
         {
             cardObject.transform.SetParent(partyStack);
                 
         };
+    }
+    
+    
+    
+    public static void MoveCardToAnotherParent ( GameObject card, Transform partyStack,float duration=0f,float delay=0f)
+    {
+
+        if (duration == 0f)
+        {
+            duration = Const.mediumCardTimeMovement;
+        }
+        card.transform.SetParent(null);
+        Sequence sequence = DOTween.Sequence();
+        sequence.SetDelay(delay);
+        sequence.Append(card.transform.DOLocalMove(Visual.instance.CardPointOutside.transform.position, duration));
+        sequence.Insert(delay, card.transform.DORotate(new Vector3(0f, 179f, 0f), duration*.5f));
+        sequence.OnComplete(() => { card.transform.SetParent(partyStack); });
+        sequence.Play();
     }
 
     
@@ -77,22 +95,20 @@ public class VisualTool
         };
     }
 
-    public static void DiscardCard(OneCardManager card,bool toWinningPile,float delay=0f)
-    {                
-        card.transform.SetParent(null);
-
-        Sequence sequence = DOTween.Sequence();
-        GameObject destination =
-            toWinningPile ? Visual.instance.CardPointWinning : Visual.instance.CardPointWinning;
-        sequence.SetDelay(delay);
-        sequence.Append(card.transform.DOLocalMove(Visual.instance.CardPointOutside.transform.position, Const.mediumCardTimeMovement));
-        sequence.Insert(delay, card.transform.DORotate(new Vector3(0f, 179f, 0f), Const.mediumCardTimeMovement*.5f));
-            
-        sequence.OnComplete(() => { card.transform.SetParent(destination.transform); });
-        sequence.Play();       
+    
+    
+    public static void DiscardCardToDiscardPile(OneCardManager card,float delay=0f)
+    {  
+       GameObject destination =Visual.instance.CardPointDiscard;
+       MoveCardToAnotherParent(card.gameObject,destination.transform,Const.mediumCardTimeMovement,0);    
+    }
+    
+    public static void DiscardCardToWinningPile(OneCardManager card,float delay=0f)
+    {   
+        GameObject destination =Visual.instance.CardPointWinning ;
+        MoveCardToAnotherParent(card.gameObject,destination.transform,Const.mediumCardTimeMovement,0);
     }
     
     
-    public static void DiscardCardToWinnintPile(OneCardManager car)
     
 }

@@ -185,7 +185,8 @@ public class OneCardManager : DestroyableEntity
         {
             uiDiceObject.SetActive(false);
             DiceImage.gameObject.SetActive(true);    
-            DiceImage.sprite = RollDiceResultBar.instance.FlatDiceImages[Game.instance.DiceEncounterNumber-1];
+            DiceImage.sprite = RollDiceResultBar.instance.FlatDiceImages[cardAsset.rollResult-1];
+            return;
         }
         else
         {

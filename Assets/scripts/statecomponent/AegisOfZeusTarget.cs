@@ -56,8 +56,9 @@ public class AegisOfZeusTarget :tempTouchComponent,UnityEngine.EventSystems.IPoi
             AegisOfZeusActivated[] arractivated = GameObject.FindObjectsOfType<AegisOfZeusActivated>();
             AegisOfZeusActivated activated = arractivated[0];
             OneCardManager aegis = activated.GetComponent<OneCardManager>();
-            VisualTool.DiscardCard(aegis,true);
-
+            
+            VisualTool.DiscardCardToWinningPile(aegis,0);
+            
             GameLogicModifyGame.SetIgnoreDeadliness(target.cardAsset);
             GameLogicEvents.eventUpdateCurrentEncounter.Invoke();
             GameLogicEvents.eventUpdateLossCounter.Invoke();

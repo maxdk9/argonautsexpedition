@@ -20,16 +20,20 @@ namespace command
         private IEnumerator MoveCardsOutsideFromDeckCoroutine()
         {
             yield return new WaitForSeconds(.01f);
+            Visual.instance.CardDeckFrame.gameObject.SetActive(true);
+            
             OneCardManager[] cards = Visual.instance.CardPointOutside.GetComponentsInChildren<OneCardManager>();
             foreach (OneCardManager cardmanager in cards)
             {
                 GameObject cardObject = cardmanager.gameObject;
-                int cardindex = Array.IndexOf(cards, cardmanager);
-                SetCanvasOrderInObject(cardObject, cardindex);
-                VisualTool.MoveCardToAnotherParent(cardObject,Visual.instance.CardDeckFrame.transform,TimeMovement);
+               // int cardindex = Array.IndexOf(cards, cardmanager);
+                //SetCanvasOrderInObject(cardObject, cardindex);
+                
+                
+                VisualTool.MoveCardToAnotherParentNoSequence(cardObject,Visual.instance.CardDeckFrame.transform,TimeMovement);
                 yield return new WaitForSeconds(SmallAmountOfTime);
             }            
-            yield return new WaitForSeconds(TimeMovement);
+            yield return new WaitForSeconds(TimeMovement+SmallAmountOfTime);
             Command.CommandExecutionComplete();
         }
         

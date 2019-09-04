@@ -129,9 +129,9 @@ namespace Model
 
             CardManager.Card currentEncounter = Visual.instance.GetCurrentEnemyCard();
 
-            int playerResult = currentEncounter.crewNumber + Game.instance.DiceEncounterNumber + GameLogic.GetPowerUp(currentEncounter);
+            int playerResult = currentEncounter.crewNumber + currentEncounter.rollResult + GameLogic.GetPowerUp(currentEncounter);
             int monsterResult = GameLogic.GetCurrentDifficulty(currentEncounter);
-            if (Game.instance.DiceEncounterNumber == 6)
+            if (currentEncounter.criticalHit)
             {
                 return true;
             }

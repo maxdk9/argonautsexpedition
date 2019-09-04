@@ -141,7 +141,7 @@ namespace Model
                 yield return new WaitForSeconds(.1f);
                 cm.transform.DOMove(Visual.instance.CardPointShuffle.transform.position, firstMoveDuration);
                 yield return new WaitForSeconds(.05f);
-                VisualTool.DiscardCard(cm,false,firstMoveDuration);
+                VisualTool.DiscardCardToDiscardPile(cm,firstMoveDuration);
             }
             yield return new WaitForSeconds(firstMoveDuration*3);
 

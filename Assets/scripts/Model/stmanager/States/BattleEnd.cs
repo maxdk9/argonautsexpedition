@@ -25,7 +25,7 @@ namespace Model.States
             
             ScreenManager.instance.Show(ScreenManager.ScreenType.Rolldice);
             Visual.instance.mainDice.SetActive(false);
-            Battle.ourInstance.SetCurrentDiceEncounterObject();
+            BattleDiceRoll.ourInstance.SetCurrentDiceEncounterObject();
             ResultPanel.instance.ShowMessage(GameLogic.GetResultMessage());
             RollDiceResultBar.instance.Show();
             

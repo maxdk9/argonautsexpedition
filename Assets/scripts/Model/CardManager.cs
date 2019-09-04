@@ -23,15 +23,15 @@ namespace Model
             public int level;
             public int crewNumber;
             public int rollResult;
+            public bool criticalHit;
             public ResolvedType resolved;
             public bool ignore=false;
             public bool IgnoreDeadliness;
-            public bool markApolloBow;
-            public bool markOrpheusLyre;
+            
             public String name;
             public int [] difficulty;
             public int [] deadliness;
-            public int diceResult;
+            
             
             
             [NonSerialized]
@@ -154,10 +154,21 @@ namespace Model
             card.IgnoreDeadliness = false;
             card.crewNumber = 0;
             card.resolved = ResolvedType.notresolved;
-            card.markApolloBow = false;
-            card.markOrpheusLyre = false;
-            card.diceResult = 0;
+            
+            card.rollResult = 0;
+            card.criticalHit = false;
         }
+
+        public static void ResetCardAfterLeg(Card card)
+        {
+            card.ignore = false;
+            card.IgnoreDeadliness = false;
+            card.crewNumber = 0;
+            card.resolved = ResolvedType.notresolved;
+            card.rollResult = 0;
+            card.criticalHit = false;
+        }
+        
         
     }
 }
