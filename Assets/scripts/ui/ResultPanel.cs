@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Experimental.UIElements;
 using Image = UnityEngine.UI.Image;
 
 public class ResultPanel : MonoBehaviour
